@@ -1,0 +1,8 @@
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
