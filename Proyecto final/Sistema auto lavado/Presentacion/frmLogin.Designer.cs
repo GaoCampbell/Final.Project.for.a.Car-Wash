@@ -66,12 +66,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 0);
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.minimizar;
+            this.pictureBox1.Location = new System.Drawing.Point(239, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
@@ -87,12 +89,14 @@
             // pictureBox8
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(263, 1);
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(268, 1);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 26);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 3;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // panel3
             // 
@@ -105,6 +109,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Presentacion.Properties.Resources.atomix_user31;
             this.pictureBox2.Location = new System.Drawing.Point(76, 1);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(139, 118);

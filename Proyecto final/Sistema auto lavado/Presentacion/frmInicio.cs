@@ -20,9 +20,10 @@ namespace Presentacion
         
         private void uSUARIOToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmUsuario _frmUsuario = new frmUsuario();
             _frmUsuario.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void frmInicio_Load(object sender, EventArgs e)
@@ -36,8 +37,7 @@ namespace Presentacion
             uSUARIOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.Tusuario;
             pRODUCTOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.producto;
             pROVEEDORToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.proveedor;
-            DateTime hoy = DateTime.Today;
-            time.Text = hoy.ToString();
+           
         }
 
         private void lblUsuario_Click(object sender, EventArgs e)
@@ -47,23 +47,67 @@ namespace Presentacion
 
         private void eMPLEADOToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+           this.Hide();
             frmEmpleado empleado = new frmEmpleado();
             empleado.Show();
-            this.Hide();
+            
         }
 
         private void aREAToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmArea area = new frmArea();
             area.Show();
-            this.Hide();
+            
         }
 
         private void gRUPOTRABAJADORESToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmGrupoTrabajadores gt = new frmGrupoTrabajadores();
             gt.Show();
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sERVICIOSToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             this.Hide();
+            frmServicioMantenimiento sm = new frmServicioMantenimiento();
+            sm.Show();
+        }
+
+        private void mANTENIMIENTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vEHICULOMANTENIMINETOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmVehiculoMan VM = new frmVehiculoMan();
+            VM.Show();
+        }
+
+        private void pROVEEDORToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmProveedor pro = new frmProveedor();
+            pro.Show();
         }
     }
 }

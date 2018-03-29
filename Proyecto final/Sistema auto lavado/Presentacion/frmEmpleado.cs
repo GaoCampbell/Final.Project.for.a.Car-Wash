@@ -160,9 +160,10 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+            this.Close();
             frmInicio inicio = new frmInicio();
             inicio.Show();
-            this.Close();
+           
         }
 
         private void dgvEmpleado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -221,6 +222,11 @@ namespace Presentacion
             btnNuevo.Enabled = true;
             txtArea.Enabled = false;
             txtGrupo.Enabled = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

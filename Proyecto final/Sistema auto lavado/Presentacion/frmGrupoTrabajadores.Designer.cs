@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,12 +40,13 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvGrupoTrabajadores = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupoTrabajadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -61,22 +61,12 @@
             this.panel2.Size = new System.Drawing.Size(651, 29);
             this.panel2.TabIndex = 13;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(592, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(262, 9);
+            this.label3.Location = new System.Drawing.Point(221, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 18);
             this.label3.TabIndex = 3;
@@ -85,7 +75,8 @@
             // pictureBox8
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(620, 0);
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(625, -1);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,7 +94,7 @@
             this.groupBox1.Size = new System.Drawing.Size(623, 85);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Sala";
+            this.groupBox1.Text = "Grupos de Trabajadores";
             // 
             // txtnombre
             // 
@@ -119,9 +110,9 @@
             this.label6.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(17, 36);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 18);
+            this.label6.Size = new System.Drawing.Size(119, 18);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Nombre  del grupo: ";
+            this.label6.Text = "Nombre  del grupo ";
             // 
             // groupBox2
             // 
@@ -130,7 +121,7 @@
             this.groupBox2.Controls.Add(this.btnModificar);
             this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 171);
+            this.groupBox2.Location = new System.Drawing.Point(12, 144);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(623, 65);
             this.groupBox2.TabIndex = 15;
@@ -139,7 +130,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(334, 21);
+            this.btnGuardar.Location = new System.Drawing.Point(322, 21);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(95, 28);
             this.btnGuardar.TabIndex = 14;
@@ -149,7 +140,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(498, 21);
+            this.btnCancelar.Location = new System.Drawing.Point(435, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 28);
             this.btnCancelar.TabIndex = 13;
@@ -159,7 +150,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(183, 21);
+            this.btnModificar.Location = new System.Drawing.Point(209, 21);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 28);
             this.btnModificar.TabIndex = 11;
@@ -169,7 +160,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(20, 21);
+            this.btnNuevo.Location = new System.Drawing.Point(96, 21);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(95, 28);
             this.btnNuevo.TabIndex = 10;
@@ -180,17 +171,29 @@
             // dgvGrupoTrabajadores
             // 
             this.dgvGrupoTrabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrupoTrabajadores.Location = new System.Drawing.Point(199, 256);
+            this.dgvGrupoTrabajadores.Location = new System.Drawing.Point(12, 215);
             this.dgvGrupoTrabajadores.Name = "dgvGrupoTrabajadores";
-            this.dgvGrupoTrabajadores.Size = new System.Drawing.Size(246, 251);
+            this.dgvGrupoTrabajadores.Size = new System.Drawing.Size(623, 140);
             this.dgvGrupoTrabajadores.TabIndex = 16;
             this.dgvGrupoTrabajadores.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrupoTrabajadores_CellDoubleClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.minimizar;
+            this.pictureBox1.Location = new System.Drawing.Point(596, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmGrupoTrabajadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 519);
+            this.ClientSize = new System.Drawing.Size(651, 366);
             this.Controls.Add(this.dgvGrupoTrabajadores);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -202,12 +205,12 @@
             this.Load += new System.EventHandler(this.frmGrupoTrabajadores_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupoTrabajadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,7 +218,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -227,5 +229,6 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvGrupoTrabajadores;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

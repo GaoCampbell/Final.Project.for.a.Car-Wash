@@ -37,5 +37,15 @@ namespace Presentacion
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

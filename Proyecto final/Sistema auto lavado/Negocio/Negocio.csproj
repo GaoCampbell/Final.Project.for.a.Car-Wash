@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Negocio</RootNamespace>
     <AssemblyName>Negocio</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,7 +44,11 @@
     <Compile Include="NArea.cs" />
     <Compile Include="NEmpleado.cs" />
     <Compile Include="NGrupoTrabajadores.cs" />
+    <Compile Include="NProveedor.cs" />
+    <Compile Include="NServicioMantenimiento.cs" />
+    <Compile Include="NServicioVehiculo.cs" />
     <Compile Include="NUsuario.cs" />
+    <Compile Include="NVehiculoMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

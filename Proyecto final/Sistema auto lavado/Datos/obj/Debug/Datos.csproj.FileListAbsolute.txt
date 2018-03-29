@@ -6,3 +6,11 @@ D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\
 D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb

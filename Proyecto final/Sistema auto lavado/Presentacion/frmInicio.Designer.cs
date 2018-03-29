@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -37,6 +39,8 @@
             this.eMPLEADOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pROVEEDORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gRUPOTRABAJADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRODUCTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMPRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,57 +57,85 @@
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.time = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.aREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gRUPOTRABAJADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.seToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 33);
+            this.panel1.Size = new System.Drawing.Size(1070, 33);
             this.panel1.TabIndex = 12;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(1013, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(29, 33);
+            this.panel7.TabIndex = 12;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(835, 1);
+            this.pictureBox2.Image = global::Presentacion.Properties.Resources.minimizar;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 29);
+            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(1042, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(28, 33);
+            this.panel6.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(863, 1);
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(324, 6);
+            this.label1.Location = new System.Drawing.Point(362, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 24);
             this.label1.TabIndex = 0;
@@ -120,7 +152,8 @@
             this.lOGOUTToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 33);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(891, 24);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(1070, 24);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -140,21 +173,36 @@
             // eMPLEADOToolStripMenuItem1
             // 
             this.eMPLEADOToolStripMenuItem1.Name = "eMPLEADOToolStripMenuItem1";
-            this.eMPLEADOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.eMPLEADOToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
             this.eMPLEADOToolStripMenuItem1.Text = "EMPLEADO";
             this.eMPLEADOToolStripMenuItem1.Click += new System.EventHandler(this.eMPLEADOToolStripMenuItem1_Click);
             // 
             // pROVEEDORToolStripMenuItem
             // 
             this.pROVEEDORToolStripMenuItem.Name = "pROVEEDORToolStripMenuItem";
-            this.pROVEEDORToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.pROVEEDORToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.pROVEEDORToolStripMenuItem.Text = "PROVEEDOR";
+            this.pROVEEDORToolStripMenuItem.Click += new System.EventHandler(this.pROVEEDORToolStripMenuItem_Click);
             // 
             // cLIENTESToolStripMenuItem
             // 
             this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
-            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
+            // 
+            // aREAToolStripMenuItem
+            // 
+            this.aREAToolStripMenuItem.Name = "aREAToolStripMenuItem";
+            this.aREAToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.aREAToolStripMenuItem.Text = "AREA";
+            this.aREAToolStripMenuItem.Click += new System.EventHandler(this.aREAToolStripMenuItem_Click);
+            // 
+            // gRUPOTRABAJADORESToolStripMenuItem
+            // 
+            this.gRUPOTRABAJADORESToolStripMenuItem.Name = "gRUPOTRABAJADORESToolStripMenuItem";
+            this.gRUPOTRABAJADORESToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.gRUPOTRABAJADORESToolStripMenuItem.Text = "GRUPO TRABAJADORES";
+            this.gRUPOTRABAJADORESToolStripMenuItem.Click += new System.EventHandler(this.gRUPOTRABAJADORESToolStripMenuItem_Click);
             // 
             // pRODUCTOToolStripMenuItem
             // 
@@ -190,7 +238,8 @@
             this.mANTENIMINETOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vEHICULOMANTENIMINETOToolStripMenuItem1,
             this.sERVICIOSToolStripMenuItem1,
-            this.mANTENIMIENTOToolStripMenuItem});
+            this.mANTENIMIENTOToolStripMenuItem,
+            this.seToolStripMenuItem});
             this.mANTENIMINETOToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.mANTENIMINETOToolStripMenuItem.Name = "mANTENIMINETOToolStripMenuItem";
             this.mANTENIMINETOToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
@@ -201,18 +250,21 @@
             this.vEHICULOMANTENIMINETOToolStripMenuItem1.Name = "vEHICULOMANTENIMINETOToolStripMenuItem1";
             this.vEHICULOMANTENIMINETOToolStripMenuItem1.Size = new System.Drawing.Size(231, 22);
             this.vEHICULOMANTENIMINETOToolStripMenuItem1.Text = "VEHICULO MANTENIMIENTO";
+            this.vEHICULOMANTENIMINETOToolStripMenuItem1.Click += new System.EventHandler(this.vEHICULOMANTENIMINETOToolStripMenuItem1_Click);
             // 
             // sERVICIOSToolStripMenuItem1
             // 
             this.sERVICIOSToolStripMenuItem1.Name = "sERVICIOSToolStripMenuItem1";
             this.sERVICIOSToolStripMenuItem1.Size = new System.Drawing.Size(231, 22);
-            this.sERVICIOSToolStripMenuItem1.Text = "SERVICIOS";
+            this.sERVICIOSToolStripMenuItem1.Text = "SERVICIOS MANTENIMIENTO";
+            this.sERVICIOSToolStripMenuItem1.Click += new System.EventHandler(this.sERVICIOSToolStripMenuItem1_Click);
             // 
             // mANTENIMIENTOToolStripMenuItem
             // 
             this.mANTENIMIENTOToolStripMenuItem.Name = "mANTENIMIENTOToolStripMenuItem";
             this.mANTENIMIENTOToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.mANTENIMIENTOToolStripMenuItem.Text = "MANTENIMIENTO";
+            this.mANTENIMIENTOToolStripMenuItem.Text = "SERVICIO";
+            this.mANTENIMIENTOToolStripMenuItem.Click += new System.EventHandler(this.mANTENIMIENTOToolStripMenuItem_Click);
             // 
             // lAVADOToolStripMenuItem
             // 
@@ -260,9 +312,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(310, 118);
+            this.pictureBox3.Image = global::Presentacion.Properties.Resources.atomix_user31;
+            this.pictureBox3.Location = new System.Drawing.Point(277, 86);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(270, 240);
+            this.pictureBox3.Size = new System.Drawing.Size(296, 263);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -270,28 +323,17 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.panel3.Controls.Add(this.time);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.lblUsuario);
+            this.panel3.Controls.Add(this.panel8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 453);
+            this.panel3.Location = new System.Drawing.Point(0, 552);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(891, 24);
+            this.panel3.Size = new System.Drawing.Size(1070, 24);
             this.panel3.TabIndex = 20;
-            // 
-            // time
-            // 
-            this.time.AutoSize = true;
-            this.time.Location = new System.Drawing.Point(12, 5);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(35, 13);
-            this.time.TabIndex = 11;
-            this.time.Text = "label2";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(671, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(78, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 10;
@@ -299,34 +341,66 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(622, 8);
+            this.lblUsuario.Location = new System.Drawing.Point(19, 6);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
-            // aREAToolStripMenuItem
+            // panel2
             // 
-            this.aREAToolStripMenuItem.Name = "aREAToolStripMenuItem";
-            this.aREAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aREAToolStripMenuItem.Text = "AREA";
-            this.aREAToolStripMenuItem.Click += new System.EventHandler(this.aREAToolStripMenuItem_Click);
+            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1070, 13);
+            this.panel2.TabIndex = 21;
             // 
-            // gRUPOTRABAJADORESToolStripMenuItem
+            // panel4
             // 
-            this.gRUPOTRABAJADORESToolStripMenuItem.Name = "gRUPOTRABAJADORESToolStripMenuItem";
-            this.gRUPOTRABAJADORESToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.gRUPOTRABAJADORESToolStripMenuItem.Text = "GRUPO TRABAJADORES";
-            this.gRUPOTRABAJADORESToolStripMenuItem.Click += new System.EventHandler(this.gRUPOTRABAJADORESToolStripMenuItem_Click);
+            this.panel4.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 70);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(134, 482);
+            this.panel4.TabIndex = 22;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(134, 70);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(936, 482);
+            this.panel5.TabIndex = 23;
+            this.panel5.TabStop = true;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.dateTimePicker1);
+            this.panel8.Controls.Add(this.lblUsuario);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(786, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(284, 24);
+            this.panel8.TabIndex = 20;
+            // 
+            // seToolStripMenuItem
+            // 
+            this.seToolStripMenuItem.Name = "seToolStripMenuItem";
+            this.seToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.seToolStripMenuItem.Text = "MANTENIMIENTO";
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 477);
+            this.ClientSize = new System.Drawing.Size(1070, 576);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -336,13 +410,17 @@
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,10 +453,16 @@
         private System.Windows.Forms.ToolStripMenuItem lOGOUTToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label time;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.ToolStripMenuItem aREAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gRUPOTRABAJADORESToolStripMenuItem;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.ToolStripMenuItem seToolStripMenuItem;
     }
 }

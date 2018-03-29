@@ -210,9 +210,14 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            frmInicio inicio = new frmInicio();
+          frmInicio inicio = new frmInicio();
             inicio.Show();
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
