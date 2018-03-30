@@ -16,14 +16,14 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmServicioVehiculo());
+           //Application.Run(new frmLavado());
 
-            /*
+            
             frmLogin login = new frmLogin();
             if (login.ShowDialog() == DialogResult.OK)
                 Application.Run(new frmInicio());
             else
-                Application.Exit();*/
+                Application.Exit();
         }
     }
 }

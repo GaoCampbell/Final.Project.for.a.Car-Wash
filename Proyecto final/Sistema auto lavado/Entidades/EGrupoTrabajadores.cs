@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class EGrupoTrabajadores
     {
-        public int idGrupo { get; set; }
+        public int? idGrupo { get; set; }
         public string grupoTrabajadores { get; set; }
     }
 }

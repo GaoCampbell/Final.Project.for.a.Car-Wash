@@ -44,10 +44,14 @@
     <Compile Include="NArea.cs" />
     <Compile Include="NEmpleado.cs" />
     <Compile Include="NGrupoTrabajadores.cs" />
+    <Compile Include="NLavado.cs" />
+    <Compile Include="NLavadoVehiculos.cs" />
     <Compile Include="NProveedor.cs" />
+    <Compile Include="NServicioLavado.cs" />
     <Compile Include="NServicioMantenimiento.cs" />
     <Compile Include="NServicioVehiculo.cs" />
     <Compile Include="NUsuario.cs" />
+    <Compile Include="NVehiculoLavado.cs" />
     <Compile Include="NVehiculoMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

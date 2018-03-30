@@ -30,9 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.eMPLEADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,31 +47,36 @@
             this.vEHICULOMANTENIMINETOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sERVICIOSToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mANTENIMIENTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lAVADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vEHICULOLAVADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sERVICIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lAVADOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.uSUARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.seToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lAVADOVEHICULOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vEHICULOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,18 +100,6 @@
             this.panel7.Size = new System.Drawing.Size(29, 33);
             this.panel7.TabIndex = 12;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Presentacion.Properties.Resources.minimizar;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.pictureBox1);
@@ -117,18 +108,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(28, 33);
             this.panel6.TabIndex = 12;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -266,12 +245,21 @@
             this.mANTENIMIENTOToolStripMenuItem.Text = "SERVICIO";
             this.mANTENIMIENTOToolStripMenuItem.Click += new System.EventHandler(this.mANTENIMIENTOToolStripMenuItem_Click);
             // 
+            // seToolStripMenuItem
+            // 
+            this.seToolStripMenuItem.Name = "seToolStripMenuItem";
+            this.seToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.seToolStripMenuItem.Text = "MANTENIMIENTO";
+            // 
             // lAVADOToolStripMenuItem
             // 
             this.lAVADOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vEHICULOLAVADOToolStripMenuItem,
             this.sERVICIOSToolStripMenuItem,
-            this.lAVADOToolStripMenuItem1});
+            this.lAVADOToolStripMenuItem1,
+            this.lAVADOVEHICULOToolStripMenuItem,
+            this.vEHICULOSToolStripMenuItem,
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem});
             this.lAVADOToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lAVADOToolStripMenuItem.Name = "lAVADOToolStripMenuItem";
             this.lAVADOToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
@@ -280,20 +268,21 @@
             // vEHICULOLAVADOToolStripMenuItem
             // 
             this.vEHICULOLAVADOToolStripMenuItem.Name = "vEHICULOLAVADOToolStripMenuItem";
-            this.vEHICULOLAVADOToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.vEHICULOLAVADOToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.vEHICULOLAVADOToolStripMenuItem.Text = "VEHICULO LAVADO";
             // 
             // sERVICIOSToolStripMenuItem
             // 
             this.sERVICIOSToolStripMenuItem.Name = "sERVICIOSToolStripMenuItem";
-            this.sERVICIOSToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.sERVICIOSToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.sERVICIOSToolStripMenuItem.Text = "SERVICIOS";
             // 
             // lAVADOToolStripMenuItem1
             // 
             this.lAVADOToolStripMenuItem1.Name = "lAVADOToolStripMenuItem1";
-            this.lAVADOToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            this.lAVADOToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
             this.lAVADOToolStripMenuItem1.Text = "LAVADO";
+            this.lAVADOToolStripMenuItem1.Click += new System.EventHandler(this.lAVADOToolStripMenuItem1_Click);
             // 
             // uSUARIOToolStripMenuItem
             // 
@@ -310,16 +299,6 @@
             this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.lOGOUTToolStripMenuItem.Text = "LOGOUT";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Presentacion.Properties.Resources.atomix_user31;
-            this.pictureBox3.Location = new System.Drawing.Point(277, 86);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(296, 263);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -329,6 +308,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1070, 24);
             this.panel3.TabIndex = 20;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.dateTimePicker1);
+            this.panel8.Controls.Add(this.lblUsuario);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(786, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(284, 24);
+            this.panel8.TabIndex = 20;
             // 
             // dateTimePicker1
             // 
@@ -376,21 +365,60 @@
             this.panel5.TabIndex = 23;
             this.panel5.TabStop = true;
             // 
-            // panel8
+            // lAVADOVEHICULOToolStripMenuItem
             // 
-            this.panel8.Controls.Add(this.dateTimePicker1);
-            this.panel8.Controls.Add(this.lblUsuario);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(786, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(284, 24);
-            this.panel8.TabIndex = 20;
+            this.lAVADOVEHICULOToolStripMenuItem.Name = "lAVADOVEHICULOToolStripMenuItem";
+            this.lAVADOVEHICULOToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.lAVADOVEHICULOToolStripMenuItem.Text = "LAVADO VEHICULO";
+            this.lAVADOVEHICULOToolStripMenuItem.Click += new System.EventHandler(this.lAVADOVEHICULOToolStripMenuItem_Click);
             // 
-            // seToolStripMenuItem
+            // vEHICULOSToolStripMenuItem
             // 
-            this.seToolStripMenuItem.Name = "seToolStripMenuItem";
-            this.seToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.seToolStripMenuItem.Text = "MANTENIMIENTO";
+            this.vEHICULOSToolStripMenuItem.Name = "vEHICULOSToolStripMenuItem";
+            this.vEHICULOSToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.vEHICULOSToolStripMenuItem.Text = "VEHICULOS";
+            this.vEHICULOSToolStripMenuItem.Click += new System.EventHandler(this.vEHICULOSToolStripMenuItem_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Presentacion.Properties.Resources.atomix_user31;
+            this.pictureBox3.Location = new System.Drawing.Point(277, 86);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(296, 263);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Presentacion.Properties.Resources.minimizar;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // tIPOSDESERVICIOSLAVADOSToolStripMenuItem
+            // 
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem.Name = "tIPOSDESERVICIOSLAVADOSToolStripMenuItem";
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem.Text = "TIPOS DE SERVICIOS LAVADOS";
+            this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem.Click += new System.EventHandler(this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -411,16 +439,16 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,5 +492,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.ToolStripMenuItem seToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lAVADOVEHICULOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vEHICULOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tIPOSDESERVICIOSLAVADOSToolStripMenuItem;
     }
 }

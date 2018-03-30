@@ -195,7 +195,7 @@ namespace Presentacion
             btnguardar.Enabled = true;
             btnModificar.Enabled = false;
             btnNuevo.Enabled = false;
-            txtArea.Enabled = false;
+            //txtArea.Enabled = false;
             txtGrupo.Enabled = false;
             modificar = true;
         }
@@ -208,8 +208,8 @@ namespace Presentacion
             btnguardar.Enabled = true;
             btnModificar.Enabled = false;
             btnNuevo.Enabled = false;
-            txtArea.Enabled = false;
-            txtGrupo.Enabled = false;
+            txtArea.Enabled = true;
+            txtGrupo.Enabled = true;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

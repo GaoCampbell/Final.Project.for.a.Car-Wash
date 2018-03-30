@@ -71,7 +71,8 @@ namespace Presentacion
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            //Environment.Exit(0);
+            Application.Restart();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -108,6 +109,34 @@ namespace Presentacion
             this.Hide();
             frmProveedor pro = new frmProveedor();
             pro.Show();
+        }
+
+        private void lAVADOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmLavado lavado = new frmLavado();
+            lavado.Show();
+            this.Hide();
+        }
+
+        private void lAVADOVEHICULOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLavadoVehiculo lavadoVehiculo = new frmLavadoVehiculo();
+            lavadoVehiculo.Show();
+            this.Hide();
+        }
+
+        private void vEHICULOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVehiculoLavado _frmVehiculoLavado = new frmVehiculoLavado();
+            _frmVehiculoLavado.Show();
+            this.Hide();
+        }
+
+        private void tIPOSDESERVICIOSLAVADOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmServicioLavado servicios = new frmServicioLavado();
+            servicios.Show();
+            this.Hide();
         }
     }
 }

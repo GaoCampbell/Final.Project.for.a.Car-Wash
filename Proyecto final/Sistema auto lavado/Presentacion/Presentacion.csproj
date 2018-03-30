@@ -71,6 +71,18 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLavado.Designer.cs">
+      <DependentUpon>frmLavado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLavadoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLavadoVehiculo.Designer.cs">
+      <DependentUpon>frmLavadoVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,12 @@
     </Compile>
     <Compile Include="frmProveedor.Designer.cs">
       <DependentUpon>frmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicioLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicioLavado.Designer.cs">
+      <DependentUpon>frmServicioLavado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmServicioMantenimiento.cs">
       <SubType>Form</SubType>
@@ -100,6 +118,12 @@
     </Compile>
     <Compile Include="frmUsuario.Designer.cs">
       <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehiculoLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehiculoLavado.Designer.cs">
+      <DependentUpon>frmVehiculoLavado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVehiculoMan.cs">
       <SubType>Form</SubType>
@@ -122,11 +146,20 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLavado.resx">
+      <DependentUpon>frmLavado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLavadoVehiculo.resx">
+      <DependentUpon>frmLavadoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicioLavado.resx">
+      <DependentUpon>frmServicioLavado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmServicioMantenimiento.resx">
       <DependentUpon>frmServicioMantenimiento.cs</DependentUpon>
@@ -136,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuario.resx">
       <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehiculoLavado.resx">
+      <DependentUpon>frmVehiculoLavado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVehiculoMan.resx">
       <DependentUpon>frmVehiculoMan.cs</DependentUpon>
