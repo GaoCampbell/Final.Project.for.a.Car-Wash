@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dalmacen.cs" />
     <Compile Include="DArea.cs" />
+    <Compile Include="Dcategoria.cs" />
+    <Compile Include="DCliente.cs" />
+    <Compile Include="Ddetalleventa.cs" />
     <Compile Include="DEmpleado.cs" />
     <Compile Include="DLavado.cs" />
     <Compile Include="DLavadoVehiculo.cs" />
     <Compile Include="Dlogin.cs" />
+    <Compile Include="Dmarca.cs" />
+    <Compile Include="Dproductos.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DServicioLavado.cs" />
     <Compile Include="DServicioMantenimiento.cs" />
@@ -54,6 +60,7 @@
     <Compile Include="DgrupoTrabajadores.cs" />
     <Compile Include="DVehiculoLavado.cs" />
     <Compile Include="DVehiculoMantenimiento.cs" />
+    <Compile Include="Dventa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

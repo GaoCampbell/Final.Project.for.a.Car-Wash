@@ -16,7 +16,7 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new frmLavado());
+           Application.Run(new frmVenta());
 
             
             frmLogin login = new frmLogin();

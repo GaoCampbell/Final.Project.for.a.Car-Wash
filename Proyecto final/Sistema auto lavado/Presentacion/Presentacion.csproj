@@ -47,11 +47,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlmacen.Designer.cs">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmArea.Designer.cs">
       <DependentUpon>frmArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarcategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarcategoria.Designer.cs">
+      <DependentUpon>frmbuscarcategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarcliente.Designer.cs">
+      <DependentUpon>frmbuscarcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarmarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarmarca.Designer.cs">
+      <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarproducto.Designer.cs">
+      <DependentUpon>frmBuscarproducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarusuario.Designer.cs">
+      <DependentUpon>frmbuscarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclientes.Designer.cs">
+      <DependentUpon>frmclientes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpleado.cs">
       <SubType>Form</SubType>
@@ -88,6 +136,18 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarca.Designer.cs">
+      <DependentUpon>frmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProveedor.cs">
       <SubType>Form</SubType>
@@ -131,11 +191,41 @@
     <Compile Include="frmVehiculoMan.Designer.cs">
       <DependentUpon>frmVehiculoMan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenta.Designer.cs">
+      <DependentUpon>frmVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlmacen.resx">
+      <DependentUpon>frmAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmArea.resx">
       <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarcategoria.resx">
+      <DependentUpon>frmbuscarcategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarcliente.resx">
+      <DependentUpon>frmbuscarcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarmarca.resx">
+      <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarproducto.resx">
+      <DependentUpon>frmBuscarproducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarusuario.resx">
+      <DependentUpon>frmbuscarusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclientes.resx">
+      <DependentUpon>frmclientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
@@ -154,6 +244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarca.resx">
+      <DependentUpon>frmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
@@ -175,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVehiculoMan.resx">
       <DependentUpon>frmVehiculoMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenta.resx">
+      <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -200,16 +299,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{cb4fb7f0-8105-45b9-80c0-b917722a904f}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Negocio\Negocio.csproj">
-      <Project>{1e694bce-529a-4c79-b1a9-c21f73493f3a}</Project>
-      <Name>Negocio</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\minimizar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +306,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\atomix_user31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{3b32c077-33f2-4fe1-867c-a97a5e5f6cc7}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{6700d4c7-7c66-407f-b2ad-c25a575c0531}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
