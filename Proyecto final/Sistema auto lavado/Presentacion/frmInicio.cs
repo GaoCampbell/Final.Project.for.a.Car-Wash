@@ -94,7 +94,9 @@ namespace Presentacion
 
         private void mANTENIMIENTOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmServicioVehiculo servicioVehiculo = new frmServicioVehiculo();
+            servicioVehiculo.Show();
+            this.Hide();
         }
 
         private void vEHICULOMANTENIMINETOToolStripMenuItem1_Click(object sender, EventArgs e)

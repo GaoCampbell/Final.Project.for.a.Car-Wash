@@ -100,6 +100,8 @@ namespace Presentacion
             modificar = true;
             lblServicio.Enabled = true;
             lblVehiculo.Enabled = true;
+            txtServicio.Enabled = false;
+            txtVehiculo.Enabled = false;
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -135,6 +137,8 @@ namespace Presentacion
                 btnnuevo.Enabled = true;
                 lblServicio.Enabled = false;
                 lblVehiculo.Enabled = false;
+                txtServicio.Enabled = false;
+                txtVehiculo.Enabled = false;
                 modificar = false;
             }
             catch (Exception ex) {
@@ -166,6 +170,8 @@ namespace Presentacion
             btnnuevo.Enabled = false;
             lblServicio.Enabled = true;
             lblVehiculo.Enabled = true;
+            txtServicio.Enabled = false;
+            txtVehiculo.Enabled = false;
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -178,11 +184,29 @@ namespace Presentacion
             btncancelar.Enabled = false;
             lblServicio.Enabled = false;
             lblVehiculo.Enabled = false;
+            txtServicio.Enabled = false;
+            txtVehiculo.Enabled = false;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblServicio_Click(object sender, EventArgs e)
+        {
+            frmBuscarServicio servicio = new frmBuscarServicio();
+            if (servicio.ShowDialog() == DialogResult.OK) {
+                txtServicio.Text = servicio.idServicio.ToString();
+            }
+        }
+
+        private void lblVehiculo_Click(object sender, EventArgs e)
+        {
+            frmBuscarVehiculo vehiculo = new frmBuscarVehiculo();
+            if (vehiculo.ShowDialog() == DialogResult.OK) {
+                txtVehiculo.Text = vehiculo.idVehiculo.ToString();
+            }
         }
     }
 }

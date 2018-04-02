@@ -139,7 +139,7 @@ namespace Presentacion
                 if (modificar)
                 {
                     EServicioVehiculo modSV = new EServicioVehiculo();
-                    modSV.idServicioVehiculo = Convert.ToInt32(txtprecio.Tag.ToString());
+                    modSV.idServicioVehiculo = Convert.ToInt32(txtprecio.Tag);
                     modSV.idServicioMantenimiento.idServicioMantenimiento = Convert.ToInt32(cmservicio.SelectedValue);
                     modSV.idVehiculoMantenimiento.idVehiculoMantenimiento = Convert.ToInt32(cmvehiculo.SelectedValue);
                     modSV.precio = Convert.ToDecimal(txtprecio.Text);

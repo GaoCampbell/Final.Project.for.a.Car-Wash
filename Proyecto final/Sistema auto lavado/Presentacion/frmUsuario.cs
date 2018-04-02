@@ -89,6 +89,8 @@ namespace Presentacion
         }
         private void frmUsuario_Load(object sender, EventArgs e)
         {
+            txtEmpleado.Enabled = false;
+            btnEmpleado.Enabled = false;
             try {
                 actualizarGrid();
             }
@@ -143,7 +145,12 @@ namespace Presentacion
                     MessageBox.Show("Se guardo sastifactoriamente", "Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 actualizarGrid();
+                Deshabilitar();
+                btnCancelar.Enabled = false;
+                btnNuevo.Enabled = true;
+                Limpiar();
                 modificar = false;
+
             }
             catch ( Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -157,6 +164,8 @@ namespace Presentacion
             btnGuardar.Enabled = true;
             btnModificar.Enabled = false;
             btnNuevo.Enabled = false;
+            txtEmpleado.Enabled = false;
+            btnEmpleado.Enabled = true;
             modificar = true;
         }
 
@@ -195,6 +204,8 @@ namespace Presentacion
             btnGuardar.Enabled = true;
             btnModificar.Enabled = false;
             btnNuevo.Enabled = false;
+            txtEmpleado.Enabled = false;
+            btnEmpleado.Enabled = true;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -205,7 +216,8 @@ namespace Presentacion
             btnGuardar.Enabled = false;
             btnModificar.Enabled = false;
             btnCancelar.Enabled = false;
-            
+            txtEmpleado.Enabled = false;
+            btnEmpleado.Enabled = false;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -219,5 +231,13 @@ namespace Presentacion
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            frmBuscarEmpleado buscarEmpleado = new frmBuscarEmpleado();
+            if (buscarEmpleado.ShowDialog() == DialogResult.OK)
+                txtEmpleado.Text = buscarEmpleado.idEmpleado.ToString();
+            }
+        }
     }
-}
+

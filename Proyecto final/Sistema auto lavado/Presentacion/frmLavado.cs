@@ -102,6 +102,7 @@ namespace Presentacion
             btncancelar.Enabled = false;
             btnbuscaridLavadoV.Enabled = false;
             btnidgrupo.Enabled = false;
+            
             lblusuario.Text = Global.usuarioSesion.usuario;
             try {
                 actualizarGrid();
@@ -150,6 +151,7 @@ namespace Presentacion
                 }
                 actualizarGrid();
                 Limpiar();
+                dtpFecha.Enabled = false;
                 Deshabilitar();
                 btncancelar.Enabled = false;
                 btnguardar.Enabled = false;
@@ -157,6 +159,8 @@ namespace Presentacion
                 btnnuevo.Enabled = true;
                 btnidgrupo.Enabled = false;
                 btnbuscaridLavadoV.Enabled = false;
+                txtgrupo.Enabled = false;
+                txtlavado.Enabled = false;
                 modificar = false;
             }
             catch (Exception ex) {
@@ -177,7 +181,12 @@ namespace Presentacion
             btncancelar.Enabled = true;
             btnguardar.Enabled = true;
             btnbuscaridLavadoV.Enabled = true;
+            btnmodificar.Enabled = false;
             btnidgrupo.Enabled = true;
+            txtgrupo.Enabled = false;
+            txttotal.Enabled = false;
+            txtlavado.Enabled = false;
+            dtpFecha.Enabled = false;
             modificar = true;
         }
 
@@ -214,6 +223,10 @@ namespace Presentacion
             btnidgrupo.Enabled = true;
             btnbuscaridLavadoV.Enabled = true;
             btnnuevo.Enabled = false;
+            txtgrupo.Enabled = false;
+            txtlavado.Enabled = false;
+            dtpFecha.Enabled = false;
+            txttotal.Enabled = false;
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -225,6 +238,27 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnidgrupo.Enabled = false;
             btnbuscaridLavadoV.Enabled = false;
+            txtgrupo.Enabled = false;
+            txtlavado.Enabled = false;
+            txttotal.Enabled = false;
+            dtpFecha.Enabled = false;
+        }
+
+        private void btnbuscaridLavadoV_Click(object sender, EventArgs e)
+        {
+            frmBuscarLV LV = new frmBuscarLV();
+            if (LV.ShowDialog() == DialogResult.OK) {
+                txtlavado.Text = LV.idLavadoVehiculo.ToString();
+                txttotal.Text = LV.precio.ToString();
+            }
+        }
+
+        private void btnidgrupo_Click(object sender, EventArgs e)
+        {
+            frmBuscarGrupo grupo = new frmBuscarGrupo();
+            if (grupo.ShowDialog() == DialogResult.OK) {
+                txtgrupo.Text = grupo.idGrupo.ToString();
+            }
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Negocio
                 throw new ArgumentException("Ingresa el total");
             if (ILavado.fecha == null)
                 throw new ArgumentException("Ingresa la fecha");
-            if (ILavado.placa == null)
+            if (ILavado.placa.Length == 0)
                 throw new ArgumentException("Ingresa la placa");
             if (ILavado.LavadoVehiculo.idLavadoVehiculo == 0)
                 throw new ArgumentException("Ingresa el vehiculo");

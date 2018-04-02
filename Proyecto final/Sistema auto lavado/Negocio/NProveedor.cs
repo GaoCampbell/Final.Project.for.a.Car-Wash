@@ -47,6 +47,7 @@ namespace Negocio
                 DProveedor gestionaProveedor = new DProveedor();
                 gestionaProveedor.Modificar(ModificarProveedor);
 
+
             }
             catch (Exception ex)
             {

@@ -224,6 +224,7 @@
             this.dgvServicioLavado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicioLavado.Location = new System.Drawing.Point(26, 265);
             this.dgvServicioLavado.Name = "dgvServicioLavado";
+            this.dgvServicioLavado.ReadOnly = true;
             this.dgvServicioLavado.Size = new System.Drawing.Size(562, 148);
             this.dgvServicioLavado.TabIndex = 37;
             this.dgvServicioLavado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicioLavado_CellContentClick);

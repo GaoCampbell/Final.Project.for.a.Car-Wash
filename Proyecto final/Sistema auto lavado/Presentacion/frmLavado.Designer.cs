@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.txttotal = new System.Windows.Forms.TextBox();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.txtgrupo = new System.Windows.Forms.TextBox();
+            this.btnidgrupo = new System.Windows.Forms.Button();
+            this.txtlavado = new System.Windows.Forms.TextBox();
+            this.btnbuscaridLavadoV = new System.Windows.Forms.Button();
+            this.txtplaca = new System.Windows.Forms.TextBox();
+            this.lblplaca = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.dgvLavado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.lblplaca = new System.Windows.Forms.Label();
-            this.txtplaca = new System.Windows.Forms.TextBox();
-            this.btnbuscaridLavadoV = new System.Windows.Forms.Button();
-            this.txtlavado = new System.Windows.Forms.TextBox();
-            this.txtgrupo = new System.Windows.Forms.TextBox();
-            this.btnidgrupo = new System.Windows.Forms.Button();
-            this.txttotal = new System.Windows.Forms.TextBox();
-            this.lbltotal = new System.Windows.Forms.Label();
-            this.lblusuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -70,16 +70,6 @@
             this.panel2.Size = new System.Drawing.Size(835, 29);
             this.panel2.TabIndex = 21;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -90,18 +80,6 @@
             this.label8.Size = new System.Drawing.Size(78, 18);
             this.label8.TabIndex = 3;
             this.label8.Text = "LAVADO";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // groupBox1
             // 
@@ -124,6 +102,99 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del proveedor";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.AutoSize = true;
+            this.lblusuario.Location = new System.Drawing.Point(27, 135);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(58, 14);
+            this.lblusuario.TabIndex = 10;
+            this.lblusuario.Text = "Usuario";
+            this.lblusuario.Click += new System.EventHandler(this.lblusuario_Click);
+            // 
+            // txttotal
+            // 
+            this.txttotal.Location = new System.Drawing.Point(455, 81);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(136, 22);
+            this.txttotal.TabIndex = 9;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Location = new System.Drawing.Point(381, 90);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(40, 14);
+            this.lbltotal.TabIndex = 8;
+            this.lbltotal.Text = "Total";
+            // 
+            // txtgrupo
+            // 
+            this.txtgrupo.Location = new System.Drawing.Point(166, 81);
+            this.txtgrupo.Name = "txtgrupo";
+            this.txtgrupo.Size = new System.Drawing.Size(191, 22);
+            this.txtgrupo.TabIndex = 7;
+            // 
+            // btnidgrupo
+            // 
+            this.btnidgrupo.Location = new System.Drawing.Point(30, 82);
+            this.btnidgrupo.Name = "btnidgrupo";
+            this.btnidgrupo.Size = new System.Drawing.Size(126, 23);
+            this.btnidgrupo.TabIndex = 6;
+            this.btnidgrupo.Text = "Asignar grupo";
+            this.btnidgrupo.UseVisualStyleBackColor = true;
+            this.btnidgrupo.Click += new System.EventHandler(this.btnidgrupo_Click);
+            // 
+            // txtlavado
+            // 
+            this.txtlavado.Location = new System.Drawing.Point(698, 25);
+            this.txtlavado.Name = "txtlavado";
+            this.txtlavado.Size = new System.Drawing.Size(102, 22);
+            this.txtlavado.TabIndex = 5;
+            // 
+            // btnbuscaridLavadoV
+            // 
+            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(603, 24);
+            this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
+            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscaridLavadoV.TabIndex = 4;
+            this.btnbuscaridLavadoV.Text = "Lavado vehiculo";
+            this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
+            this.btnbuscaridLavadoV.Click += new System.EventHandler(this.btnbuscaridLavadoV_Click);
+            // 
+            // txtplaca
+            // 
+            this.txtplaca.Location = new System.Drawing.Point(455, 27);
+            this.txtplaca.Name = "txtplaca";
+            this.txtplaca.Size = new System.Drawing.Size(136, 22);
+            this.txtplaca.TabIndex = 3;
+            // 
+            // lblplaca
+            // 
+            this.lblplaca.AutoSize = true;
+            this.lblplaca.Location = new System.Drawing.Point(381, 35);
+            this.lblplaca.Name = "lblplaca";
+            this.lblplaca.Size = new System.Drawing.Size(43, 14);
+            this.lblplaca.TabIndex = 2;
+            this.lblplaca.Text = "Placa";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(166, 29);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 22);
+            this.dtpFecha.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fecha";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
             // 
@@ -189,96 +260,27 @@
             this.dgvLavado.TabIndex = 25;
             this.dgvLavado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellDoubleClick);
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // dtpFecha
+            // pictureBox8
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(166, 29);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 22);
-            this.dtpFecha.TabIndex = 1;
-            // 
-            // lblplaca
-            // 
-            this.lblplaca.AutoSize = true;
-            this.lblplaca.Location = new System.Drawing.Point(381, 35);
-            this.lblplaca.Name = "lblplaca";
-            this.lblplaca.Size = new System.Drawing.Size(43, 14);
-            this.lblplaca.TabIndex = 2;
-            this.lblplaca.Text = "Placa";
-            // 
-            // txtplaca
-            // 
-            this.txtplaca.Location = new System.Drawing.Point(455, 27);
-            this.txtplaca.Name = "txtplaca";
-            this.txtplaca.Size = new System.Drawing.Size(136, 22);
-            this.txtplaca.TabIndex = 3;
-            // 
-            // btnbuscaridLavadoV
-            // 
-            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(603, 24);
-            this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
-            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(75, 23);
-            this.btnbuscaridLavadoV.TabIndex = 4;
-            this.btnbuscaridLavadoV.Text = "Lavado vehiculo";
-            this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
-            // 
-            // txtlavado
-            // 
-            this.txtlavado.Location = new System.Drawing.Point(698, 25);
-            this.txtlavado.Name = "txtlavado";
-            this.txtlavado.Size = new System.Drawing.Size(102, 22);
-            this.txtlavado.TabIndex = 5;
-            // 
-            // txtgrupo
-            // 
-            this.txtgrupo.Location = new System.Drawing.Point(166, 81);
-            this.txtgrupo.Name = "txtgrupo";
-            this.txtgrupo.Size = new System.Drawing.Size(191, 22);
-            this.txtgrupo.TabIndex = 7;
-            // 
-            // btnidgrupo
-            // 
-            this.btnidgrupo.Location = new System.Drawing.Point(30, 82);
-            this.btnidgrupo.Name = "btnidgrupo";
-            this.btnidgrupo.Size = new System.Drawing.Size(126, 23);
-            this.btnidgrupo.TabIndex = 6;
-            this.btnidgrupo.Text = "Asignar grupo";
-            this.btnidgrupo.UseVisualStyleBackColor = true;
-            // 
-            // txttotal
-            // 
-            this.txttotal.Location = new System.Drawing.Point(455, 81);
-            this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(136, 22);
-            this.txttotal.TabIndex = 9;
-            // 
-            // lbltotal
-            // 
-            this.lbltotal.AutoSize = true;
-            this.lbltotal.Location = new System.Drawing.Point(381, 90);
-            this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(40, 14);
-            this.lbltotal.TabIndex = 8;
-            this.lbltotal.Text = "Total";
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.AutoSize = true;
-            this.lblusuario.Location = new System.Drawing.Point(27, 135);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(58, 14);
-            this.lblusuario.TabIndex = 10;
-            this.lblusuario.Text = "Usuario";
-            this.lblusuario.Click += new System.EventHandler(this.lblusuario_Click);
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // frmLavado
             // 
@@ -296,12 +298,12 @@
             this.Load += new System.EventHandler(this.frmLavado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }

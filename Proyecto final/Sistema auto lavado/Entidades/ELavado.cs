@@ -12,13 +12,14 @@ namespace Entidades
         public decimal? total { get; set; }
         public DateTime? fecha { get; set; }
         public string placa { get; set; }
-        public ELavadoVehiculo LavadoVehiculo {get; set;}
+        public ELavadoVehiculo LavadoVehiculo { get; set; }
         public EGrupoTrabajadores grupoTrabajadores { get; set; }
         public EUsuario usuario { get; set; }
         public EEmpleado empleado { get; set; }
         public EVehiculoLavado vehiculoLavado { get; set; }
         public EServicioLavado servicioLavado { get; set; }
-        public ELavado() {
+        public ELavado()
+        {
             LavadoVehiculo = new ELavadoVehiculo();
             grupoTrabajadores = new EGrupoTrabajadores();
             usuario = new EUsuario();

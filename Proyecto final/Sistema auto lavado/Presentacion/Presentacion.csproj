@@ -71,6 +71,24 @@
     <Compile Include="frmbuscarcliente.Designer.cs">
       <DependentUpon>frmbuscarcliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpleado.Designer.cs">
+      <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarGrupo.Designer.cs">
+      <DependentUpon>frmBuscarGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarLV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarLV.Designer.cs">
+      <DependentUpon>frmBuscarLV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbuscarmarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +101,23 @@
     <Compile Include="frmBuscarproducto.Designer.cs">
       <DependentUpon>frmBuscarproducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarServicio.Designer.cs">
+      <DependentUpon>frmBuscarServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbuscarusuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmbuscarusuario.Designer.cs">
       <DependentUpon>frmbuscarusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarVehiculo.Designer.cs">
+      <DependentUpon>frmBuscarVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCategoria.cs">
       <SubType>Form</SubType>
@@ -212,14 +242,29 @@
     <EmbeddedResource Include="frmbuscarcliente.resx">
       <DependentUpon>frmbuscarcliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmpleado.resx">
+      <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarGrupo.resx">
+      <DependentUpon>frmBuscarGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarLV.resx">
+      <DependentUpon>frmBuscarLV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarmarca.resx">
       <DependentUpon>frmbuscarmarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarproducto.resx">
       <DependentUpon>frmBuscarproducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarServicio.resx">
+      <DependentUpon>frmBuscarServicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarusuario.resx">
       <DependentUpon>frmbuscarusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarVehiculo.resx">
+      <DependentUpon>frmBuscarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
