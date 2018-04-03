@@ -45,6 +45,8 @@
     <Compile Include="DArea.cs" />
     <Compile Include="Dcategoria.cs" />
     <Compile Include="DCliente.cs" />
+    <Compile Include="Dcompra.cs" />
+    <Compile Include="Ddetallecompra.cs" />
     <Compile Include="Ddetalleventa.cs" />
     <Compile Include="DEmpleado.cs" />
     <Compile Include="DLavado.cs" />

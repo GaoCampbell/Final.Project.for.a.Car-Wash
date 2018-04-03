@@ -45,6 +45,8 @@
     <Compile Include="NArea.cs" />
     <Compile Include="Ncategoria.cs" />
     <Compile Include="NCliente.cs" />
+    <Compile Include="Ncompra.cs" />
+    <Compile Include="Ndetallecompra.cs" />
     <Compile Include="Ndetalleventa.cs" />
     <Compile Include="NEmpleado.cs" />
     <Compile Include="NGrupoTrabajadores.cs" />

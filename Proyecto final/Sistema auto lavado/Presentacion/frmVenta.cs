@@ -163,7 +163,7 @@ namespace Presentacion
                 ventas.TotalDolares = Convert.ToDecimal(txtTotalDolares.Text);
                 Nventa gestionventas = new Nventa();
                 gestionventas.agregarventa(ventas);
-                MessageBox.Show("Se agrego la venta correctamente", "Venta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se agrego la venta correctamente", "VENTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ActualizarLista();
                 Limpiar();
@@ -225,7 +225,7 @@ namespace Presentacion
             {
 
                 txtproducto.Text = bp.Codproducto.ToString();
-                txtprecio.Text = bp.Precio.ToString();            
+                txtprecio.Text = bp.Costo.ToString();            
                 txtnombre.Text = bp.Nombre_Producto.ToString();
 
 

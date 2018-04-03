@@ -17,7 +17,7 @@ namespace Presentacion
         List<Eproductos> listaproducto;
         public int? Codproducto;
         public string Nombre_Producto;
-        public decimal Precio;
+        public decimal Precio , Costo;
         public frmBuscarproducto()
         {
             InitializeComponent();
@@ -106,8 +106,8 @@ namespace Presentacion
 
                 Codproducto = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Codproducto"].Value.ToString());
                 Nombre_Producto = dataGridView1.Rows[e.RowIndex].Cells["Producto"].Value.ToString();
-                Precio = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Precio"].Value.ToString());
-
+                Precio = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Precio"].Value.ToString()); 
+                    Costo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
                 DialogResult = DialogResult.OK;
             }
             catch (Exception ex)
@@ -115,6 +115,11 @@ namespace Presentacion
 
                 throw ex;
             }
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

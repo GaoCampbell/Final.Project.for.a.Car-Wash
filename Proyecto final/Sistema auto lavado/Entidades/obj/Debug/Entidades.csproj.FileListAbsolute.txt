@@ -27,3 +27,8 @@ E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\E
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb

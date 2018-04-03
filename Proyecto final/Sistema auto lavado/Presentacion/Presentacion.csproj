@@ -107,6 +107,12 @@
     <Compile Include="frmBuscarproducto.Designer.cs">
       <DependentUpon>frmBuscarproducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmbuscarproveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarproveedor.Designer.cs">
+      <DependentUpon>frmbuscarproveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarServicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     </Compile>
     <Compile Include="frmclientes.Designer.cs">
       <DependentUpon>frmclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompra.Designer.cs">
+      <DependentUpon>frmCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpleado.cs">
       <SubType>Form</SubType>
@@ -269,6 +281,9 @@
     <EmbeddedResource Include="frmBuscarproducto.resx">
       <DependentUpon>frmBuscarproducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarproveedor.resx">
+      <DependentUpon>frmbuscarproveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarServicio.resx">
       <DependentUpon>frmBuscarServicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmclientes.resx">
       <DependentUpon>frmclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompra.resx">
+      <DependentUpon>frmCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
@@ -386,6 +404,7 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <Content Include="Resources\c3.png" />
     <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Car1.ico" />
     <None Include="Resources\car-flat.png" />
     <None Include="Resources\215810.png" />
