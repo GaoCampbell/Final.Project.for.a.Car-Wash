@@ -50,6 +50,7 @@
     <Compile Include="EGrupoTrabajadores.cs" />
     <Compile Include="ELavado.cs" />
     <Compile Include="ELavadoVehiculo.cs" />
+    <Compile Include="EMantenimineto.cs" />
     <Compile Include="EMarcas.cs" />
     <Compile Include="EPermiso.cs" />
     <Compile Include="Eproductos.cs" />

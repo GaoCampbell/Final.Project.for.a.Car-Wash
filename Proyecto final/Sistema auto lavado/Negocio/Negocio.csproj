@@ -50,6 +50,7 @@
     <Compile Include="NGrupoTrabajadores.cs" />
     <Compile Include="NLavado.cs" />
     <Compile Include="NLavadoVehiculos.cs" />
+    <Compile Include="NMantenimiento.cs" />
     <Compile Include="Nmarca.cs" />
     <Compile Include="Nproductos.cs" />
     <Compile Include="NProveedor.cs" />

@@ -50,6 +50,7 @@
     <Compile Include="DLavado.cs" />
     <Compile Include="DLavadoVehiculo.cs" />
     <Compile Include="Dlogin.cs" />
+    <Compile Include="DMantenimineto.cs" />
     <Compile Include="Dmarca.cs" />
     <Compile Include="Dproductos.cs" />
     <Compile Include="DProveedor.cs" />

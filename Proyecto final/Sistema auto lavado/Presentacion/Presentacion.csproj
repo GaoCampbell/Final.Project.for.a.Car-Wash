@@ -33,6 +33,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Graphicloads-Colorful-Long-Shadow-Car1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -167,6 +173,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMantenimineto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimineto.Designer.cs">
+      <DependentUpon>frmMantenimineto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +302,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimineto.resx">
+      <DependentUpon>frmMantenimineto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMarca.resx">
       <DependentUpon>frmMarca.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,6 +376,20 @@
       <Project>{6700d4c7-7c66-407f-b2ad-c25a575c0531}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-default-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
+    <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\car-flat.png" />
+    <None Include="Resources\215810.png" />
+    <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Car.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
