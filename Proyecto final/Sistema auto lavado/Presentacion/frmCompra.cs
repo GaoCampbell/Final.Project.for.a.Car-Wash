@@ -40,7 +40,7 @@ namespace Presentacion
                              d.producto.Precio,
                              d.Cantidad,
                              d.Total
-                         }).ToList();
+                         }).ToList();       
             dgvventas.DataSource = lista;
             
            
@@ -131,7 +131,7 @@ namespace Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-         
+            dgvventas.DataSource = null;
             Deshabilitar();
 
 
@@ -140,7 +140,7 @@ namespace Presentacion
             btnagregar.Enabled = true;
             btnagregar.Enabled = true;
             btncrearproducto.Enabled = true;
-           // dgvventas.Columns.Clear();
+          
             Habilitar();
             
             txtproducto.Enabled = false;
@@ -212,11 +212,12 @@ namespace Presentacion
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
 
 
-            Limpiar();
             
+            Limpiar();
+            this.Close();
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

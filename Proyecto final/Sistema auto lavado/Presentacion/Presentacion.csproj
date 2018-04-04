@@ -119,6 +119,12 @@
     <Compile Include="frmBuscarServicio.Designer.cs">
       <DependentUpon>frmBuscarServicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarServicioMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarServicioMan.Designer.cs">
+      <DependentUpon>frmBuscarServicioMan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbuscarusuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,12 @@
     </Compile>
     <Compile Include="frmMarca.Designer.cs">
       <DependentUpon>frmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuprincipl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuprincipl.Designer.cs">
+      <DependentUpon>frmMenuprincipl.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProductos.cs">
       <SubType>Form</SubType>
@@ -287,6 +299,9 @@
     <EmbeddedResource Include="frmBuscarServicio.resx">
       <DependentUpon>frmBuscarServicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarServicioMan.resx">
+      <DependentUpon>frmBuscarServicioMan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarusuario.resx">
       <DependentUpon>frmbuscarusuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMarca.resx">
       <DependentUpon>frmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuprincipl.resx">
+      <DependentUpon>frmMenuprincipl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>

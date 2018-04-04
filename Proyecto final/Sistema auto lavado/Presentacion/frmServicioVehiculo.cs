@@ -46,6 +46,7 @@ namespace Presentacion
                 dgvServicioV.Columns["idServicioVehiculo"].Visible = false;
                 dgvServicioV.Columns["idServicioMantenimiento"].Visible = false;
                 dgvServicioV.Columns["idVehiculoMantenimiento"].Visible = false;
+                dgvServicioV.Columns["estado"].Visible = false;
 
                 ActualizarServicioV();
 
@@ -89,6 +90,7 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
             modificar = true;
+            dgvServicioV.Enabled = false;
         }
         private void Deshabilitar()
         {
@@ -247,6 +249,12 @@ namespace Presentacion
                 btncancelar.Enabled = false;
                 btnguardar.Enabled = false;
             }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            frmInicio fi = new frmInicio();
+            fi.Show(); this.Close();
         }
 
 

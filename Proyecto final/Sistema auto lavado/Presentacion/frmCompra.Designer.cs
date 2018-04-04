@@ -36,7 +36,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.txtbuscarproveedornombre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.btncrearproducto = new System.Windows.Forms.Button();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtproducto = new System.Windows.Forms.TextBox();
@@ -62,9 +62,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dgvventas = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btncrearproducto = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.txtiva = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@
             this.txtdescuento = new System.Windows.Forms.TextBox();
             this.txtTotalDolares = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -188,16 +188,6 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(208, 32);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
-            this.btnNuevo.TabIndex = 10;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnagregar
             // 
@@ -391,6 +381,21 @@
             this.label16.TabIndex = 100;
             this.label16.Text = "Cantidad :";
             // 
+            // btncrearproducto
+            // 
+            this.btncrearproducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncrearproducto.Enabled = false;
+            this.btncrearproducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrearproducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncrearproducto.Location = new System.Drawing.Point(364, 52);
+            this.btncrearproducto.Name = "btncrearproducto";
+            this.btncrearproducto.Size = new System.Drawing.Size(160, 33);
+            this.btncrearproducto.TabIndex = 179;
+            this.btncrearproducto.Text = "Crear nuevo producto";
+            this.btncrearproducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncrearproducto.UseVisualStyleBackColor = true;
+            this.btncrearproducto.Click += new System.EventHandler(this.button1_Click);
+            // 
             // txtCantidad
             // 
             this.txtCantidad.Enabled = false;
@@ -480,6 +485,16 @@
             this.panel2.Size = new System.Drawing.Size(906, 29);
             this.panel2.TabIndex = 165;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(962, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -490,31 +505,6 @@
             this.label3.Size = new System.Drawing.Size(176, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "FACTURA COMPRAS";
-            // 
-            // btncrearproducto
-            // 
-            this.btncrearproducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncrearproducto.Enabled = false;
-            this.btncrearproducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrearproducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncrearproducto.Location = new System.Drawing.Point(364, 52);
-            this.btncrearproducto.Name = "btncrearproducto";
-            this.btncrearproducto.Size = new System.Drawing.Size(160, 33);
-            this.btncrearproducto.TabIndex = 179;
-            this.btncrearproducto.Text = "Crear nuevo producto";
-            this.btncrearproducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btncrearproducto.UseVisualStyleBackColor = true;
-            this.btncrearproducto.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(962, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox8
             // 
@@ -633,6 +623,16 @@
             this.pictureBox2.TabIndex = 184;
             this.pictureBox2.TabStop = false;
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(208, 32);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnNuevo.TabIndex = 10;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
             // frmCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -690,7 +690,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
@@ -731,5 +730,6 @@
         private System.Windows.Forms.TextBox txtdescuento;
         private System.Windows.Forms.TextBox txtTotalDolares;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }

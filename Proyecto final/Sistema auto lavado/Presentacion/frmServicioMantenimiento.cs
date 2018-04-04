@@ -48,6 +48,7 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
             modificar = true;
+            dgvServicioM.Enabled = false;
         }
 
         private void Deshabilitar()

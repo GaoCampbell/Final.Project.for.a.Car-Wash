@@ -42,6 +42,7 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
             modificar = true;
+            dgvVehiculoM.Enabled = false;
         }
         private void Deshabilitar()
         {

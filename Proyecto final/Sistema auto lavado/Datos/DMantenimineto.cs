@@ -109,5 +109,31 @@ namespace Datos
                 throw ex;
             }
         }
+        public void InsertRow(EMantenimineto newManv)
+        {
+            try
+            {
+                SqlConnection conex = new SqlConnection(Properties.Settings.Default.cadenaConexion);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "Ingenieria..[sp_mantenimiento]";
+                cmd.Parameters.Add("@i_operacion", SqlDbType.Char, 1).Value = "I";
+                cmd.Parameters.AddWithValue("@idMantenimiento", newManv.idMantenimiento);
+                cmd.Parameters.AddWithValue("@total", newManv.total);
+                cmd.Parameters.AddWithValue("@fecha", newManv.fecha);
+                cmd.Parameters.AddWithValue("@placa", newManv.placa);
+                cmd.Parameters.AddWithValue("@idgrupo", newManv.idgrupo.idGrupo);
+                cmd.Parameters.AddWithValue("@idservicioVehiculo", newManv.idservicioVehiculo.idServicioVehiculo);
+                cmd.Parameters.AddWithValue("@usuario", newManv.usuario.usuario);
+                cmd.Connection = conex;
+                conex.Open();
+                cmd.ExecuteNonQuery();
+                conex.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

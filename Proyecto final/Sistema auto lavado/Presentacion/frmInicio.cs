@@ -140,5 +140,24 @@ namespace Presentacion
             servicios.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmCompra a = new frmCompra();
+            a.Show();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void seToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMantenimineto servicios = new frmMantenimineto();
+            servicios.Show();
+            this.Hide();
+            
+        }
     }
 }
