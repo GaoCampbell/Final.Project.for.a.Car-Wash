@@ -193,7 +193,7 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            //this.Close();
+            this.Close();
             //frmInicio ini = new frmInicio();
             //ini.Show();
         }

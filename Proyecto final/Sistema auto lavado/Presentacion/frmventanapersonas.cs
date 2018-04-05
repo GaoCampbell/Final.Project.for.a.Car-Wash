@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
-using System.Runtime.InteropServices;
 
 namespace Presentacion
 {
-    public partial class frmMenuprincipl : Form
+    public partial class frmventanapersonas : Form
     {
-        public frmMenuprincipl()
+        public frmventanapersonas()
         {
             InitializeComponent();
-        }
-
-        private void frmMenuprincipl_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

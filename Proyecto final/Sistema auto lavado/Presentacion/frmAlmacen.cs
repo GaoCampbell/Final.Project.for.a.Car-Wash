@@ -229,5 +229,10 @@ namespace Presentacion
                 txttipo.Text = bp.Nombre_Categoria.ToString();
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

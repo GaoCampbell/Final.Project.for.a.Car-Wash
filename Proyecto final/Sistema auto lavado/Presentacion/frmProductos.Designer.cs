@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.dgvfiltrarproductos = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -53,27 +55,37 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvfiltrarproductos)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(948, 29);
+            this.panel2.Size = new System.Drawing.Size(792, 29);
             this.panel2.TabIndex = 24;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox1.Location = new System.Drawing.Point(750, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
@@ -86,12 +98,22 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "PRODUCTOS";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Location = new System.Drawing.Point(718, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
             // dgvfiltrarproductos
             // 
             this.dgvfiltrarproductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvfiltrarproductos.Location = new System.Drawing.Point(12, 268);
             this.dgvfiltrarproductos.Name = "dgvfiltrarproductos";
-            this.dgvfiltrarproductos.Size = new System.Drawing.Size(919, 272);
+            this.dgvfiltrarproductos.Size = new System.Drawing.Size(766, 272);
             this.dgvfiltrarproductos.TabIndex = 23;
             this.dgvfiltrarproductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvfiltrarproductos_CellDoubleClick);
             // 
@@ -104,7 +126,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 200);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(919, 57);
+            this.groupBox2.Size = new System.Drawing.Size(766, 57);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
@@ -112,7 +134,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Enabled = false;
-            this.btnGuardar.Location = new System.Drawing.Point(461, 21);
+            this.btnGuardar.Location = new System.Drawing.Point(368, 21);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(95, 28);
             this.btnGuardar.TabIndex = 14;
@@ -123,7 +145,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Enabled = false;
-            this.btnCancelar.Location = new System.Drawing.Point(562, 21);
+            this.btnCancelar.Location = new System.Drawing.Point(469, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 28);
             this.btnCancelar.TabIndex = 13;
@@ -134,7 +156,7 @@
             // btnModificar
             // 
             this.btnModificar.Enabled = false;
-            this.btnModificar.Location = new System.Drawing.Point(360, 21);
+            this.btnModificar.Location = new System.Drawing.Point(267, 21);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 28);
             this.btnModificar.TabIndex = 11;
@@ -144,7 +166,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(259, 21);
+            this.btnNuevo.Location = new System.Drawing.Point(166, 21);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(95, 28);
             this.btnNuevo.TabIndex = 10;
@@ -173,7 +195,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 39);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(919, 155);
+            this.groupBox1.Size = new System.Drawing.Size(766, 155);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Sala";
@@ -181,7 +203,7 @@
             // txtpreciocompra
             // 
             this.txtpreciocompra.Enabled = false;
-            this.txtpreciocompra.Location = new System.Drawing.Point(648, 125);
+            this.txtpreciocompra.Location = new System.Drawing.Point(566, 128);
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.Size = new System.Drawing.Size(193, 22);
             this.txtpreciocompra.TabIndex = 25;
@@ -189,7 +211,7 @@
             // txtprecioventa
             // 
             this.txtprecioventa.Enabled = false;
-            this.txtprecioventa.Location = new System.Drawing.Point(648, 95);
+            this.txtprecioventa.Location = new System.Drawing.Point(566, 98);
             this.txtprecioventa.Name = "txtprecioventa";
             this.txtprecioventa.Size = new System.Drawing.Size(193, 22);
             this.txtprecioventa.TabIndex = 15;
@@ -198,7 +220,7 @@
             // 
             this.rbtnInactivo.AutoSize = true;
             this.rbtnInactivo.Enabled = false;
-            this.rbtnInactivo.Location = new System.Drawing.Point(720, 58);
+            this.rbtnInactivo.Location = new System.Drawing.Point(638, 61);
             this.rbtnInactivo.Name = "rbtnInactivo";
             this.rbtnInactivo.Size = new System.Drawing.Size(79, 18);
             this.rbtnInactivo.TabIndex = 22;
@@ -210,7 +232,7 @@
             // 
             this.rbtnActvivo.AutoSize = true;
             this.rbtnActvivo.Enabled = false;
-            this.rbtnActvivo.Location = new System.Drawing.Point(648, 58);
+            this.rbtnActvivo.Location = new System.Drawing.Point(566, 61);
             this.rbtnActvivo.Name = "rbtnActvivo";
             this.rbtnActvivo.Size = new System.Drawing.Size(66, 18);
             this.rbtnActvivo.TabIndex = 15;
@@ -221,7 +243,7 @@
             // btnBuscarmarca
             // 
             this.btnBuscarmarca.Enabled = false;
-            this.btnBuscarmarca.Location = new System.Drawing.Point(280, 18);
+            this.btnBuscarmarca.Location = new System.Drawing.Point(198, 21);
             this.btnBuscarmarca.Name = "btnBuscarmarca";
             this.btnBuscarmarca.Size = new System.Drawing.Size(63, 28);
             this.btnBuscarmarca.TabIndex = 15;
@@ -232,7 +254,7 @@
             // txtCodSAC
             // 
             this.txtCodSAC.Enabled = false;
-            this.txtCodSAC.Location = new System.Drawing.Point(191, 91);
+            this.txtCodSAC.Location = new System.Drawing.Point(109, 94);
             this.txtCodSAC.Name = "txtCodSAC";
             this.txtCodSAC.Size = new System.Drawing.Size(293, 22);
             this.txtCodSAC.TabIndex = 23;
@@ -241,7 +263,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(104, 97);
+            this.label8.Location = new System.Drawing.Point(22, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 14);
             this.label8.TabIndex = 24;
@@ -250,7 +272,7 @@
             // txtexistencia
             // 
             this.txtexistencia.Enabled = false;
-            this.txtexistencia.Location = new System.Drawing.Point(191, 124);
+            this.txtexistencia.Location = new System.Drawing.Point(109, 127);
             this.txtexistencia.Name = "txtexistencia";
             this.txtexistencia.Size = new System.Drawing.Size(293, 22);
             this.txtexistencia.TabIndex = 19;
@@ -258,7 +280,7 @@
             // txtmarca
             // 
             this.txtmarca.Enabled = false;
-            this.txtmarca.Location = new System.Drawing.Point(192, 22);
+            this.txtmarca.Location = new System.Drawing.Point(110, 25);
             this.txtmarca.Name = "txtmarca";
             this.txtmarca.Size = new System.Drawing.Size(86, 22);
             this.txtmarca.TabIndex = 18;
@@ -267,7 +289,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(502, 93);
+            this.label1.Location = new System.Drawing.Point(420, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 18);
             this.label1.TabIndex = 17;
@@ -277,7 +299,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(104, 129);
+            this.label2.Location = new System.Drawing.Point(22, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 18);
             this.label2.TabIndex = 16;
@@ -286,7 +308,7 @@
             // txtnombre
             // 
             this.txtnombre.Enabled = false;
-            this.txtnombre.Location = new System.Drawing.Point(191, 58);
+            this.txtnombre.Location = new System.Drawing.Point(109, 61);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(293, 22);
             this.txtnombre.TabIndex = 9;
@@ -295,7 +317,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(506, 59);
+            this.label7.Location = new System.Drawing.Point(424, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 18);
             this.label7.TabIndex = 14;
@@ -305,7 +327,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(104, 66);
+            this.label6.Location = new System.Drawing.Point(22, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 18);
             this.label6.TabIndex = 8;
@@ -315,7 +337,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(104, 30);
+            this.label5.Location = new System.Drawing.Point(22, 33);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 18);
             this.label5.TabIndex = 10;
@@ -325,37 +347,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(502, 125);
+            this.label4.Location = new System.Drawing.Point(420, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 18);
             this.label4.TabIndex = 15;
             this.label4.Text = "Precio de compra :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(750, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(718, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 552);
+            this.ClientSize = new System.Drawing.Size(792, 552);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvfiltrarproductos);
             this.Controls.Add(this.groupBox2);
@@ -367,12 +369,12 @@
             this.Load += new System.EventHandler(this.frmProductos_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvfiltrarproductos)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }

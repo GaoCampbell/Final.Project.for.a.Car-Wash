@@ -209,11 +209,11 @@
     <Compile Include="frmMarca.Designer.cs">
       <DependentUpon>frmMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMenuprincipl.cs">
+    <Compile Include="frmMenuprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuprincipl.Designer.cs">
-      <DependentUpon>frmMenuprincipl.cs</DependentUpon>
+    <Compile Include="frmMenuprincipal.Designer.cs">
+      <DependentUpon>frmMenuprincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPago.cs">
       <SubType>Form</SubType>
@@ -274,6 +274,36 @@
     </Compile>
     <Compile Include="frmVenta.Designer.cs">
       <DependentUpon>frmVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentanaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentanaFactura.Designer.cs">
+      <DependentUpon>frmVentanaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentanaLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentanaLavado.Designer.cs">
+      <DependentUpon>frmVentanaLavado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmventanamantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmventanamantenimiento.Designer.cs">
+      <DependentUpon>frmventanamantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmventanapersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmventanapersonas.Designer.cs">
+      <DependentUpon>frmventanapersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmventanaproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmventanaproducto.Designer.cs">
+      <DependentUpon>frmventanaproducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
@@ -356,8 +386,8 @@
     <EmbeddedResource Include="frmMarca.resx">
       <DependentUpon>frmMarca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuprincipl.resx">
-      <DependentUpon>frmMenuprincipl.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuprincipal.resx">
+      <DependentUpon>frmMenuprincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPago.resx">
       <DependentUpon>frmPago.cs</DependentUpon>
@@ -388,6 +418,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentanaFactura.resx">
+      <DependentUpon>frmVentanaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmventanaproducto.resx">
+      <DependentUpon>frmventanaproducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -441,6 +477,27 @@
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
     <Content Include="Resources\c3.png" />
+    <None Include="Resources\icons8-vender-641.png" />
+    <None Include="Resources\icons8-comprar-641.png" />
+    <None Include="Resources\icons8-vender-stock-96.png" />
+    <None Include="Resources\icons8-comprar-96.png" />
+    <None Include="Resources\icons8-categoría-96.png" />
+    <None Include="Resources\icons8-garaje-cerrado-96.png" />
+    <None Include="Resources\icons8-producto-96.png" />
+    <None Include="Resources\icons8-producto-641.png" />
+    <None Include="Resources\icons8-vender-64.png" />
+    <None Include="Resources\icons8-usuario-64.png" />
+    <None Include="Resources\icons8-rueda-64.png" />
+    <None Include="Resources\icons8-producto-64.png" />
+    <None Include="Resources\icons8-maximizar-la-ventana-96.png" />
+    <None Include="Resources\icons8-lista-96.png" />
+    <None Include="Resources\icons8-invitado-masculino-64.png" />
+    <None Include="Resources\icons8-grupo-de-usuarios-hombre-hombre-64.png" />
+    <None Include="Resources\icons8-garaje-64.png" />
+    <None Include="Resources\icons8-factura-64 %281%29.png" />
+    <None Include="Resources\icons8-comprar-64.png" />
+    <None Include="Resources\icons8-cierre-de-sesión-redondeado-64.png" />
+    <None Include="Resources\icons8-carpeta-de-usuario-64.png" />
     <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Car1.ico" />
     <None Include="Resources\car-flat.png" />
     <None Include="Resources\215810.png" />

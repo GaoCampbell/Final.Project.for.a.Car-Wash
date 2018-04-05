@@ -16,13 +16,13 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new frmLogin());
+            Application.Run(new frmMenuprincipal());
 
-            frmLogin login = new frmLogin();
-            if (login.ShowDialog() == DialogResult.OK)
-                Application.Run(new frmInicio());
-            else
-                Application.Exit();
+            //frmLogin login = new frmLogin();
+            //if (login.ShowDialog() == DialogResult.OK)
+            //    Application.Run(new frmInicio());
+            //else
+            //    Application.Exit();
         }
     }
 }
