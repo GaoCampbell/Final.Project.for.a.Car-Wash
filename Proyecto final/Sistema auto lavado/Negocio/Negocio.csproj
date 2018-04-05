@@ -54,6 +54,7 @@
     <Compile Include="NLavadoVehiculos.cs" />
     <Compile Include="NMantenimiento.cs" />
     <Compile Include="Nmarca.cs" />
+    <Compile Include="NPago.cs" />
     <Compile Include="Nproductos.cs" />
     <Compile Include="NProveedor.cs" />
     <Compile Include="NServicioLavado.cs" />

@@ -38,6 +38,7 @@ namespace Datos
                     validarUsuario.Permiso.Tusuario = leer.GetBoolean(10);
                     validarUsuario.Permiso.producto = leer.GetBoolean(11);
                     validarUsuario.Permiso.proveedor = leer.GetBoolean(12);
+                    validarUsuario.Permiso.PidUsuario = leer.GetInt32(13);
                 }
                 return validarUsuario;
             }

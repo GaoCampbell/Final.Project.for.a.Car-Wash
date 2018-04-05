@@ -14,6 +14,8 @@ namespace Presentacion
     public partial class frmBuscarGrupo : Form
     {
         public int idGrupo;
+        public string grupo;
+        List<EGrupoTrabajadores> list;
         public frmBuscarGrupo()
         {
             InitializeComponent();
@@ -29,23 +31,55 @@ namespace Presentacion
             try
             {
                 NGrupoTrabajadores gestioG = new NGrupoTrabajadores();
-                List<EGrupoTrabajadores> list = gestioG.obtenerLista();
+                list = gestioG.obtenerLista();
                 dgvBuscarGrupo.DataSource = list;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
         }
 
         private void dgvPelicula_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            try {
+            try
+            {
                 idGrupo = Convert.ToInt32(dgvBuscarGrupo.Rows[e.RowIndex].Cells["idGrupo"].Value.ToString());
+                grupo = dgvBuscarGrupo.Rows[e.RowIndex].Cells["grupoTrabajadores"].Value.ToString();
                 DialogResult = DialogResult.OK;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
+        }
+        public void filtrar()
+        {
+            var resultado = (
+                from grupo in list
+                where grupo.grupoTrabajadores.ToUpper().StartsWith(textBox1.Text.ToUpper())
+                select new
+                {
+                    grupo.grupoTrabajadores,
+                    grupo.idGrupo
+                }
+                ).ToList();
+            dgvBuscarGrupo.DataSource = resultado;
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            filtrar();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

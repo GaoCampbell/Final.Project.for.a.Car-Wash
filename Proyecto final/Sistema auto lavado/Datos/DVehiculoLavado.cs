@@ -30,6 +30,10 @@ namespace Datos
                         lista.vehiculoLavado = null;
                     else
                         lista.vehiculoLavado = leer.GetString(1);
+                    if (leer.IsDBNull(2))
+                        lista.estado = false;
+                    else
+                        lista.estado = leer.GetBoolean(2);
                     listarVehiculos.Add(lista);
                 }
                 return listarVehiculos;
@@ -46,6 +50,7 @@ namespace Datos
                 cmd.CommandText = "Ingenieria..sp_vehiculoLavado";
                 cmd.Parameters.Add("@i_operacion", SqlDbType.Char, 1).Value = "I";
                 cmd.Parameters.AddWithValue("@i_vehiculoLavado",IVL.vehiculoLavado);
+                cmd.Parameters.AddWithValue("@i_estado", IVL.estado);
                 cmd.Connection = conex;
                 conex.Open();
                 cmd.ExecuteNonQuery();
@@ -67,6 +72,7 @@ namespace Datos
                 cmd.Parameters.Add("@i_operacion", SqlDbType.Char, 1).Value = "U";
                 cmd.Parameters.AddWithValue("@idVehiculoLavado",UVL.idVehiculoLavado);
                 cmd.Parameters.AddWithValue("@i_vehiculoLavado", UVL.vehiculoLavado);
+                cmd.Parameters.AddWithValue("@i_estado", UVL.estado);
                 cmd.Connection = conex;
                 conex.Open();
                 cmd.ExecuteNonQuery();

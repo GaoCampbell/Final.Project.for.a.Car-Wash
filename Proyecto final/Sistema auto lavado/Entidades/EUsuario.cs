@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class EUsuario
     {
-        public int idUsuario{ get; set; }
+        public int? idUsuario{ get; set; }
         public string usuario{ get; set; }
         public string password { get; set; }
         public EEmpleado Empleado {get;set;}

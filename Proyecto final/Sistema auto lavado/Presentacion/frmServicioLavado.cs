@@ -24,6 +24,8 @@ namespace Presentacion
             btnnuevo.Enabled = true;
             btnmodificar.Enabled = false;
             btnguardar.Enabled = false;
+            rbActivo.Enabled = false;
+            rbInactivo.Enabled = false;
         }
         private void Deshabilitar()
         {
@@ -69,6 +71,8 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
             modificar = true;
+            rbActivo.Enabled = true;
+            rbInactivo.Enabled = true;
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -80,6 +84,13 @@ namespace Presentacion
                     EServicioLavado UpdateSL = new EServicioLavado();
                     UpdateSL.servicioLavado = txtServicio.Text;
                     UpdateSL.idServicioLavado = Convert.ToInt32(txtServicio.Tag);
+                    if (rbActivo.Checked == true)
+                    {
+                        UpdateSL.estado = true;
+                    }
+                    else {
+                        UpdateSL.estado = false;
+                    }
                     NServicioLavado update = new NServicioLavado();
                     update.UpdaetRow(UpdateSL);
                     MessageBox.Show("Modificado", "Vehiculo Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -88,6 +99,14 @@ namespace Presentacion
                 {
                     EServicioLavado InsertSL = new EServicioLavado();
                     InsertSL.servicioLavado = txtServicio.Text;
+                    if (rbActivo.Checked == true)
+                    {
+                        InsertSL.estado = true;
+                    }
+                    else
+                    {
+                        InsertSL.estado = false;
+                    }
                     NServicioLavado Insert = new NServicioLavado();
                     Insert.InsertRow(InsertSL);
                     MessageBox.Show("Guardado", "Vehiculo Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,6 +120,8 @@ namespace Presentacion
                 btnmodificar.Enabled = false;
                 btnnuevo.Enabled = true;
                 modificar = false;
+                rbActivo.Enabled = false;
+                rbInactivo.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -114,10 +135,13 @@ namespace Presentacion
             {
                 txtServicio.Text = dgvServicioLavado.Rows[e.RowIndex].Cells["servicioLavado"].Value.ToString();
                 txtServicio.Tag = dgvServicioLavado.Rows[e.RowIndex].Cells["idServicioLavado"].Value.ToString();
+                rbActivo.Checked = bool.Parse(dgvServicioLavado.Rows[e.RowIndex].Cells["estado"].Value.ToString());
                 btnmodificar.Enabled = true;
                 btncancelar.Enabled = true;
                 btnguardar.Enabled = false;
                 btnnuevo.Enabled = false;
+                rbActivo.Enabled = false;
+                rbInactivo.Enabled = false;
             }
         }
 
@@ -136,6 +160,8 @@ namespace Presentacion
             btnguardar.Enabled = true;
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
+            rbActivo.Enabled = true;
+            rbInactivo.Enabled = true;
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -146,6 +172,8 @@ namespace Presentacion
             btnguardar.Enabled = false;
             btnmodificar.Enabled = false;
             btncancelar.Enabled = false;
+            rbActivo.Enabled = false;
+            rbInactivo.Enabled = false;
         }
 
         private void dgvServicioLavado_CellContentClick(object sender, DataGridViewCellEventArgs e)

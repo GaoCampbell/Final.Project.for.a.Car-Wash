@@ -23,6 +23,7 @@ namespace Negocio
             try {
                 if (InsertVL.vehiculoLavado == null)
                     throw new ArgumentException("Ingresa el vehiculo");
+                
                 DVehiculoLavado Insert = new DVehiculoLavado();
                 Insert.InsertRow(InsertVL);
             }

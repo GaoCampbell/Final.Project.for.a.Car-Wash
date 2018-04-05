@@ -65,6 +65,12 @@
     <Compile Include="frmArea.Designer.cs">
       <DependentUpon>frmArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarArea.Designer.cs">
+      <DependentUpon>frmBuscarArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbuscarcategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,12 @@
     <Compile Include="frmMenuprincipl.Designer.cs">
       <DependentUpon>frmMenuprincipl.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPago.Designer.cs">
+      <DependentUpon>frmPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmArea.resx">
       <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarArea.resx">
+      <DependentUpon>frmBuscarArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarcategoria.resx">
       <DependentUpon>frmbuscarcategoria.cs</DependentUpon>
@@ -343,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuprincipl.resx">
       <DependentUpon>frmMenuprincipl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPago.resx">
+      <DependentUpon>frmPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>

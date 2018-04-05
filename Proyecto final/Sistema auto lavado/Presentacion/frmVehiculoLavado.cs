@@ -20,6 +20,8 @@ namespace Presentacion
         {
             InitializeComponent();
             Deshabilitar();
+            rbActivo.Enabled = false;
+            rbInactivo.Enabled = false;
         }
         private void Deshabilitar()
         {
@@ -44,6 +46,8 @@ namespace Presentacion
         }
         private void frmVehiculoLavado_Load(object sender, EventArgs e)
         {
+            rbActivo.Checked = false;
+            rbInactivo.Checked = false;
             try {
                 actualizarGrid();
                 dgvVehiculoLavado.DataSource = listaVehiculo;
@@ -67,6 +71,8 @@ namespace Presentacion
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
             modificar = true;
+            rbActivo.Enabled = true;
+            rbInactivo.Enabled = true;
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -76,6 +82,13 @@ namespace Presentacion
                     EVehiculoLavado UpdateVL = new EVehiculoLavado();
                     UpdateVL.vehiculoLavado = txtvehiculo.Text;
                     UpdateVL.idVehiculoLavado = Convert.ToInt32(txtvehiculo.Tag);
+                    if (rbActivo.Checked)
+                    {
+                        UpdateVL.estado = true;
+                    }
+                    else {
+                        UpdateVL.estado = false;
+                    }
                     NVehiculoLavado update = new NVehiculoLavado();
                     update.UpdaetRow(UpdateVL);
                     MessageBox.Show("Modificado","Vehiculo Lavado",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -83,6 +96,15 @@ namespace Presentacion
                 else {
                     EVehiculoLavado InsertVL = new EVehiculoLavado();
                     InsertVL.vehiculoLavado = txtvehiculo.Text;
+                    InsertVL.idVehiculoLavado = Convert.ToInt32(txtvehiculo.Tag);
+                    if (rbActivo.Checked)
+                    {
+                        InsertVL.estado = true;
+                    }
+                    else
+                    {
+                        InsertVL.estado = false;
+                    }
                     NVehiculoLavado Insert = new NVehiculoLavado();
                     Insert.InsertRow(InsertVL);
                     MessageBox.Show("Guardado", "Vehiculo Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -96,6 +118,8 @@ namespace Presentacion
                 btnmodificar.Enabled = false;
                 btnnuevo.Enabled = true;
                 modificar = false;
+                rbActivo.Checked = false;
+                rbInactivo.Checked = false;
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -104,14 +128,20 @@ namespace Presentacion
 
         private void dgvVehiculoLavado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) {
-                txtvehiculo.Text = dgvVehiculoLavado.Rows[e.RowIndex].Cells["vehiculoLavado"].Value.ToString();
-                txtvehiculo.Tag = dgvVehiculoLavado.Rows[e.RowIndex].Cells["idVehiculoLavado"].Value.ToString();
-                btnmodificar.Enabled = true;
-                btncancelar.Enabled = true;
-                btnguardar.Enabled = false;
-                btnnuevo.Enabled = false;
-            }
+           
+                if (e.RowIndex >= 0) {
+                    if (dgvVehiculoLavado.Rows[e.RowIndex].Cells["vehiculoLavado"].Value == null)
+                        txtvehiculo.Text = "";
+                    else
+                        txtvehiculo.Text = dgvVehiculoLavado.Rows[e.RowIndex].Cells["vehiculoLavado"].Value.ToString();
+                    txtvehiculo.Tag = dgvVehiculoLavado.Rows[e.RowIndex].Cells["idVehiculoLavado"].Value.ToString();
+                    rbActivo.Checked = bool.Parse(dgvVehiculoLavado.Rows[e.RowIndex].Cells["estado"].Value.ToString());
+                    btnmodificar.Enabled = true;
+                    btncancelar.Enabled = true;
+                    btnguardar.Enabled = false;
+                    btnnuevo.Enabled = false;
+                }
+
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -130,6 +160,8 @@ namespace Presentacion
             btnguardar.Enabled = true;
             btnmodificar.Enabled = false;
             btnnuevo.Enabled = false;
+            rbActivo.Enabled = true;
+            rbInactivo.Checked = true;
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -140,6 +172,8 @@ namespace Presentacion
             btnguardar.Enabled = false;
             btnmodificar.Enabled = false;
             btncancelar.Enabled = false;
+            rbActivo.Enabled = false;
+            rbInactivo.Enabled = false;
         }
     }
 }

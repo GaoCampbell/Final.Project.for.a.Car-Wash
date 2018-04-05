@@ -54,6 +54,7 @@
     <Compile Include="ELavadoVehiculo.cs" />
     <Compile Include="EMantenimineto.cs" />
     <Compile Include="EMarcas.cs" />
+    <Compile Include="EPago.cs" />
     <Compile Include="EPermiso.cs" />
     <Compile Include="Eproductos.cs" />
     <Compile Include="EProveedor.cs" />

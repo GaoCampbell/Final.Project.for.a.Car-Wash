@@ -10,5 +10,6 @@ namespace Entidades
     {
         public int? idVehiculoLavado{ get; set; }
         public string vehiculoLavado{ get; set; }
+        public bool estado { get; set; }
     }
 }

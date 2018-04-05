@@ -60,7 +60,7 @@ namespace Presentacion
                                  lavado.usuario.usuario,
                                 Atendido_por = lavado.empleado.nombres,
                                  lavado.grupoTrabajadores.idGrupo,
-                                 Area = lavado.grupoTrabajadores.grupoTrabajadores,
+                                 Area_Empleado=lavado.grupoTrabajadores.grupoTrabajadores,
                                  lavado.vehiculoLavado.idVehiculoLavado,
                                  lavado.vehiculoLavado.vehiculoLavado,
                                  lavado.servicioLavado.idServicioLavado,
@@ -123,12 +123,12 @@ namespace Presentacion
                 if (modificar)
                 {
                     ELavado UpdateLavado = new ELavado();
-                    UpdateLavado.idLavado = Convert.ToInt32(txtgrupo.Tag);
+                    UpdateLavado.idLavado = Convert.ToInt32(dtpFecha.Tag);
                     UpdateLavado.total = Convert.ToDecimal(txttotal.Text);
                     UpdateLavado.fecha = Convert.ToDateTime(dtpFecha.Text);
                     UpdateLavado.placa = txtplaca.Text;
-                    UpdateLavado.LavadoVehiculo.idLavadoVehiculo = Convert.ToInt32(txtlavado.Text);
-                    UpdateLavado.grupoTrabajadores.idGrupo = Convert.ToInt32(txtgrupo.Text);
+                    UpdateLavado.LavadoVehiculo.idLavadoVehiculo = Convert.ToInt32(txtlavado.Tag);
+                    UpdateLavado.grupoTrabajadores.idGrupo = Convert.ToInt32(txtgrupo.Tag);
                     UpdateLavado.usuario.usuario = lblusuario.Text;
                     NLavado UL = new NLavado();
                     UL.UpdateRow(UpdateLavado);
@@ -141,8 +141,8 @@ namespace Presentacion
                     InserLavado.total = Convert.ToDecimal(txttotal.Text);
                     InserLavado.fecha = Convert.ToDateTime(dtpFecha.Text);
                     InserLavado.placa = txtplaca.Text;
-                    InserLavado.LavadoVehiculo.idLavadoVehiculo = Convert.ToInt32(txtlavado.Text);
-                    InserLavado.grupoTrabajadores.idGrupo = Convert.ToInt32(txtgrupo.Text);
+                    InserLavado.LavadoVehiculo.idLavadoVehiculo = Convert.ToInt32(txtlavado.Tag);
+                    InserLavado.grupoTrabajadores.idGrupo = Convert.ToInt32(txtgrupo.Tag);
                     InserLavado.usuario.usuario = lblusuario.Text;
                     NLavado IL = new NLavado();
                     IL.InsertRow(InserLavado);
@@ -194,12 +194,14 @@ namespace Presentacion
         {
             if (e.RowIndex >= 0)
             {
-                txtgrupo.Tag = dgvLavado.Rows[e.RowIndex].Cells["idLavado"].Value.ToString();
+                dtpFecha.Tag = dgvLavado.Rows[e.RowIndex].Cells["idLavado"].Value.ToString();
                 txttotal.Text = dgvLavado.Rows[e.RowIndex].Cells["total"].Value.ToString();
                 dtpFecha.Text = dgvLavado.Rows[e.RowIndex].Cells["fecha"].Value.ToString();
                 txtplaca.Text = dgvLavado.Rows[e.RowIndex].Cells["placa"].Value.ToString();
-                txtlavado.Text = dgvLavado.Rows[e.RowIndex].Cells["idLavadoVehiculo"].Value.ToString();
-                txtgrupo.Text = dgvLavado.Rows[e.RowIndex].Cells["idGrupo"].Value.ToString();
+                txtlavado.Tag = dgvLavado.Rows[e.RowIndex].Cells["idLavadoVehiculo"].Value.ToString();
+                txtlavado.Text = dgvLavado.Rows[e.RowIndex].Cells["vehiculoLavado"].Value.ToString();
+                txtgrupo.Tag = dgvLavado.Rows[e.RowIndex].Cells["idGrupo"].Value.ToString();
+                txtgrupo.Text = dgvLavado.Rows[e.RowIndex].Cells["Area_Empleado"].Value.ToString();
                 lblusuario.Text = dgvLavado.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
                 btnmodificar.Enabled = true;
                 btncancelar.Enabled = true;
@@ -241,6 +243,7 @@ namespace Presentacion
             txtgrupo.Enabled = false;
             txtlavado.Enabled = false;
             txttotal.Enabled = false;
+            btncancelar.Enabled = false;
             dtpFecha.Enabled = false;
         }
 
@@ -248,7 +251,8 @@ namespace Presentacion
         {
             frmBuscarLV LV = new frmBuscarLV();
             if (LV.ShowDialog() == DialogResult.OK) {
-                txtlavado.Text = LV.idLavadoVehiculo.ToString();
+                txtlavado.Tag = LV.idLavadoVehiculo.ToString();
+                txtlavado.Text = LV.vehiculo.ToString();
                 txttotal.Text = LV.precio.ToString();
             }
         }
@@ -257,7 +261,8 @@ namespace Presentacion
         {
             frmBuscarGrupo grupo = new frmBuscarGrupo();
             if (grupo.ShowDialog() == DialogResult.OK) {
-                txtgrupo.Text = grupo.idGrupo.ToString();
+                txtgrupo.Tag = grupo.idGrupo.ToString();
+                txtgrupo.Text = grupo.grupo.ToString();
             }
         }
     }

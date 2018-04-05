@@ -105,11 +105,11 @@ namespace Presentacion
                 if (modificar)
                 {
                     EUsuario Uusuario = new EUsuario();
-                    Uusuario.Permiso.PidUsuario = Convert.ToInt32( txtEmpleado.Tag);
-                    Uusuario.idUsuario = Convert.ToInt32(txtNombreUsuario.Tag);
+                    Uusuario.Permiso.PidUsuario = Convert.ToInt32(dgvUsuarios.Tag);
+                    Uusuario.idUsuario = Convert.ToInt32(txtContraseña.Tag);
                     Uusuario.usuario = txtNombreUsuario.Text;
                     Uusuario.password = txtContraseña.Text;
-                    Uusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Text);
+                    Uusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Tag);
                     Uusuario.estado = cmbEstado.Text;
                     Uusuario.Permiso.venta = chkVenta.Checked;
                     Uusuario.Permiso.mantenimiento = chkMantenimiento.Checked;
@@ -129,7 +129,7 @@ namespace Presentacion
                     EUsuario Iusuario = new EUsuario();
                     Iusuario.usuario = txtNombreUsuario.Text;
                     Iusuario.password = txtContraseña.Text;
-                    Iusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Text);
+                    Iusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Tag);
                     Iusuario.estado = cmbEstado.Text;
                     Iusuario.Permiso.venta = chkVenta.Checked;
                     Iusuario.Permiso.mantenimiento = chkMantenimiento.Checked;
@@ -173,7 +173,8 @@ namespace Presentacion
         {
             if (e.RowIndex >= 0)
             {
-                txtEmpleado.Text = dgvUsuarios.Rows[e.RowIndex].Cells["idEmpleado"].Value.ToString();
+                txtEmpleado.Text = dgvUsuarios.Rows[e.RowIndex].Cells["nombres"].Value.ToString();
+                txtEmpleado.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["idEmpleado"].Value.ToString();
                 txtNombreUsuario.Text = dgvUsuarios.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
                 txtContraseña.Text = dgvUsuarios.Rows[e.RowIndex].Cells["password"].Value.ToString();
                 cmbEstado.Text = dgvUsuarios.Rows[e.RowIndex].Cells["estado"].Value.ToString();
@@ -185,8 +186,8 @@ namespace Presentacion
                 chkUsuario.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["Tusuario"].Value.ToString());
                 chkProducto.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["producto"].Value.ToString());
                 chkProveedor.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["proveedor"].Value.ToString());
-                txtEmpleado.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["idUsuario"].Value.ToString();
-                txtNombreUsuario.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["PidUsuario"].Value.ToString();
+                txtContraseña.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["idUsuario"].Value.ToString();
+                dgvUsuarios.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["PidUsuario"].Value.ToString();
 
                 btnModificar.Enabled = true;
                 btnCancelar.Enabled = true;
@@ -236,8 +237,9 @@ namespace Presentacion
         {
             frmBuscarEmpleado buscarEmpleado = new frmBuscarEmpleado();
             if (buscarEmpleado.ShowDialog() == DialogResult.OK)
-                txtEmpleado.Text = buscarEmpleado.idEmpleado.ToString();
-            }
+                txtEmpleado.Tag = buscarEmpleado.idEmpleado.ToString();
+                txtEmpleado.Text = buscarEmpleado.empleado.ToString();
+        }
         }
     }
 

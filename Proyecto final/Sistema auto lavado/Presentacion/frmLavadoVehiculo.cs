@@ -109,9 +109,9 @@ namespace Presentacion
             try {
                 if (modificar) {
                     ELavadoVehiculo UpdateLV = new ELavadoVehiculo();
-                    UpdateLV.idLavadoVehiculo = Convert.ToInt32(txtServicio.Tag);
-                    UpdateLV.servicioLavado.idServicioLavado = Convert.ToInt32(txtServicio.Text);
-                    UpdateLV.vehiculoLavado.idVehiculoLavado = Convert.ToInt32(txtVehiculo.Text);
+                    UpdateLV.idLavadoVehiculo = Convert.ToInt32(btncancelar.Tag);
+                    UpdateLV.servicioLavado.idServicioLavado = Convert.ToInt32(txtServicio.Tag);
+                    UpdateLV.vehiculoLavado.idVehiculoLavado = Convert.ToInt32(txtVehiculo.Tag);
                     UpdateLV.precio = Convert.ToDecimal(txtPrecio.Text);
                     NLavadoVehiculos ULV = new NLavadoVehiculos();
                     ULV.UpdateRow(UpdateLV);
@@ -120,8 +120,8 @@ namespace Presentacion
                 else
                 {
                     ELavadoVehiculo InsertLV = new ELavadoVehiculo();
-                    InsertLV.servicioLavado.idServicioLavado = Convert.ToInt32(txtServicio.Text);
-                    InsertLV.vehiculoLavado.idVehiculoLavado = Convert.ToInt32(txtVehiculo.Text);
+                    InsertLV.servicioLavado.idServicioLavado = Convert.ToInt32(txtServicio.Tag);
+                    InsertLV.vehiculoLavado.idVehiculoLavado = Convert.ToInt32(txtVehiculo.Tag);
                     InsertLV.precio = Convert.ToDecimal(txtPrecio.Text);
                     NLavadoVehiculos ILV = new NLavadoVehiculos();
                     ILV.insertRow(InsertLV);
@@ -149,9 +149,11 @@ namespace Presentacion
         private void dgvLavadoVehiculo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) {
-                txtServicio.Tag = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idLavadoVehiculo"].Value.ToString();
-                txtServicio.Text = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idServicioLavado"].Value.ToString();
-                txtVehiculo.Text = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idVehiculoLavado"].Value.ToString();
+                btncancelar.Tag = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idLavadoVehiculo"].Value.ToString();
+                txtServicio.Tag = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idServicioLavado"].Value.ToString();
+                txtServicio.Text = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["servicioLavado"].Value.ToString();
+                txtVehiculo.Tag = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["idVehiculoLavado"].Value.ToString();
+                txtVehiculo.Text = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["vehiculoLavado"].Value.ToString();
                 txtPrecio.Text = dgvLavadoVehiculo.Rows[e.RowIndex].Cells["precio"].Value.ToString();
                 btnmodificar.Enabled = true;
                 btncancelar.Enabled = true;
@@ -197,7 +199,8 @@ namespace Presentacion
         {
             frmBuscarServicio servicio = new frmBuscarServicio();
             if (servicio.ShowDialog() == DialogResult.OK) {
-                txtServicio.Text = servicio.idServicio.ToString();
+                txtServicio.Tag = servicio.idServicio.ToString();
+                txtServicio.Text = servicio.servicio.ToString();
             }
         }
 
@@ -205,7 +208,8 @@ namespace Presentacion
         {
             frmBuscarVehiculo vehiculo = new frmBuscarVehiculo();
             if (vehiculo.ShowDialog() == DialogResult.OK) {
-                txtVehiculo.Text = vehiculo.idVehiculo.ToString();
+                txtVehiculo.Tag = vehiculo.idVehiculo.ToString();
+                txtVehiculo.Text = vehiculo.vehiculo.ToString();
             }
         }
     }

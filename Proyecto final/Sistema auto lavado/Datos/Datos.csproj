@@ -54,6 +54,7 @@
     <Compile Include="Dlogin.cs" />
     <Compile Include="DMantenimineto.cs" />
     <Compile Include="Dmarca.cs" />
+    <Compile Include="DPago.cs" />
     <Compile Include="Dproductos.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DServicioLavado.cs" />

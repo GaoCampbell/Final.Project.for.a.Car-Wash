@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -63,20 +64,19 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgvEmpleado = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.rbruc = new System.Windows.Forms.RadioButton();
-            this.rbempresa = new System.Windows.Forms.RadioButton();
+            this.rbtApellido = new System.Windows.Forms.RadioButton();
+            this.rbtCargo = new System.Windows.Forms.RadioButton();
+            this.rbtCedula = new System.Windows.Forms.RadioButton();
             this.rbnombre = new System.Windows.Forms.RadioButton();
             this.lblNombrep = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -90,6 +90,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(917, 29);
             this.panel2.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.minimizar;
+            this.pictureBox1.Location = new System.Drawing.Point(862, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label8
             // 
@@ -190,6 +202,7 @@
             this.btnGrupo.TabIndex = 28;
             this.btnGrupo.Text = "Grupo";
             this.btnGrupo.UseVisualStyleBackColor = true;
+            this.btnGrupo.Click += new System.EventHandler(this.btnGrupo_Click);
             // 
             // btnArea
             // 
@@ -199,6 +212,7 @@
             this.btnArea.TabIndex = 27;
             this.btnArea.Text = "Area";
             this.btnArea.UseVisualStyleBackColor = true;
+            this.btnArea.Click += new System.EventHandler(this.btnArea_Click);
             // 
             // txtNombre
             // 
@@ -268,7 +282,7 @@
             this.lblbFechaNac.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbFechaNac.Location = new System.Drawing.Point(21, 89);
             this.lblbFechaNac.Name = "lblbFechaNac";
-            this.lblbFechaNac.Size = new System.Drawing.Size(110, 14);
+            this.lblbFechaNac.Size = new System.Drawing.Size(108, 14);
             this.lblbFechaNac.TabIndex = 4;
             this.lblbFechaNac.Text = "F. de nacimiento";
             // 
@@ -432,9 +446,9 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Controls.Add(this.rbruc);
-            this.groupBox4.Controls.Add(this.rbempresa);
+            this.groupBox4.Controls.Add(this.rbtApellido);
+            this.groupBox4.Controls.Add(this.rbtCargo);
+            this.groupBox4.Controls.Add(this.rbtCedula);
             this.groupBox4.Controls.Add(this.rbnombre);
             this.groupBox4.Controls.Add(this.lblNombrep);
             this.groupBox4.Controls.Add(this.textBox1);
@@ -446,38 +460,38 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Filtrar";
             // 
-            // radioButton1
+            // rbtApellido
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(648, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 18);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Apellido";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtApellido.AutoSize = true;
+            this.rbtApellido.Location = new System.Drawing.Point(648, 16);
+            this.rbtApellido.Name = "rbtApellido";
+            this.rbtApellido.Size = new System.Drawing.Size(78, 18);
+            this.rbtApellido.TabIndex = 7;
+            this.rbtApellido.TabStop = true;
+            this.rbtApellido.Text = "Apellido";
+            this.rbtApellido.UseVisualStyleBackColor = true;
             // 
-            // rbruc
+            // rbtCargo
             // 
-            this.rbruc.AutoSize = true;
-            this.rbruc.Location = new System.Drawing.Point(812, 16);
-            this.rbruc.Name = "rbruc";
-            this.rbruc.Size = new System.Drawing.Size(64, 18);
-            this.rbruc.TabIndex = 6;
-            this.rbruc.TabStop = true;
-            this.rbruc.Text = "Cargo";
-            this.rbruc.UseVisualStyleBackColor = true;
+            this.rbtCargo.AutoSize = true;
+            this.rbtCargo.Location = new System.Drawing.Point(812, 16);
+            this.rbtCargo.Name = "rbtCargo";
+            this.rbtCargo.Size = new System.Drawing.Size(64, 18);
+            this.rbtCargo.TabIndex = 6;
+            this.rbtCargo.TabStop = true;
+            this.rbtCargo.Text = "Cargo";
+            this.rbtCargo.UseVisualStyleBackColor = true;
             // 
-            // rbempresa
+            // rbtCedula
             // 
-            this.rbempresa.AutoSize = true;
-            this.rbempresa.Location = new System.Drawing.Point(727, 16);
-            this.rbempresa.Name = "rbempresa";
-            this.rbempresa.Size = new System.Drawing.Size(70, 18);
-            this.rbempresa.TabIndex = 5;
-            this.rbempresa.TabStop = true;
-            this.rbempresa.Text = "Cedula";
-            this.rbempresa.UseVisualStyleBackColor = true;
+            this.rbtCedula.AutoSize = true;
+            this.rbtCedula.Location = new System.Drawing.Point(727, 16);
+            this.rbtCedula.Name = "rbtCedula";
+            this.rbtCedula.Size = new System.Drawing.Size(70, 18);
+            this.rbtCedula.TabIndex = 5;
+            this.rbtCedula.TabStop = true;
+            this.rbtCedula.Text = "Cedula";
+            this.rbtCedula.UseVisualStyleBackColor = true;
             // 
             // rbnombre
             // 
@@ -507,18 +521,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(354, 22);
             this.textBox1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.minimizar;
-            this.pictureBox1.Location = new System.Drawing.Point(862, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // frmEmpleado
             // 
@@ -537,6 +540,7 @@
             this.Load += new System.EventHandler(this.frmEmpleado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -544,7 +548,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -586,9 +589,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton rbruc;
-        private System.Windows.Forms.RadioButton rbempresa;
+        private System.Windows.Forms.RadioButton rbtApellido;
+        private System.Windows.Forms.RadioButton rbtCargo;
+        private System.Windows.Forms.RadioButton rbtCedula;
         private System.Windows.Forms.RadioButton rbnombre;
         private System.Windows.Forms.Label lblNombrep;
         private System.Windows.Forms.TextBox textBox1;
