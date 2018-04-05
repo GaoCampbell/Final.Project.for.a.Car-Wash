@@ -98,17 +98,17 @@ namespace Presentacion
 
         private void btnpersonas_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmventanapersonas());
+            
         }
 
         private void btnproducto_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmventanaproducto());
+            AbrirFormInPanel(new frmProductos());
         }
 
         private void btnmantenimiento_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmventanamantenimiento());
+            AbrirFormInPanel(new frmMantenimineto());
         }
 
         private void btnusuario_Click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace Presentacion
 
         private void button7_Click(object sender, EventArgs e)
         {
-          
+            AbrirFormInPanel(new frmVenta());
         }
 
         private void button1_Click(object sender, EventArgs e)

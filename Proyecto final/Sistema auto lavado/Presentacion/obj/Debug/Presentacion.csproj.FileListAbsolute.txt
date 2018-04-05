@@ -458,3 +458,9 @@ C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmVentanaFactura.resources
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmventanaproducto.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarArea.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarServicioMan.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmMenuprincipal.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmPago.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmVentanaFactura.resources
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmventanaproducto.resources
