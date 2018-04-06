@@ -89,6 +89,12 @@
     <Compile Include="frmBuscarEmpleado.Designer.cs">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmbuscarfactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarfactura.Designer.cs">
+      <DependentUpon>frmbuscarfactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="frmBuscarVehiculo.Designer.cs">
       <DependentUpon>frmBuscarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarventa.Designer.cs">
+      <DependentUpon>frmbuscarventa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCategoria.cs">
       <SubType>Form</SubType>
@@ -269,6 +281,12 @@
     <Compile Include="frmVehiculoMan.Designer.cs">
       <DependentUpon>frmVehiculoMan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucion.Designer.cs">
+      <DependentUpon>frmDevolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +296,12 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentanaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaFactura.Designer.cs">
+      <DependentUpon>VentanaFactura.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAlmacen.resx">
       <DependentUpon>frmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleado.resx">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarfactura.resx">
+      <DependentUpon>frmbuscarfactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarGrupo.resx">
       <DependentUpon>frmBuscarGrupo.cs</DependentUpon>
@@ -322,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarVehiculo.resx">
       <DependentUpon>frmBuscarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarventa.resx">
+      <DependentUpon>frmbuscarventa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>
@@ -386,6 +416,9 @@
     <EmbeddedResource Include="frmVehiculoMan.resx">
       <DependentUpon>frmVehiculoMan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucion.resx">
+      <DependentUpon>frmDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,6 +432,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VentanaFactura.resx">
+      <DependentUpon>VentanaFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -440,6 +476,11 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\icons8-lista-961.png" />
+    <None Include="Resources\icons8-deshacer-402.png" />
+    <None Include="Resources\icons8-deshacer-401.png" />
+    <None Include="Resources\icons8-deshacer-40.png" />
+    <None Include="Resources\Back.gif" />
     <Content Include="Resources\c3.png" />
     <None Include="Resources\icons8-vender-641.png" />
     <None Include="Resources\icons8-comprar-641.png" />

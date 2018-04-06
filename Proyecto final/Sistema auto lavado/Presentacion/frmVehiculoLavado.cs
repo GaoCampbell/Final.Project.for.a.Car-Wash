@@ -43,6 +43,7 @@ namespace Presentacion
         public void actualizarGrid() {
             NVehiculoLavado listar = new NVehiculoLavado();
             listaVehiculo = listar.SelectRow();
+          
         }
         private void frmVehiculoLavado_Load(object sender, EventArgs e)
         {
@@ -146,7 +147,7 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            frmInicio inicio = new frmInicio();
+            frmMenuprincipal inicio = new frmMenuprincipal();
             inicio.Show();
             this.Close();
         }

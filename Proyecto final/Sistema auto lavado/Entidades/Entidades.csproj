@@ -47,7 +47,9 @@
     <Compile Include="ECliente.cs" />
     <Compile Include="Ecompra.cs" />
     <Compile Include="EdetalleCompra.cs" />
+    <Compile Include="Edetalledevolucion.cs" />
     <Compile Include="Edetalleventa.cs" />
+    <Compile Include="Edevolucion.cs" />
     <Compile Include="EEmpleado.cs" />
     <Compile Include="EGrupoTrabajadores.cs" />
     <Compile Include="ELavado.cs" />

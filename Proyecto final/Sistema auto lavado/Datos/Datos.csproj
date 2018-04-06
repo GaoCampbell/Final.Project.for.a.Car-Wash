@@ -47,7 +47,9 @@
     <Compile Include="DCliente.cs" />
     <Compile Include="Dcompra.cs" />
     <Compile Include="Ddetallecompra.cs" />
+    <Compile Include="Ddetalledevolucion.cs" />
     <Compile Include="Ddetalleventa.cs" />
+    <Compile Include="Ddevolucion.cs" />
     <Compile Include="DEmpleado.cs" />
     <Compile Include="DLavado.cs" />
     <Compile Include="DLavadoVehiculo.cs" />

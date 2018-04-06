@@ -12,8 +12,8 @@ namespace Entidades
         public ECliente Cliente { get; set; }
         public EUsuario Usuario { get; set; }
         public DateTime? FechaFactura { get; set; }
-        public DateTime? HoraFactura { get; set; }
         public string Tipopago { get; set; }
+        public string Estado { get; set; }
         public decimal? Subtotal { get; set; }
         public decimal? Descuento { get; set; }
         public decimal? TotalCordobas { get; set; }

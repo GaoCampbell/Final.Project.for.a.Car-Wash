@@ -30,15 +30,19 @@ namespace Datos
                     validarUsuario.Empleado.cargo = leer.GetString(1);
                     validarUsuario.usuario = leer.GetString(2);
                     validarUsuario.estado = leer.GetString(4);
-                    validarUsuario.Permiso.venta = leer.GetBoolean(5);
-                    validarUsuario.Permiso.mantenimiento = leer.GetBoolean(6);
-                    validarUsuario.Permiso.lavado = leer.GetBoolean(7);
-                    validarUsuario.Permiso.compra = leer.GetBoolean(8);
-                    validarUsuario.Permiso.empleado = leer.GetBoolean(9);
-                    validarUsuario.Permiso.Tusuario = leer.GetBoolean(10);
-                    validarUsuario.Permiso.producto = leer.GetBoolean(11);
-                    validarUsuario.Permiso.proveedor = leer.GetBoolean(12);
-                    validarUsuario.Permiso.PidUsuario = leer.GetInt32(13);
+                    validarUsuario.Permiso.facturar = leer.GetBoolean(5);
+                    validarUsuario.Permiso.personas = leer.GetBoolean(6);
+                    validarUsuario.Permiso.producto = leer.GetBoolean(7);
+                    validarUsuario.Permiso.reporte = leer.GetBoolean(8);
+                    validarUsuario.Permiso.mantenimiento = leer.GetBoolean(9);
+                    validarUsuario.Permiso.lavado = leer.GetBoolean(10);
+                    validarUsuario.Permiso.btnFacturar = leer.GetBoolean(11);
+                    validarUsuario.Permiso.btnUsuarios = leer.GetBoolean(12);
+                    validarUsuario.Permiso.btnProducto = leer.GetBoolean(13);
+                    validarUsuario.Permiso.btnMantenimiento = leer.GetBoolean(14);
+                    validarUsuario.Permiso.btnLavado = leer.GetBoolean(15);
+                    validarUsuario.Permiso.btnPersonas = leer.GetBoolean(16);
+                    validarUsuario.Permiso.PidUsuario = leer.GetInt32(17);
                 }
                 return validarUsuario;
             }

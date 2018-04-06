@@ -50,6 +50,7 @@ namespace Presentacion
                 {
                     servicio.idServicioLavado,
                     servicio.servicioLavado,
+                    servicio.estado,
                 }
                 ).ToList();
             dgvBuscarServicio.DataSource = resultado;

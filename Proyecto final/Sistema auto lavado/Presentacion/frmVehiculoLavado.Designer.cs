@@ -242,7 +242,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmVehiculoLavado";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmVehiculoLavado";
             this.Load += new System.EventHandler(this.frmVehiculoLavado_Load);
             this.panel2.ResumeLayout(false);

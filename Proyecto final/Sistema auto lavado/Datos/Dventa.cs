@@ -37,22 +37,21 @@ namespace Datos
                     else
                         nuevaFila.FechaFactura = leer.GetDateTime(3);
 
-
                     if (leer.IsDBNull(4))
-                        nuevaFila.HoraFactura = null;
-                    else
-                        nuevaFila.HoraFactura = leer.GetDateTime(4);
-
-                    if (leer.IsDBNull(5))
                         nuevaFila.Tipopago = null;
                     else
-                        nuevaFila.Tipopago = leer.GetString(5);
+                        nuevaFila.Tipopago = leer.GetString(4);
 
+                    if (leer.IsDBNull(5))
+                        nuevaFila.Estado = null;
+                    else
+                        nuevaFila.Estado = leer.GetString(5);
 
                     if (leer.IsDBNull(6))
                         nuevaFila.Subtotal = null;
                     else
                         nuevaFila.Subtotal = leer.GetDecimal(6);
+
                     if (leer.IsDBNull(7))
                         nuevaFila.Descuento = null;
                     else
@@ -98,8 +97,9 @@ namespace Datos
                 comando.Parameters.AddWithValue("@I_idcliente", nuevaventa.Cliente.idCliente);
                 comando.Parameters.AddWithValue("@Idusuario", nuevaventa.Usuario.idUsuario);
                 comando.Parameters.AddWithValue("@fechafactura", nuevaventa.FechaFactura);
-                comando.Parameters.AddWithValue("@Horafactura", nuevaventa.HoraFactura);
+              //  comando.Parameters.AddWithValue("@Horafactura", nuevaventa.HoraFactura);
                 comando.Parameters.AddWithValue("@tipopago", nuevaventa.Tipopago);
+                comando.Parameters.AddWithValue("@Estado", nuevaventa.Estado);
                 comando.Parameters.AddWithValue("@Subtotal", nuevaventa.Subtotal);
                 comando.Parameters.AddWithValue("@Descuento", nuevaventa.Descuento);
                 comando.Parameters.AddWithValue("@totalcordobas", nuevaventa.TotalCordobas);

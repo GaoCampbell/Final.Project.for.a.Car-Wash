@@ -48,6 +48,7 @@ namespace Presentacion
                              {
                                  vehiculo.idVehiculoLavado,
                                  vehiculo.vehiculoLavado,
+                                 vehiculo.estado,
                              }
                              ).ToList();
             dgvBuscarVehiculo.DataSource = resultado;

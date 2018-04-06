@@ -28,15 +28,15 @@ namespace Presentacion
 
         private void frmInicio_Load(object sender, EventArgs e)
         {
-            lblUsuario.Text = Global.usuarioSesion.usuario;
-            vENTAToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.venta;
-            mANTENIMIENTOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.mantenimiento;
-            lAVADOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.lavado;
-            cOMPRAToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.compra;
-            eMPLEADOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.empleado;
-            uSUARIOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.Tusuario;
-            pRODUCTOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.producto;
-            pROVEEDORToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.proveedor;
+            //lblUsuario.Text = Global.usuarioSesion.usuario;
+            //vENTAToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.venta;
+            //mANTENIMIENTOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.mantenimiento;
+            //lAVADOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.lavado;
+            //cOMPRAToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.compra;
+            //eMPLEADOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.empleado;
+            //uSUARIOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.Tusuario;
+            //pRODUCTOToolStripMenuItem1.Enabled = Global.usuarioSesion.Permiso.producto;
+            //pROVEEDORToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.proveedor;
            
         }
 

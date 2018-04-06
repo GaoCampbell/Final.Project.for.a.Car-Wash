@@ -42,6 +42,8 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtbuscarusuario = new System.Windows.Forms.TextBox();
             this.txtbuscarcliente = new System.Windows.Forms.TextBox();
-            this.dtpfecha = new System.Windows.Forms.DateTimePicker();
             this.Btnbuscarusuario = new System.Windows.Forms.Button();
             this.txtbuscarusuarionombre = new System.Windows.Forms.TextBox();
             this.btnbuscarcliente = new System.Windows.Forms.Button();
@@ -76,6 +77,7 @@
             this.txtdescuento = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.mkfecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -106,7 +108,7 @@
             // 
             this.txtiva.Enabled = false;
             this.txtiva.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtiva.Location = new System.Drawing.Point(149, 433);
+            this.txtiva.Location = new System.Drawing.Point(149, 467);
             this.txtiva.Name = "txtiva";
             this.txtiva.Size = new System.Drawing.Size(50, 26);
             this.txtiva.TabIndex = 158;
@@ -115,7 +117,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 437);
+            this.label11.Location = new System.Drawing.Point(13, 471);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 22);
             this.label11.TabIndex = 157;
@@ -125,7 +127,7 @@
             // 
             this.txtsubtotal.Enabled = false;
             this.txtsubtotal.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsubtotal.Location = new System.Drawing.Point(553, 433);
+            this.txtsubtotal.Location = new System.Drawing.Point(553, 467);
             this.txtsubtotal.Name = "txtsubtotal";
             this.txtsubtotal.Size = new System.Drawing.Size(158, 26);
             this.txtsubtotal.TabIndex = 156;
@@ -134,7 +136,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(432, 433);
+            this.label8.Location = new System.Drawing.Point(432, 467);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 22);
             this.label8.TabIndex = 155;
@@ -144,7 +146,7 @@
             // 
             this.txttotalCordobas.Enabled = false;
             this.txttotalCordobas.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotalCordobas.Location = new System.Drawing.Point(553, 501);
+            this.txttotalCordobas.Location = new System.Drawing.Point(553, 535);
             this.txttotalCordobas.Name = "txttotalCordobas";
             this.txttotalCordobas.Size = new System.Drawing.Size(158, 26);
             this.txttotalCordobas.TabIndex = 154;
@@ -154,7 +156,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(432, 505);
+            this.label7.Location = new System.Drawing.Point(432, 539);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 22);
             this.label7.TabIndex = 153;
@@ -165,7 +167,7 @@
             this.btneliminarproductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btneliminarproductos.Enabled = false;
             this.btneliminarproductos.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminarproductos.Location = new System.Drawing.Point(752, 267);
+            this.btneliminarproductos.Location = new System.Drawing.Point(752, 301);
             this.btneliminarproductos.Name = "btneliminarproductos";
             this.btneliminarproductos.Size = new System.Drawing.Size(139, 33);
             this.btneliminarproductos.TabIndex = 148;
@@ -179,7 +181,7 @@
             this.groupBox3.Controls.Add(this.btnCancelar);
             this.groupBox3.Controls.Add(this.btnNuevo);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(19, 530);
+            this.groupBox3.Location = new System.Drawing.Point(19, 564);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(703, 65);
             this.groupBox3.TabIndex = 152;
@@ -222,7 +224,7 @@
             this.btnagregar.Enabled = false;
             this.btnagregar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnagregar.Location = new System.Drawing.Point(752, 225);
+            this.btnagregar.Location = new System.Drawing.Point(752, 259);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(139, 33);
             this.btnagregar.TabIndex = 147;
@@ -233,6 +235,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.mkfecha);
+            this.groupBox2.Controls.Add(this.cmbEstado);
+            this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.dtpHora);
             this.groupBox2.Controls.Add(this.label1);
@@ -240,7 +245,6 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtbuscarusuario);
             this.groupBox2.Controls.Add(this.txtbuscarcliente);
-            this.groupBox2.Controls.Add(this.dtpfecha);
             this.groupBox2.Controls.Add(this.Btnbuscarusuario);
             this.groupBox2.Controls.Add(this.txtbuscarusuarionombre);
             this.groupBox2.Controls.Add(this.btnbuscarcliente);
@@ -248,17 +252,39 @@
             this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(11, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(880, 78);
+            this.groupBox2.Size = new System.Drawing.Size(880, 115);
             this.groupBox2.TabIndex = 151;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registro de venta";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Cancelada",
+            "Pendiente",
+            "Anulada"});
+            this.cmbEstado.Location = new System.Drawing.Point(494, 72);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(121, 26);
+            this.cmbEstado.TabIndex = 161;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(422, 80);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 18);
+            this.label14.TabIndex = 160;
+            this.label14.Text = "Estado :";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(562, 42);
+            this.label5.Location = new System.Drawing.Point(680, 74);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 18);
             this.label5.TabIndex = 61;
@@ -270,7 +296,7 @@
             this.dtpHora.Enabled = false;
             this.dtpHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHora.Location = new System.Drawing.Point(613, 39);
+            this.dtpHora.Location = new System.Drawing.Point(740, 71);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.ShowUpDown = true;
             this.dtpHora.Size = new System.Drawing.Size(81, 21);
@@ -280,7 +306,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 42);
+            this.label1.Location = new System.Drawing.Point(6, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 36;
@@ -290,17 +316,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(286, 42);
+            this.label2.Location = new System.Drawing.Point(422, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 18);
+            this.label2.Size = new System.Drawing.Size(58, 18);
             this.label2.TabIndex = 37;
-            this.label2.Text = "IDCliente :";
+            this.label2.Text = "Cliente :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(700, 42);
+            this.label4.Location = new System.Drawing.Point(45, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 18);
             this.label4.TabIndex = 38;
@@ -310,39 +336,29 @@
             // 
             this.txtbuscarusuario.Enabled = false;
             this.txtbuscarusuario.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarusuario.Location = new System.Drawing.Point(73, 37);
+            this.txtbuscarusuario.Location = new System.Drawing.Point(76, 25);
             this.txtbuscarusuario.Name = "txtbuscarusuario";
-            this.txtbuscarusuario.Size = new System.Drawing.Size(30, 23);
+            this.txtbuscarusuario.Size = new System.Drawing.Size(59, 23);
             this.txtbuscarusuario.TabIndex = 39;
             // 
             // txtbuscarcliente
             // 
             this.txtbuscarcliente.Enabled = false;
             this.txtbuscarcliente.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarcliente.Location = new System.Drawing.Point(361, 37);
+            this.txtbuscarcliente.Location = new System.Drawing.Point(494, 25);
             this.txtbuscarcliente.Name = "txtbuscarcliente";
-            this.txtbuscarcliente.Size = new System.Drawing.Size(37, 23);
+            this.txtbuscarcliente.Size = new System.Drawing.Size(52, 23);
             this.txtbuscarcliente.TabIndex = 40;
             this.txtbuscarcliente.TextChanged += new System.EventHandler(this.txtbuscarcliente_TextChanged);
-            // 
-            // dtpfecha
-            // 
-            this.dtpfecha.Enabled = false;
-            this.dtpfecha.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfecha.Location = new System.Drawing.Point(757, 37);
-            this.dtpfecha.Name = "dtpfecha";
-            this.dtpfecha.Size = new System.Drawing.Size(104, 23);
-            this.dtpfecha.TabIndex = 41;
             // 
             // Btnbuscarusuario
             // 
             this.Btnbuscarusuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btnbuscarusuario.Enabled = false;
             this.Btnbuscarusuario.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnbuscarusuario.Location = new System.Drawing.Point(205, 34);
+            this.Btnbuscarusuario.Location = new System.Drawing.Point(330, 22);
             this.Btnbuscarusuario.Name = "Btnbuscarusuario";
-            this.Btnbuscarusuario.Size = new System.Drawing.Size(74, 26);
+            this.Btnbuscarusuario.Size = new System.Drawing.Size(68, 26);
             this.Btnbuscarusuario.TabIndex = 42;
             this.Btnbuscarusuario.Text = "Agregar";
             this.Btnbuscarusuario.UseVisualStyleBackColor = true;
@@ -352,9 +368,9 @@
             // 
             this.txtbuscarusuarionombre.Enabled = false;
             this.txtbuscarusuarionombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarusuarionombre.Location = new System.Drawing.Point(105, 37);
+            this.txtbuscarusuarionombre.Location = new System.Drawing.Point(149, 25);
             this.txtbuscarusuarionombre.Name = "txtbuscarusuarionombre";
-            this.txtbuscarusuarionombre.Size = new System.Drawing.Size(95, 23);
+            this.txtbuscarusuarionombre.Size = new System.Drawing.Size(175, 23);
             this.txtbuscarusuarionombre.TabIndex = 58;
             // 
             // btnbuscarcliente
@@ -362,7 +378,7 @@
             this.btnbuscarcliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscarcliente.Enabled = false;
             this.btnbuscarcliente.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscarcliente.Location = new System.Drawing.Point(490, 34);
+            this.btnbuscarcliente.Location = new System.Drawing.Point(733, 22);
             this.btnbuscarcliente.Name = "btnbuscarcliente";
             this.btnbuscarcliente.Size = new System.Drawing.Size(68, 26);
             this.btnbuscarcliente.TabIndex = 43;
@@ -374,9 +390,9 @@
             // 
             this.txtbuscarclientenombre.Enabled = false;
             this.txtbuscarclientenombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarclientenombre.Location = new System.Drawing.Point(404, 37);
+            this.txtbuscarclientenombre.Location = new System.Drawing.Point(552, 25);
             this.txtbuscarclientenombre.Name = "txtbuscarclientenombre";
-            this.txtbuscarclientenombre.Size = new System.Drawing.Size(80, 23);
+            this.txtbuscarclientenombre.Size = new System.Drawing.Size(175, 23);
             this.txtbuscarclientenombre.TabIndex = 57;
             // 
             // groupBox1
@@ -391,7 +407,7 @@
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 122);
+            this.groupBox1.Location = new System.Drawing.Point(11, 156);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(735, 97);
             this.groupBox1.TabIndex = 150;
@@ -478,7 +494,7 @@
             // dgvventas
             // 
             this.dgvventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvventas.Location = new System.Drawing.Point(12, 225);
+            this.dgvventas.Location = new System.Drawing.Point(12, 259);
             this.dgvventas.Name = "dgvventas";
             this.dgvventas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvventas.Size = new System.Drawing.Size(734, 199);
@@ -486,7 +502,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox8);
@@ -534,7 +550,7 @@
             this.groupBox4.Controls.Add(this.radioButton2);
             this.groupBox4.Controls.Add(this.rbtEfectivo);
             this.groupBox4.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(752, 122);
+            this.groupBox4.Location = new System.Drawing.Point(752, 156);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(139, 97);
             this.groupBox4.TabIndex = 160;
@@ -570,7 +586,7 @@
             // 
             this.txtTotalDolares.Enabled = false;
             this.txtTotalDolares.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalDolares.Location = new System.Drawing.Point(553, 465);
+            this.txtTotalDolares.Location = new System.Drawing.Point(553, 499);
             this.txtTotalDolares.Name = "txtTotalDolares";
             this.txtTotalDolares.Size = new System.Drawing.Size(158, 26);
             this.txtTotalDolares.TabIndex = 162;
@@ -579,7 +595,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(432, 469);
+            this.label9.Location = new System.Drawing.Point(432, 503);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 22);
             this.label9.TabIndex = 161;
@@ -589,7 +605,7 @@
             // 
             this.txtdescuento.Enabled = false;
             this.txtdescuento.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdescuento.Location = new System.Drawing.Point(149, 462);
+            this.txtdescuento.Location = new System.Drawing.Point(149, 496);
             this.txtdescuento.Name = "txtdescuento";
             this.txtdescuento.Size = new System.Drawing.Size(123, 26);
             this.txtdescuento.TabIndex = 164;
@@ -599,7 +615,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(13, 462);
+            this.label12.Location = new System.Drawing.Point(13, 496);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 22);
             this.label12.TabIndex = 163;
@@ -608,18 +624,25 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Presentacion.Properties.Resources.car_flat;
-            this.pictureBox2.Location = new System.Drawing.Point(728, 430);
+            this.pictureBox2.Location = new System.Drawing.Point(728, 464);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(174, 183);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 185;
             this.pictureBox2.TabStop = false;
             // 
+            // mkfecha
+            // 
+            this.mkfecha.Location = new System.Drawing.Point(98, 75);
+            this.mkfecha.Name = "mkfecha";
+            this.mkfecha.Size = new System.Drawing.Size(282, 23);
+            this.mkfecha.TabIndex = 162;
+            // 
             // frmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 605);
+            this.ClientSize = new System.Drawing.Size(902, 653);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtdescuento);
             this.Controls.Add(this.label12);
@@ -683,7 +706,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbuscarusuario;
         private System.Windows.Forms.TextBox txtbuscarcliente;
-        private System.Windows.Forms.DateTimePicker dtpfecha;
         private System.Windows.Forms.Button Btnbuscarusuario;
         private System.Windows.Forms.TextBox txtbuscarusuarionombre;
         private System.Windows.Forms.Button btnbuscarcliente;
@@ -712,5 +734,8 @@
         private System.Windows.Forms.TextBox txtdescuento;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker mkfecha;
     }
 }

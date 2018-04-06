@@ -27,6 +27,7 @@ namespace Datos
                 while (leer.Read())
                 {
                     Edetalleventa nuevaFila = new Edetalleventa();
+
                     if (leer.IsDBNull(0))
                         nuevaFila.Cantidad = null;
                     else

@@ -43,20 +43,24 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.chkProveedor = new System.Windows.Forms.CheckBox();
-            this.chkVenta = new System.Windows.Forms.CheckBox();
-            this.chkProducto = new System.Windows.Forms.CheckBox();
-            this.chkMantenimiento = new System.Windows.Forms.CheckBox();
-            this.chkUsuario = new System.Windows.Forms.CheckBox();
-            this.chkLavado = new System.Windows.Forms.CheckBox();
-            this.chkEmpleado = new System.Windows.Forms.CheckBox();
-            this.chkCompra = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.chkFacturar = new System.Windows.Forms.CheckBox();
+            this.chkPersonas = new System.Windows.Forms.CheckBox();
+            this.chkProductos = new System.Windows.Forms.CheckBox();
+            this.chkReporte = new System.Windows.Forms.CheckBox();
+            this.chkMantenimiento = new System.Windows.Forms.CheckBox();
+            this.chkLavado = new System.Windows.Forms.CheckBox();
+            this.chkBtnFacturar = new System.Windows.Forms.CheckBox();
+            this.chkBtnPersonas = new System.Windows.Forms.CheckBox();
+            this.chkBtnLavado = new System.Windows.Forms.CheckBox();
+            this.chkBtnMantenimiento = new System.Windows.Forms.CheckBox();
+            this.chkBtnProducto = new System.Windows.Forms.CheckBox();
+            this.chkBtnUsuarios = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -68,7 +72,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.pictureBox8);
@@ -76,14 +80,14 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(934, 29);
+            this.panel2.Size = new System.Drawing.Size(902, 29);
             this.panel2.TabIndex = 22;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Presentacion.Properties.Resources.minimizar;
-            this.pictureBox1.Location = new System.Drawing.Point(879, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(847, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 30);
@@ -97,7 +101,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(423, 5);
+            this.label8.Location = new System.Drawing.Point(382, 11);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 18);
@@ -108,7 +112,7 @@
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(908, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(876, 0);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
@@ -129,20 +133,21 @@
             this.groupBox2.Controls.Add(this.txtContraseña);
             this.groupBox2.Controls.Add(this.lblContraseña);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(33, 48);
+            this.groupBox2.Location = new System.Drawing.Point(0, 35);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox2.Size = new System.Drawing.Size(873, 156);
+            this.groupBox2.Size = new System.Drawing.Size(889, 156);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del Usuario";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 40);
+            this.label1.Location = new System.Drawing.Point(12, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 14);
@@ -151,7 +156,7 @@
             // 
             // txtEmpleado
             // 
-            this.txtEmpleado.Location = new System.Drawing.Point(110, 36);
+            this.txtEmpleado.Location = new System.Drawing.Point(105, 40);
             this.txtEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmpleado.Name = "txtEmpleado";
             this.txtEmpleado.Size = new System.Drawing.Size(233, 22);
@@ -159,7 +164,7 @@
             // 
             // btnEmpleado
             // 
-            this.btnEmpleado.Location = new System.Drawing.Point(351, 34);
+            this.btnEmpleado.Location = new System.Drawing.Point(346, 38);
             this.btnEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEmpleado.Name = "btnEmpleado";
             this.btnEmpleado.Size = new System.Drawing.Size(109, 24);
@@ -172,7 +177,7 @@
             // 
             this.lblestado.AutoSize = true;
             this.lblestado.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblestado.Location = new System.Drawing.Point(488, 84);
+            this.lblestado.Location = new System.Drawing.Point(479, 90);
             this.lblestado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblestado.Name = "lblestado";
             this.lblestado.Size = new System.Drawing.Size(51, 14);
@@ -181,10 +186,10 @@
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(549, 38);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(542, 39);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(307, 22);
+            this.txtNombreUsuario.Size = new System.Drawing.Size(248, 22);
             this.txtNombreUsuario.TabIndex = 5;
             // 
             // cmbEstado
@@ -193,17 +198,17 @@
             this.cmbEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cmbEstado.Location = new System.Drawing.Point(549, 84);
+            this.cmbEstado.Location = new System.Drawing.Point(542, 82);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(307, 22);
+            this.cmbEstado.Size = new System.Drawing.Size(248, 22);
             this.cmbEstado.TabIndex = 13;
             // 
             // lblNombreUsuario
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreUsuario.Location = new System.Drawing.Point(488, 41);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(479, 47);
             this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
             this.lblNombreUsuario.Size = new System.Drawing.Size(55, 14);
@@ -212,7 +217,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(110, 81);
+            this.txtContraseña.Location = new System.Drawing.Point(105, 85);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(233, 22);
@@ -222,7 +227,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(17, 84);
+            this.lblContraseña.Location = new System.Drawing.Point(12, 88);
             this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(81, 14);
@@ -231,111 +236,27 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.chkProveedor);
-            this.groupBox3.Controls.Add(this.chkVenta);
-            this.groupBox3.Controls.Add(this.chkProducto);
-            this.groupBox3.Controls.Add(this.chkMantenimiento);
-            this.groupBox3.Controls.Add(this.chkUsuario);
+            this.groupBox3.Controls.Add(this.chkBtnPersonas);
+            this.groupBox3.Controls.Add(this.chkBtnLavado);
+            this.groupBox3.Controls.Add(this.chkBtnMantenimiento);
+            this.groupBox3.Controls.Add(this.chkBtnProducto);
+            this.groupBox3.Controls.Add(this.chkBtnUsuarios);
+            this.groupBox3.Controls.Add(this.chkBtnFacturar);
             this.groupBox3.Controls.Add(this.chkLavado);
-            this.groupBox3.Controls.Add(this.chkEmpleado);
-            this.groupBox3.Controls.Add(this.chkCompra);
+            this.groupBox3.Controls.Add(this.chkMantenimiento);
+            this.groupBox3.Controls.Add(this.chkReporte);
+            this.groupBox3.Controls.Add(this.chkProductos);
+            this.groupBox3.Controls.Add(this.chkPersonas);
+            this.groupBox3.Controls.Add(this.chkFacturar);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(33, 210);
+            this.groupBox3.Location = new System.Drawing.Point(0, 197);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(873, 80);
+            this.groupBox3.Size = new System.Drawing.Size(889, 119);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Permisos";
-            // 
-            // chkProveedor
-            // 
-            this.chkProveedor.AutoSize = true;
-            this.chkProveedor.Location = new System.Drawing.Point(433, 41);
-            this.chkProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkProveedor.Name = "chkProveedor";
-            this.chkProveedor.Size = new System.Drawing.Size(95, 18);
-            this.chkProveedor.TabIndex = 17;
-            this.chkProveedor.Text = "Proveedor";
-            this.chkProveedor.UseVisualStyleBackColor = true;
-            // 
-            // chkVenta
-            // 
-            this.chkVenta.AutoSize = true;
-            this.chkVenta.Location = new System.Drawing.Point(40, 41);
-            this.chkVenta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkVenta.Name = "chkVenta";
-            this.chkVenta.Size = new System.Drawing.Size(64, 18);
-            this.chkVenta.TabIndex = 10;
-            this.chkVenta.Text = "Venta";
-            this.chkVenta.UseVisualStyleBackColor = true;
-            // 
-            // chkProducto
-            // 
-            this.chkProducto.AutoSize = true;
-            this.chkProducto.Location = new System.Drawing.Point(340, 41);
-            this.chkProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkProducto.Name = "chkProducto";
-            this.chkProducto.Size = new System.Drawing.Size(85, 18);
-            this.chkProducto.TabIndex = 16;
-            this.chkProducto.Text = "Producto";
-            this.chkProducto.UseVisualStyleBackColor = true;
-            // 
-            // chkMantenimiento
-            // 
-            this.chkMantenimiento.AutoSize = true;
-            this.chkMantenimiento.Location = new System.Drawing.Point(627, 41);
-            this.chkMantenimiento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkMantenimiento.Name = "chkMantenimiento";
-            this.chkMantenimiento.Size = new System.Drawing.Size(123, 18);
-            this.chkMantenimiento.TabIndex = 11;
-            this.chkMantenimiento.Text = "Mantenimiento";
-            this.chkMantenimiento.UseVisualStyleBackColor = true;
-            // 
-            // chkUsuario
-            // 
-            this.chkUsuario.AutoSize = true;
-            this.chkUsuario.Location = new System.Drawing.Point(542, 41);
-            this.chkUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkUsuario.Name = "chkUsuario";
-            this.chkUsuario.Size = new System.Drawing.Size(77, 18);
-            this.chkUsuario.TabIndex = 15;
-            this.chkUsuario.Text = "Usuario";
-            this.chkUsuario.UseVisualStyleBackColor = true;
-            // 
-            // chkLavado
-            // 
-            this.chkLavado.AutoSize = true;
-            this.chkLavado.Location = new System.Drawing.Point(123, 41);
-            this.chkLavado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkLavado.Name = "chkLavado";
-            this.chkLavado.Size = new System.Drawing.Size(74, 18);
-            this.chkLavado.TabIndex = 12;
-            this.chkLavado.Text = "Lavado";
-            this.chkLavado.UseVisualStyleBackColor = true;
-            // 
-            // chkEmpleado
-            // 
-            this.chkEmpleado.AutoSize = true;
-            this.chkEmpleado.Location = new System.Drawing.Point(227, 41);
-            this.chkEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkEmpleado.Name = "chkEmpleado";
-            this.chkEmpleado.Size = new System.Drawing.Size(90, 18);
-            this.chkEmpleado.TabIndex = 14;
-            this.chkEmpleado.Text = "Empleado";
-            this.chkEmpleado.UseVisualStyleBackColor = true;
-            // 
-            // chkCompra
-            // 
-            this.chkCompra.AutoSize = true;
-            this.chkCompra.Location = new System.Drawing.Point(771, 41);
-            this.chkCompra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkCompra.Name = "chkCompra";
-            this.chkCompra.Size = new System.Drawing.Size(77, 18);
-            this.chkCompra.TabIndex = 13;
-            this.chkCompra.Text = "Compra";
-            this.chkCompra.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -344,11 +265,11 @@
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 296);
+            this.groupBox1.Location = new System.Drawing.Point(7, 322);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(873, 71);
+            this.groupBox1.Size = new System.Drawing.Size(889, 71);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Funciones";
@@ -400,18 +321,138 @@
             // dgvUsuarios
             // 
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(33, 373);
+            this.dgvUsuarios.Location = new System.Drawing.Point(7, 399);
             this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(873, 207);
+            this.dgvUsuarios.Size = new System.Drawing.Size(889, 207);
             this.dgvUsuarios.TabIndex = 26;
             this.dgvUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellDoubleClick);
+            // 
+            // chkFacturar
+            // 
+            this.chkFacturar.AutoSize = true;
+            this.chkFacturar.Location = new System.Drawing.Point(30, 35);
+            this.chkFacturar.Name = "chkFacturar";
+            this.chkFacturar.Size = new System.Drawing.Size(82, 18);
+            this.chkFacturar.TabIndex = 0;
+            this.chkFacturar.Text = "Facturar";
+            this.chkFacturar.UseVisualStyleBackColor = true;
+            // 
+            // chkPersonas
+            // 
+            this.chkPersonas.AutoSize = true;
+            this.chkPersonas.Location = new System.Drawing.Point(157, 35);
+            this.chkPersonas.Name = "chkPersonas";
+            this.chkPersonas.Size = new System.Drawing.Size(87, 18);
+            this.chkPersonas.TabIndex = 1;
+            this.chkPersonas.Text = "Personas";
+            this.chkPersonas.UseVisualStyleBackColor = true;
+            // 
+            // chkProductos
+            // 
+            this.chkProductos.AutoSize = true;
+            this.chkProductos.Location = new System.Drawing.Point(286, 35);
+            this.chkProductos.Name = "chkProductos";
+            this.chkProductos.Size = new System.Drawing.Size(92, 18);
+            this.chkProductos.TabIndex = 2;
+            this.chkProductos.Text = "Productos";
+            this.chkProductos.UseVisualStyleBackColor = true;
+            // 
+            // chkReporte
+            // 
+            this.chkReporte.AutoSize = true;
+            this.chkReporte.Location = new System.Drawing.Point(459, 35);
+            this.chkReporte.Name = "chkReporte";
+            this.chkReporte.Size = new System.Drawing.Size(78, 18);
+            this.chkReporte.TabIndex = 3;
+            this.chkReporte.Text = "Reporte";
+            this.chkReporte.UseVisualStyleBackColor = true;
+            // 
+            // chkMantenimiento
+            // 
+            this.chkMantenimiento.AutoSize = true;
+            this.chkMantenimiento.Location = new System.Drawing.Point(589, 35);
+            this.chkMantenimiento.Name = "chkMantenimiento";
+            this.chkMantenimiento.Size = new System.Drawing.Size(123, 18);
+            this.chkMantenimiento.TabIndex = 4;
+            this.chkMantenimiento.Text = "Mantenimiento";
+            this.chkMantenimiento.UseVisualStyleBackColor = true;
+            // 
+            // chkLavado
+            // 
+            this.chkLavado.AutoSize = true;
+            this.chkLavado.Location = new System.Drawing.Point(739, 35);
+            this.chkLavado.Name = "chkLavado";
+            this.chkLavado.Size = new System.Drawing.Size(74, 18);
+            this.chkLavado.TabIndex = 5;
+            this.chkLavado.Text = "Lavado";
+            this.chkLavado.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnFacturar
+            // 
+            this.chkBtnFacturar.AutoSize = true;
+            this.chkBtnFacturar.Location = new System.Drawing.Point(739, 77);
+            this.chkBtnFacturar.Name = "chkBtnFacturar";
+            this.chkBtnFacturar.Size = new System.Drawing.Size(121, 18);
+            this.chkBtnFacturar.TabIndex = 6;
+            this.chkBtnFacturar.Text = "Menu Facturar";
+            this.chkBtnFacturar.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnPersonas
+            // 
+            this.chkBtnPersonas.AutoSize = true;
+            this.chkBtnPersonas.Location = new System.Drawing.Point(589, 77);
+            this.chkBtnPersonas.Name = "chkBtnPersonas";
+            this.chkBtnPersonas.Size = new System.Drawing.Size(125, 18);
+            this.chkBtnPersonas.TabIndex = 11;
+            this.chkBtnPersonas.Text = "Menu personas";
+            this.chkBtnPersonas.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnLavado
+            // 
+            this.chkBtnLavado.AutoSize = true;
+            this.chkBtnLavado.Location = new System.Drawing.Point(459, 77);
+            this.chkBtnLavado.Name = "chkBtnLavado";
+            this.chkBtnLavado.Size = new System.Drawing.Size(113, 18);
+            this.chkBtnLavado.TabIndex = 10;
+            this.chkBtnLavado.Text = "Menu Lavado";
+            this.chkBtnLavado.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnMantenimiento
+            // 
+            this.chkBtnMantenimiento.AutoSize = true;
+            this.chkBtnMantenimiento.Location = new System.Drawing.Point(286, 77);
+            this.chkBtnMantenimiento.Name = "chkBtnMantenimiento";
+            this.chkBtnMantenimiento.Size = new System.Drawing.Size(162, 18);
+            this.chkBtnMantenimiento.TabIndex = 9;
+            this.chkBtnMantenimiento.Text = "Menu Mantenimiento";
+            this.chkBtnMantenimiento.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnProducto
+            // 
+            this.chkBtnProducto.AutoSize = true;
+            this.chkBtnProducto.Location = new System.Drawing.Point(157, 77);
+            this.chkBtnProducto.Name = "chkBtnProducto";
+            this.chkBtnProducto.Size = new System.Drawing.Size(123, 18);
+            this.chkBtnProducto.TabIndex = 8;
+            this.chkBtnProducto.Text = "Menu producto";
+            this.chkBtnProducto.UseVisualStyleBackColor = true;
+            // 
+            // chkBtnUsuarios
+            // 
+            this.chkBtnUsuarios.AutoSize = true;
+            this.chkBtnUsuarios.Location = new System.Drawing.Point(30, 77);
+            this.chkBtnUsuarios.Name = "chkBtnUsuarios";
+            this.chkBtnUsuarios.Size = new System.Drawing.Size(121, 18);
+            this.chkBtnUsuarios.TabIndex = 7;
+            this.chkBtnUsuarios.Text = "Menu usuarios";
+            this.chkBtnUsuarios.UseVisualStyleBackColor = true;
             // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 592);
+            this.ClientSize = new System.Drawing.Size(902, 618);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -453,14 +494,6 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox chkProveedor;
-        private System.Windows.Forms.CheckBox chkVenta;
-        private System.Windows.Forms.CheckBox chkProducto;
-        private System.Windows.Forms.CheckBox chkMantenimiento;
-        private System.Windows.Forms.CheckBox chkUsuario;
-        private System.Windows.Forms.CheckBox chkLavado;
-        private System.Windows.Forms.CheckBox chkEmpleado;
-        private System.Windows.Forms.CheckBox chkCompra;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnModificar;
@@ -469,5 +502,17 @@
         private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox chkBtnPersonas;
+        private System.Windows.Forms.CheckBox chkBtnLavado;
+        private System.Windows.Forms.CheckBox chkBtnMantenimiento;
+        private System.Windows.Forms.CheckBox chkBtnProducto;
+        private System.Windows.Forms.CheckBox chkBtnUsuarios;
+        private System.Windows.Forms.CheckBox chkBtnFacturar;
+        private System.Windows.Forms.CheckBox chkLavado;
+        private System.Windows.Forms.CheckBox chkMantenimiento;
+        private System.Windows.Forms.CheckBox chkReporte;
+        private System.Windows.Forms.CheckBox chkProductos;
+        private System.Windows.Forms.CheckBox chkPersonas;
+        private System.Windows.Forms.CheckBox chkFacturar;
     }
 }

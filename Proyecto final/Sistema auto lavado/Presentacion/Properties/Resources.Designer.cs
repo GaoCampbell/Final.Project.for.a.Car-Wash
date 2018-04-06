@@ -93,6 +93,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back {
+            get {
+                object obj = ResourceManager.GetObject("Back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car_flat {
             get {
                 object obj = ResourceManager.GetObject("car-flat", resourceCulture);
@@ -173,6 +183,36 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_deshacer_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-deshacer-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_deshacer_401 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-deshacer-401", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_deshacer_402 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-deshacer-402", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_factura_64__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-factura-64 (1)", resourceCulture);
@@ -226,6 +266,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap icons8_lista_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lista-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lista_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lista-961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

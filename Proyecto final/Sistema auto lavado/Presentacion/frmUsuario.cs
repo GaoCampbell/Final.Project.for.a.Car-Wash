@@ -28,14 +28,18 @@ namespace Presentacion
                              usuario.usuario,
                              usuario.password,
                              usuario.estado,
-                             usuario.Permiso.venta,
+                             usuario.Permiso.facturar,
+                             usuario.Permiso.personas,
+                             usuario.Permiso.producto,
+                             usuario.Permiso.reporte,
                              usuario.Permiso.mantenimiento,
                              usuario.Permiso.lavado,
-                             usuario.Permiso.compra,
-                             usuario.Permiso.empleado,
-                             usuario.Permiso.Tusuario,
-                             usuario.Permiso.producto,
-                             usuario.Permiso.proveedor,
+                             usuario.Permiso.btnFacturar,
+                             usuario.Permiso.btnUsuarios,
+                             usuario.Permiso.btnProducto,
+                             usuario.Permiso.btnMantenimiento,
+                             usuario.Permiso.btnLavado,
+                             usuario.Permiso.btnPersonas,
                              usuario.idUsuario,
                              usuario.Permiso.PidUsuario,
                              usuario.Empleado.idEmpleado,
@@ -72,18 +76,18 @@ namespace Presentacion
         private void Limpiar()
         {
 
-            txtContraseña.Text = "";
-            txtEmpleado.Text = "";
-            txtNombreUsuario.Text = "";
-            cmbEstado.Text = "";
-            chkVenta.Checked = false;
-            chkMantenimiento.Checked = false;
-            chkLavado.Checked = false;
-            chkCompra.Checked = false;
-            chkEmpleado.Checked = false;
-            chkUsuario.Checked = false;
-            chkProducto.Checked = false;
-            chkProveedor.Checked = false;
+            //txtContraseña.Text = "";
+            //txtEmpleado.Text = "";
+            //txtNombreUsuario.Text = "";
+            //cmbEstado.Text = "";
+            //chkVenta.Checked = false;
+            //chkMantenimiento.Checked = false;
+            //chkLavado.Checked = false;
+            //chkCompra.Checked = false;
+            //chkEmpleado.Checked = false;
+            //chkUsuario.Checked = false;
+            //chkProducto.Checked = false;
+            //chkProveedor.Checked = false;
            
 
         }
@@ -111,14 +115,18 @@ namespace Presentacion
                     Uusuario.password = txtContraseña.Text;
                     Uusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Tag);
                     Uusuario.estado = cmbEstado.Text;
-                    Uusuario.Permiso.venta = chkVenta.Checked;
+                    Uusuario.Permiso.facturar = chkFacturar.Checked;
+                    Uusuario.Permiso.personas = chkPersonas.Checked;
+                    Uusuario.Permiso.producto = chkProductos.Checked;
+                    Uusuario.Permiso.reporte = chkReporte.Checked;
                     Uusuario.Permiso.mantenimiento = chkMantenimiento.Checked;
                     Uusuario.Permiso.lavado = chkLavado.Checked;
-                    Uusuario.Permiso.compra = chkCompra.Checked;
-                    Uusuario.Permiso.empleado = chkEmpleado.Checked;
-                    Uusuario.Permiso.Tusuario = chkUsuario.Checked;
-                    Uusuario.Permiso.producto = chkProducto.Checked;
-                    Uusuario.Permiso.proveedor = chkProveedor.Checked;
+                    Uusuario.Permiso.btnFacturar = chkBtnFacturar.Checked;
+                    Uusuario.Permiso.btnPersonas = chkBtnPersonas.Checked;
+                    Uusuario.Permiso.btnProducto = chkBtnProducto.Checked;
+                    Uusuario.Permiso.btnMantenimiento = chkBtnMantenimiento.Checked;
+                    Uusuario.Permiso.btnLavado = chkBtnLavado.Checked;
+                    Uusuario.Permiso.btnUsuarios = chkBtnUsuarios.Checked;
 
                     NUsuario UpRow = new NUsuario();
                     UpRow.UpdateRow(Uusuario);
@@ -131,14 +139,18 @@ namespace Presentacion
                     Iusuario.password = txtContraseña.Text;
                     Iusuario.Empleado.idEmpleado = Convert.ToInt32(txtEmpleado.Tag);
                     Iusuario.estado = cmbEstado.Text;
-                    Iusuario.Permiso.venta = chkVenta.Checked;
+                    Iusuario.Permiso.facturar = chkFacturar.Checked;
+                    Iusuario.Permiso.personas = chkPersonas.Checked;
+                    Iusuario.Permiso.producto = chkProductos.Checked;
+                    Iusuario.Permiso.reporte = chkReporte.Checked;
                     Iusuario.Permiso.mantenimiento = chkMantenimiento.Checked;
                     Iusuario.Permiso.lavado = chkLavado.Checked;
-                    Iusuario.Permiso.compra = chkCompra.Checked;
-                    Iusuario.Permiso.empleado = chkEmpleado.Checked;
-                    Iusuario.Permiso.Tusuario = chkUsuario.Checked;
-                    Iusuario.Permiso.producto = chkProducto.Checked;
-                    Iusuario.Permiso.proveedor = chkProveedor.Checked;
+                    Iusuario.Permiso.btnFacturar = chkBtnFacturar.Checked;
+                    Iusuario.Permiso.btnPersonas = chkBtnPersonas.Checked;
+                    Iusuario.Permiso.btnProducto = chkBtnProducto.Checked;
+                    Iusuario.Permiso.btnMantenimiento = chkBtnMantenimiento.Checked;
+                    Iusuario.Permiso.btnLavado = chkBtnLavado.Checked;
+                    Iusuario.Permiso.btnUsuarios = chkBtnUsuarios.Checked;
 
                     NUsuario InsertRow = new NUsuario();
                     InsertRow.InsertRow(Iusuario);
@@ -178,14 +190,19 @@ namespace Presentacion
                 txtNombreUsuario.Text = dgvUsuarios.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
                 txtContraseña.Text = dgvUsuarios.Rows[e.RowIndex].Cells["password"].Value.ToString();
                 cmbEstado.Text = dgvUsuarios.Rows[e.RowIndex].Cells["estado"].Value.ToString();
-                chkVenta.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["venta"].Value.ToString());
+                chkFacturar.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["facturar"].Value.ToString());
+                chkPersonas.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["personas"].Value.ToString());
+                chkProductos.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["producto"].Value.ToString());
+                chkReporte.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["reporte"].Value.ToString());
                 chkMantenimiento.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["mantenimiento"].Value.ToString());
                 chkLavado.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["lavado"].Value.ToString());
-                chkCompra.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["compra"].Value.ToString());
-                chkEmpleado.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["empleado"].Value.ToString());
-                chkUsuario.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["Tusuario"].Value.ToString());
-                chkProducto.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["producto"].Value.ToString());
-                chkProveedor.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["proveedor"].Value.ToString());
+                chkBtnFacturar.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnFacturar"].Value.ToString());
+                chkBtnPersonas.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnPersonas"].Value.ToString());
+                chkBtnProducto.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnProducto"].Value.ToString());
+                chkBtnMantenimiento.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnMantenimiento"].Value.ToString());
+                chkBtnLavado.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnLavado"].Value.ToString());
+                chkBtnUsuarios.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnUsuarios"].Value.ToString());
+
                 txtContraseña.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["idUsuario"].Value.ToString();
                 dgvUsuarios.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["PidUsuario"].Value.ToString();
 
@@ -223,7 +240,7 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-          frmInicio inicio = new frmInicio();
+          frmMenuprincipal inicio = new frmMenuprincipal();
             inicio.Show();
             this.Close();
         }
@@ -240,6 +257,11 @@ namespace Presentacion
                 txtEmpleado.Tag = buscarEmpleado.idEmpleado.ToString();
                 txtEmpleado.Text = buscarEmpleado.empleado.ToString();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 

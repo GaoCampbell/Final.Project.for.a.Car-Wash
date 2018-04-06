@@ -41,15 +41,16 @@ namespace Presentacion
                              d.Totaldetalle
                          }).ToList();
             dgvventas.DataSource = lista;
+        
 
         }
         private void frmVenta_Load(object sender, EventArgs e)
         {
             try
             {
-
+                
                 ActualizarLista();
-               
+
 
             }
             catch (Exception ex)
@@ -61,7 +62,7 @@ namespace Presentacion
         {
             txtbuscarusuario.Enabled = true;
             txtbuscarcliente.Enabled = true;
-            dtpfecha.Enabled = true;
+            mkfecha.Enabled = true;
             dtpHora.Enabled = true;
             txtdescuento.Enabled = true;
             txtproducto.Enabled = true;
@@ -74,7 +75,7 @@ namespace Presentacion
         {
             txtbuscarusuario.Enabled = false;
             txtbuscarcliente.Enabled = false;
-            dtpfecha.Enabled = false;
+            mkfecha.Enabled = false;
             dtpHora.Enabled = false;
             txtdescuento.Enabled = false;
             txtproducto.Enabled = false;
@@ -83,6 +84,7 @@ namespace Presentacion
             txtCantidad.Enabled = false;
           
         }
+
         public void Limpiar()
         {
             int d;
@@ -91,7 +93,7 @@ namespace Presentacion
 
             txtbuscarusuario.Text = "";
             txtbuscarcliente.Text = "";
-            dtpfecha.Text = "";
+            mkfecha.Text = "";
             dtpHora.Text = "";
          // txtdescuento.Text = "";
             txtbuscarclientenombre.Text = "";
@@ -113,7 +115,7 @@ namespace Presentacion
 
         
 
-            dtpfecha.Focus();
+            mkfecha.Focus();
             btnagregar.Enabled = true;
             btnagregar.Enabled = true;
             dgvventas.DataSource = null;
@@ -133,7 +135,7 @@ namespace Presentacion
             txtprecio.Enabled = false;
             txtnombre.Enabled = false;
             txtCantidad.Enabled = true;        
-            dtpfecha.Enabled = false;
+            mkfecha.Enabled = false;
             txttotalCordobas.Enabled = false;
             Limpiar();
         }
@@ -145,8 +147,9 @@ namespace Presentacion
               
                 ventas.Cliente.idCliente = Convert.ToInt32(txtbuscarcliente.Text);
                 ventas.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
-                ventas.FechaFactura = dtpfecha.Value;
-                ventas.HoraFactura = dtpHora.Value;
+                ventas.FechaFactura = mkfecha.Value;
+               // ventas.HoraFactura = dtpHora.Value;
+                
               
                 if (rbtEfectivo.Checked == true)
                 {
@@ -157,6 +160,7 @@ namespace Presentacion
                     ventas.Tipopago = "Tarjeta";
                    
                 }
+                ventas.Estado = cmbEstado.Text;
                 ventas.Subtotal = Convert.ToDecimal(txtsubtotal.Text);
                 ventas.Descuento = Convert.ToDecimal(txtdescuento.Text);
                 ventas.TotalCordobas = Convert.ToDecimal(txttotalCordobas.Text);
@@ -187,6 +191,7 @@ namespace Presentacion
             }
 
             Limpiar();
+            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -358,6 +363,8 @@ namespace Presentacion
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
+            frmMenuprincipal inicio = new frmMenuprincipal();
+            inicio.Show();
         }
     }
 }

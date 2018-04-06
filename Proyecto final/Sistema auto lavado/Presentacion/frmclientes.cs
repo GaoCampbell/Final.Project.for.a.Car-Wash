@@ -194,8 +194,8 @@ namespace Presentacion
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
-            //frmInicio ini = new frmInicio();
-            //ini.Show();
+            //frmMenuprincipal inicio = new frmMenuprincipal();
+            //inicio.Show();
         }
 
         private void dgvfiltrarclientes_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -17,24 +17,25 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")] private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")] private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
+    
         private void btnslide_Click(object sender, EventArgs e)
         {
-            if (Menuvertical.Width == 250)
+            if (Menuvertical.Width == 59)
             {
-                Menuvertical.Width = 70;
+                Menuvertical.Width = 250;
             }
             else
 
-                Menuvertical.Width = 250;
+                Menuvertical.Width = 59;
 
         }
 
         private void iconocerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
 
         private void iconomaximizar_Click(object sender, EventArgs e)
@@ -69,36 +70,30 @@ namespace Presentacion
 
         }
 
-        private void AbrirFormInPanel(object FormHijo)
+        public void AbrirFormInPanel(object FormHijo)
 
         {
             if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
+               this.panelContenedor.Controls.RemoveAt(0);
             Form fh = FormHijo as Form;
-
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
             this.panelContenedor.Controls.Add(fh);
             this.panelContenedor.Tag = fh;
             fh.Show();
-
-
         }
      
 
         private void btnfacturar_Click(object sender, EventArgs e)
         {
-         
 
-            
-
-
+            AbrirFormInPanel(new frmVenta());
 
         }
 
         private void btnpersonas_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormInPanel(new frmEmpleado());
         }
 
         private void btnproducto_Click(object sender, EventArgs e)
@@ -118,12 +113,12 @@ namespace Presentacion
 
         private void btncerrarsecion_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmVenta());
+            AbrirFormInPanel(new VentanaFactura());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,6 +129,144 @@ namespace Presentacion
         private void cOMPRAToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmMenuprincipal_Load(object sender, EventArgs e)
+        {
+            lblUsuarios.Text = Global.usuarioSesion.usuario;
+            fACTURARToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.facturar;
+            eMPLEADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.personas;
+            pRODUCTOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.producto;
+            rEPORTESToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.reporte;
+            mANTENIMINETOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.mantenimiento;
+            lAVADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.lavado;
+            btnfacturar.Enabled = Global.usuarioSesion.Permiso.btnFacturar;
+            btnpersonas.Enabled = Global.usuarioSesion.Permiso.btnPersonas;
+            btnproducto.Enabled = Global.usuarioSesion.Permiso.btnProducto;
+            btnmantenimiento.Enabled = Global.usuarioSesion.Permiso.btnMantenimiento;
+            btnlavado.Enabled = Global.usuarioSesion.Permiso.btnLavado;
+            btnusuario.Enabled = Global.usuarioSesion.Permiso.btnUsuarios;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void reporteFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AbrirFormInPanel(new frmre());
+        }
+
+        private void btnlavado_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmLavado());
+        }
+
+        private void cOMPRAToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmCompra());
+        }
+
+        private void vENTAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmVenta());
+        }
+
+        private void eMPLEADOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmEmpleado());
+        }
+
+        private void pROVEEDORToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmProveedor());
+        }
+
+        private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmclientes());
+        }
+
+        private void aREAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmArea());
+        }
+
+        private void gRUPOTRABAJADORESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmGrupoTrabajadores());
+        }
+
+        private void pRODUCTOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmProductos());
+        }
+
+        private void aLMACENToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmAlmacen());
+        }
+
+        private void cATEGORIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmCategoria());
+        }
+
+        private void mARCAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmMarca());
+        }
+
+        private void vEHICULOMANTENIMINETOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmVehiculoMan());
+        }
+
+        private void sERVICIOSToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmServicioMantenimiento());
+        }
+
+        private void mANTENIMIENTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmServicioMantenimiento());
+        }
+
+        private void seToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmMantenimineto());
+        }
+
+        private void lAVADOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmLavado());
+        }
+
+        private void lAVADOVEHICULOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmLavadoVehiculo());
+        }
+
+        private void vEHICULOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmVehiculoLavado());
+        }
+
+        private void tIPOSDESERVICIOSLAVADOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmServicioLavado());
         }
     }
 }

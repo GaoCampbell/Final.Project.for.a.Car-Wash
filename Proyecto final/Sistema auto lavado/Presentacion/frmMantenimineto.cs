@@ -216,8 +216,9 @@ namespace Presentacion
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            frmInicio fi = new frmInicio();
-            fi.Show(); this.Close();
+            this.Close();
+            frmMenuprincipal inicio = new frmMenuprincipal();
+            inicio.Show();
         }
         
     }
