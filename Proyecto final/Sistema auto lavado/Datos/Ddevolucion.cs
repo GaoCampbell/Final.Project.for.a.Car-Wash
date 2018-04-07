@@ -26,9 +26,8 @@ namespace Datos
                 while (leer.Read())
                 {
                     Edevolucion nuevaFila = new Edevolucion();
-                    nuevaFila.idDevolucion = leer.GetInt32(0);
 
-                 
+                    nuevaFila.idDevolucion = leer.GetInt32(0);
 
                     nuevaFila.Usuario.idUsuario = leer.GetInt32(1);
 
@@ -89,9 +88,9 @@ namespace Datos
                 {
                     comando = new SqlCommand();
                     comando.CommandType = CommandType.StoredProcedure;
-                    comando.CommandText = "insertar_detalle";
+                    comando.CommandText = "insertar_detalledevolucion";
                     comando.Parameters.AddWithValue("@cantidad", item.Cantidad);
-                    comando.Parameters.AddWithValue("@iddevolucion", nuevadevolucion.Venta.Num_venta);
+                    comando.Parameters.AddWithValue("@iddevolucion", nuevadevolucion.idDevolucion);
                     comando.Parameters.AddWithValue("@idproducto", item.producto.Codproducto);
                     comando.Connection = conexion;
                     comando.ExecuteNonQuery();

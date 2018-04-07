@@ -16,6 +16,11 @@ namespace Presentacion
     {
 
         List<Eventa> listaventas;
+        public int idcliente, idusuario, Numventas;
+        public decimal descuento, subtotal, totalcordobas, totaldolares;
+        public string tipopago, estado;
+
+        public DateTime fechafactura;
         public frmbuscarfactura()
         {
             InitializeComponent();
@@ -57,15 +62,38 @@ namespace Presentacion
         {
             try
             {
-                frmDevolucion d = new frmDevolucion();
-                d.Numventa = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Numventa"].ToString());
-                d.ShowDialog();
+                Numventas = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Numventa"].Value.ToString());
+                idcliente = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["idCliente"].Value.ToString());
+                idusuario = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["idUsuario"].Value.ToString());
+                fechafactura = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells["FechaFactura"].Value.ToString());
+                tipopago = dataGridView1.Rows[e.RowIndex].Cells["Tipopago"].Value.ToString();
+                estado = dataGridView1.Rows[e.RowIndex].Cells["Estado"].Value.ToString();
+                descuento = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Descuento"].Value.ToString());
+                subtotal = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Subtotal"].Value.ToString());
+                totalcordobas = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["TotalCordobas"].Value.ToString());
+                totaldolares = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["TotalDolares"].Value.ToString());
+                DialogResult = DialogResult.OK;
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

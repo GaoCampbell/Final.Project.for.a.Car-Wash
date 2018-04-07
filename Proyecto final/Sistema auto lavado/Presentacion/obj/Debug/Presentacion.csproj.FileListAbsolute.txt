@@ -455,8 +455,6 @@ C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmVenta.resources
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmVentanaFactura.resources
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmventanaproducto.resources
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarArea.resources
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarServicioMan.resources
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmMenuprincipal.resources
@@ -521,3 +519,5 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGIN
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.VentanaFactura.resources
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmbuscarfactura.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmDevolucion.resources

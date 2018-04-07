@@ -55,7 +55,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox1.Location = new System.Drawing.Point(810, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(824, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

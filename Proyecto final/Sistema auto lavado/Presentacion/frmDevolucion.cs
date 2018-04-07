@@ -14,15 +14,17 @@ namespace Presentacion
 {
     public partial class frmDevolucion : Form
     {
+        public readonly Ndetalleventa _Ndetalleventa = new Ndetalleventa();
         Edevolucion devolucion = new Edevolucion();
+        List<Edetalleventa> listadetallev = new List<Edetalleventa>();
         Eventa ventas = new Eventa();
         public int Numventa;
         public frmDevolucion()
         {
             InitializeComponent();
         }
-          
-         
+
+
         private void ActualizarLista()
         {
             //Nventas gestionproduucto = new Nventas();
@@ -42,16 +44,16 @@ namespace Presentacion
                              d.Cantidad,
                              d.Totaldetalle
                          }).ToList();
-            dgvventas.DataSource = lista;
+            dgvdevolucion.DataSource = lista;
 
         }
         private void frmVenta_Load(object sender, EventArgs e)
         {
-              try
+            try
             {
 
                 ActualizarLista();
-               
+
 
             }
             catch (Exception ex)
@@ -70,7 +72,7 @@ namespace Presentacion
             txtprecio.Enabled = true;
             txtnombre.Enabled = true;
             txtCantidad.Enabled = true;
-          
+
         }
         public void Deshabilitar()
         {
@@ -83,7 +85,7 @@ namespace Presentacion
             txtprecio.Enabled = false;
             txtnombre.Enabled = false;
             txtCantidad.Enabled = false;
-          
+
         }
         public void Limpiar()
         {
@@ -95,30 +97,30 @@ namespace Presentacion
             txtbuscarcliente.Text = "";
             dtpfecha.Text = "";
             dtpHora.Text = "";
-         // txtdescuento.Text = "";
+            // txtdescuento.Text = "";
             txtbuscarclientenombre.Text = "";
             txtbuscarusuarionombre.Text = "";
             txtproducto.Text = "";
             txtprecio.Text = "";
             txtnombre.Text = "";
             txtCantidad.Text = "";
-            
+
 
 
         }
-        
+
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            
+
             Deshabilitar();
 
-        
+
 
             dtpfecha.Focus();
             btnagregar.Enabled = true;
             btnagregar.Enabled = true;
-            dgvventas.DataSource = null;
+            dgvdevolucion.DataSource = null;
             Habilitar();
             txtproducto.Enabled = false;
             txttotalCordobas.Enabled = false;
@@ -130,11 +132,11 @@ namespace Presentacion
             Btnbuscarusuario.Enabled = true;
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
-     //       btnNuevo.Enabled = false;
+            //btnNuevo.Enabled = false;
             btneliminarproductos.Enabled = true;
             txtprecio.Enabled = false;
             txtnombre.Enabled = false;
-            txtCantidad.Enabled = true;        
+            txtCantidad.Enabled = true;
             dtpfecha.Enabled = false;
             txttotalCordobas.Enabled = false;
             Limpiar();
@@ -144,31 +146,31 @@ namespace Presentacion
         {
             try
             {
-              
-                    ventas.Cliente.idCliente = Convert.ToInt32(txtbuscarcliente.Text);
-                    ventas.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
-               // ventas.FechaFactura = dtpfecha.Value;
-              //  ventas.HoraFactura = dtpHora.Value;
-                
-              
-                if (rbtEfectivo.Checked == true)
-                {
-                    ventas.Tipopago = "Efectivo";
-                }
-                else
-                {
-                    ventas.Tipopago = "Tarjeta";
-                   
-                }
-                ventas.Estado = cmbEstado.Text;
-                ventas.Subtotal = Convert.ToDecimal(txtsubtotal.Text);
-                ventas.Descuento = Convert.ToDecimal(txtdescuento.Text);
-                ventas.TotalCordobas = Convert.ToDecimal(txttotalCordobas.Text);
-                ventas.TotalDolares = Convert.ToDecimal(txtTotalDolares.Text);
-                Nventa gestionventas = new Nventa();
-                gestionventas.agregarventa(ventas);
-                MessageBox.Show("Se agrego la venta correctamente", "VENTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                devolucion.Venta.Num_venta = Convert.ToInt32(txtNumventas.Text);
+                devolucion.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
+                devolucion.Fecha = Convert.ToDateTime(dtpfecha.Value);
+                devolucion.Observacion = txtobservacion.Text;
+                Ndevolucion gestiondevolucion = new Ndevolucion();
+
+                MessageBox.Show("Se realizo la devolucion correctamente", "DEVOLUCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                foreach (DataGridViewRow item in dgvdevolucion.Rows)
+                {
+
+                    Edetalledevolucion nuevas = new Edetalledevolucion();
+                    nuevas.Cantidad = Convert.ToInt32(item.Cells["Cantidad"].Value.ToString());
+                    nuevas.producto = new Eproductos() { Codproducto = Convert.ToInt32(item.Cells["Codproducto"].Value.ToString()) };
+                    devolucion.listadetalle.Add(nuevas);
+                }
+
+                //DataGridViewRow row = dgvdevolucion.Rows[0];  // fila 1
+                //nuevas.Cantidad = Convert.ToInt32(row.Cells[1].Value);
+                //nuevas.producto.Codproducto = Convert.ToInt32(row.Cells[2].Value);
+                //nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                //nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+
+                gestiondevolucion.agregardevolucion(devolucion);
                 ActualizarLista();
                 Limpiar();
                 Deshabilitar();
@@ -179,11 +181,11 @@ namespace Presentacion
                 txttotalCordobas.Clear();
                 txtsubtotal.Clear();
 
-                dgvventas.DataSource = null;
+                dgvdevolucion.DataSource = null;
                 btnagregar.Enabled = false;
                 btnGuardar.Enabled = false;
                 btnCancelar.Enabled = false;
-          //      btnNuevo.Enabled = true;
+
             }
             catch (Exception ex)
             {
@@ -197,7 +199,7 @@ namespace Presentacion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             ActualizarLista();
-         //   btnNuevo.Enabled = true;
+            //   btnNuevo.Enabled = true;
             btnGuardar.Enabled = false;
             Deshabilitar();
             Limpiar();
@@ -230,7 +232,7 @@ namespace Presentacion
             {
 
                 txtproducto.Text = bp.Codproducto.ToString();
-                txtprecio.Text = bp.Costo.ToString();            
+                txtprecio.Text = bp.Costo.ToString();
                 txtnombre.Text = bp.Nombre_Producto.ToString();
 
 
@@ -251,7 +253,7 @@ namespace Presentacion
 
             double sumatoria = 0;
             double totalcordobas = 0;
-            double totaldolares= 0;
+            double totaldolares = 0;
             double descuento = 0;
             double descuentox = 0;
             double iva = 0;
@@ -265,8 +267,8 @@ namespace Presentacion
 
             descuentox = Convert.ToDouble(txtdescuento.Text);
             ivax = (sumatoria * 0.15);
-            iva = ((sumatoria * 0.15) + sumatoria) ;
-            txtiva.Text = ivax.ToString();        
+            iva = ((sumatoria * 0.15) + sumatoria);
+            txtiva.Text = ivax.ToString();
             descuento = iva * (descuentox / 100);
             totalcordobas = iva - descuento;
             txtsubtotal.Text = sumatoria.ToString();
@@ -274,7 +276,7 @@ namespace Presentacion
 
             totaldolares = totalcordobas / 30.9;
 
-            
+
 
 
 
@@ -282,32 +284,32 @@ namespace Presentacion
 
         }
 
-     
+
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
             try
             {
-                Edetalleventa nuevas = new Edetalleventa();            
-                nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);                    
-                nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
-                nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
-                nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
-                nuevas.producto.Producto = txtnombre.Text;
-                ventas.listadetalle.Add(nuevas);
-                ActualizarLista2();
-                calculartotal();
-                Deshabilitar();
-                txtCantidad.Enabled = true;
-                btnGuardar.Enabled = true;
-                btnCancelar.Enabled = true;
-              //  btnNuevo.Enabled = true;
-                txtdescuento.Enabled = true;
-                txtproducto.Text = "";
-                txtprecio.Text = "";             
-                txtnombre.Text = "";
-                txtCantidad.Text = "";
-                txtprecio.Text = "";
+                //Edetalleventa nuevas = new Edetalleventa();
+                //nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                //nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+                //nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
+                //nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
+                //nuevas.producto.Producto = txtnombre.Text;
+                //ventas.listadetalle.Add(nuevas);
+                //ActualizarLista2();
+                //calculartotal();
+                //Deshabilitar();
+                //txtCantidad.Enabled = true;
+                //btnGuardar.Enabled = true;
+                //btnCancelar.Enabled = true;
+                ////  btnNuevo.Enabled = true;
+                //txtdescuento.Enabled = true;
+                //txtproducto.Text = "";
+                //txtprecio.Text = "";
+                //txtnombre.Text = "";
+                //txtCantidad.Text = "";
+                //txtprecio.Text = "";
             }
             catch (Exception ex)
             {
@@ -363,8 +365,7 @@ namespace Presentacion
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmMenuprincipal inicio = new frmMenuprincipal();
-            inicio.Show();
+
         }
 
         private void dgvventas_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -376,5 +377,57 @@ namespace Presentacion
         {
 
         }
+
+        private void btnagregarfactura_Click(object sender, EventArgs e)
+        {
+            frmbuscarfactura bc = new frmbuscarfactura();
+            if (bc.ShowDialog() == DialogResult.OK)
+            {
+                txtNumventas.Text = bc.Numventas.ToString();
+                txtbuscarcliente.Text = bc.idcliente.ToString();
+                txtbuscarusuario.Text = bc.idusuario.ToString();
+                dtpfecha.Text = bc.fechafactura.ToString();
+
+                rbtEfectivo.Text = bc.tipopago.ToString();
+
+                if (rbtEfectivo.Text == "Efectivo")
+                {
+                    rbtEfectivo.Checked = true;
+
+                }
+                else
+                {
+                    rbtarjeta.Checked = true;
+                }
+
+
+                cmbEstado.Text = bc.estado.ToString();
+                txtdescuento.Text = bc.descuento.ToString();
+                txtsubtotal.Text = bc.subtotal.ToString();
+                txttotalCordobas.Text = bc.totalcordobas.ToString();
+                txtTotalDolares.Text = bc.totaldolares.ToString();
+
+
+                listadetallev = _Ndetalleventa.obtenerlistdetalle();
+                var lista = (from d in listadetallev
+                             where d.Venta.Num_venta == bc.Numventas
+                             select new
+                             {
+                                 //d.ventas.idventas,
+                                 d.Cantidad,
+                                 d.producto.Codproducto,
+                                 d.Venta.Num_venta,
+                                 d.Totaldetalle,
+
+                             }
+                    ).ToList();
+                dgvdevolucion.DataSource = lista;
+
+
+
+
+            }
+        }
     }
+
 }

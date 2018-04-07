@@ -42,6 +42,7 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mkfecha = new System.Windows.Forms.DateTimePicker();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -77,7 +78,6 @@
             this.txtdescuento = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.mkfecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -257,6 +257,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registro de venta";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // mkfecha
+            // 
+            this.mkfecha.Location = new System.Drawing.Point(98, 75);
+            this.mkfecha.Name = "mkfecha";
+            this.mkfecha.Size = new System.Drawing.Size(282, 23);
+            this.mkfecha.TabIndex = 162;
             // 
             // cmbEstado
             // 
@@ -499,6 +506,7 @@
             this.dgvventas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvventas.Size = new System.Drawing.Size(734, 199);
             this.dgvventas.TabIndex = 149;
+            this.dgvventas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvventas_CellContentClick);
             // 
             // panel2
             // 
@@ -527,7 +535,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(353, 9);
+            this.label3.Location = new System.Drawing.Point(372, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 18);
             this.label3.TabIndex = 3;
@@ -537,7 +545,7 @@
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(865, -1);
+            this.pictureBox8.Location = new System.Drawing.Point(876, -1);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -630,13 +638,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 185;
             this.pictureBox2.TabStop = false;
-            // 
-            // mkfecha
-            // 
-            this.mkfecha.Location = new System.Drawing.Point(98, 75);
-            this.mkfecha.Name = "mkfecha";
-            this.mkfecha.Size = new System.Drawing.Size(282, 23);
-            this.mkfecha.TabIndex = 162;
             // 
             // frmVenta
             // 

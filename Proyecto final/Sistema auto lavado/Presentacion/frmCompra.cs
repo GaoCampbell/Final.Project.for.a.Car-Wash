@@ -16,7 +16,7 @@ namespace Presentacion
     public partial class frmCompra : Form
     {
         Ecompra compra = new Ecompra();
-
+        List<DataGridViewRow> list = new List<DataGridViewRow>();
         public frmCompra()
         {
             InitializeComponent();
@@ -388,6 +388,11 @@ namespace Presentacion
             this.Close();
             //frmMenuprincipal inicio = new frmMenuprincipal();
             //inicio.Show();
+        }
+
+        private void btneliminarproductos_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -153,6 +153,7 @@
             this.btneliminarproductos.TabIndex = 167;
             this.btneliminarproductos.Text = "Eliminar de la lista";
             this.btneliminarproductos.UseVisualStyleBackColor = true;
+            this.btneliminarproductos.Click += new System.EventHandler(this.btneliminarproductos_Click);
             // 
             // groupBox3
             // 
@@ -520,7 +521,7 @@
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(869, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(879, 0);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

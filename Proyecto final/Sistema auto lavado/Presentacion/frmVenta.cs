@@ -363,8 +363,12 @@ namespace Presentacion
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmMenuprincipal inicio = new frmMenuprincipal();
-            inicio.Show();
+            
+        }
+
+        private void dgvventas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

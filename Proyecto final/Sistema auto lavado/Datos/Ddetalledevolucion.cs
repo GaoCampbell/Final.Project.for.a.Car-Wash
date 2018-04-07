@@ -35,6 +35,7 @@ namespace Datos
 
                     //venta
                     nuevaFila.Devolucion = new Edevolucion();
+
                     nuevaFila.Devolucion.idDevolucion = leer.GetInt32(1);
                   
 

@@ -57,6 +57,9 @@ namespace Presentacion
             }
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

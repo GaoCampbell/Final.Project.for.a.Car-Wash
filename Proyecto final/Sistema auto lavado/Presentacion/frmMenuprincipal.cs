@@ -23,13 +23,13 @@ namespace Presentacion
     
         private void btnslide_Click(object sender, EventArgs e)
         {
-            if (Menuvertical.Width == 59)
+            if (Menuvertical.Width == 62)
             {
                 Menuvertical.Width = 250;
             }
             else
 
-                Menuvertical.Width = 59;
+                Menuvertical.Width = 62;
 
         }
 
@@ -74,10 +74,10 @@ namespace Presentacion
 
         {
             if (this.panelContenedor.Controls.Count > 0)
-               this.panelContenedor.Controls.RemoveAt(0);
+            this.panelContenedor.Controls.RemoveAt(0);
             Form fh = FormHijo as Form;
             fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
+           // fh.Dock = DockStyle.Fill;
             this.panelContenedor.Controls.Add(fh);
             this.panelContenedor.Tag = fh;
             fh.Show();
@@ -118,7 +118,7 @@ namespace Presentacion
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new VentanaFactura());
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -147,15 +147,15 @@ namespace Presentacion
             fACTURARToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.facturar;
             eMPLEADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.personas;
             pRODUCTOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.producto;
-            rEPORTESToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.reporte;
+            //rEPORTESToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.reporte;
             mANTENIMINETOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.mantenimiento;
             lAVADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.lavado;
             btnfacturar.Enabled = Global.usuarioSesion.Permiso.btnFacturar;
-            btnpersonas.Enabled = Global.usuarioSesion.Permiso.btnPersonas;
-            btnproducto.Enabled = Global.usuarioSesion.Permiso.btnProducto;
+        //    btnpersonas.Enabled = Global.usuarioSesion.Permiso.btnPersonas;
+          //  btnproducto.Enabled = Global.usuarioSesion.Permiso.btnProducto;
             btnmantenimiento.Enabled = Global.usuarioSesion.Permiso.btnMantenimiento;
             btnlavado.Enabled = Global.usuarioSesion.Permiso.btnLavado;
-            btnusuario.Enabled = Global.usuarioSesion.Permiso.btnUsuarios;
+        //    btnusuario.Enabled = Global.usuarioSesion.Permiso.btnUsuarios;
 
         }
 
@@ -267,6 +267,27 @@ namespace Presentacion
         private void tIPOSDESERVICIOSLAVADOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new frmServicioLavado());
+        }
+
+        private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            AbrirFormInPanel(new frmCompra());
+        }
+
+        private void uSUARIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmUsuario());
+        }
+
+        private void dEVOLUCIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmDevolucion());
         }
     }
 }
