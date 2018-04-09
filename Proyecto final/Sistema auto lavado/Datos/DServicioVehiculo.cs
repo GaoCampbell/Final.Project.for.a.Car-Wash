@@ -102,6 +102,7 @@ namespace Datos
          {
              SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cadenaConexion);
              SqlCommand cmd = new SqlCommand();
+             cmd.CommandType = CommandType.StoredProcedure;
              cmd.CommandText = "sp_ServicioVehiculo";
              cmd.Parameters.AddWithValue("@idServicioVehiculo", ModServicioV.idServicioVehiculo);
              cmd.Parameters.AddWithValue("@idServicioMantenimiento", ModServicioV.idServicioMantenimiento.idServicioMantenimiento);

@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="Nalmacen.cs" />
     <Compile Include="NArea.cs" />
+    <Compile Include="NAuditoriaMantenimiento.cs" />
     <Compile Include="Ncategoria.cs" />
     <Compile Include="NCliente.cs" />
     <Compile Include="Ncompra.cs" />
+    <Compile Include="NControl_Entrada.cs" />
     <Compile Include="Ndetallecompra.cs" />
     <Compile Include="Ndetalledevolucion.cs" />
     <Compile Include="Ndetalleventa.cs" />

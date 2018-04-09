@@ -47,3 +47,4 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGIN
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

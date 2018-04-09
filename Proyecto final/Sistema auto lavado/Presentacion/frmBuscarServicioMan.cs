@@ -59,5 +59,33 @@ namespace Presentacion
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            filtrar();
+
+        }
+        public void filtrar()
+        {
+
+             var lista = (from sv in ListaServicioV
+                          where sv.idServicioMantenimiento.servicioMantenimiento.ToUpper().StartsWith(textBox1.Text.ToUpper())
+                         select new
+                         {
+                             sv.idServicioVehiculo,
+                            Servicio= sv.idServicioMantenimiento.servicioMantenimiento,
+                             Vehiculo=sv.idVehiculoMantenimiento.vehiculoMantenimiento,
+                             Precio=sv.precio,
+                             sv.estado,
+                             sv.idServicioMantenimiento.idServicioMantenimiento,
+                             sv.idVehiculoMantenimiento.idVehiculoMantenimiento,
+                         }).ToList();
+            dgvBuscarServicio.DataSource = lista;
+            dgvBuscarServicio.Columns["idServicioVehiculo"].Visible = false;
+            dgvBuscarServicio.Columns["idServicioMantenimiento"].Visible = false;
+            dgvBuscarServicio.Columns["idVehiculoMantenimiento"].Visible = false;
+            dgvBuscarServicio.Columns["estado"].Visible = false;
+        
+        }
     }
 }

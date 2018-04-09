@@ -354,7 +354,6 @@ E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debu
 F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmbuscarproveedor.resources
 F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmCompra.resources
 F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmMantenimineto.resources
-F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmMenuprincipl.resources
 F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarServicioMan.resources
 D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\bin\Debug\Presentacion.exe.config
 D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.exe
@@ -521,3 +520,10 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGIN
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmbuscarfactura.resources
 C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmDevolucion.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarArea.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmbuscarfactura.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmMenuprincipal.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmPago.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmDevolucion.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmControlEntrada.resources
+F:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmAuditoriaMantenimiento.resources

@@ -105,7 +105,7 @@
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(285, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 14);
+            this.label2.Size = new System.Drawing.Size(59, 14);
             this.label2.TabIndex = 19;
             this.label2.Text = "Vehiculo";
             // 
@@ -257,6 +257,7 @@
             this.dgvServicioV.Size = new System.Drawing.Size(551, 150);
             this.dgvServicioV.TabIndex = 25;
             this.dgvServicioV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicioV_CellClick);
+//            this.dgvServicioV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicioV_CellContentClick);
             // 
             // frmServicioVehiculo
             // 

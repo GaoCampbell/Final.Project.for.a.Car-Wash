@@ -81,7 +81,7 @@
             this.dgvBuscarServicio.Location = new System.Drawing.Point(12, 109);
             this.dgvBuscarServicio.Name = "dgvBuscarServicio";
             this.dgvBuscarServicio.ReadOnly = true;
-            this.dgvBuscarServicio.Size = new System.Drawing.Size(539, 185);
+            this.dgvBuscarServicio.Size = new System.Drawing.Size(539, 223);
             this.dgvBuscarServicio.TabIndex = 15;
             this.dgvBuscarServicio.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuscarServicio_CellDoubleClick);
             // 
@@ -114,12 +114,13 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(318, 22);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmBuscarServicioMan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 308);
+            this.ClientSize = new System.Drawing.Size(568, 344);
             this.Controls.Add(this.dgvBuscarServicio);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel2);

@@ -46,7 +46,7 @@ namespace Presentacion
                 dgvServicioV.Columns["idServicioVehiculo"].Visible = false;
                 dgvServicioV.Columns["idServicioMantenimiento"].Visible = false;
                 dgvServicioV.Columns["idVehiculoMantenimiento"].Visible = false;
-                dgvServicioV.Columns["estado"].Visible = false;
+                dgvServicioV.Columns["estado"].Visible = true;
 
                 ActualizarServicioV();
 
@@ -142,12 +142,11 @@ namespace Presentacion
                 {
                     EServicioVehiculo modSV = new EServicioVehiculo();
                     modSV.idServicioVehiculo = Convert.ToInt32(txtprecio.Tag);
+
                     modSV.idServicioMantenimiento.idServicioMantenimiento = Convert.ToInt32(cmservicio.SelectedValue);
                     modSV.idVehiculoMantenimiento.idVehiculoMantenimiento = Convert.ToInt32(cmvehiculo.SelectedValue);
                     modSV.precio = Convert.ToDecimal(txtprecio.Text);
                     if (rbActivo.Checked == true) { modSV.estado = true; } else { modSV.estado = false; }
-
-
                     NServicioVehiculo gestionarSV = new NServicioVehiculo();
                     gestionarSV.Modificar(modSV);
 
@@ -224,24 +223,24 @@ namespace Presentacion
                 if (dgvServicioV.Rows[e.RowIndex].Cells["idVehiculoMantenimiento"].Value == null)
                 {
                     cmvehiculo.Text = "";
-                    cmvehiculo.SelectedValue = "";
+                    cmvehiculo.ValueMember = "";
                 }
                 else
                 {
                     cmvehiculo.SelectedValue = dgvServicioV.Rows[e.RowIndex].Cells["idVehiculoMantenimiento"].Value.ToString();
-                    cmvehiculo.Text = dgvServicioV.Rows[e.RowIndex].Cells["VehiculoMantenimiento"].Value.ToString();
+                   cmvehiculo.Text = dgvServicioV.Rows[e.RowIndex].Cells["VehiculoMantenimiento"].Value.ToString();
 
                 }
 
                 if (dgvServicioV.Rows[e.RowIndex].Cells["idServicioMantenimiento"].Value == null)
                 {
-                    cmservicio.SelectedValue = "";
+                    cmservicio.ValueMember = "";
                     cmservicio.Text = "";
                 }
                 else
                 {
                     cmservicio.SelectedValue = dgvServicioV.Rows[e.RowIndex].Cells["idServicioMantenimiento"].Value.ToString();
-                    cmservicio.Text = dgvServicioV.Rows[e.RowIndex].Cells["ServicioMantenimiento"].Value.ToString();
+                   cmservicio.Text = dgvServicioV.Rows[e.RowIndex].Cells["ServicioMantenimiento"].Value.ToString();
                 }
 
 
@@ -256,6 +255,8 @@ namespace Presentacion
          
             this.Close();
         }
+
+        
 
 
     }

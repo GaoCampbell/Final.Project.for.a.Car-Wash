@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Entidades;
+using Negocio;
 
 namespace Presentacion
 {
     public partial class frmMenuprincipal : Form
     {
+        
         public frmMenuprincipal()
         {
             InitializeComponent();
@@ -35,6 +38,12 @@ namespace Presentacion
 
         private void iconocerrar_Click(object sender, EventArgs e)
         {
+            EControl_Entrada newcontrol = new EControl_Entrada();
+            newcontrol.usuario.usuario = (lblUsuarios.Text);
+
+
+            NControl_Entrada gestionarcontrol = new NControl_Entrada();
+            gestionarcontrol.Insertar(newcontrol);
             Application.Restart();
         }
 
@@ -113,6 +122,12 @@ namespace Presentacion
 
         private void btncerrarsecion_Click(object sender, EventArgs e)
         {
+            EControl_Entrada newcontrol = new EControl_Entrada();
+            newcontrol.usuario.usuario = (lblUsuarios.Text);
+
+
+            NControl_Entrada gestionarcontrol = new NControl_Entrada();
+            gestionarcontrol.Insertar(newcontrol);
             Application.Restart();
         }
 
@@ -241,7 +256,7 @@ namespace Presentacion
 
         private void mANTENIMIENTOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmServicioMantenimiento());
+            AbrirFormInPanel(new frmServicioVehiculo());
         }
 
         private void seToolStripMenuItem_Click(object sender, EventArgs e)
@@ -271,6 +286,12 @@ namespace Presentacion
 
         private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EControl_Entrada newcontrol = new EControl_Entrada();
+            newcontrol.usuario.usuario = (lblUsuarios.Text);
+            
+         
+            NControl_Entrada gestionarcontrol = new NControl_Entrada();
+            gestionarcontrol.Insertar(newcontrol);
             Application.Restart();
         }
 
@@ -288,6 +309,17 @@ namespace Presentacion
         private void dEVOLUCIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new frmDevolucion());
+        }
+
+        private void controlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmControlEntrada());
+        }
+
+        private void mANTENIMIENTOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmAuditoriaMantenimiento());
+            
         }
     }
 }
