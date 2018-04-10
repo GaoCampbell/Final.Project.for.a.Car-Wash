@@ -60,12 +60,12 @@ namespace Presentacion
                                  lavado.usuario.usuario,
                                 Atendido_por = lavado.empleado.nombres,
                                  lavado.grupoTrabajadores.idGrupo,
-                                 Area_Empleado=lavado.grupoTrabajadores.grupoTrabajadores,
+                                 Grupo_Asignado=lavado.grupoTrabajadores.grupoTrabajadores,
                                  lavado.vehiculoLavado.idVehiculoLavado,
                                  lavado.vehiculoLavado.vehiculoLavado,
                                  lavado.servicioLavado.idServicioLavado,
                                  lavado.servicioLavado.servicioLavado,
-                                 Grupo_Asignado = lavado.grupoTrabajadores.idGrupo,
+                                 Grupo = lavado.grupoTrabajadores.idGrupo,
                                  lavado.LavadoVehiculo.idLavadoVehiculo,
                                  lavado.LavadoVehiculo.precio,
                                  lavado.placa,
@@ -79,6 +79,7 @@ namespace Presentacion
                 dgvLavado.Columns["idServicioLavado"].Visible = false;
                 dgvLavado.Columns["idLavadoVehiculo"].Visible = false;
                 dgvLavado.Columns["precio"].Visible = false;
+                dgvLavado.Columns["Grupo"].Visible = false;
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -200,7 +201,7 @@ namespace Presentacion
                 txtlavado.Tag = dgvLavado.Rows[e.RowIndex].Cells["idLavadoVehiculo"].Value.ToString();
                 txtlavado.Text = dgvLavado.Rows[e.RowIndex].Cells["vehiculoLavado"].Value.ToString();
                 txtgrupo.Tag = dgvLavado.Rows[e.RowIndex].Cells["idGrupo"].Value.ToString();
-                txtgrupo.Text = dgvLavado.Rows[e.RowIndex].Cells["Area_Empleado"].Value.ToString();
+                txtgrupo.Text = dgvLavado.Rows[e.RowIndex].Cells["Grupo_Asignado"].Value.ToString();
                 lblusuario.Text = dgvLavado.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
                 btnmodificar.Enabled = true;
                 btncancelar.Enabled = true;

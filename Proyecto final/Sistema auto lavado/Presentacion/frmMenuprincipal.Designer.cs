@@ -31,15 +31,11 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.lblUsuarios = new System.Windows.Forms.Label();
             this.Barratitulo = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.lOGSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.controlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Menuvertical = new System.Windows.Forms.Panel();
-            this.mANTENIMIENTOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.iconorestaurar = new System.Windows.Forms.PictureBox();
             this.iconomaximizar = new System.Windows.Forms.PictureBox();
             this.iconominimizar = new System.Windows.Forms.PictureBox();
             this.iconocerrar = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fACTURARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMPRAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,22 +64,27 @@
             this.tIPOSDESERVICIOSLAVADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOGSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mANTENIMIENTOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnslide = new System.Windows.Forms.PictureBox();
+            this.Menuvertical = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btncerrarsecion = new System.Windows.Forms.Button();
             this.btnmantenimiento = new System.Windows.Forms.Button();
             this.btnlavado = new System.Windows.Forms.Button();
             this.btnfacturar = new System.Windows.Forms.Button();
+            this.lAVADOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContenedor.SuspendLayout();
             this.Barratitulo.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.Menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
+            this.Menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,63 +120,6 @@
             this.Barratitulo.Size = new System.Drawing.Size(1088, 79);
             this.Barratitulo.TabIndex = 4;
             this.Barratitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.Barratitulo_Paint);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fACTURARToolStripMenuItem,
-            this.eMPLEADOToolStripMenuItem,
-            this.pRODUCTOToolStripMenuItem,
-            this.mANTENIMINETOToolStripMenuItem,
-            this.lAVADOToolStripMenuItem,
-            this.lOGOUTToolStripMenuItem,
-            this.aYUDAToolStripMenuItem,
-            this.lOGSToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1088, 24);
-            this.menuStrip1.TabIndex = 14;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // lOGSToolStripMenuItem
-            // 
-            this.lOGSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.controlToolStripMenuItem,
-            this.mANTENIMIENTOToolStripMenuItem1});
-            this.lOGSToolStripMenuItem.Name = "lOGSToolStripMenuItem";
-            this.lOGSToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.lOGSToolStripMenuItem.Text = "LOGS";
-            // 
-            // controlToolStripMenuItem
-            // 
-            this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
-            this.controlToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.controlToolStripMenuItem.Text = "ENTRADA & SALIDA";
-            this.controlToolStripMenuItem.Click += new System.EventHandler(this.controlToolStripMenuItem_Click);
-            // 
-            // Menuvertical
-            // 
-            this.Menuvertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.Menuvertical.Controls.Add(this.pictureBox1);
-            this.Menuvertical.Controls.Add(this.button1);
-            this.Menuvertical.Controls.Add(this.btncerrarsecion);
-            this.Menuvertical.Controls.Add(this.btnmantenimiento);
-            this.Menuvertical.Controls.Add(this.btnlavado);
-            this.Menuvertical.Controls.Add(this.btnfacturar);
-            this.Menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menuvertical.Location = new System.Drawing.Point(0, 0);
-            this.Menuvertical.Name = "Menuvertical";
-            this.Menuvertical.Size = new System.Drawing.Size(62, 750);
-            this.Menuvertical.TabIndex = 3;
-            this.Menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.Menuvertical_Paint);
-            // 
-            // mANTENIMIENTOToolStripMenuItem1
-            // 
-            this.mANTENIMIENTOToolStripMenuItem1.Name = "mANTENIMIENTOToolStripMenuItem1";
-            this.mANTENIMIENTOToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
-            this.mANTENIMIENTOToolStripMenuItem1.Text = "MANTENIMIENTO";
-            this.mANTENIMIENTOToolStripMenuItem1.Click += new System.EventHandler(this.mANTENIMIENTOToolStripMenuItem1_Click);
             // 
             // iconorestaurar
             // 
@@ -229,6 +173,24 @@
             this.iconocerrar.TabIndex = 1;
             this.iconocerrar.TabStop = false;
             this.iconocerrar.Click += new System.EventHandler(this.iconocerrar_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fACTURARToolStripMenuItem,
+            this.eMPLEADOToolStripMenuItem,
+            this.pRODUCTOToolStripMenuItem,
+            this.mANTENIMINETOToolStripMenuItem,
+            this.lAVADOToolStripMenuItem,
+            this.lOGOUTToolStripMenuItem,
+            this.aYUDAToolStripMenuItem,
+            this.lOGSToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(1088, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // fACTURARToolStripMenuItem
             // 
@@ -478,6 +440,30 @@
             this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.aYUDAToolStripMenuItem.Text = "AYUDA";
             // 
+            // lOGSToolStripMenuItem
+            // 
+            this.lOGSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controlToolStripMenuItem,
+            this.mANTENIMIENTOToolStripMenuItem1,
+            this.lAVADOToolStripMenuItem2});
+            this.lOGSToolStripMenuItem.Name = "lOGSToolStripMenuItem";
+            this.lOGSToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.lOGSToolStripMenuItem.Text = "LOGS";
+            // 
+            // controlToolStripMenuItem
+            // 
+            this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
+            this.controlToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.controlToolStripMenuItem.Text = "ENTRADA & SALIDA";
+            this.controlToolStripMenuItem.Click += new System.EventHandler(this.controlToolStripMenuItem_Click);
+            // 
+            // mANTENIMIENTOToolStripMenuItem1
+            // 
+            this.mANTENIMIENTOToolStripMenuItem1.Name = "mANTENIMIENTOToolStripMenuItem1";
+            this.mANTENIMIENTOToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.mANTENIMIENTOToolStripMenuItem1.Text = "MANTENIMIENTO";
+            this.mANTENIMIENTOToolStripMenuItem1.Click += new System.EventHandler(this.mANTENIMIENTOToolStripMenuItem1_Click);
+            // 
             // btnslide
             // 
             this.btnslide.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -489,6 +475,22 @@
             this.btnslide.TabIndex = 0;
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
+            // 
+            // Menuvertical
+            // 
+            this.Menuvertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.Menuvertical.Controls.Add(this.pictureBox1);
+            this.Menuvertical.Controls.Add(this.button1);
+            this.Menuvertical.Controls.Add(this.btncerrarsecion);
+            this.Menuvertical.Controls.Add(this.btnmantenimiento);
+            this.Menuvertical.Controls.Add(this.btnlavado);
+            this.Menuvertical.Controls.Add(this.btnfacturar);
+            this.Menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menuvertical.Location = new System.Drawing.Point(0, 0);
+            this.Menuvertical.Name = "Menuvertical";
+            this.Menuvertical.Size = new System.Drawing.Size(62, 750);
+            this.Menuvertical.TabIndex = 3;
+            this.Menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.Menuvertical_Paint);
             // 
             // pictureBox1
             // 
@@ -585,6 +587,13 @@
             this.btnfacturar.UseVisualStyleBackColor = true;
             this.btnfacturar.Click += new System.EventHandler(this.btnfacturar_Click);
             // 
+            // lAVADOToolStripMenuItem2
+            // 
+            this.lAVADOToolStripMenuItem2.Name = "lAVADOToolStripMenuItem2";
+            this.lAVADOToolStripMenuItem2.Size = new System.Drawing.Size(172, 22);
+            this.lAVADOToolStripMenuItem2.Text = "LAVADO";
+            this.lAVADOToolStripMenuItem2.Click += new System.EventHandler(this.lAVADOToolStripMenuItem2_Click);
+            // 
             // frmMenuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -602,14 +611,14 @@
             this.panelContenedor.PerformLayout();
             this.Barratitulo.ResumeLayout(false);
             this.Barratitulo.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.Menuvertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
+            this.Menuvertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -664,5 +673,6 @@
         private System.Windows.Forms.ToolStripMenuItem lOGSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mANTENIMIENTOToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem lAVADOToolStripMenuItem2;
     }
 }

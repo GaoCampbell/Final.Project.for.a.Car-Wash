@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Dalmacen.cs" />
     <Compile Include="DArea.cs" />
+    <Compile Include="DAuditoriaLavado.cs" />
     <Compile Include="DAuditoriaMantenimiento.cs" />
     <Compile Include="Dcategoria.cs" />
     <Compile Include="DCliente.cs" />

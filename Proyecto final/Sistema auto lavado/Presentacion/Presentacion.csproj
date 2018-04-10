@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmrAuditoriaLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrAuditoriaLavado.Designer.cs">
+      <DependentUpon>fmrAuditoriaLavado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmrAuditoriaLavado.resx">
+      <DependentUpon>fmrAuditoriaLavado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlmacen.resx">
       <DependentUpon>frmAlmacen.cs</DependentUpon>
     </EmbeddedResource>

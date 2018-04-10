@@ -92,10 +92,17 @@ namespace Datos
                         entidadesUsuario.Permiso.btnPersonas = false;
                     else
                         entidadesUsuario.Permiso.btnPersonas = leer.GetBoolean(16);
-
-                    entidadesUsuario.idUsuario = leer.GetInt32(17);
-                    entidadesUsuario.Permiso.PidUsuario = leer.GetInt32(18);
-                    entidadesUsuario.Empleado.idEmpleado = leer.GetInt32(19);
+                    if (leer.IsDBNull(17))
+                        entidadesUsuario.Permiso.btnFacturarCompra = false;
+                    else
+                        entidadesUsuario.Permiso.btnFacturarCompra = leer.GetBoolean(17);
+                    if (leer.IsDBNull(18))
+                        entidadesUsuario.Permiso.logs = false;
+                    else
+                        entidadesUsuario.Permiso.logs = leer.GetBoolean(18);
+                    entidadesUsuario.idUsuario = leer.GetInt32(19);
+                    entidadesUsuario.Permiso.PidUsuario = leer.GetInt32(20);
+                    entidadesUsuario.Empleado.idEmpleado = leer.GetInt32(21);
                     listaUsuario.Add(entidadesUsuario);
 
 
@@ -134,6 +141,8 @@ namespace Datos
                 cmd.Parameters.AddWithValue("@i_btnLavado",Iusuario.Permiso.btnLavado);
                 cmd.Parameters.AddWithValue("@i_btnPersonas",Iusuario.Permiso.btnPersonas);
                 cmd.Parameters.AddWithValue("@i_Pusuario",Iusuario.usuario);
+                cmd.Parameters.AddWithValue("@i_btnFacturarCompra",Iusuario.Permiso.btnFacturarCompra);
+                cmd.Parameters.AddWithValue("@i_logs",Iusuario.Permiso.logs);
                 cmd.Connection = conex;
                 conex.Open();
                 cmd.ExecuteNonQuery();
@@ -172,6 +181,8 @@ namespace Datos
                 cmd.Parameters.AddWithValue("@i_btnLavado", Uusuario.Permiso.btnLavado);
                 cmd.Parameters.AddWithValue("@i_btnPersonas", Uusuario.Permiso.btnPersonas);
                 cmd.Parameters.AddWithValue("@i_Pusuario", Uusuario.usuario);
+                cmd.Parameters.AddWithValue("@i_btnFacturarCompra", Uusuario.Permiso.btnFacturarCompra);
+                cmd.Parameters.AddWithValue("@i_logs", Uusuario.Permiso.logs);
                 cmd.Connection = conex;
                 conex.Open();
                 cmd.ExecuteNonQuery();

@@ -43,6 +43,8 @@ namespace Datos
                     validarUsuario.Permiso.btnLavado = leer.GetBoolean(15);
                     validarUsuario.Permiso.btnPersonas = leer.GetBoolean(16);
                     validarUsuario.Permiso.PidUsuario = leer.GetInt32(17);
+                    validarUsuario.Permiso.btnFacturarCompra = leer.GetBoolean(18);
+                    validarUsuario.Permiso.logs = leer.GetBoolean(19);
                 }
                 return validarUsuario;
             }

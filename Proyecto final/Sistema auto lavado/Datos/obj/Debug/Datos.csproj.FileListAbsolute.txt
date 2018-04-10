@@ -78,3 +78,11 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGIN
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb

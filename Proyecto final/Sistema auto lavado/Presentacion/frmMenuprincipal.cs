@@ -170,8 +170,9 @@ namespace Presentacion
           //  btnproducto.Enabled = Global.usuarioSesion.Permiso.btnProducto;
             btnmantenimiento.Enabled = Global.usuarioSesion.Permiso.btnMantenimiento;
             btnlavado.Enabled = Global.usuarioSesion.Permiso.btnLavado;
-        //    btnusuario.Enabled = Global.usuarioSesion.Permiso.btnUsuarios;
-
+            //    btnusuario.Enabled = Global.usuarioSesion.Permiso.btnUsuarios;
+            lOGSToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.logs;
+            button1.Enabled = Global.usuarioSesion.Permiso.btnFacturarCompra;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -320,6 +321,11 @@ namespace Presentacion
         {
             AbrirFormInPanel(new frmAuditoriaMantenimiento());
             
+        }
+
+        private void lAVADOToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel( new fmrAuditoriaLavado());
         }
     }
 }

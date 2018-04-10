@@ -21,6 +21,8 @@ namespace Entidades
         public bool btnMantenimiento { get; set; }
         public bool btnLavado { get; set; }
         public bool btnPersonas { get; set; }
+        public bool btnFacturarCompra { get; set; }
+        public bool logs { get; set; }
         public string usuario { get; set; }
     }
 }

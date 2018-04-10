@@ -60,6 +60,8 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.chkLog = new System.Windows.Forms.CheckBox();
+            this.chkbtnFacComp = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -77,7 +79,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(902, 29);
+            this.panel2.Size = new System.Drawing.Size(1085, 29);
             this.panel2.TabIndex = 22;
             // 
             // label8
@@ -96,7 +98,7 @@
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(876, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(1146, -1);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
@@ -117,7 +119,7 @@
             this.groupBox2.Controls.Add(this.txtContraseña);
             this.groupBox2.Controls.Add(this.lblContraseña);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, 35);
+            this.groupBox2.Location = new System.Drawing.Point(88, 32);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -220,6 +222,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.chkbtnFacComp);
+            this.groupBox3.Controls.Add(this.chkLog);
             this.groupBox3.Controls.Add(this.chkBtnPersonas);
             this.groupBox3.Controls.Add(this.chkBtnLavado);
             this.groupBox3.Controls.Add(this.chkBtnMantenimiento);
@@ -233,11 +237,11 @@
             this.groupBox3.Controls.Add(this.chkPersonas);
             this.groupBox3.Controls.Add(this.chkFacturar);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(0, 197);
+            this.groupBox3.Location = new System.Drawing.Point(30, 197);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(889, 119);
+            this.groupBox3.Size = new System.Drawing.Size(1027, 119);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Permisos";
@@ -245,7 +249,7 @@
             // chkBtnPersonas
             // 
             this.chkBtnPersonas.AutoSize = true;
-            this.chkBtnPersonas.Location = new System.Drawing.Point(589, 77);
+            this.chkBtnPersonas.Location = new System.Drawing.Point(572, 78);
             this.chkBtnPersonas.Name = "chkBtnPersonas";
             this.chkBtnPersonas.Size = new System.Drawing.Size(125, 18);
             this.chkBtnPersonas.TabIndex = 11;
@@ -255,7 +259,7 @@
             // chkBtnLavado
             // 
             this.chkBtnLavado.AutoSize = true;
-            this.chkBtnLavado.Location = new System.Drawing.Point(459, 77);
+            this.chkBtnLavado.Location = new System.Drawing.Point(442, 78);
             this.chkBtnLavado.Name = "chkBtnLavado";
             this.chkBtnLavado.Size = new System.Drawing.Size(113, 18);
             this.chkBtnLavado.TabIndex = 10;
@@ -265,7 +269,7 @@
             // chkBtnMantenimiento
             // 
             this.chkBtnMantenimiento.AutoSize = true;
-            this.chkBtnMantenimiento.Location = new System.Drawing.Point(286, 77);
+            this.chkBtnMantenimiento.Location = new System.Drawing.Point(269, 78);
             this.chkBtnMantenimiento.Name = "chkBtnMantenimiento";
             this.chkBtnMantenimiento.Size = new System.Drawing.Size(162, 18);
             this.chkBtnMantenimiento.TabIndex = 9;
@@ -275,7 +279,7 @@
             // chkBtnProducto
             // 
             this.chkBtnProducto.AutoSize = true;
-            this.chkBtnProducto.Location = new System.Drawing.Point(157, 77);
+            this.chkBtnProducto.Location = new System.Drawing.Point(140, 78);
             this.chkBtnProducto.Name = "chkBtnProducto";
             this.chkBtnProducto.Size = new System.Drawing.Size(123, 18);
             this.chkBtnProducto.TabIndex = 8;
@@ -285,7 +289,7 @@
             // chkBtnUsuarios
             // 
             this.chkBtnUsuarios.AutoSize = true;
-            this.chkBtnUsuarios.Location = new System.Drawing.Point(30, 77);
+            this.chkBtnUsuarios.Location = new System.Drawing.Point(13, 78);
             this.chkBtnUsuarios.Name = "chkBtnUsuarios";
             this.chkBtnUsuarios.Size = new System.Drawing.Size(121, 18);
             this.chkBtnUsuarios.TabIndex = 7;
@@ -295,7 +299,7 @@
             // chkBtnFacturar
             // 
             this.chkBtnFacturar.AutoSize = true;
-            this.chkBtnFacturar.Location = new System.Drawing.Point(739, 77);
+            this.chkBtnFacturar.Location = new System.Drawing.Point(722, 78);
             this.chkBtnFacturar.Name = "chkBtnFacturar";
             this.chkBtnFacturar.Size = new System.Drawing.Size(121, 18);
             this.chkBtnFacturar.TabIndex = 6;
@@ -305,7 +309,7 @@
             // chkLavado
             // 
             this.chkLavado.AutoSize = true;
-            this.chkLavado.Location = new System.Drawing.Point(739, 35);
+            this.chkLavado.Location = new System.Drawing.Point(722, 36);
             this.chkLavado.Name = "chkLavado";
             this.chkLavado.Size = new System.Drawing.Size(74, 18);
             this.chkLavado.TabIndex = 5;
@@ -315,7 +319,7 @@
             // chkMantenimiento
             // 
             this.chkMantenimiento.AutoSize = true;
-            this.chkMantenimiento.Location = new System.Drawing.Point(589, 35);
+            this.chkMantenimiento.Location = new System.Drawing.Point(572, 36);
             this.chkMantenimiento.Name = "chkMantenimiento";
             this.chkMantenimiento.Size = new System.Drawing.Size(123, 18);
             this.chkMantenimiento.TabIndex = 4;
@@ -325,7 +329,7 @@
             // chkReporte
             // 
             this.chkReporte.AutoSize = true;
-            this.chkReporte.Location = new System.Drawing.Point(459, 35);
+            this.chkReporte.Location = new System.Drawing.Point(442, 36);
             this.chkReporte.Name = "chkReporte";
             this.chkReporte.Size = new System.Drawing.Size(78, 18);
             this.chkReporte.TabIndex = 3;
@@ -335,7 +339,7 @@
             // chkProductos
             // 
             this.chkProductos.AutoSize = true;
-            this.chkProductos.Location = new System.Drawing.Point(286, 35);
+            this.chkProductos.Location = new System.Drawing.Point(269, 36);
             this.chkProductos.Name = "chkProductos";
             this.chkProductos.Size = new System.Drawing.Size(92, 18);
             this.chkProductos.TabIndex = 2;
@@ -345,7 +349,7 @@
             // chkPersonas
             // 
             this.chkPersonas.AutoSize = true;
-            this.chkPersonas.Location = new System.Drawing.Point(157, 35);
+            this.chkPersonas.Location = new System.Drawing.Point(140, 36);
             this.chkPersonas.Name = "chkPersonas";
             this.chkPersonas.Size = new System.Drawing.Size(87, 18);
             this.chkPersonas.TabIndex = 1;
@@ -355,7 +359,7 @@
             // chkFacturar
             // 
             this.chkFacturar.AutoSize = true;
-            this.chkFacturar.Location = new System.Drawing.Point(30, 35);
+            this.chkFacturar.Location = new System.Drawing.Point(13, 36);
             this.chkFacturar.Name = "chkFacturar";
             this.chkFacturar.Size = new System.Drawing.Size(82, 18);
             this.chkFacturar.TabIndex = 0;
@@ -369,7 +373,7 @@
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(7, 322);
+            this.groupBox1.Location = new System.Drawing.Point(88, 322);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -425,18 +429,38 @@
             // dgvUsuarios
             // 
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(7, 399);
+            this.dgvUsuarios.Location = new System.Drawing.Point(88, 399);
             this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(889, 207);
             this.dgvUsuarios.TabIndex = 26;
             this.dgvUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellDoubleClick);
             // 
+            // chkLog
+            // 
+            this.chkLog.AutoSize = true;
+            this.chkLog.Location = new System.Drawing.Point(848, 36);
+            this.chkLog.Name = "chkLog";
+            this.chkLog.Size = new System.Drawing.Size(57, 18);
+            this.chkLog.TabIndex = 12;
+            this.chkLog.Text = "Logs";
+            this.chkLog.UseVisualStyleBackColor = true;
+            // 
+            // chkbtnFacComp
+            // 
+            this.chkbtnFacComp.AutoSize = true;
+            this.chkbtnFacComp.Location = new System.Drawing.Point(848, 78);
+            this.chkbtnFacComp.Name = "chkbtnFacComp";
+            this.chkbtnFacComp.Size = new System.Drawing.Size(176, 18);
+            this.chkbtnFacComp.TabIndex = 13;
+            this.chkbtnFacComp.Text = "Menu Facturar Compra";
+            this.chkbtnFacComp.UseVisualStyleBackColor = true;
+            // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 618);
+            this.ClientSize = new System.Drawing.Size(1085, 618);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -496,5 +520,7 @@
         private System.Windows.Forms.CheckBox chkProductos;
         private System.Windows.Forms.CheckBox chkPersonas;
         private System.Windows.Forms.CheckBox chkFacturar;
+        private System.Windows.Forms.CheckBox chkbtnFacComp;
+        private System.Windows.Forms.CheckBox chkLog;
     }
 }

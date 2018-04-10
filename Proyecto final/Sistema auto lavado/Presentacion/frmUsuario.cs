@@ -40,6 +40,8 @@ namespace Presentacion
                              usuario.Permiso.btnMantenimiento,
                              usuario.Permiso.btnLavado,
                              usuario.Permiso.btnPersonas,
+                             usuario.Permiso.btnFacturarCompra,
+                             usuario.Permiso.logs,
                              usuario.idUsuario,
                              usuario.Permiso.PidUsuario,
                              usuario.Empleado.idEmpleado,
@@ -71,30 +73,67 @@ namespace Presentacion
             txtEmpleado.Enabled = true;
             txtNombreUsuario.Enabled = true;
             cmbEstado.Enabled = true;
+            btnModificar.Enabled = true;
+            btnCancelar.Enabled = true;
+            btnGuardar.Enabled = false;
+            btnNuevo.Enabled = false;
+            chkBtnFacturar.Enabled = true;
+            chkBtnLavado.Enabled = true;
+            chkBtnMantenimiento.Enabled = true;
+            chkBtnPersonas.Enabled = true;
+            chkBtnProducto.Enabled = true;
+            chkBtnUsuarios.Enabled = true;
+            chkFacturar.Enabled = true;
+            chkLavado.Enabled = true;
+            chkMantenimiento.Enabled = true;
+            chkPersonas.Enabled = true;
+            chkProductos.Enabled = true;
+            chkReporte.Enabled = true;
+            chkbtnFacComp.Enabled = true;
+            chkLog.Enabled = true;
         }
 
         private void Limpiar()
         {
 
-            //txtContraseña.Text = "";
-            //txtEmpleado.Text = "";
-            //txtNombreUsuario.Text = "";
-            //cmbEstado.Text = "";
-            //chkVenta.Checked = false;
-            //chkMantenimiento.Checked = false;
-            //chkLavado.Checked = false;
-            //chkCompra.Checked = false;
-            //chkEmpleado.Checked = false;
-            //chkUsuario.Checked = false;
-            //chkProducto.Checked = false;
-            //chkProveedor.Checked = false;
-           
+            txtContraseña.Text = "";
+            txtEmpleado.Text = "";
+            txtNombreUsuario.Text = "";
+            cmbEstado.Text = "";
+            chkBtnFacturar.Checked = false;
+            chkBtnLavado.Checked = false;
+            chkBtnMantenimiento.Checked = false;
+            chkBtnPersonas.Checked = false;
+            chkBtnProducto.Checked = false;
+            chkBtnUsuarios.Checked = false;
+            chkFacturar.Checked = false;
+            chkLavado.Checked = false;
+            chkMantenimiento.Checked = false;
+            chkPersonas.Checked = false;
+            chkProductos.Checked = false;
+            chkReporte.Checked = false;
+            chkbtnFacComp.Checked = false;
+            chkLog.Checked = false;
 
         }
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             txtEmpleado.Enabled = false;
             btnEmpleado.Enabled = false;
+            chkBtnFacturar.Enabled = false;
+            chkBtnLavado.Enabled = false;
+            chkBtnMantenimiento.Enabled = false;
+            chkBtnPersonas.Enabled = false;
+            chkBtnProducto.Enabled = false;
+            chkBtnUsuarios.Enabled = false;
+            chkFacturar.Enabled = false;
+            chkLavado.Enabled = false;
+            chkMantenimiento.Enabled = false;
+            chkPersonas.Enabled = false;
+            chkProductos.Enabled = false;
+            chkReporte.Enabled = false;
+            chkbtnFacComp.Enabled = false;
+            chkLog.Enabled = false;
             try {
                 actualizarGrid();
             }
@@ -127,6 +166,8 @@ namespace Presentacion
                     Uusuario.Permiso.btnMantenimiento = chkBtnMantenimiento.Checked;
                     Uusuario.Permiso.btnLavado = chkBtnLavado.Checked;
                     Uusuario.Permiso.btnUsuarios = chkBtnUsuarios.Checked;
+                    Uusuario.Permiso.btnFacturarCompra = chkbtnFacComp.Checked;
+                    Uusuario.Permiso.logs = chkLog.Checked;
 
                     NUsuario UpRow = new NUsuario();
                     UpRow.UpdateRow(Uusuario);
@@ -151,6 +192,8 @@ namespace Presentacion
                     Iusuario.Permiso.btnMantenimiento = chkBtnMantenimiento.Checked;
                     Iusuario.Permiso.btnLavado = chkBtnLavado.Checked;
                     Iusuario.Permiso.btnUsuarios = chkBtnUsuarios.Checked;
+                    Iusuario.Permiso.btnFacturarCompra = chkbtnFacComp.Checked;
+                    Iusuario.Permiso.logs = chkLog.Checked;
 
                     NUsuario InsertRow = new NUsuario();
                     InsertRow.InsertRow(Iusuario);
@@ -202,6 +245,8 @@ namespace Presentacion
                 chkBtnMantenimiento.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnMantenimiento"].Value.ToString());
                 chkBtnLavado.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnLavado"].Value.ToString());
                 chkBtnUsuarios.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnUsuarios"].Value.ToString());
+                chkbtnFacComp.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["btnFacturarCompra"].Value.ToString());
+                chkLog.Checked = Convert.ToBoolean(dgvUsuarios.Rows[e.RowIndex].Cells["logs"].Value.ToString());
 
                 txtContraseña.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["idUsuario"].Value.ToString();
                 dgvUsuarios.Tag = dgvUsuarios.Rows[e.RowIndex].Cells["PidUsuario"].Value.ToString();
@@ -210,6 +255,20 @@ namespace Presentacion
                 btnCancelar.Enabled = true;
                 btnGuardar.Enabled = false;
                 btnNuevo.Enabled = false;
+                chkBtnFacturar.Enabled = false;
+                chkBtnLavado.Enabled = false;
+                chkBtnMantenimiento.Enabled = false;
+                chkBtnPersonas.Enabled = false;
+                chkBtnProducto.Enabled = false;
+                chkBtnUsuarios.Enabled = false;
+                chkFacturar.Enabled = false;
+                chkLavado.Enabled = false;
+                chkMantenimiento.Enabled = false;
+                chkPersonas.Enabled = false;
+                chkProductos.Enabled = false;
+                chkReporte.Enabled = false;
+                chkLog.Enabled = false;
+                chkbtnFacComp.Enabled = false;
             }
         }
 
@@ -236,6 +295,20 @@ namespace Presentacion
             btnCancelar.Enabled = false;
             txtEmpleado.Enabled = false;
             btnEmpleado.Enabled = false;
+            chkBtnFacturar.Enabled = false;
+            chkBtnLavado.Enabled = false;
+            chkBtnMantenimiento.Enabled = false;
+            chkBtnPersonas.Enabled = false;
+            chkBtnProducto.Enabled = false;
+            chkBtnUsuarios.Enabled = false;
+            chkFacturar.Enabled = false;
+            chkLavado.Enabled = false;
+            chkMantenimiento.Enabled = false;
+            chkPersonas.Enabled = false;
+            chkProductos.Enabled = false;
+            chkReporte.Enabled = false;
+            chkLog.Enabled = false;
+            chkbtnFacComp.Enabled = false;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

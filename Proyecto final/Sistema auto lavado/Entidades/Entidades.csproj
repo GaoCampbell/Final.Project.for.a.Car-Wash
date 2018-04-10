@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Ealmacen.cs" />
     <Compile Include="EArea.cs" />
+    <Compile Include="EAuditoriaLavado.cs" />
     <Compile Include="EAuditoriaMantenimiento.cs" />
     <Compile Include="Ecategoria.cs" />
     <Compile Include="ECliente.cs" />
