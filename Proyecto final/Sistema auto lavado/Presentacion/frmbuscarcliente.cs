@@ -16,7 +16,7 @@ namespace Presentacion
     {
         public int idcliente;
         public string nombre;
-        List<ECliente> lista;
+        List<ECliente> listacliente;
         public frmbuscarcliente()
         {
             InitializeComponent();
@@ -25,15 +25,84 @@ namespace Presentacion
         {
 
             NCliente gestion = new NCliente();
-            lista = gestion.obtenerlistClientes();
+            listacliente = gestion.obtenerlistClientes();
+
+            var lista = (from cliente in listacliente
+                         where cliente.estado == "Inactivo"
+                         select new
+                         {
+                             cliente.idCliente,
+                             cliente.nombres,
+                             cliente.apellido,
+                             cliente.celular,
+                             cliente.correo,
+                             cliente.estado,
+
+                         }).ToList();
+            dataGridView1.DataSource = lista;
+            dataGridView1.Columns["idCliente"].Visible = true;
+            dataGridView1.Columns["estado"].Visible = true;
+
+
         }
+        public void filtrar()
+        {
+
+            if (rbcodigo.Checked)
+            {
+                var lista = (from cliente in listacliente
+                             where cliente.estado == "Inactivo" && cliente.idCliente.ToString().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 cliente.idCliente,
+                                 cliente.nombres,
+                                 cliente.apellido,
+                                 cliente.celular,
+                                 cliente.correo,
+                                 cliente.estado,
+
+                             }).ToList();
+                dataGridView1.DataSource = lista;
+                dataGridView1.Columns["idCliente"].Visible = true;
+                dataGridView1.Columns["estado"].Visible = true;
+
+            }
+
+
+            if (rbNombre.Checked)
+            {
+                var lista = (from cliente in listacliente
+                             where cliente.estado == "Inactivo" && cliente.nombres.ToUpper().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 cliente.idCliente,
+                                 cliente.nombres,
+                                 cliente.apellido,
+                                 cliente.celular,
+                                 cliente.correo,
+                                 cliente.estado,
+
+                             }).ToList();
+                dataGridView1.DataSource = lista;
+                dataGridView1.Columns["idCliente"].Visible = true;
+                dataGridView1.Columns["estado"].Visible = true;
+
+
+            }
+
+
+
+        }
+
+
+
         private void frmbuscarcliente_Load(object sender, EventArgs e)
         {
             try
             {
                 ActualizarLista();
-                NCliente gestion = new NCliente();
-                dataGridView1.DataSource = gestion.obtenerlistClientes();
+                //NCliente gestion = new NCliente();
+                //dataGridView1.DataSource = gestion.obtenerlistClientes();
             }
             catch (Exception ex)
             {

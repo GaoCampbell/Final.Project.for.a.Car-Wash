@@ -138,5 +138,30 @@ namespace Datos
 
         }
 
+        public void modificarestadoventa(Eventa modificar)
+        {
+            try
+            {
+
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cadenaConexion);
+                SqlCommand comando = new SqlCommand();
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.CommandText = "modificarventa";
+                comando.Parameters.AddWithValue("@Numventas", modificar.Num_venta);
+                comando.Parameters.AddWithValue("@Estado", modificar.Estado);
+                comando.Connection = conexion;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
     }
 }

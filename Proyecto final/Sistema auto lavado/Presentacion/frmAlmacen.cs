@@ -63,8 +63,8 @@ namespace Presentacion
         public void Habilitar()
         {
             txtnombre.Enabled = true;
-            txtcategoria.Enabled = true;
-            txttipo.Enabled = true;
+            txtcategoria.Enabled = false;
+            txttipo.Enabled = false;
             txtubicacion.Enabled = true;
 
             txtdescripcion.Enabled = true;

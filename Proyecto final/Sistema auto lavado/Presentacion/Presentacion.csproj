@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditoriaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditoriaVenta.Designer.cs">
+      <DependentUpon>AuditoriaVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmrAuditoriaLavado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     <Compile Include="frmBuscarEmpleado.Designer.cs">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmbuscarfacturaINACTIVA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarfacturaINACTIVA.Designer.cs">
+      <DependentUpon>frmbuscarfacturaINACTIVA.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmbuscarfactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,12 @@
     </Compile>
     <Compile Include="frmbuscarmarca.Designer.cs">
       <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarproductoINACTIVO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarproductoINACTIVO.Designer.cs">
+      <DependentUpon>frmBuscarproductoINACTIVO.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarproducto.cs">
       <SubType>Form</SubType>
@@ -308,6 +326,9 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AuditoriaVenta.resx">
+      <DependentUpon>AuditoriaVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmrAuditoriaLavado.resx">
       <DependentUpon>fmrAuditoriaLavado.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,6 +353,9 @@
     <EmbeddedResource Include="frmBuscarEmpleado.resx">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarfacturaINACTIVA.resx">
+      <DependentUpon>frmbuscarfacturaINACTIVA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarfactura.resx">
       <DependentUpon>frmbuscarfactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarmarca.resx">
       <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarproductoINACTIVO.resx">
+      <DependentUpon>frmBuscarproductoINACTIVO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarproducto.resx">
       <DependentUpon>frmBuscarproducto.cs</DependentUpon>
@@ -485,6 +512,31 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\icons8-bolsa-de-dinero-32.png" />
+    <None Include="Resources\icons8-menos-32.png" />
+    <None Include="Resources\icons8-más-32 %281%29.png" />
+    <None Include="Resources\icons8-más-32.png" />
+    <None Include="Resources\icons8-eliminar-32.png" />
+    <None Include="Resources\icons8-guardar-32.png" />
+    <None Include="Resources\icons8-guardar-16.png" />
+    <None Include="Resources\edit-user-male.png" />
+    <None Include="Resources\icons8-cancel-483.png" />
+    <None Include="Resources\icons8-cancel-482.png" />
+    <None Include="Resources\icons8-guardar-481.png" />
+    <None Include="Resources\icons8-por-nueva-copia-401.png" />
+    <None Include="Resources\icons8-editar-propiedad-482.png" />
+    <None Include="Resources\icons8-editar-propiedad-481.png" />
+    <None Include="Resources\icons8-cancel-481.png" />
+    <None Include="Resources\icons8-cancel-48.png" />
+    <None Include="Resources\icons8-guardar-48.png" />
+    <None Include="Resources\icons8-editar-propiedad-48.png" />
+    <None Include="Resources\icons8-por-nueva-copia-40.png" />
+    <None Include="Resources\icons8-búsqueda-48.png" />
+    <None Include="Resources\icons8-búsqueda-480.png" />
+    <None Include="Resources\icons8-orden-de-compra-60.png" />
+    <None Include="Resources\icons8-orden-de-compra-90.png" />
+    <None Include="Resources\icons8-flecha-direccional-horizontal-80.png" />
+    <None Include="Resources\icons8-encuesta-96.png" />
     <None Include="Resources\icons8-reembolso-48.png" />
     <None Include="Resources\empleado.png" />
     <None Include="Resources\icons8-factura-96.png" />
@@ -524,6 +576,8 @@
     <None Include="Resources\icons8-deshacer-401.png" />
     <None Include="Resources\icons8-deshacer-40.png" />
     <None Include="Resources\Back.gif" />
+    <None Include="Resources\add-user-group-man-man.png" />
+    <None Include="Resources\add-user-group-man-man1.png" />
     <Content Include="Resources\c3.png" />
     <None Include="Resources\icons8-vender-641.png" />
     <None Include="Resources\icons8-comprar-641.png" />

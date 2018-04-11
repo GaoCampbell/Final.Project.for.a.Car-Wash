@@ -110,7 +110,7 @@ namespace Presentacion
             {
                 if (modificar)
                 {
-                    EMarcas editar = new EMarcas();
+                        EMarcas editar = new EMarcas();
                    
                         editar.Codmarca = Convert.ToInt32(txtmarca.Tag.ToString());
                         editar.Marca = txtmarca.Text;

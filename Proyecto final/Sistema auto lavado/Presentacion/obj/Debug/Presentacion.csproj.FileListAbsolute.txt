@@ -583,3 +583,9 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyec
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.fmrAuditoriaLavado.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.AuditoriaVenta.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.fmrAuditoriaLavado.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmAuditoriaMantenimiento.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmControlEntrada.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmBuscarproductoINACTIVO.resources
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Presentacion\obj\Debug\Presentacion.frmbuscarfacturaINACTIVA.resources

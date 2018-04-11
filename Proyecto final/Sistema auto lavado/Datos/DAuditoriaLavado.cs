@@ -11,7 +11,9 @@ namespace Datos
 {
     public class DAuditoriaLavado
     {
-        public List<EAuditoriaLavado> SelectRow() {
+        public List<EAuditoriaLavado> 
+            SelectRow()
+        {
             try {
                 SqlConnection conex = new SqlConnection(Properties.Settings.Default.cadenaConexion);
                 SqlCommand cmd = new SqlCommand();

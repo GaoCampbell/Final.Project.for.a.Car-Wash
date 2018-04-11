@@ -54,5 +54,23 @@ namespace Negocio
                 throw ex;
             }
         }
+
+        public void modificarestado(Eventa modificar)
+        {
+            try
+            {
+
+
+                if (modificar.Estado.Length == 0)
+                    throw new ArgumentException("Ingrese el estado del producto");
+
+                Dventa gestion = new Dventa();
+                gestion.modificarestadoventa(modificar);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
+    }
     }

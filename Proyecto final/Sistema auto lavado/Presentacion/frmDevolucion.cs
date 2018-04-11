@@ -146,12 +146,17 @@ namespace Presentacion
         {
             try
             {
-
                 devolucion.Venta.Num_venta = Convert.ToInt32(txtNumventas.Text);
                 devolucion.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
                 devolucion.Fecha = Convert.ToDateTime(dtpfecha.Value);
                 devolucion.Observacion = txtobservacion.Text;
                 Ndevolucion gestiondevolucion = new Ndevolucion();
+
+                Eventa editar = new Eventa();
+                editar.Num_venta = Convert.ToInt32(txtNumventas.Text);
+                editar.Estado = cmbEstado.Text;
+                Nventa gestion = new Nventa();
+                gestion.modificarestado(editar);
 
                 MessageBox.Show("Se realizo la devolucion correctamente", "DEVOLUCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -162,13 +167,10 @@ namespace Presentacion
                     nuevas.Cantidad = Convert.ToInt32(item.Cells["Cantidad"].Value.ToString());
                     nuevas.producto = new Eproductos() { Codproducto = Convert.ToInt32(item.Cells["Codproducto"].Value.ToString()) };
                     devolucion.listadetalle.Add(nuevas);
-                }
+                }   
 
-                //DataGridViewRow row = dgvdevolucion.Rows[0];  // fila 1
-                //nuevas.Cantidad = Convert.ToInt32(row.Cells[1].Value);
-                //nuevas.producto.Codproducto = Convert.ToInt32(row.Cells[2].Value);
-                //nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                //nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+
+
 
                 gestiondevolucion.agregardevolucion(devolucion);
                 ActualizarLista();
@@ -424,6 +426,8 @@ namespace Presentacion
                 dgvdevolucion.DataSource = lista;
 
 
+
+                cmbEstado.Enabled = true;
 
 
             }

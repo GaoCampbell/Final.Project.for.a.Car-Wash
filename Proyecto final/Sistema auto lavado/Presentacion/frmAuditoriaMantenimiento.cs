@@ -88,7 +88,7 @@ namespace Presentacion
             if (rbempleado.Checked)
             {
 
-                var resultado = (
+               var resultado = (
                from am in lista
                where am.realizado.ToUpper().StartsWith(textBox1.Text.ToUpper())
                select new
@@ -114,7 +114,7 @@ namespace Presentacion
             if (rbplaca.Checked)
             {
 
-                var resultado = (
+               var resultado = (
                from am in lista
                where am.placa.ToUpper().StartsWith(textBox1.Text.ToUpper())
                select new

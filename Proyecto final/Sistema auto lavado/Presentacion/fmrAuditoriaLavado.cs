@@ -27,7 +27,7 @@ namespace Presentacion
                                 AL.fecha,
                                 AL.accion,
                                 Atendido_por = AL.empleado.nombres,
-                               Vehiculo =  AL.VehiculoLavado.vehiculoLavado,
+                                Vehiculo =  AL.VehiculoLavado.vehiculoLavado,
                                 AL.placa,
                                 Grupo_Asignado = AL.GrupoTrabajadores.grupoTrabajadores,
                                 Servivio_aplicado = AL.ServicioLavado.servicioLavado,

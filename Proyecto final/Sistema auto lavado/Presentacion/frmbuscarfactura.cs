@@ -25,6 +25,73 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void rbNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            lblnombre.Text = "Cliente : ";
+        }
+
+        private void rbcodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            lblnombre.Text = "Codigo : ";
+        }
+
+
+        public void filtrar()
+        {
+
+            if (rbcodigo.Checked)
+            {
+                var lista = (from venta in listaventas
+                             where venta.Num_venta.ToString().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 Numventa = venta.Num_venta,
+                                 venta.Cliente.idCliente,
+                                 venta.Usuario.idUsuario,
+                                 venta.FechaFactura,
+                                 venta.Tipopago,
+                                 venta.Estado,
+                                 venta.Descuento,
+                                 venta.Subtotal,
+                                 venta.TotalCordobas,
+                                 venta.TotalDolares
+                             }
+
+                   ).ToList();
+                dataGridView1.DataSource = lista;
+            }
+
+
+            if (rbNombre.Checked)
+            {
+                var lista = (from venta in listaventas
+                             where venta.Cliente.idCliente.ToString().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 Numventa = venta.Num_venta,
+                                 venta.Cliente.idCliente,
+                                 venta.Usuario.idUsuario,
+                                 venta.FechaFactura,
+                                 venta.Tipopago,
+                                 venta.Estado,
+                                 venta.Descuento,
+                                 venta.Subtotal,
+                                 venta.TotalCordobas,
+                                 venta.TotalDolares
+                             }
+
+                    ).ToList();
+                dataGridView1.DataSource = lista;
+
+
+            }
+
+
+
+        }
+
+
         private void ActualizarLista()
         {
             Nventa listam = new Nventa();

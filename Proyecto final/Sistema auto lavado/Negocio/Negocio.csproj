@@ -45,6 +45,7 @@
     <Compile Include="NArea.cs" />
     <Compile Include="NAuditoriaLavado.cs" />
     <Compile Include="NAuditoriaMantenimiento.cs" />
+    <Compile Include="Nauditoriaventa.cs" />
     <Compile Include="Ncategoria.cs" />
     <Compile Include="NCliente.cs" />
     <Compile Include="Ncompra.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Ndevolucion.cs" />
     <Compile Include="NEmpleado.cs" />
     <Compile Include="NGrupoTrabajadores.cs" />
+    <Compile Include="Ninactivo_anulada.cs" />
     <Compile Include="NLavado.cs" />
     <Compile Include="NLavadoVehiculos.cs" />
     <Compile Include="NMantenimiento.cs" />

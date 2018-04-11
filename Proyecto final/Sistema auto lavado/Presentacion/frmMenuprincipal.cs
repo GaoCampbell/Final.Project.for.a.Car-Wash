@@ -26,13 +26,13 @@ namespace Presentacion
     
         private void btnslide_Click(object sender, EventArgs e)
         {
-            if (Menuvertical.Width == 62)
+            if (Menuvertical.Width == 72)
             {
                 Menuvertical.Width = 250;
             }
             else
 
-                Menuvertical.Width = 62;
+                Menuvertical.Width = 72;
 
         }
 
@@ -86,7 +86,7 @@ namespace Presentacion
             this.panelContenedor.Controls.RemoveAt(0);
             Form fh = FormHijo as Form;
             fh.TopLevel = false;
-           // fh.Dock = DockStyle.Fill;
+          
             this.panelContenedor.Controls.Add(fh);
             this.panelContenedor.Tag = fh;
             fh.Show();
@@ -227,7 +227,7 @@ namespace Presentacion
 
         private void pRODUCTOToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmProductos());
+            
         }
 
         private void aLMACENToolStripMenuItem_Click(object sender, EventArgs e)
@@ -326,6 +326,41 @@ namespace Presentacion
         private void lAVADOToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel( new fmrAuditoriaLavado());
+        }
+
+        private void vENTASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new AuditoriaVenta());
+        }
+
+        private void aCTIVOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmBuscarproducto());
+        }
+
+        private void aDMINISTRARPRODUCTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmProductos());
+        }
+
+        private void iNACTIVOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmBuscarproductoINACTIVO());
+        }
+
+        private void nknToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cANCELADASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmbuscarfactura());
+        }
+
+        private void aNULADASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmbuscarfacturaINACTIVA());
         }
     }
 }

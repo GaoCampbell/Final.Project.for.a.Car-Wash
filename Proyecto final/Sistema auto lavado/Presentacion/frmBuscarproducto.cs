@@ -46,9 +46,63 @@ namespace Presentacion
             dataGridView1.DataSource = lista;
             dataGridView1.Columns["Codproducto"].Visible = true;
             dataGridView1.Columns["Marca"].Visible = false;
-            dataGridView1.Columns["Activo"].Visible = false;
+            dataGridView1.Columns["Activo"].Visible = true;
 
         }
+        public void filtrar()
+        {
+
+            if (rbcodigo.Checked)
+            {
+                var lista = (from productos in listaproducto
+                             where productos.Codproducto.ToString().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 productos.Codproducto,
+                                 Producto = productos.Producto,
+                                 Marca = productos.Marca.Codmarca,
+                                 CodSAC = productos.CodSac,
+                                 productos.Existencia,
+                                 Costo = productos.Costo,
+                                 Precio = productos.Precio,
+                                 productos.Activo
+                             }).ToList();
+                dataGridView1.DataSource = lista;
+                dataGridView1.Columns["Codproducto"].Visible = true;
+                dataGridView1.Columns["Marca"].Visible = false;
+                dataGridView1.Columns["Activo"].Visible = true;
+
+            }
+
+
+            if (rbNombre.Checked)
+            {
+                var lista = (from productos in listaproducto
+                             where productos.Producto.ToUpper().StartsWith(textBox1.Text.ToUpper())
+                             select new
+                             {
+                                 productos.Codproducto,
+                                 Producto = productos.Producto,
+                                 Marca = productos.Marca.Codmarca,
+                                 CodSAC = productos.CodSac,
+                                 productos.Existencia,
+                                 Costo = productos.Costo,
+                                 Precio = productos.Precio,
+                                 productos.Activo
+                             }).ToList();
+                dataGridView1.DataSource = lista;
+                dataGridView1.Columns["Codproducto"].Visible = true;
+                dataGridView1.Columns["Marca"].Visible = false;
+                dataGridView1.Columns["Activo"].Visible = true;
+
+
+            }
+
+
+           
+        }
+
+
 
         private void frmBuscarproducto_Load(object sender, EventArgs e)
         {
@@ -107,7 +161,7 @@ namespace Presentacion
                 Codproducto = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Codproducto"].Value.ToString());
                 Nombre_Producto = dataGridView1.Rows[e.RowIndex].Cells["Producto"].Value.ToString();
                 Precio = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Precio"].Value.ToString()); 
-                    Costo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
+                Costo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
                 DialogResult = DialogResult.OK;
             }
             catch (Exception ex)
@@ -122,9 +176,24 @@ namespace Presentacion
             this.Close();
         }
 
+        private void rbcodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            label3.Text = "Codigo : ";
+        }
+
+        private void rbNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            label3.Text = "Nombre : ";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            filtrar();
+        }
+
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
 
-        }
+        }   
     }
 }
