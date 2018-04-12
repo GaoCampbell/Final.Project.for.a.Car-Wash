@@ -31,15 +31,18 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.lblUsuarios = new System.Windows.Forms.Label();
             this.Barratitulo = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Menuvertical = new System.Windows.Forms.Panel();
             this.iconorestaurar = new System.Windows.Forms.PictureBox();
             this.iconomaximizar = new System.Windows.Forms.PictureBox();
             this.iconominimizar = new System.Windows.Forms.PictureBox();
             this.iconocerrar = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fACTURARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMPRAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEVOLUCIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRAToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vENTAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eMPLEADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eMPLEADOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pROVEEDORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,30 +80,25 @@
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnslide = new System.Windows.Forms.PictureBox();
-            this.Menuvertical = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btncerrarsecion = new System.Windows.Forms.Button();
             this.btnmantenimiento = new System.Windows.Forms.Button();
             this.btnlavado = new System.Windows.Forms.Button();
             this.btnfacturar = new System.Windows.Forms.Button();
-            this.cOMPRAToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.vENTAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContenedor.SuspendLayout();
             this.Barratitulo.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.Menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
-            this.Menuvertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Controls.Add(this.lblUsuarios);
             this.panelContenedor.Location = new System.Drawing.Point(250, 79);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(900, 671);
@@ -110,7 +108,7 @@
             // lblUsuarios
             // 
             this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.Location = new System.Drawing.Point(845, 649);
+            this.lblUsuarios.Location = new System.Drawing.Point(12, 737);
             this.lblUsuarios.Name = "lblUsuarios";
             this.lblUsuarios.Size = new System.Drawing.Size(43, 13);
             this.lblUsuarios.TabIndex = 2;
@@ -130,6 +128,41 @@
             this.Barratitulo.Size = new System.Drawing.Size(1078, 79);
             this.Barratitulo.TabIndex = 4;
             this.Barratitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.Barratitulo_Paint);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fACTURARToolStripMenuItem,
+            this.eMPLEADOToolStripMenuItem,
+            this.pRODUCTOToolStripMenuItem,
+            this.mANTENIMINETOToolStripMenuItem,
+            this.lAVADOToolStripMenuItem,
+            this.lOGSToolStripMenuItem,
+            this.aYUDAToolStripMenuItem,
+            this.lOGOUTToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(1078, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // Menuvertical
+            // 
+            this.Menuvertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.Menuvertical.Controls.Add(this.lblUsuarios);
+            this.Menuvertical.Controls.Add(this.pictureBox1);
+            this.Menuvertical.Controls.Add(this.button1);
+            this.Menuvertical.Controls.Add(this.btncerrarsecion);
+            this.Menuvertical.Controls.Add(this.btnmantenimiento);
+            this.Menuvertical.Controls.Add(this.btnlavado);
+            this.Menuvertical.Controls.Add(this.btnfacturar);
+            this.Menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Menuvertical.Location = new System.Drawing.Point(0, 0);
+            this.Menuvertical.Name = "Menuvertical";
+            this.Menuvertical.Size = new System.Drawing.Size(72, 750);
+            this.Menuvertical.TabIndex = 3;
+            this.Menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.Menuvertical_Paint);
             // 
             // iconorestaurar
             // 
@@ -184,24 +217,6 @@
             this.iconocerrar.TabStop = false;
             this.iconocerrar.Click += new System.EventHandler(this.iconocerrar_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fACTURARToolStripMenuItem,
-            this.eMPLEADOToolStripMenuItem,
-            this.pRODUCTOToolStripMenuItem,
-            this.mANTENIMINETOToolStripMenuItem,
-            this.lAVADOToolStripMenuItem,
-            this.lOGSToolStripMenuItem,
-            this.aYUDAToolStripMenuItem,
-            this.lOGOUTToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1078, 24);
-            this.menuStrip1.TabIndex = 14;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // fACTURARToolStripMenuItem
             // 
             this.fACTURARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -239,6 +254,22 @@
             this.dEVOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dEVOLUCIONToolStripMenuItem.Text = "DEVOLUCION";
             this.dEVOLUCIONToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONToolStripMenuItem_Click);
+            // 
+            // cOMPRAToolStripMenuItem2
+            // 
+            this.cOMPRAToolStripMenuItem2.Image = global::Presentacion.Properties.Resources.icons8_comprar_963;
+            this.cOMPRAToolStripMenuItem2.Name = "cOMPRAToolStripMenuItem2";
+            this.cOMPRAToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cOMPRAToolStripMenuItem2.Text = "COMPRA";
+            this.cOMPRAToolStripMenuItem2.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem2_Click);
+            // 
+            // vENTAToolStripMenuItem1
+            // 
+            this.vENTAToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_vender_stock_96;
+            this.vENTAToolStripMenuItem1.Name = "vENTAToolStripMenuItem1";
+            this.vENTAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.vENTAToolStripMenuItem1.Text = "VENTA";
+            this.vENTAToolStripMenuItem1.Click += new System.EventHandler(this.vENTAToolStripMenuItem1_Click);
             // 
             // eMPLEADOToolStripMenuItem
             // 
@@ -325,12 +356,13 @@
             this.iNACTIVOSToolStripMenuItem});
             this.pRODUCTOToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_producto_961;
             this.pRODUCTOToolStripMenuItem1.Name = "pRODUCTOToolStripMenuItem1";
-            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.pRODUCTOToolStripMenuItem1.Text = "PRODUCTO";
             this.pRODUCTOToolStripMenuItem1.Click += new System.EventHandler(this.pRODUCTOToolStripMenuItem1_Click);
             // 
             // aDMINISTRARPRODUCTOToolStripMenuItem
             // 
+            this.aDMINISTRARPRODUCTOToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_datos_salientes_961;
             this.aDMINISTRARPRODUCTOToolStripMenuItem.Name = "aDMINISTRARPRODUCTOToolStripMenuItem";
             this.aDMINISTRARPRODUCTOToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.aDMINISTRARPRODUCTOToolStripMenuItem.Text = "ADMINISTRAR PRODUCTO";
@@ -338,6 +370,7 @@
             // 
             // aCTIVOToolStripMenuItem
             // 
+            this.aCTIVOToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_lista_962;
             this.aCTIVOToolStripMenuItem.Name = "aCTIVOToolStripMenuItem";
             this.aCTIVOToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.aCTIVOToolStripMenuItem.Text = "ACTIVO";
@@ -345,6 +378,7 @@
             // 
             // iNACTIVOSToolStripMenuItem
             // 
+            this.iNACTIVOSToolStripMenuItem.Image = global::Presentacion.Properties.Resources.to_do;
             this.iNACTIVOSToolStripMenuItem.Name = "iNACTIVOSToolStripMenuItem";
             this.iNACTIVOSToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.iNACTIVOSToolStripMenuItem.Text = "INACTIVOS";
@@ -354,7 +388,7 @@
             // 
             this.aLMACENToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_garaje_cerrado_962;
             this.aLMACENToolStripMenuItem.Name = "aLMACENToolStripMenuItem";
-            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aLMACENToolStripMenuItem.Text = "ALMACEN";
             this.aLMACENToolStripMenuItem.Click += new System.EventHandler(this.aLMACENToolStripMenuItem_Click);
             // 
@@ -362,7 +396,7 @@
             // 
             this.cATEGORIAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_canales_de_venta_96__1_;
             this.cATEGORIAToolStripMenuItem.Name = "cATEGORIAToolStripMenuItem";
-            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cATEGORIAToolStripMenuItem.Text = "CATEGORIA";
             this.cATEGORIAToolStripMenuItem.Click += new System.EventHandler(this.cATEGORIAToolStripMenuItem_Click);
             // 
@@ -370,7 +404,7 @@
             // 
             this.mARCAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_categoría_961;
             this.mARCAToolStripMenuItem.Name = "mARCAToolStripMenuItem";
-            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mARCAToolStripMenuItem.Text = "MARCA";
             this.mARCAToolStripMenuItem.Click += new System.EventHandler(this.mARCAToolStripMenuItem_Click);
             // 
@@ -379,12 +413,14 @@
             this.fACTURASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cANCELADASToolStripMenuItem,
             this.aNULADASToolStripMenuItem});
+            this.fACTURASToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_encuesta_48;
             this.fACTURASToolStripMenuItem.Name = "fACTURASToolStripMenuItem";
-            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fACTURASToolStripMenuItem.Text = "FACTURAS";
             // 
             // cANCELADASToolStripMenuItem
             // 
+            this.cANCELADASToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_factura_64;
             this.cANCELADASToolStripMenuItem.Name = "cANCELADASToolStripMenuItem";
             this.cANCELADASToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.cANCELADASToolStripMenuItem.Text = "CANCELADAS";
@@ -392,6 +428,7 @@
             // 
             // aNULADASToolStripMenuItem
             // 
+            this.aNULADASToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_flecha_direccional_horizontal_801;
             this.aNULADASToolStripMenuItem.Name = "aNULADASToolStripMenuItem";
             this.aNULADASToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.aNULADASToolStripMenuItem.Text = "ANULADAS";
@@ -534,6 +571,7 @@
             // 
             // cOMPRAToolStripMenuItem
             // 
+            this.cOMPRAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_comprar_962;
             this.cOMPRAToolStripMenuItem.Name = "cOMPRAToolStripMenuItem";
             this.cOMPRAToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.cOMPRAToolStripMenuItem.Text = "COMPRA";
@@ -565,22 +603,6 @@
             this.btnslide.TabIndex = 0;
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
-            // 
-            // Menuvertical
-            // 
-            this.Menuvertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.Menuvertical.Controls.Add(this.pictureBox1);
-            this.Menuvertical.Controls.Add(this.button1);
-            this.Menuvertical.Controls.Add(this.btncerrarsecion);
-            this.Menuvertical.Controls.Add(this.btnmantenimiento);
-            this.Menuvertical.Controls.Add(this.btnlavado);
-            this.Menuvertical.Controls.Add(this.btnfacturar);
-            this.Menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Menuvertical.Location = new System.Drawing.Point(0, 0);
-            this.Menuvertical.Name = "Menuvertical";
-            this.Menuvertical.Size = new System.Drawing.Size(72, 750);
-            this.Menuvertical.TabIndex = 3;
-            this.Menuvertical.Paint += new System.Windows.Forms.PaintEventHandler(this.Menuvertical_Paint);
             // 
             // pictureBox1
             // 
@@ -677,20 +699,6 @@
             this.btnfacturar.UseVisualStyleBackColor = true;
             this.btnfacturar.Click += new System.EventHandler(this.btnfacturar_Click);
             // 
-            // cOMPRAToolStripMenuItem2
-            // 
-            this.cOMPRAToolStripMenuItem2.Name = "cOMPRAToolStripMenuItem2";
-            this.cOMPRAToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.cOMPRAToolStripMenuItem2.Text = "COMPRA";
-            this.cOMPRAToolStripMenuItem2.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem2_Click);
-            // 
-            // vENTAToolStripMenuItem1
-            // 
-            this.vENTAToolStripMenuItem1.Name = "vENTAToolStripMenuItem1";
-            this.vENTAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.vENTAToolStripMenuItem1.Text = "VENTA";
-            this.vENTAToolStripMenuItem1.Click += new System.EventHandler(this.vENTAToolStripMenuItem1_Click);
-            // 
             // frmMenuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -704,18 +712,17 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuprincipal";
             this.Load += new System.EventHandler(this.frmMenuprincipal_Load);
-            this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
             this.Barratitulo.ResumeLayout(false);
             this.Barratitulo.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.Menuvertical.ResumeLayout(false);
+            this.Menuvertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
-            this.Menuvertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -81,9 +81,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(222, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(174, 18);
+            this.label8.Size = new System.Drawing.Size(180, 18);
             this.label8.TabIndex = 3;
-            this.label8.Text = "VEHICULO A LAVAR";
+            this.label8.Text = "TIPOS DE VEHICULO";
             // 
             // groupBox1
             // 

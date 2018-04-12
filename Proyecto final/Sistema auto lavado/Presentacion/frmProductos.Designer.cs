@@ -134,7 +134,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Enabled = false;
-            this.btnGuardar.Location = new System.Drawing.Point(368, 21);
+            this.btnGuardar.Location = new System.Drawing.Point(469, 23);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(95, 28);
             this.btnGuardar.TabIndex = 14;
@@ -145,7 +145,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Enabled = false;
-            this.btnCancelar.Location = new System.Drawing.Point(469, 21);
+            this.btnCancelar.Location = new System.Drawing.Point(570, 23);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 28);
             this.btnCancelar.TabIndex = 13;
@@ -156,7 +156,7 @@
             // btnModificar
             // 
             this.btnModificar.Enabled = false;
-            this.btnModificar.Location = new System.Drawing.Point(267, 21);
+            this.btnModificar.Location = new System.Drawing.Point(368, 23);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 28);
             this.btnModificar.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(166, 21);
+            this.btnNuevo.Location = new System.Drawing.Point(267, 23);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(95, 28);
             this.btnNuevo.TabIndex = 10;

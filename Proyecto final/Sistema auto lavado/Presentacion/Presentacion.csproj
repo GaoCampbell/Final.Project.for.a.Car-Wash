@@ -539,6 +539,24 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\icons8-comprar-963.png" />
+    <None Include="Resources\icons8-vender-stock-961.png" />
+    <None Include="Resources\icons8-flecha-direccional-horizontal-801.png" />
+    <None Include="Resources\icons8-factura-64.png" />
+    <None Include="Resources\icons8-encuesta-48.png" />
+    <None Include="Resources\to-do.png" />
+    <None Include="Resources\icons8-lista-962.png" />
+    <None Include="Resources\icons8-datos-salientes-961.png" />
+    <None Include="Resources\icons8-datos-salientes-96.png" />
+    <None Include="Resources\icons8-comprar-962.png" />
+    <None Include="Resources\icons8-comprar-961.png" />
+    <None Include="Resources\icons8-búsqueda-483.png" />
+    <None Include="Resources\icons8-menos-321.png" />
+    <None Include="Resources\icons8-más-32 %281%291.png" />
+    <None Include="Resources\icons8-eliminar-321.png" />
+    <None Include="Resources\icons8-bolsa-de-dinero-321.png" />
+    <None Include="Resources\icons8-por-nueva-copia-403.png" />
+    <None Include="Resources\icons8-por-nueva-copia-402.png" />
     <None Include="Resources\icons8-búsqueda-482.png" />
     <None Include="Resources\icons8-búsqueda-481.png" />
     <None Include="Resources\icons8-bolsa-de-dinero-32.png" />

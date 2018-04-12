@@ -44,6 +44,8 @@
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.dgvLavadoVehiculo = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -87,6 +89,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.lblPrecio);
             this.groupBox1.Controls.Add(this.txtVehiculo);
@@ -103,7 +107,7 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(137, 93);
+            this.txtPrecio.Location = new System.Drawing.Point(86, 99);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 22);
             this.txtPrecio.TabIndex = 5;
@@ -111,7 +115,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(58, 101);
+            this.lblPrecio.Location = new System.Drawing.Point(31, 102);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(49, 14);
             this.lblPrecio.TabIndex = 4;
@@ -119,35 +123,35 @@
             // 
             // txtVehiculo
             // 
-            this.txtVehiculo.Location = new System.Drawing.Point(383, 38);
+            this.txtVehiculo.Location = new System.Drawing.Point(363, 47);
             this.txtVehiculo.Name = "txtVehiculo";
             this.txtVehiculo.Size = new System.Drawing.Size(100, 22);
             this.txtVehiculo.TabIndex = 3;
             // 
             // lblVehiculo
             // 
-            this.lblVehiculo.Location = new System.Drawing.Point(282, 38);
+            this.lblVehiculo.Location = new System.Drawing.Point(476, 47);
             this.lblVehiculo.Name = "lblVehiculo";
             this.lblVehiculo.Size = new System.Drawing.Size(75, 23);
             this.lblVehiculo.TabIndex = 2;
-            this.lblVehiculo.Text = "Vehiculo";
+            this.lblVehiculo.Text = "Buscar";
             this.lblVehiculo.UseVisualStyleBackColor = true;
             this.lblVehiculo.Click += new System.EventHandler(this.lblVehiculo_Click);
             // 
             // txtServicio
             // 
-            this.txtServicio.Location = new System.Drawing.Point(137, 38);
+            this.txtServicio.Location = new System.Drawing.Point(86, 41);
             this.txtServicio.Name = "txtServicio";
             this.txtServicio.Size = new System.Drawing.Size(100, 22);
             this.txtServicio.TabIndex = 1;
             // 
             // lblServicio
             // 
-            this.lblServicio.Location = new System.Drawing.Point(36, 38);
+            this.lblServicio.Location = new System.Drawing.Point(191, 43);
             this.lblServicio.Name = "lblServicio";
             this.lblServicio.Size = new System.Drawing.Size(75, 23);
             this.lblServicio.TabIndex = 0;
-            this.lblServicio.Text = "Servicio";
+            this.lblServicio.Text = "Buscar";
             this.lblServicio.UseVisualStyleBackColor = true;
             this.lblServicio.Click += new System.EventHandler(this.lblServicio_Click);
             // 
@@ -215,6 +219,24 @@
             this.dgvLavadoVehiculo.TabIndex = 26;
             this.dgvLavadoVehiculo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavadoVehiculo_CellDoubleClick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 14);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Servicio :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(286, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 14);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Vehiculo :";
+            // 
             // frmLavadoVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,5 +280,7 @@
         private System.Windows.Forms.TextBox txtServicio;
         private System.Windows.Forms.Button lblServicio;
         private System.Windows.Forms.DataGridView dgvLavadoVehiculo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

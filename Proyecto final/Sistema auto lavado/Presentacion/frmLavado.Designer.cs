@@ -50,6 +50,8 @@
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.dgvLavado = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -105,6 +107,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblusuario);
             this.groupBox1.Controls.Add(this.txttotal);
             this.groupBox1.Controls.Add(this.lbltotal);
@@ -137,7 +141,7 @@
             // 
             // txttotal
             // 
-            this.txttotal.Location = new System.Drawing.Point(455, 81);
+            this.txttotal.Location = new System.Drawing.Point(457, 82);
             this.txttotal.Name = "txttotal";
             this.txttotal.Size = new System.Drawing.Size(136, 22);
             this.txttotal.TabIndex = 9;
@@ -145,7 +149,7 @@
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
-            this.lbltotal.Location = new System.Drawing.Point(381, 90);
+            this.lbltotal.Location = new System.Drawing.Point(408, 85);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(40, 14);
             this.lbltotal.TabIndex = 8;
@@ -153,41 +157,41 @@
             // 
             // txtgrupo
             // 
-            this.txtgrupo.Location = new System.Drawing.Point(166, 81);
+            this.txtgrupo.Location = new System.Drawing.Point(109, 81);
             this.txtgrupo.Name = "txtgrupo";
             this.txtgrupo.Size = new System.Drawing.Size(191, 22);
             this.txtgrupo.TabIndex = 7;
             // 
             // btnidgrupo
             // 
-            this.btnidgrupo.Location = new System.Drawing.Point(30, 82);
+            this.btnidgrupo.Location = new System.Drawing.Point(306, 80);
             this.btnidgrupo.Name = "btnidgrupo";
-            this.btnidgrupo.Size = new System.Drawing.Size(126, 23);
+            this.btnidgrupo.Size = new System.Drawing.Size(83, 23);
             this.btnidgrupo.TabIndex = 6;
-            this.btnidgrupo.Text = "Asignar grupo";
+            this.btnidgrupo.Text = "Buscar";
             this.btnidgrupo.UseVisualStyleBackColor = true;
             this.btnidgrupo.Click += new System.EventHandler(this.btnidgrupo_Click);
             // 
             // txtlavado
             // 
-            this.txtlavado.Location = new System.Drawing.Point(698, 25);
+            this.txtlavado.Location = new System.Drawing.Point(599, 30);
             this.txtlavado.Name = "txtlavado";
             this.txtlavado.Size = new System.Drawing.Size(102, 22);
             this.txtlavado.TabIndex = 5;
             // 
             // btnbuscaridLavadoV
             // 
-            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(603, 24);
+            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(707, 29);
             this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
             this.btnbuscaridLavadoV.Size = new System.Drawing.Size(75, 23);
             this.btnbuscaridLavadoV.TabIndex = 4;
-            this.btnbuscaridLavadoV.Text = "Lavado vehiculo";
+            this.btnbuscaridLavadoV.Text = "Buscar";
             this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
             this.btnbuscaridLavadoV.Click += new System.EventHandler(this.btnbuscaridLavadoV_Click);
             // 
             // txtplaca
             // 
-            this.txtplaca.Location = new System.Drawing.Point(455, 27);
+            this.txtplaca.Location = new System.Drawing.Point(360, 27);
             this.txtplaca.Name = "txtplaca";
             this.txtplaca.Size = new System.Drawing.Size(136, 22);
             this.txtplaca.TabIndex = 3;
@@ -195,7 +199,7 @@
             // lblplaca
             // 
             this.lblplaca.AutoSize = true;
-            this.lblplaca.Location = new System.Drawing.Point(381, 35);
+            this.lblplaca.Location = new System.Drawing.Point(311, 35);
             this.lblplaca.Name = "lblplaca";
             this.lblplaca.Size = new System.Drawing.Size(43, 14);
             this.lblplaca.TabIndex = 2;
@@ -203,7 +207,7 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(166, 29);
+            this.dtpFecha.Location = new System.Drawing.Point(100, 27);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 22);
             this.dtpFecha.TabIndex = 1;
@@ -211,7 +215,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 33);
+            this.label1.Location = new System.Drawing.Point(27, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 14);
             this.label1.TabIndex = 0;
@@ -282,6 +286,24 @@
             this.dgvLavado.TabIndex = 25;
             this.dgvLavado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellDoubleClick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(529, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 14);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Lavado :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 14);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Grupo :";
+            // 
             // frmLavado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,5 +354,7 @@
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.TextBox txtgrupo;
         private System.Windows.Forms.Button btnidgrupo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
