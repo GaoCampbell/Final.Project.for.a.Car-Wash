@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Nalmacen.cs" />
     <Compile Include="NArea.cs" />
+    <Compile Include="NauditoriaCompra.cs" />
     <Compile Include="NAuditoriaLavado.cs" />
     <Compile Include="NAuditoriaMantenimiento.cs" />
     <Compile Include="Nauditoriaventa.cs" />
@@ -52,8 +53,10 @@
     <Compile Include="NControl_Entrada.cs" />
     <Compile Include="Ndetallecompra.cs" />
     <Compile Include="Ndetalledevolucion.cs" />
+    <Compile Include="Ndetalledevolucioncompra.cs" />
     <Compile Include="Ndetalleventa.cs" />
     <Compile Include="Ndevolucion.cs" />
+    <Compile Include="NdevolucionCompra.cs" />
     <Compile Include="NEmpleado.cs" />
     <Compile Include="NGrupoTrabajadores.cs" />
     <Compile Include="Ninactivo_anulada.cs" />

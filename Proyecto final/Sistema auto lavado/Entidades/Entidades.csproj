@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EdetalledevolucionCOMPRA.CS" />
+    <Compile Include="EdevolucionCompra.cs" />
     <Compile Include="Ealmacen.cs" />
     <Compile Include="EArea.cs" />
     <Compile Include="Eauditoriacompra.cs" />

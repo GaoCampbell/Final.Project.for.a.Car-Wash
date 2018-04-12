@@ -18,7 +18,7 @@ namespace Datos
                 SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cadenaConexion);
                 SqlCommand comando = new SqlCommand();
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.CommandText = "getdevolucion";
+                comando.CommandText = "getdevolucionventa";
                 comando.Connection = conexion;
                 conexion.Open();
                 SqlDataReader leer = comando.ExecuteReader();
@@ -39,10 +39,7 @@ namespace Datos
                         nuevaFila.Fecha = leer.GetDateTime(3);
 
                    
-                 
-
-
-
+             
                     listaventa.Add(nuevaFila);
                 }
 

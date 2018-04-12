@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Entidades;
-
+using Presentacion;
 
 namespace Presentacion
 {
@@ -17,6 +17,7 @@ namespace Presentacion
     {
         Ecompra compra = new Ecompra();
         List<DataGridViewRow> list = new List<DataGridViewRow>();
+      
         public frmCompra()
         {
             InitializeComponent();
@@ -42,12 +43,12 @@ namespace Presentacion
                              d.Total
                          }).ToList();       
             dgvventas.DataSource = lista;
-            
-           
+
+
 
 
         }
-       
+    
 
         private void frmCompra_Load(object sender, EventArgs e)
         {
@@ -80,6 +81,7 @@ namespace Presentacion
             txtCantidad.Enabled = true;
             rbtEfectivo.Enabled = true;
             radioButton2.Enabled = true;
+            cmbEstado.Enabled = true;
 
         }
         public void Deshabilitar()
@@ -96,6 +98,8 @@ namespace Presentacion
             rbtEfectivo.Enabled = false;
             radioButton2.Enabled = false;
             txtCantidad.Enabled = false;
+            cmbEstado.Enabled =false;
+
 
         }
         public void Limpiar()
@@ -116,6 +120,7 @@ namespace Presentacion
             txtprecio.Text = "";
             txtnombre.Text = "";
             txtCantidad.Text = "";
+            cmbEstado.Text = "";
 
 
 
@@ -172,7 +177,7 @@ namespace Presentacion
                 compra.Proveedor.idProveedor = Convert.ToInt32(txtbuscaridproveedor.Text);
                 compra.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
                 compra.FechaFactura = dtpfecha.Value;
-                compra.HoraFactura = dtpHora.Value;
+                compra.Estado = cmbEstado.Text;
 
                 if (rbtEfectivo.Checked == true)
                 {
@@ -214,9 +219,24 @@ namespace Presentacion
             }
 
 
-            
+            if (MessageBox.Show("Desea volver a realizar otra compra?", "COMPRA",MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
+            {
+
+
+
+                frmMenuprincipal formmenu = new frmMenuprincipal();              
+                formmenu.AbrirFormInPanel(new frmCompra());
+          
+
+
+
+            }
+            else
+            {
+                this.Close();
+            }
             Limpiar();
-            this.Close();
+            
 
         }
 
@@ -393,6 +413,36 @@ namespace Presentacion
         private void btneliminarproductos_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void dtpHora_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbuscarusuarionombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbuscaridproveedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbuscarusuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

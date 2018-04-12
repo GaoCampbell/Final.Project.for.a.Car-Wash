@@ -34,7 +34,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtobservacion = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.btnagregarfactura = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
@@ -61,11 +60,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnagregar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtNumventas = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btneliminarproductos = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txttotalCordobas = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -80,9 +77,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtdescuento = new System.Windows.Forms.TextBox();
             this.dgvdevolucion = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtNumventas = new System.Windows.Forms.TextBox();
+            this.btneliminarproductos = new System.Windows.Forms.Button();
+            this.btnagregar = new System.Windows.Forms.Button();
+            this.btnagregarfactura = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
@@ -156,20 +156,6 @@
             this.label15.Size = new System.Drawing.Size(89, 18);
             this.label15.TabIndex = 43;
             this.label15.Text = "Observacion :";
-            // 
-            // btnagregarfactura
-            // 
-            this.btnagregarfactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnagregarfactura.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnagregarfactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnagregarfactura.Location = new System.Drawing.Point(704, 37);
-            this.btnagregarfactura.Name = "btnagregarfactura";
-            this.btnagregarfactura.Size = new System.Drawing.Size(129, 33);
-            this.btnagregarfactura.TabIndex = 186;
-            this.btnagregarfactura.Text = "Agregar factura";
-            this.btnagregarfactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnagregarfactura.UseVisualStyleBackColor = true;
-            this.btnagregarfactura.Click += new System.EventHandler(this.btnagregarfactura_Click);
             // 
             // groupBox5
             // 
@@ -482,40 +468,22 @@
             this.groupBox2.Text = "Registro de venta";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // btnagregar
+            // label17
             // 
-            this.btnagregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnagregar.Enabled = false;
-            this.btnagregar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnagregar.Location = new System.Drawing.Point(751, 240);
-            this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(139, 33);
-            this.btnagregar.TabIndex = 147;
-            this.btnagregar.Text = "Agregar a la Lista";
-            this.btnagregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnagregar.UseVisualStyleBackColor = true;
-            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(335, 60);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 18);
+            this.label17.TabIndex = 165;
+            this.label17.Text = "Numventas :";
             // 
-            // btnCancelar
+            // txtNumventas
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(366, 16);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(158, 38);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(182, 16);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(158, 38);
-            this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "Guardar Devolucion";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.txtNumventas.Location = new System.Drawing.Point(432, 57);
+            this.txtNumventas.Name = "txtNumventas";
+            this.txtNumventas.ReadOnly = true;
+            this.txtNumventas.Size = new System.Drawing.Size(100, 23);
+            this.txtNumventas.TabIndex = 164;
             // 
             // groupBox3
             // 
@@ -528,19 +496,7 @@
             this.groupBox3.TabIndex = 152;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Funciones";
-            // 
-            // btneliminarproductos
-            // 
-            this.btneliminarproductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btneliminarproductos.Enabled = false;
-            this.btneliminarproductos.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminarproductos.Location = new System.Drawing.Point(751, 282);
-            this.btneliminarproductos.Name = "btneliminarproductos";
-            this.btneliminarproductos.Size = new System.Drawing.Size(139, 33);
-            this.btneliminarproductos.TabIndex = 148;
-            this.btneliminarproductos.Text = "Eliminar de la lista";
-            this.btneliminarproductos.UseVisualStyleBackColor = true;
-            this.btneliminarproductos.Click += new System.EventHandler(this.btneliminarproductos_Click);
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label7
             // 
@@ -688,26 +644,55 @@
             this.dgvdevolucion.Name = "dgvdevolucion";
             this.dgvdevolucion.ReadOnly = true;
             this.dgvdevolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdevolucion.Size = new System.Drawing.Size(734, 199);
+            this.dgvdevolucion.Size = new System.Drawing.Size(761, 199);
             this.dgvdevolucion.TabIndex = 149;
             this.dgvdevolucion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvventas_CellContentClick);
             // 
-            // label17
+            // btneliminarproductos
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(335, 60);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 18);
-            this.label17.TabIndex = 165;
-            this.label17.Text = "Numventas :";
+            this.btneliminarproductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneliminarproductos.Enabled = false;
+            this.btneliminarproductos.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneliminarproductos.Image = global::Presentacion.Properties.Resources.icons8_menos_32;
+            this.btneliminarproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneliminarproductos.Location = new System.Drawing.Point(781, 275);
+            this.btneliminarproductos.Name = "btneliminarproductos";
+            this.btneliminarproductos.Size = new System.Drawing.Size(105, 33);
+            this.btneliminarproductos.TabIndex = 188;
+            this.btneliminarproductos.Text = "Eliminar";
+            this.btneliminarproductos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btneliminarproductos.UseVisualStyleBackColor = true;
             // 
-            // txtNumventas
+            // btnagregar
             // 
-            this.txtNumventas.Location = new System.Drawing.Point(432, 57);
-            this.txtNumventas.Name = "txtNumventas";
-            this.txtNumventas.ReadOnly = true;
-            this.txtNumventas.Size = new System.Drawing.Size(100, 23);
-            this.txtNumventas.TabIndex = 164;
+            this.btnagregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnagregar.Enabled = false;
+            this.btnagregar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnagregar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnagregar.Location = new System.Drawing.Point(781, 236);
+            this.btnagregar.Name = "btnagregar";
+            this.btnagregar.Size = new System.Drawing.Size(105, 33);
+            this.btnagregar.TabIndex = 187;
+            this.btnagregar.Text = "Agregar ";
+            this.btnagregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click_1);
+            // 
+            // btnagregarfactura
+            // 
+            this.btnagregarfactura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnagregarfactura.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnagregarfactura.Image = global::Presentacion.Properties.Resources.icons8_búsqueda_481;
+            this.btnagregarfactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnagregarfactura.Location = new System.Drawing.Point(693, 38);
+            this.btnagregarfactura.Name = "btnagregarfactura";
+            this.btnagregarfactura.Size = new System.Drawing.Size(132, 34);
+            this.btnagregarfactura.TabIndex = 186;
+            this.btnagregarfactura.Text = "Buscar factura";
+            this.btnagregarfactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnagregarfactura.UseVisualStyleBackColor = true;
+            this.btnagregarfactura.Click += new System.EventHandler(this.btnagregarfactura_Click);
             // 
             // pictureBox2
             // 
@@ -718,6 +703,32 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 185;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_guardar_481;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(182, 16);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(204, 38);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Guardar Devolucion";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_483;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(402, 16);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(204, 38);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox1
             // 
@@ -746,6 +757,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 658);
+            this.Controls.Add(this.btneliminarproductos);
+            this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.dgvdevolucion);
             this.Controls.Add(this.pictureBox2);
@@ -764,9 +777,7 @@
             this.Controls.Add(this.txtbuscarclientenombre);
             this.Controls.Add(this.txttotalCordobas);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btneliminarproductos);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
@@ -831,11 +842,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btneliminarproductos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txttotalCordobas;
         private System.Windows.Forms.Label label8;
@@ -853,5 +862,7 @@
         private System.Windows.Forms.DataGridView dgvdevolucion;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtNumventas;
+        private System.Windows.Forms.Button btneliminarproductos;
+        private System.Windows.Forms.Button btnagregar;
     }
 }

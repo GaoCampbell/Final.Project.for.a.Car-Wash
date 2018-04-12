@@ -55,6 +55,9 @@
             this.aLMACENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cATEGORIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mARCAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cANCELADASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aNULADASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mANTENIMINETOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vEHICULOMANTENIMINETOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sERVICIOSToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +73,7 @@
             this.mANTENIMIENTOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lAVADOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnslide = new System.Windows.Forms.PictureBox();
@@ -80,9 +84,8 @@
             this.btnmantenimiento = new System.Windows.Forms.Button();
             this.btnlavado = new System.Windows.Forms.Button();
             this.btnfacturar = new System.Windows.Forms.Button();
-            this.fACTURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cANCELADASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aNULADASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRAToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vENTAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContenedor.SuspendLayout();
             this.Barratitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
@@ -214,7 +217,7 @@
             // 
             this.cOMPRAToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_comprar_96;
             this.cOMPRAToolStripMenuItem1.Name = "cOMPRAToolStripMenuItem1";
-            this.cOMPRAToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
+            this.cOMPRAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.cOMPRAToolStripMenuItem1.Text = "COMPRA";
             this.cOMPRAToolStripMenuItem1.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem1_Click);
             // 
@@ -222,15 +225,18 @@
             // 
             this.vENTAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_vender_stock_96;
             this.vENTAToolStripMenuItem.Name = "vENTAToolStripMenuItem";
-            this.vENTAToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.vENTAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vENTAToolStripMenuItem.Text = "VENTA";
             this.vENTAToolStripMenuItem.Click += new System.EventHandler(this.vENTAToolStripMenuItem_Click);
             // 
             // dEVOLUCIONToolStripMenuItem
             // 
+            this.dEVOLUCIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cOMPRAToolStripMenuItem2,
+            this.vENTAToolStripMenuItem1});
             this.dEVOLUCIONToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_reembolso_48;
             this.dEVOLUCIONToolStripMenuItem.Name = "dEVOLUCIONToolStripMenuItem";
-            this.dEVOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.dEVOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dEVOLUCIONToolStripMenuItem.Text = "DEVOLUCION";
             this.dEVOLUCIONToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONToolStripMenuItem_Click);
             // 
@@ -319,7 +325,7 @@
             this.iNACTIVOSToolStripMenuItem});
             this.pRODUCTOToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_producto_961;
             this.pRODUCTOToolStripMenuItem1.Name = "pRODUCTOToolStripMenuItem1";
-            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
             this.pRODUCTOToolStripMenuItem1.Text = "PRODUCTO";
             this.pRODUCTOToolStripMenuItem1.Click += new System.EventHandler(this.pRODUCTOToolStripMenuItem1_Click);
             // 
@@ -348,7 +354,7 @@
             // 
             this.aLMACENToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_garaje_cerrado_962;
             this.aLMACENToolStripMenuItem.Name = "aLMACENToolStripMenuItem";
-            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.aLMACENToolStripMenuItem.Text = "ALMACEN";
             this.aLMACENToolStripMenuItem.Click += new System.EventHandler(this.aLMACENToolStripMenuItem_Click);
             // 
@@ -356,7 +362,7 @@
             // 
             this.cATEGORIAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_canales_de_venta_96__1_;
             this.cATEGORIAToolStripMenuItem.Name = "cATEGORIAToolStripMenuItem";
-            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.cATEGORIAToolStripMenuItem.Text = "CATEGORIA";
             this.cATEGORIAToolStripMenuItem.Click += new System.EventHandler(this.cATEGORIAToolStripMenuItem_Click);
             // 
@@ -364,9 +370,32 @@
             // 
             this.mARCAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_categoría_961;
             this.mARCAToolStripMenuItem.Name = "mARCAToolStripMenuItem";
-            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.mARCAToolStripMenuItem.Text = "MARCA";
             this.mARCAToolStripMenuItem.Click += new System.EventHandler(this.mARCAToolStripMenuItem_Click);
+            // 
+            // fACTURASToolStripMenuItem
+            // 
+            this.fACTURASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cANCELADASToolStripMenuItem,
+            this.aNULADASToolStripMenuItem});
+            this.fACTURASToolStripMenuItem.Name = "fACTURASToolStripMenuItem";
+            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.fACTURASToolStripMenuItem.Text = "FACTURAS";
+            // 
+            // cANCELADASToolStripMenuItem
+            // 
+            this.cANCELADASToolStripMenuItem.Name = "cANCELADASToolStripMenuItem";
+            this.cANCELADASToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.cANCELADASToolStripMenuItem.Text = "CANCELADAS";
+            this.cANCELADASToolStripMenuItem.Click += new System.EventHandler(this.cANCELADASToolStripMenuItem_Click);
+            // 
+            // aNULADASToolStripMenuItem
+            // 
+            this.aNULADASToolStripMenuItem.Name = "aNULADASToolStripMenuItem";
+            this.aNULADASToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.aNULADASToolStripMenuItem.Text = "ANULADAS";
+            this.aNULADASToolStripMenuItem.Click += new System.EventHandler(this.aNULADASToolStripMenuItem_Click);
             // 
             // mANTENIMINETOToolStripMenuItem
             // 
@@ -464,7 +493,8 @@
             this.controlToolStripMenuItem,
             this.mANTENIMIENTOToolStripMenuItem1,
             this.lAVADOToolStripMenuItem2,
-            this.vENTASToolStripMenuItem});
+            this.vENTASToolStripMenuItem,
+            this.cOMPRAToolStripMenuItem});
             this.lOGSToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_encuesta_96;
             this.lOGSToolStripMenuItem.Name = "lOGSToolStripMenuItem";
             this.lOGSToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
@@ -501,6 +531,13 @@
             this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.vENTASToolStripMenuItem.Text = "VENTAS";
             this.vENTASToolStripMenuItem.Click += new System.EventHandler(this.vENTASToolStripMenuItem_Click);
+            // 
+            // cOMPRAToolStripMenuItem
+            // 
+            this.cOMPRAToolStripMenuItem.Name = "cOMPRAToolStripMenuItem";
+            this.cOMPRAToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.cOMPRAToolStripMenuItem.Text = "COMPRA";
+            this.cOMPRAToolStripMenuItem.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem_Click_1);
             // 
             // aYUDAToolStripMenuItem
             // 
@@ -640,28 +677,19 @@
             this.btnfacturar.UseVisualStyleBackColor = true;
             this.btnfacturar.Click += new System.EventHandler(this.btnfacturar_Click);
             // 
-            // fACTURASToolStripMenuItem
+            // cOMPRAToolStripMenuItem2
             // 
-            this.fACTURASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cANCELADASToolStripMenuItem,
-            this.aNULADASToolStripMenuItem});
-            this.fACTURASToolStripMenuItem.Name = "fACTURASToolStripMenuItem";
-            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fACTURASToolStripMenuItem.Text = "FACTURAS";
+            this.cOMPRAToolStripMenuItem2.Name = "cOMPRAToolStripMenuItem2";
+            this.cOMPRAToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cOMPRAToolStripMenuItem2.Text = "COMPRA";
+            this.cOMPRAToolStripMenuItem2.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem2_Click);
             // 
-            // cANCELADASToolStripMenuItem
+            // vENTAToolStripMenuItem1
             // 
-            this.cANCELADASToolStripMenuItem.Name = "cANCELADASToolStripMenuItem";
-            this.cANCELADASToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cANCELADASToolStripMenuItem.Text = "CANCELADAS";
-            this.cANCELADASToolStripMenuItem.Click += new System.EventHandler(this.cANCELADASToolStripMenuItem_Click);
-            // 
-            // aNULADASToolStripMenuItem
-            // 
-            this.aNULADASToolStripMenuItem.Name = "aNULADASToolStripMenuItem";
-            this.aNULADASToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aNULADASToolStripMenuItem.Text = "ANULADAS";
-            this.aNULADASToolStripMenuItem.Click += new System.EventHandler(this.aNULADASToolStripMenuItem_Click);
+            this.vENTAToolStripMenuItem1.Name = "vENTAToolStripMenuItem1";
+            this.vENTAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.vENTAToolStripMenuItem1.Text = "VENTA";
+            this.vENTAToolStripMenuItem1.Click += new System.EventHandler(this.vENTAToolStripMenuItem1_Click);
             // 
             // frmMenuprincipal
             // 
@@ -750,5 +778,8 @@
         private System.Windows.Forms.ToolStripMenuItem fACTURASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cANCELADASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aNULADASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOMPRAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOMPRAToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem vENTAToolStripMenuItem1;
     }
 }

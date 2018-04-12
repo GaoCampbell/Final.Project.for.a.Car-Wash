@@ -11,7 +11,7 @@ namespace Negocio
 {
     public class Ndetallecompra
     {
-        public List<EdetalleCompra> obtenerlistdetalle()
+        public List<EdetalleCompra> obtenerlistdetallecompra()
         {
 
             try

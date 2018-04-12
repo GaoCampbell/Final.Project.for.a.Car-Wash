@@ -19,7 +19,6 @@ namespace Presentacion
         public int idcliente, idusuario, Numventas;
         public decimal descuento, subtotal, totalcordobas, totaldolares;
         public string tipopago, estado;
-
         public DateTime fechafactura;
         public frmbuscarfactura()
         {
@@ -91,6 +90,10 @@ namespace Presentacion
 
         }
 
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
 
         private void ActualizarLista()
         {

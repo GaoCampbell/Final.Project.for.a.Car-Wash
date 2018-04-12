@@ -272,7 +272,7 @@
             "Cancelada",
             "Pendiente",
             "Anulada"});
-            this.cmbEstado.Location = new System.Drawing.Point(494, 72);
+            this.cmbEstado.Location = new System.Drawing.Point(688, 72);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 26);
             this.cmbEstado.TabIndex = 161;
@@ -281,7 +281,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(422, 80);
+            this.label14.Location = new System.Drawing.Point(616, 80);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 18);
             this.label14.TabIndex = 160;
@@ -291,7 +291,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(680, 74);
+            this.label5.Location = new System.Drawing.Point(434, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 18);
             this.label5.TabIndex = 61;
@@ -303,7 +303,7 @@
             this.dtpHora.Enabled = false;
             this.dtpHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHora.Location = new System.Drawing.Point(740, 71);
+            this.dtpHora.Location = new System.Drawing.Point(494, 77);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.ShowUpDown = true;
             this.dtpHora.Size = new System.Drawing.Size(81, 21);
@@ -354,7 +354,7 @@
             this.txtbuscarcliente.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbuscarcliente.Location = new System.Drawing.Point(494, 25);
             this.txtbuscarcliente.Name = "txtbuscarcliente";
-            this.txtbuscarcliente.Size = new System.Drawing.Size(52, 23);
+            this.txtbuscarcliente.Size = new System.Drawing.Size(59, 23);
             this.txtbuscarcliente.TabIndex = 40;
             this.txtbuscarcliente.TextChanged += new System.EventHandler(this.txtbuscarcliente_TextChanged);
             // 
@@ -375,9 +375,9 @@
             // 
             this.txtbuscarusuarionombre.Enabled = false;
             this.txtbuscarusuarionombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarusuarionombre.Location = new System.Drawing.Point(149, 25);
+            this.txtbuscarusuarionombre.Location = new System.Drawing.Point(138, 25);
             this.txtbuscarusuarionombre.Name = "txtbuscarusuarionombre";
-            this.txtbuscarusuarionombre.Size = new System.Drawing.Size(175, 23);
+            this.txtbuscarusuarionombre.Size = new System.Drawing.Size(186, 23);
             this.txtbuscarusuarionombre.TabIndex = 58;
             // 
             // btnbuscarcliente
@@ -385,7 +385,7 @@
             this.btnbuscarcliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscarcliente.Enabled = false;
             this.btnbuscarcliente.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscarcliente.Location = new System.Drawing.Point(733, 22);
+            this.btnbuscarcliente.Location = new System.Drawing.Point(741, 22);
             this.btnbuscarcliente.Name = "btnbuscarcliente";
             this.btnbuscarcliente.Size = new System.Drawing.Size(68, 26);
             this.btnbuscarcliente.TabIndex = 43;
@@ -397,7 +397,7 @@
             // 
             this.txtbuscarclientenombre.Enabled = false;
             this.txtbuscarclientenombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscarclientenombre.Location = new System.Drawing.Point(552, 25);
+            this.txtbuscarclientenombre.Location = new System.Drawing.Point(560, 25);
             this.txtbuscarclientenombre.Name = "txtbuscarclientenombre";
             this.txtbuscarclientenombre.Size = new System.Drawing.Size(175, 23);
             this.txtbuscarclientenombre.TabIndex = 57;

@@ -15,7 +15,7 @@ namespace Presentacion
 {
     public partial class frmMenuprincipal : Form
     {
-        
+        public int FORMCOMPRA;
         public frmMenuprincipal()
         {
             InitializeComponent();
@@ -124,8 +124,6 @@ namespace Presentacion
         {
             EControl_Entrada newcontrol = new EControl_Entrada();
             newcontrol.usuario.usuario = (lblUsuarios.Text);
-
-
             NControl_Entrada gestionarcontrol = new NControl_Entrada();
             gestionarcontrol.Insertar(newcontrol);
             Application.Restart();
@@ -309,7 +307,7 @@ namespace Presentacion
 
         private void dEVOLUCIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new frmDevolucion());
+           
         }
 
         private void controlToolStripMenuItem_Click(object sender, EventArgs e)
@@ -361,6 +359,22 @@ namespace Presentacion
         private void aNULADASToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new frmbuscarfacturaINACTIVA());
+        }
+
+        private void cOMPRAToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new FrmAuditoriaCompra());
+        }
+
+        private void cOMPRAToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmDevolucioncompra());
+        }
+
+        private void vENTAToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmDevolucion());
+          
         }
     }
 }

@@ -27,36 +27,36 @@ namespace Datos
                 while (leer.Read())
                 {
                     EdetalleCompra nuevaFila = new EdetalleCompra();
-                    //Compra
-                    nuevaFila.Compra = new Ecompra();
-                    nuevaFila.Compra.Idcompra = leer.GetInt32(0);
-                    //---------------------------------------------
 
-                    if (leer.IsDBNull(1))
+                    if (leer.IsDBNull(0))
                         nuevaFila.Cantidad = null;
                     else
-                        nuevaFila.Cantidad = leer.GetInt32(1);
+                        nuevaFila.Cantidad = leer.GetInt32(0);             
+                    //Compra
+                    nuevaFila.Compra = new Ecompra();
+                    nuevaFila.Compra.Idcompra = leer.GetInt32(1);
+                    
+                 
 
-
-                    if (leer.IsDBNull(2))
-                        nuevaFila.Total = null;
-                    else
-                        nuevaFila.Total = leer.GetDecimal(2);
+                    
                     //PRODUCTO
                     nuevaFila.producto = new Eproductos();
-                    nuevaFila.producto.Codproducto = leer.GetInt32(3);
+                    nuevaFila.producto.Codproducto = leer.GetInt32(2);
 
-                    if (leer.IsDBNull(4))
+                    if (leer.IsDBNull(3))
                         nuevaFila.producto.Producto = null;
                     else
-                        nuevaFila.producto.Producto = leer.GetString(4);
+                        nuevaFila.producto.Producto = leer.GetString(3);
+
+                    if (leer.IsDBNull(4))
+                        nuevaFila.producto.Costo = null;
+                    else
+                        nuevaFila.producto.Costo = leer.GetDecimal(4);
 
                     if (leer.IsDBNull(5))
-                        nuevaFila.producto.Precio = null;
+                        nuevaFila.Total = null;
                     else
-                        nuevaFila.producto.Precio = leer.GetDecimal(5);
-
-
+                        nuevaFila.Total = leer.GetDecimal(5);
 
                     listadetalle.Add(nuevaFila);
                 }

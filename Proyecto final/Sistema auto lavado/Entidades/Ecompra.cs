@@ -13,12 +13,12 @@ namespace Entidades
         public EProveedor Proveedor { get; set; }
         public EUsuario Usuario { get; set; }
         public DateTime? FechaFactura { get; set; }
-        public DateTime? HoraFactura { get; set; }
         public string Tipopago { get; set; }
         public decimal? Subtotal { get; set; }
         public decimal? Descuento { get; set; }
         public decimal? TotalCordobas { get; set; }
         public decimal? TotalDolares { get; set; }
+        public string Estado { get; set; }
         public List<EdetalleCompra> listadetalle { get; set; }
 
         public Ecompra()

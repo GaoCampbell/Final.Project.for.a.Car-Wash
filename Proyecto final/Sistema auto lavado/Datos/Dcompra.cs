@@ -35,39 +35,37 @@ namespace Datos
                     else
                         nuevaFila.FechaFactura = leer.GetDateTime(2);
 
-
                     if (leer.IsDBNull(3))
-                        nuevaFila.HoraFactura = null;
-                    else
-                        nuevaFila.HoraFactura = leer.GetDateTime(3);
-
-
-                    if (leer.IsDBNull(4))
                         nuevaFila.TotalCordobas = null;
                     else
-                        nuevaFila.TotalCordobas = leer.GetDecimal(4);
+                        nuevaFila.TotalCordobas = leer.GetDecimal(3);
 
-                    nuevaFila.Usuario.idUsuario = leer.GetInt32(5);
+                    nuevaFila.Usuario.idUsuario = leer.GetInt32(4);
 
-                    if (leer.IsDBNull(6))
+                    if (leer.IsDBNull(5))
                         nuevaFila.Tipopago = null;
                     else
-                        nuevaFila.Tipopago = leer.GetString(6);
+                        nuevaFila.Tipopago = leer.GetString(5);
 
-                    if (leer.IsDBNull(7))
+                    if (leer.IsDBNull(6))
                         nuevaFila.Descuento = null;
                     else
-                        nuevaFila.Descuento = leer.GetDecimal(7);
+                        nuevaFila.Descuento = leer.GetDecimal(6);
 
-                    if (leer.IsDBNull(8))
+                    if (leer.IsDBNull(7))
                         nuevaFila.Subtotal = null;
                     else
-                        nuevaFila.Subtotal = leer.GetDecimal(8);
+                        nuevaFila.Subtotal = leer.GetDecimal(7);
 
-                    if (leer.IsDBNull(9))
+                    if (leer.IsDBNull(8))
                         nuevaFila.TotalDolares = null;
                     else
-                        nuevaFila.TotalDolares = leer.GetDecimal(9);
+                        nuevaFila.TotalDolares = leer.GetDecimal(8);
+
+                    if (leer.IsDBNull(9))
+                        nuevaFila.Estado = null;
+                    else
+                        nuevaFila.Estado = leer.GetString(9);
 
 
                     listaventa.Add(nuevaFila);
@@ -98,7 +96,7 @@ namespace Datos
                 comando.Parameters.AddWithValue("@IdProveedor", nuevaventa.Proveedor.idProveedor);
                 comando.Parameters.AddWithValue("@Idusuario", nuevaventa.Usuario.idUsuario);
                 comando.Parameters.AddWithValue("@FechaCompra", nuevaventa.FechaFactura);
-                comando.Parameters.AddWithValue("@HoraCompra", nuevaventa.HoraFactura);
+                comando.Parameters.AddWithValue("@Estado", nuevaventa.Estado);
                 comando.Parameters.AddWithValue("@TotalCordobas", nuevaventa.TotalCordobas);
                 comando.Parameters.AddWithValue("@TotalDolares", nuevaventa.TotalDolares);
                 comando.Parameters.AddWithValue("@Tipopago", nuevaventa.Tipopago);

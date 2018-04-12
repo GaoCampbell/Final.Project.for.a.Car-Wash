@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAuditoriaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuditoriaCompra.Designer.cs">
+      <DependentUpon>FrmAuditoriaCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="AuditoriaVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="frmBuscarEmpleado.Designer.cs">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarfacturaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarfacturaCompra.Designer.cs">
+      <DependentUpon>frmbuscarfacturaCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="frmbuscarfacturaINACTIVA.cs">
       <SubType>Form</SubType>
@@ -202,6 +214,12 @@
     </Compile>
     <Compile Include="frmControlEntrada.Designer.cs">
       <DependentUpon>frmControlEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevolucioncompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucioncompra.Designer.cs">
+      <DependentUpon>frmDevolucioncompra.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpleado.cs">
       <SubType>Form</SubType>
@@ -326,6 +344,9 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAuditoriaCompra.resx">
+      <DependentUpon>FrmAuditoriaCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AuditoriaVenta.resx">
       <DependentUpon>AuditoriaVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleado.resx">
       <DependentUpon>frmBuscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarfacturaCompra.resx">
+      <DependentUpon>frmbuscarfacturaCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarfacturaINACTIVA.resx">
       <DependentUpon>frmbuscarfacturaINACTIVA.cs</DependentUpon>
@@ -400,6 +424,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmControlEntrada.resx">
       <DependentUpon>frmControlEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucioncompra.resx">
+      <DependentUpon>frmDevolucioncompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleado.resx">
       <DependentUpon>frmEmpleado.cs</DependentUpon>
@@ -512,6 +539,8 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\icons8-búsqueda-482.png" />
+    <None Include="Resources\icons8-búsqueda-481.png" />
     <None Include="Resources\icons8-bolsa-de-dinero-32.png" />
     <None Include="Resources\icons8-menos-32.png" />
     <None Include="Resources\icons8-más-32 %281%29.png" />
