@@ -11,7 +11,7 @@ namespace Entidades
         public int Codproducto { get; set; }
         public string Producto { get; set; }
         public string CodSac { get; set; }
-        public decimal? Existencia { get; set; }
+        public int? Existencia { get; set; }
         public decimal? Costo { get; set; }
         public decimal? Precio { get; set; }
         public bool? Activo { get; set; }

@@ -25,15 +25,6 @@ D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Ne
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
@@ -106,3 +97,21 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb

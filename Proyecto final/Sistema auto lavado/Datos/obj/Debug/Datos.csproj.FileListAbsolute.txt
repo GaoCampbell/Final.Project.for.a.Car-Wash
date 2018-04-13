@@ -22,14 +22,6 @@ D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Da
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
@@ -94,3 +86,19 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb

@@ -28,7 +28,7 @@ namespace Presentacion
             listacliente = gestion.obtenerlistClientes();
 
             var lista = (from cliente in listacliente
-                         where cliente.estado == "Inactivo"
+                         where cliente.estado == "Activo"
                          select new
                          {
                              cliente.idCliente,
@@ -51,7 +51,7 @@ namespace Presentacion
             if (rbcodigo.Checked)
             {
                 var lista = (from cliente in listacliente
-                             where cliente.estado == "Inactivo" && cliente.idCliente.ToString().StartsWith(textBox1.Text.ToUpper())
+                             where cliente.estado == "Activo" && cliente.idCliente.ToString().StartsWith(textBox1.Text.ToUpper())
                              select new
                              {
                                  cliente.idCliente,
@@ -72,7 +72,7 @@ namespace Presentacion
             if (rbNombre.Checked)
             {
                 var lista = (from cliente in listacliente
-                             where cliente.estado == "Inactivo" && cliente.nombres.ToUpper().StartsWith(textBox1.Text.ToUpper())
+                             where cliente.estado == "Activo" && cliente.nombres.ToUpper().StartsWith(textBox1.Text.ToUpper())
                              select new
                              {
                                  cliente.idCliente,

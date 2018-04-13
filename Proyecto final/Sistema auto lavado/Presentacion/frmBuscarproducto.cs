@@ -18,6 +18,7 @@ namespace Presentacion
         public int? Codproducto;
         public string Nombre_Producto;
         public decimal Precio , Costo;
+        public int existencias;
         public frmBuscarproducto()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace Presentacion
                              Producto = productos.Producto,
                              Marca = productos.Marca.Codmarca,
                              CodSAC = productos.CodSac,
-                             productos.Existencia,
+                             Exis = productos.Existencia,
                              Costo = productos.Costo,
                              Precio = productos.Precio,
                              productos.Activo
@@ -62,7 +63,7 @@ namespace Presentacion
                                  Producto = productos.Producto,
                                  Marca = productos.Marca.Codmarca,
                                  CodSAC = productos.CodSac,
-                                 productos.Existencia,
+                                 Exis = productos.Existencia,
                                  Costo = productos.Costo,
                                  Precio = productos.Precio,
                                  productos.Activo
@@ -85,7 +86,7 @@ namespace Presentacion
                                  Producto = productos.Producto,
                                  Marca = productos.Marca.Codmarca,
                                  CodSAC = productos.CodSac,
-                                 productos.Existencia,
+                                 Exis = productos.Existencia,
                                  Costo = productos.Costo,
                                  Precio = productos.Precio,
                                  productos.Activo
@@ -156,13 +157,23 @@ namespace Presentacion
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
-            {
+            {   
+                string ex = dataGridView1.Rows[e.RowIndex].Cells["Exis"].Value.ToString();
+                if (Convert.ToInt32(ex.ToString()) > 0)
+                {
+                    Codproducto = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Codproducto"].Value.ToString());
+                    Nombre_Producto = dataGridView1.Rows[e.RowIndex].Cells["Producto"].Value.ToString();
+                    Precio = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Precio"].Value.ToString());
+                    Costo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
+                    existencias = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Exis"].Value.ToString());
 
-                Codproducto = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Codproducto"].Value.ToString());
-                Nombre_Producto = dataGridView1.Rows[e.RowIndex].Cells["Producto"].Value.ToString();
-                Precio = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Precio"].Value.ToString()); 
-                Costo = Convert.ToDecimal(dataGridView1.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
-                DialogResult = DialogResult.OK;
+                    DialogResult = DialogResult.OK;
+                }
+                else
+                {
+
+                    MessageBox.Show("no tiene existencias");
+                }
             }
             catch (Exception ex)
             {
@@ -189,6 +200,11 @@ namespace Presentacion
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             filtrar();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)

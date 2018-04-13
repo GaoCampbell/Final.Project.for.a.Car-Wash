@@ -44,7 +44,7 @@ namespace Datos
                     if (leer.IsDBNull(4))
                         nuevafila.Existencia = null;
                     else
-                        nuevafila.Existencia = leer.GetDecimal(4);
+                        nuevafila.Existencia = leer.GetInt32(4);
 
                     if (leer.IsDBNull(5))
                         nuevafila.Costo = null;

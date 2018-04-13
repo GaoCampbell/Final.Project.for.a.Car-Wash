@@ -12,10 +12,6 @@ D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\En
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 D:\10mo Cuatrimestres\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
@@ -52,8 +48,16 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyec
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\git II\ORIGINAL-master\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\original IV\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
+L:\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb

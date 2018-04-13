@@ -232,7 +232,7 @@ namespace Presentacion
                 txtproducto.Text = bp.Codproducto.ToString();
                 txtprecio.Text = bp.Costo.ToString();            
                 txtnombre.Text = bp.Nombre_Producto.ToString();
-
+                txtExistencias.Text = bp.existencias.ToString();
 
             }
         }
@@ -288,26 +288,37 @@ namespace Presentacion
         {
             try
             {
-                Edetalleventa nuevas = new Edetalleventa();            
-                nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);                    
-                nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
-                nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
-                nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
-                nuevas.producto.Producto = txtnombre.Text;
-                ventas.listadetalle.Add(nuevas);
-                ActualizarLista2();
-                calculartotal();
-                Deshabilitar();
-                txtCantidad.Enabled = true;
-                btnGuardar.Enabled = true;
-                btnCancelar.Enabled = true;
-                btnNuevo.Enabled = true;
-                txtdescuento.Enabled = true;
-                txtproducto.Text = "";
-                txtprecio.Text = "";             
-                txtnombre.Text = "";
-                txtCantidad.Text = "";
-                txtprecio.Text = "";
+                if (Convert.ToInt32(txtExistencias.Text) >= Convert.ToInt32(txtCantidad.Text))
+                {
+                    Edetalleventa nuevas = new Edetalleventa();
+                    nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                    nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+                    nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
+                    nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
+                    nuevas.producto.Producto = txtnombre.Text;
+                    ventas.listadetalle.Add(nuevas);
+                    ActualizarLista2();
+                    calculartotal();
+                    Deshabilitar();
+                    txtCantidad.Enabled = true;
+                    btnGuardar.Enabled = true;
+                    btnCancelar.Enabled = true;
+                    btnNuevo.Enabled = true;
+                    txtdescuento.Enabled = true;
+                    txtproducto.Text = "";
+                    txtprecio.Text = "";
+                    txtnombre.Text = "";
+                    txtCantidad.Text = "";
+                    txtprecio.Text = "";
+
+                }
+                else
+                {
+                    MessageBox.Show("existencias insuficientes");
+
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -317,7 +328,27 @@ namespace Presentacion
 
         private void btneliminarproductos_Click(object sender, EventArgs e)
         {
+            try
+            {
+                foreach (DataGridViewRow fila in dgvventas.SelectedRows)
+                {
+                    foreach (Edetalleventa item in ventas.listadetalle)
+                    {
+                        if (item.producto.Codproducto == Convert.ToInt32(fila.Cells["Codproducto"].Value.ToString()))
+                        {
+                            ventas.listadetalle.Remove(item);
+                            break;
+                        }
+                    }
+                }
+                ActualizarLista2();
+                calculartotal();
+            }
+            catch (Exception ex)
+            {
 
+                throw;
+            }
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -367,6 +398,11 @@ namespace Presentacion
         }
 
         private void dgvventas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -117,29 +117,41 @@ namespace Presentacion
                 if (modificar)
                 {
 
-                    Eproductos editar = new Eproductos();
-                   
-                            editar.Codproducto = Convert.ToInt32(txtnombre.Tag.ToString());
-                            editar.Producto = txtnombre.Text;
-                            editar.CodSac = txtCodSAC.Text;
-                            editar.Marca.Codmarca = Convert.ToInt32(txtmarca.Text.ToString());
-                            editar.Existencia = Convert.ToDecimal(txtexistencia.Text.ToString());
-                            editar.Precio = Convert.ToDecimal(txtprecioventa.Text.ToString());
-                            editar.Costo = Convert.ToDecimal(txtpreciocompra.Text.ToString());
-                            if (rbtnActvivo.Checked == true)
-                            {
-                                editar.Activo = true;
-                            }
-                            else
-                            {
-                                editar.Activo = false;
-                            }
+                    if (Convert.ToDecimal(txtpreciocompra.Text.ToString()) >= Convert.ToDecimal(txtprecioventa.Text.ToString()))
+                    {
 
-                            Nproductos gestion = new Nproductos();
-                            gestion.modificar(editar);
-                            MessageBox.Show("Se modifico correctamente", "PRODUCTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("El precio de compra no puede ser mayor al precio  de compra", "REVISE", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                   
+
+                    }
+                    else
+                    {
+
+                        Eproductos editar = new Eproductos();
+
+                        editar.Codproducto = Convert.ToInt32(txtnombre.Tag.ToString());
+                        editar.Producto = txtnombre.Text;
+                        editar.CodSac = txtCodSAC.Text;
+                        editar.Marca.Codmarca = Convert.ToInt32(txtmarca.Text.ToString());
+                        editar.Existencia = Convert.ToInt16(txtexistencia.Text.ToString());
+                        editar.Precio = Convert.ToDecimal(txtprecioventa.Text.ToString());
+                        editar.Costo = Convert.ToDecimal(txtpreciocompra.Text.ToString());
+                        if (rbtnActvivo.Checked == true)
+                        {
+                            editar.Activo = true;
+                        }
+                        else
+                        {
+                            editar.Activo = false;
+                        }
+
+                        Nproductos gestion = new Nproductos();
+                        gestion.modificar(editar);
+                        MessageBox.Show("Se modifico correctamente", "PRODUCTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+
+
                 }
                 else
                 {
@@ -151,24 +163,46 @@ namespace Presentacion
                     if (!exist == true)
                     {
                         if (!exist2 == true)
+
                         {
-                            nuevo.Producto = txtnombre.Text;
-                            nuevo.Marca.Codmarca = Convert.ToInt32(txtmarca.Text.ToString());
-                            nuevo.CodSac = txtCodSAC.Text;
-                            nuevo.Existencia = Convert.ToDecimal(txtexistencia.Text.ToString());
-                            nuevo.Precio = Convert.ToDecimal(txtprecioventa.Text.ToString());
-                            nuevo.Costo = Convert.ToDecimal(txtpreciocompra.Text.ToString());
-                            if (rbtnActvivo.Checked == true)
+                        
+                            if (Convert.ToDecimal(txtpreciocompra.Text.ToString()) >= Convert.ToDecimal(txtprecioventa.Text.ToString()))
                             {
-                                nuevo.Activo = true;
+
+                                MessageBox.Show("El precio de compra no puede ser mayor al precio  de compra", "REVISE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                             }
                             else
                             {
-                                nuevo.Activo = false;
+                                nuevo.Producto = txtnombre.Text;
+                                nuevo.Marca.Codmarca = Convert.ToInt32(txtmarca.Text.ToString());
+                                nuevo.CodSac = txtCodSAC.Text;
+                                nuevo.Existencia = Convert.ToInt32(txtexistencia.Text.ToString());
+                                nuevo.Precio = Convert.ToDecimal(txtprecioventa.Text.ToString());
+                                nuevo.Costo = Convert.ToDecimal(txtpreciocompra.Text.ToString());
+                                if (rbtnActvivo.Checked == true)
+                                {
+                                    nuevo.Activo = true;
+                                }
+                                else
+                                {
+                                    nuevo.Activo = false;
+                                }
+                                Nproductos gestion = new Nproductos();
+                                gestion.agregar(nuevo);
+                                MessageBox.Show("Se guardo correctamente", "PRODUCTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                Limpiar();
+                                Deshabilitar();
+                                btnGuardar.Enabled = false;
+                                btnCancelar.Enabled = false;
+                                btnModificar.Enabled = false;
+                                btnBuscarmarca.Enabled = false;
+                                btnNuevo.Enabled = true;
+                                modificar = false;
                             }
-                            Nproductos gestion = new Nproductos();
-                            gestion.agregar(nuevo);
-                            MessageBox.Show("Se guardo correctamente", "PRODUCTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                         }
                         else
                         {
@@ -187,14 +221,8 @@ namespace Presentacion
                 }
 
                 ActualizarLista();
-                Limpiar();
-                Deshabilitar();
-                btnGuardar.Enabled = false;
-                btnCancelar.Enabled = false;
-                btnModificar.Enabled = false;
-                btnBuscarmarca.Enabled = false;
-                btnNuevo.Enabled = true;
-                modificar = false;
+          
+               
             }
             catch (Exception ex)
             {
