@@ -165,12 +165,13 @@
             // 
             // btnEmpleado
             // 
-            this.btnEmpleado.Location = new System.Drawing.Point(348, 40);
+            this.btnEmpleado.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_481;
+            this.btnEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmpleado.Location = new System.Drawing.Point(331, 40);
             this.btnEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEmpleado.Name = "btnEmpleado";
-            this.btnEmpleado.Size = new System.Drawing.Size(109, 24);
+            this.btnEmpleado.Size = new System.Drawing.Size(40, 24);
             this.btnEmpleado.TabIndex = 12;
-            this.btnEmpleado.Text = "Buscar";
             this.btnEmpleado.UseVisualStyleBackColor = true;
             this.btnEmpleado.Click += new System.EventHandler(this.btnEmpleado_Click);
             // 
@@ -419,45 +420,57 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_40;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(166, 21);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(116, 28);
             this.btnNuevo.TabIndex = 8;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
+            this.btnModificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_482;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.Location = new System.Drawing.Point(290, 21);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(95, 28);
+            this.btnModificar.Size = new System.Drawing.Size(116, 28);
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(414, 21);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(95, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(116, 28);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_48;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(538, 21);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(95, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 28);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -467,7 +480,7 @@
             this.dgvUsuarios.Location = new System.Drawing.Point(27, 495);
             this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(811, 207);
+            this.dgvUsuarios.Size = new System.Drawing.Size(811, 165);
             this.dgvUsuarios.TabIndex = 26;
             this.dgvUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellDoubleClick);
             // 
@@ -475,7 +488,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 719);
+            this.ClientSize = new System.Drawing.Size(853, 672);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);

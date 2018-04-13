@@ -32,6 +32,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.txtVehiculo = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.dgvLavadoVehiculo = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -105,6 +105,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Servicio";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(276, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 14);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Vehiculo :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 14);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Servicio :";
+            // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(86, 99);
@@ -123,18 +141,19 @@
             // 
             // txtVehiculo
             // 
-            this.txtVehiculo.Location = new System.Drawing.Point(363, 47);
+            this.txtVehiculo.Location = new System.Drawing.Point(354, 39);
             this.txtVehiculo.Name = "txtVehiculo";
             this.txtVehiculo.Size = new System.Drawing.Size(100, 22);
             this.txtVehiculo.TabIndex = 3;
             // 
             // lblVehiculo
             // 
-            this.lblVehiculo.Location = new System.Drawing.Point(476, 47);
+            this.lblVehiculo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_482;
+            this.lblVehiculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lblVehiculo.Location = new System.Drawing.Point(469, 39);
             this.lblVehiculo.Name = "lblVehiculo";
-            this.lblVehiculo.Size = new System.Drawing.Size(75, 23);
+            this.lblVehiculo.Size = new System.Drawing.Size(48, 24);
             this.lblVehiculo.TabIndex = 2;
-            this.lblVehiculo.Text = "Buscar";
             this.lblVehiculo.UseVisualStyleBackColor = true;
             this.lblVehiculo.Click += new System.EventHandler(this.lblVehiculo_Click);
             // 
@@ -147,11 +166,12 @@
             // 
             // lblServicio
             // 
-            this.lblServicio.Location = new System.Drawing.Point(191, 43);
+            this.lblServicio.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_482;
+            this.lblServicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lblServicio.Location = new System.Drawing.Point(192, 39);
             this.lblServicio.Name = "lblServicio";
-            this.lblServicio.Size = new System.Drawing.Size(75, 23);
+            this.lblServicio.Size = new System.Drawing.Size(48, 24);
             this.lblServicio.TabIndex = 0;
-            this.lblServicio.Text = "Buscar";
             this.lblServicio.UseVisualStyleBackColor = true;
             this.lblServicio.Click += new System.EventHandler(this.lblServicio_Click);
             // 
@@ -172,41 +192,53 @@
             // 
             // btnguardar
             // 
+            this.btnguardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguardar.Location = new System.Drawing.Point(283, 31);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(95, 28);
+            this.btnguardar.Size = new System.Drawing.Size(116, 28);
             this.btnguardar.TabIndex = 9;
             this.btnguardar.Text = "Guardar";
+            this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btncancelar
             // 
-            this.btncancelar.Location = new System.Drawing.Point(392, 31);
+            this.btncancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_481;
+            this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelar.Location = new System.Drawing.Point(416, 31);
             this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(95, 28);
+            this.btncancelar.Size = new System.Drawing.Size(116, 28);
             this.btncancelar.TabIndex = 8;
             this.btncancelar.Text = "Cancelar";
+            this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(175, 31);
+            this.btnmodificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_482;
+            this.btnmodificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmodificar.Location = new System.Drawing.Point(150, 31);
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(95, 28);
+            this.btnmodificar.Size = new System.Drawing.Size(116, 28);
             this.btnmodificar.TabIndex = 6;
             this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnmodificar.UseVisualStyleBackColor = true;
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // btnnuevo
             // 
-            this.btnnuevo.Location = new System.Drawing.Point(65, 31);
+            this.btnnuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_402;
+            this.btnnuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnuevo.Location = new System.Drawing.Point(17, 31);
             this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnnuevo.Size = new System.Drawing.Size(116, 28);
             this.btnnuevo.TabIndex = 5;
             this.btnnuevo.Text = "Nuevo";
+            this.btnnuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnuevo.UseVisualStyleBackColor = true;
             this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
@@ -218,24 +250,6 @@
             this.dgvLavadoVehiculo.Size = new System.Drawing.Size(551, 150);
             this.dgvLavadoVehiculo.TabIndex = 26;
             this.dgvLavadoVehiculo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavadoVehiculo_CellDoubleClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 14);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Servicio :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 14);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Vehiculo :";
             // 
             // frmLavadoVehiculo
             // 

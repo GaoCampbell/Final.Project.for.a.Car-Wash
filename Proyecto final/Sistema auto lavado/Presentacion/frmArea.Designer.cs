@@ -55,7 +55,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 29);
+            this.panel2.Size = new System.Drawing.Size(557, 29);
             this.panel2.TabIndex = 13;
             // 
             // lblArea
@@ -63,7 +63,7 @@
             this.lblArea.AutoSize = true;
             this.lblArea.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArea.ForeColor = System.Drawing.Color.White;
-            this.lblArea.Location = new System.Drawing.Point(222, 9);
+            this.lblArea.Location = new System.Drawing.Point(263, 9);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(54, 18);
             this.lblArea.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(484, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(528, 0);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(26, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +88,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 47);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 84);
+            this.groupBox1.Size = new System.Drawing.Size(527, 84);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Area";
@@ -121,48 +121,60 @@
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 137);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(482, 65);
+            this.groupBox2.Size = new System.Drawing.Size(533, 65);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(243, 21);
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(280, 21);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(95, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(116, 28);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(344, 21);
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_481;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(411, 21);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(95, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 28);
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
+            this.btnModificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_481;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.Location = new System.Drawing.Point(142, 21);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(95, 28);
+            this.btnModificar.Size = new System.Drawing.Size(116, 28);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(39, 21);
+            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_40;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(6, 21);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(116, 28);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -171,7 +183,7 @@
             this.dgvArea.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArea.Location = new System.Drawing.Point(12, 208);
             this.dgvArea.Name = "dgvArea";
-            this.dgvArea.Size = new System.Drawing.Size(482, 144);
+            this.dgvArea.Size = new System.Drawing.Size(527, 144);
             this.dgvArea.TabIndex = 16;
             this.dgvArea.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArea_CellDoubleClick);
             // 
@@ -179,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 364);
+            this.ClientSize = new System.Drawing.Size(557, 364);
             this.Controls.Add(this.dgvArea);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

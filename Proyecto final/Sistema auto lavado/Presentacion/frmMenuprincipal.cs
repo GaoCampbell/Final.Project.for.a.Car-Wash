@@ -160,7 +160,7 @@ namespace Presentacion
             fACTURARToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.facturar;
             eMPLEADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.personas;
             pRODUCTOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.producto;
-            //rEPORTESToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.reporte;
+            reporteToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.reporte;
             mANTENIMINETOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.mantenimiento;
             lAVADOToolStripMenuItem.Enabled = Global.usuarioSesion.Permiso.lavado;
             btnfacturar.Enabled = Global.usuarioSesion.Permiso.btnFacturar;
@@ -375,6 +375,16 @@ namespace Presentacion
         {
             AbrirFormInPanel(new frmDevolucion());
           
+        }
+
+        private void aYUDAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lAVADOToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmReporteLavado());
         }
     }
 }

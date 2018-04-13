@@ -77,8 +77,9 @@
             this.lAVADOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMPRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnslide = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -86,6 +87,7 @@
             this.btnmantenimiento = new System.Windows.Forms.Button();
             this.btnlavado = new System.Windows.Forms.Button();
             this.btnfacturar = new System.Windows.Forms.Button();
+            this.lAVADOToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.Barratitulo.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.Menuvertical.SuspendLayout();
@@ -138,8 +140,9 @@
             this.mANTENIMINETOToolStripMenuItem,
             this.lAVADOToolStripMenuItem,
             this.lOGSToolStripMenuItem,
-            this.aYUDAToolStripMenuItem,
-            this.lOGOUTToolStripMenuItem});
+            this.reporteToolStripMenuItem,
+            this.lOGOUTToolStripMenuItem,
+            this.rayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -232,7 +235,7 @@
             // 
             this.cOMPRAToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_comprar_96;
             this.cOMPRAToolStripMenuItem1.Name = "cOMPRAToolStripMenuItem1";
-            this.cOMPRAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cOMPRAToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
             this.cOMPRAToolStripMenuItem1.Text = "COMPRA";
             this.cOMPRAToolStripMenuItem1.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem1_Click);
             // 
@@ -240,7 +243,7 @@
             // 
             this.vENTAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_vender_stock_96;
             this.vENTAToolStripMenuItem.Name = "vENTAToolStripMenuItem";
-            this.vENTAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vENTAToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.vENTAToolStripMenuItem.Text = "VENTA";
             this.vENTAToolStripMenuItem.Click += new System.EventHandler(this.vENTAToolStripMenuItem_Click);
             // 
@@ -251,7 +254,7 @@
             this.vENTAToolStripMenuItem1});
             this.dEVOLUCIONToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_reembolso_48;
             this.dEVOLUCIONToolStripMenuItem.Name = "dEVOLUCIONToolStripMenuItem";
-            this.dEVOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dEVOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.dEVOLUCIONToolStripMenuItem.Text = "DEVOLUCION";
             this.dEVOLUCIONToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONToolStripMenuItem_Click);
             // 
@@ -259,7 +262,7 @@
             // 
             this.cOMPRAToolStripMenuItem2.Image = global::Presentacion.Properties.Resources.icons8_comprar_963;
             this.cOMPRAToolStripMenuItem2.Name = "cOMPRAToolStripMenuItem2";
-            this.cOMPRAToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cOMPRAToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.cOMPRAToolStripMenuItem2.Text = "COMPRA";
             this.cOMPRAToolStripMenuItem2.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem2_Click);
             // 
@@ -267,7 +270,7 @@
             // 
             this.vENTAToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_vender_stock_96;
             this.vENTAToolStripMenuItem1.Name = "vENTAToolStripMenuItem1";
-            this.vENTAToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.vENTAToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.vENTAToolStripMenuItem1.Text = "VENTA";
             this.vENTAToolStripMenuItem1.Click += new System.EventHandler(this.vENTAToolStripMenuItem1_Click);
             // 
@@ -356,7 +359,7 @@
             this.iNACTIVOSToolStripMenuItem});
             this.pRODUCTOToolStripMenuItem1.Image = global::Presentacion.Properties.Resources.icons8_producto_961;
             this.pRODUCTOToolStripMenuItem1.Name = "pRODUCTOToolStripMenuItem1";
-            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.pRODUCTOToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
             this.pRODUCTOToolStripMenuItem1.Text = "PRODUCTO";
             this.pRODUCTOToolStripMenuItem1.Click += new System.EventHandler(this.pRODUCTOToolStripMenuItem1_Click);
             // 
@@ -388,7 +391,7 @@
             // 
             this.aLMACENToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_garaje_cerrado_962;
             this.aLMACENToolStripMenuItem.Name = "aLMACENToolStripMenuItem";
-            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.aLMACENToolStripMenuItem.Text = "ALMACEN";
             this.aLMACENToolStripMenuItem.Click += new System.EventHandler(this.aLMACENToolStripMenuItem_Click);
             // 
@@ -396,7 +399,7 @@
             // 
             this.cATEGORIAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_canales_de_venta_96__1_;
             this.cATEGORIAToolStripMenuItem.Name = "cATEGORIAToolStripMenuItem";
-            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.cATEGORIAToolStripMenuItem.Text = "CATEGORIA";
             this.cATEGORIAToolStripMenuItem.Click += new System.EventHandler(this.cATEGORIAToolStripMenuItem_Click);
             // 
@@ -404,7 +407,7 @@
             // 
             this.mARCAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_categoría_961;
             this.mARCAToolStripMenuItem.Name = "mARCAToolStripMenuItem";
-            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.mARCAToolStripMenuItem.Text = "MARCA";
             this.mARCAToolStripMenuItem.Click += new System.EventHandler(this.mARCAToolStripMenuItem_Click);
             // 
@@ -415,7 +418,7 @@
             this.aNULADASToolStripMenuItem});
             this.fACTURASToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_encuesta_48;
             this.fACTURASToolStripMenuItem.Name = "fACTURASToolStripMenuItem";
-            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fACTURASToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.fACTURASToolStripMenuItem.Text = "FACTURAS";
             // 
             // cANCELADASToolStripMenuItem
@@ -577,12 +580,15 @@
             this.cOMPRAToolStripMenuItem.Text = "COMPRA";
             this.cOMPRAToolStripMenuItem.Click += new System.EventHandler(this.cOMPRAToolStripMenuItem_Click_1);
             // 
-            // aYUDAToolStripMenuItem
+            // reporteToolStripMenuItem
             // 
-            this.aYUDAToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_ayuda_96;
-            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
-            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.aYUDAToolStripMenuItem.Text = "AYUDA";
+            this.reporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lAVADOToolStripMenuItem3});
+            this.reporteToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_48;
+            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.reporteToolStripMenuItem.Text = "REPORTE";
+            this.reporteToolStripMenuItem.Click += new System.EventHandler(this.aYUDAToolStripMenuItem_Click);
             // 
             // lOGOUTToolStripMenuItem
             // 
@@ -591,6 +597,13 @@
             this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.lOGOUTToolStripMenuItem.Text = "LOGOUT";
             this.lOGOUTToolStripMenuItem.Click += new System.EventHandler(this.lOGOUTToolStripMenuItem_Click);
+            // 
+            // rayudaToolStripMenuItem
+            // 
+            this.rayudaToolStripMenuItem.Image = global::Presentacion.Properties.Resources.icons8_ayuda_96;
+            this.rayudaToolStripMenuItem.Name = "rayudaToolStripMenuItem";
+            this.rayudaToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.rayudaToolStripMenuItem.Text = "AYUDA";
             // 
             // btnslide
             // 
@@ -699,6 +712,14 @@
             this.btnfacturar.UseVisualStyleBackColor = true;
             this.btnfacturar.Click += new System.EventHandler(this.btnfacturar_Click);
             // 
+            // lAVADOToolStripMenuItem3
+            // 
+            this.lAVADOToolStripMenuItem3.Image = global::Presentacion.Properties.Resources.icons8_encuesta_96;
+            this.lAVADOToolStripMenuItem3.Name = "lAVADOToolStripMenuItem3";
+            this.lAVADOToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.lAVADOToolStripMenuItem3.Text = "LAVADO";
+            this.lAVADOToolStripMenuItem3.Click += new System.EventHandler(this.lAVADOToolStripMenuItem3_Click);
+            // 
             // frmMenuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -767,7 +788,6 @@
         private System.Windows.Forms.ToolStripMenuItem aLMACENToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cATEGORIAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mARCAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.Label lblUsuarios;
         private System.Windows.Forms.ToolStripMenuItem lOGOUTToolStripMenuItem;
         private System.Windows.Forms.Button button1;
@@ -788,5 +808,8 @@
         private System.Windows.Forms.ToolStripMenuItem cOMPRAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cOMPRAToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem vENTAToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lAVADOToolStripMenuItem3;
     }
 }

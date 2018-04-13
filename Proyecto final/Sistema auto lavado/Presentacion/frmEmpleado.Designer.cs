@@ -30,6 +30,7 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,13 +69,12 @@
             this.rbnombre = new System.Windows.Forms.RadioButton();
             this.lblNombrep = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -98,6 +98,18 @@
             this.label8.Size = new System.Drawing.Size(100, 18);
             this.label8.TabIndex = 3;
             this.label8.Text = "EMPLEADO";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(833, -1);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // groupBox2
             // 
@@ -169,21 +181,23 @@
             // 
             // btnGrupo
             // 
+            this.btnGrupo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_48;
+            this.btnGrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGrupo.Location = new System.Drawing.Point(492, 122);
             this.btnGrupo.Name = "btnGrupo";
             this.btnGrupo.Size = new System.Drawing.Size(60, 22);
             this.btnGrupo.TabIndex = 28;
-            this.btnGrupo.Text = "Buscar";
             this.btnGrupo.UseVisualStyleBackColor = true;
             this.btnGrupo.Click += new System.EventHandler(this.btnGrupo_Click);
             // 
             // btnArea
             // 
+            this.btnArea.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_48;
+            this.btnArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnArea.Location = new System.Drawing.Point(752, 166);
             this.btnArea.Name = "btnArea";
             this.btnArea.Size = new System.Drawing.Size(74, 22);
             this.btnArea.TabIndex = 27;
-            this.btnArea.Text = "Buscar";
             this.btnArea.UseVisualStyleBackColor = true;
             this.btnArea.Click += new System.EventHandler(this.btnArea_Click);
             // 
@@ -370,41 +384,53 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(229, 21);
+            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_401;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(174, 21);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(116, 28);
             this.btnNuevo.TabIndex = 18;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnguardar
             // 
+            this.btnguardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguardar.Location = new System.Drawing.Point(447, 21);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(95, 28);
+            this.btnguardar.Size = new System.Drawing.Size(116, 28);
             this.btnguardar.TabIndex = 20;
             this.btnguardar.Text = "Guardar";
+            this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(556, 21);
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_483;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(578, 21);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(95, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 28);
             this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(338, 21);
+            this.btnModificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_482;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(311, 21);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(95, 28);
+            this.btnModificar.Size = new System.Drawing.Size(116, 28);
             this.btnModificar.TabIndex = 19;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
@@ -496,18 +522,6 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(833, -1);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
             // frmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -525,13 +539,13 @@
             this.Load += new System.EventHandler(this.frmEmpleado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }

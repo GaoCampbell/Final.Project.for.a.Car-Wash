@@ -40,8 +40,11 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dtsLavado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsLavado.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmAuditoriaCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +283,12 @@
     <Compile Include="frmMenuprincipal.Designer.cs">
       <DependentUpon>frmMenuprincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMostrarReporteLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavado.Designer.cs">
+      <DependentUpon>frmMostrarReporteLavado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,6 +306,12 @@
     </Compile>
     <Compile Include="frmProveedor.Designer.cs">
       <DependentUpon>frmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteLavado.Designer.cs">
+      <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmServicioLavado.cs">
       <SubType>Form</SubType>
@@ -344,6 +364,12 @@
     <Compile Include="Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\frmFacturaLavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmFacturaLavado.Designer.cs">
+      <DependentUpon>frmFacturaLavado.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAuditoriaCompra.resx">
       <DependentUpon>FrmAuditoriaCompra.cs</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +481,9 @@
     <EmbeddedResource Include="frmMenuprincipal.resx">
       <DependentUpon>frmMenuprincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarReporteLavado.resx">
+      <DependentUpon>frmMostrarReporteLavado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPago.resx">
       <DependentUpon>frmPago.cs</DependentUpon>
     </EmbeddedResource>
@@ -463,6 +492,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteLavado.resx">
+      <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmServicioLavado.resx">
       <DependentUpon>frmServicioLavado.cs</DependentUpon>
@@ -488,6 +520,7 @@
     <EmbeddedResource Include="frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="informeLavado.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -498,6 +531,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\frmFacturaLavado.resx">
+      <DependentUpon>frmFacturaLavado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptFacturarLavado.rdlc" />
+    <None Include="dtsLavado.xsc">
+      <DependentUpon>dtsLavado.xsd</DependentUpon>
+    </None>
+    <None Include="dtsLavado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsLavado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dtsLavado.xss">
+      <DependentUpon>dtsLavado.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

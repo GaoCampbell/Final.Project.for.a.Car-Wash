@@ -98,7 +98,7 @@
             this.txtnombre.Enabled = false;
             this.txtnombre.Location = new System.Drawing.Point(158, 32);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(300, 22);
+            this.txtnombre.Size = new System.Drawing.Size(419, 22);
             this.txtnombre.TabIndex = 9;
             // 
             // label6
@@ -127,41 +127,53 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(322, 21);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(95, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(116, 28);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(435, 21);
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_481;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(461, 21);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(95, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 28);
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(209, 21);
+            this.btnModificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_481;
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(185, 21);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(95, 28);
+            this.btnModificar.Size = new System.Drawing.Size(116, 28);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(96, 21);
+            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_402;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(41, 21);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(116, 28);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 

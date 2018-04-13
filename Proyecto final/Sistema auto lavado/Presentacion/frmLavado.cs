@@ -265,5 +265,12 @@ namespace Presentacion
                 txtgrupo.Text = grupo.grupo.ToString();
             }
         }
+
+        private void btnFacturar_Click(object sender, EventArgs e)
+        {
+            frmFacturaLavado factura = new frmFacturaLavado();
+            factura.idLavado = Convert.ToInt32(this.dgvLavado.CurrentRow.Cells["idLavado"].Value);
+            factura.ShowDialog();
+        }
     }
 }

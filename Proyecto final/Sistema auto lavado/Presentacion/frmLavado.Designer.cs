@@ -33,6 +33,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.lbltotal = new System.Windows.Forms.Label();
@@ -45,13 +47,12 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnFacturar = new System.Windows.Forms.Button();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.dgvLavado = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -129,6 +130,24 @@
             this.groupBox1.Text = "Datos del proveedor";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 14);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Grupo :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(529, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 14);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Lavado :";
+            // 
             // lblusuario
             // 
             this.lblusuario.AutoSize = true;
@@ -164,11 +183,12 @@
             // 
             // btnidgrupo
             // 
-            this.btnidgrupo.Location = new System.Drawing.Point(306, 80);
+            this.btnidgrupo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
+            this.btnidgrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnidgrupo.Location = new System.Drawing.Point(306, 81);
             this.btnidgrupo.Name = "btnidgrupo";
-            this.btnidgrupo.Size = new System.Drawing.Size(83, 23);
+            this.btnidgrupo.Size = new System.Drawing.Size(48, 23);
             this.btnidgrupo.TabIndex = 6;
-            this.btnidgrupo.Text = "Buscar";
             this.btnidgrupo.UseVisualStyleBackColor = true;
             this.btnidgrupo.Click += new System.EventHandler(this.btnidgrupo_Click);
             // 
@@ -181,11 +201,12 @@
             // 
             // btnbuscaridLavadoV
             // 
-            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(707, 29);
+            this.btnbuscaridLavadoV.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
+            this.btnbuscaridLavadoV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(707, 30);
             this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
-            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(48, 22);
             this.btnbuscaridLavadoV.TabIndex = 4;
-            this.btnbuscaridLavadoV.Text = "Buscar";
             this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
             this.btnbuscaridLavadoV.Click += new System.EventHandler(this.btnbuscaridLavadoV_Click);
             // 
@@ -224,6 +245,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnFacturar);
             this.groupBox2.Controls.Add(this.btnguardar);
             this.groupBox2.Controls.Add(this.btncancelar);
             this.groupBox2.Controls.Add(this.btnmodificar);
@@ -236,43 +258,68 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
             // 
+            // btnFacturar
+            // 
+            this.btnFacturar.Image = global::Presentacion.Properties.Resources.icons8_encuesta_48;
+            this.btnFacturar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturar.Location = new System.Drawing.Point(654, 35);
+            this.btnFacturar.Name = "btnFacturar";
+            this.btnFacturar.Size = new System.Drawing.Size(116, 28);
+            this.btnFacturar.TabIndex = 10;
+            this.btnFacturar.Text = "Facturar";
+            this.btnFacturar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFacturar.UseVisualStyleBackColor = true;
+            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click);
+            // 
             // btnguardar
             // 
-            this.btnguardar.Location = new System.Drawing.Point(409, 31);
+            this.btnguardar.Image = global::Presentacion.Properties.Resources.icons8_más_32__1_1;
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnguardar.Location = new System.Drawing.Point(357, 35);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(95, 28);
+            this.btnguardar.Size = new System.Drawing.Size(116, 28);
             this.btnguardar.TabIndex = 9;
             this.btnguardar.Text = "Guardar";
+            this.btnguardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btncancelar
             // 
-            this.btncancelar.Location = new System.Drawing.Point(518, 31);
+            this.btncancelar.Image = global::Presentacion.Properties.Resources.icons8_cancel_482;
+            this.btncancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelar.Location = new System.Drawing.Point(506, 35);
             this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(95, 28);
+            this.btncancelar.Size = new System.Drawing.Size(116, 28);
             this.btncancelar.TabIndex = 8;
             this.btncancelar.Text = "Cancelar";
+            this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(301, 31);
+            this.btnmodificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_482;
+            this.btnmodificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmodificar.Location = new System.Drawing.Point(205, 35);
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(95, 28);
+            this.btnmodificar.Size = new System.Drawing.Size(116, 28);
             this.btnmodificar.TabIndex = 6;
             this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnmodificar.UseVisualStyleBackColor = true;
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // btnnuevo
             // 
-            this.btnnuevo.Location = new System.Drawing.Point(191, 31);
+            this.btnnuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_401;
+            this.btnnuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnuevo.Location = new System.Drawing.Point(52, 35);
             this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(95, 28);
+            this.btnnuevo.Size = new System.Drawing.Size(116, 28);
             this.btnnuevo.TabIndex = 5;
             this.btnnuevo.Text = "Nuevo";
+            this.btnnuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnuevo.UseVisualStyleBackColor = true;
             this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
@@ -285,24 +332,6 @@
             this.dgvLavado.Size = new System.Drawing.Size(806, 204);
             this.dgvLavado.TabIndex = 25;
             this.dgvLavado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellDoubleClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(529, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 14);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Lavado :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 14);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Grupo :";
             // 
             // frmLavado
             // 
@@ -356,5 +385,6 @@
         private System.Windows.Forms.Button btnidgrupo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnFacturar;
     }
 }
