@@ -39,7 +39,7 @@ namespace Negocio
                 if (nuevo.CodSac.Length == 0)
                     throw new ArgumentException("Ingrese el CodSAC");
                 if (nuevo.Existencia.Value == 0)
-                    throw new ArgumentException("Ingrese la cantidad");
+                    throw new ArgumentException("Ingrese la cantidad de productos");
                 if (nuevo.Costo.Value == 0)
                     throw new ArgumentException("Ingrese el precio de venta");
                 if (nuevo.Precio.Value == 0)

@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.dgvLavado = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbtEmpleadp = new System.Windows.Forms.RadioButton();
-            this.rbtServicio = new System.Windows.Forms.RadioButton();
-            this.rbtVehiculo = new System.Windows.Forms.RadioButton();
             this.rbtFecha = new System.Windows.Forms.RadioButton();
+            this.rbtVehiculo = new System.Windows.Forms.RadioButton();
+            this.rbtServicio = new System.Windows.Forms.RadioButton();
+            this.rbtEmpleadp = new System.Windows.Forms.RadioButton();
             this.btnFecha = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnEmpledo = new System.Windows.Forms.Button();
             this.btnServicio = new System.Windows.Forms.Button();
             this.btnVehiculo = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -65,6 +65,16 @@
             this.panel2.Size = new System.Drawing.Size(835, 29);
             this.panel2.TabIndex = 22;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -76,6 +86,18 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "REPORTE LAVADO";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
             // dgvLavado
             // 
             this.dgvLavado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -84,6 +106,7 @@
             this.dgvLavado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLavado.Size = new System.Drawing.Size(809, 291);
             this.dgvLavado.TabIndex = 26;
+           // this.dgvLavado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellContentClick);
             // 
             // groupBox1
             // 
@@ -96,6 +119,7 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtro";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label3
             // 
@@ -128,27 +152,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filtrar por";
             // 
-            // rbtEmpleadp
+            // rbtFecha
             // 
-            this.rbtEmpleadp.AutoSize = true;
-            this.rbtEmpleadp.Location = new System.Drawing.Point(77, 21);
-            this.rbtEmpleadp.Name = "rbtEmpleadp";
-            this.rbtEmpleadp.Size = new System.Drawing.Size(89, 18);
-            this.rbtEmpleadp.TabIndex = 0;
-            this.rbtEmpleadp.TabStop = true;
-            this.rbtEmpleadp.Text = "Empleado";
-            this.rbtEmpleadp.UseVisualStyleBackColor = true;
-            // 
-            // rbtServicio
-            // 
-            this.rbtServicio.AutoSize = true;
-            this.rbtServicio.Location = new System.Drawing.Point(265, 21);
-            this.rbtServicio.Name = "rbtServicio";
-            this.rbtServicio.Size = new System.Drawing.Size(79, 18);
-            this.rbtServicio.TabIndex = 1;
-            this.rbtServicio.TabStop = true;
-            this.rbtServicio.Text = "Servicio";
-            this.rbtServicio.UseVisualStyleBackColor = true;
+            this.rbtFecha.AutoSize = true;
+            this.rbtFecha.Location = new System.Drawing.Point(672, 21);
+            this.rbtFecha.Name = "rbtFecha";
+            this.rbtFecha.Size = new System.Drawing.Size(64, 18);
+            this.rbtFecha.TabIndex = 3;
+            this.rbtFecha.TabStop = true;
+            this.rbtFecha.Text = "Fecha";
+            this.rbtFecha.UseVisualStyleBackColor = true;
             // 
             // rbtVehiculo
             // 
@@ -161,16 +174,27 @@
             this.rbtVehiculo.Text = "Vehiculo";
             this.rbtVehiculo.UseVisualStyleBackColor = true;
             // 
-            // rbtFecha
+            // rbtServicio
             // 
-            this.rbtFecha.AutoSize = true;
-            this.rbtFecha.Location = new System.Drawing.Point(672, 21);
-            this.rbtFecha.Name = "rbtFecha";
-            this.rbtFecha.Size = new System.Drawing.Size(64, 18);
-            this.rbtFecha.TabIndex = 3;
-            this.rbtFecha.TabStop = true;
-            this.rbtFecha.Text = "Fecha";
-            this.rbtFecha.UseVisualStyleBackColor = true;
+            this.rbtServicio.AutoSize = true;
+            this.rbtServicio.Location = new System.Drawing.Point(265, 21);
+            this.rbtServicio.Name = "rbtServicio";
+            this.rbtServicio.Size = new System.Drawing.Size(79, 18);
+            this.rbtServicio.TabIndex = 1;
+            this.rbtServicio.TabStop = true;
+            this.rbtServicio.Text = "Servicio";
+            this.rbtServicio.UseVisualStyleBackColor = true;
+            // 
+            // rbtEmpleadp
+            // 
+            this.rbtEmpleadp.AutoSize = true;
+            this.rbtEmpleadp.Location = new System.Drawing.Point(77, 21);
+            this.rbtEmpleadp.Name = "rbtEmpleadp";
+            this.rbtEmpleadp.Size = new System.Drawing.Size(89, 18);
+            this.rbtEmpleadp.TabIndex = 0;
+            this.rbtEmpleadp.TabStop = true;
+            this.rbtEmpleadp.Text = "Empleado";
+            this.rbtEmpleadp.UseVisualStyleBackColor = true;
             // 
             // btnFecha
             // 
@@ -183,28 +207,6 @@
             this.btnFecha.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFecha.UseVisualStyleBackColor = true;
             this.btnFecha.Click += new System.EventHandler(this.btnReporteLavado_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // btnEmpledo
             // 
@@ -259,13 +261,13 @@
             this.Load += new System.EventHandler(this.frmReporteLavado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }

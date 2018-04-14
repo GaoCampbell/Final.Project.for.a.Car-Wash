@@ -207,6 +207,7 @@
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.Size = new System.Drawing.Size(193, 22);
             this.txtpreciocompra.TabIndex = 25;
+            this.txtpreciocompra.Text = "0";
             // 
             // txtprecioventa
             // 
@@ -215,6 +216,7 @@
             this.txtprecioventa.Name = "txtprecioventa";
             this.txtprecioventa.Size = new System.Drawing.Size(193, 22);
             this.txtprecioventa.TabIndex = 15;
+            this.txtprecioventa.Text = "0";
             // 
             // rbtnInactivo
             // 
@@ -276,6 +278,7 @@
             this.txtexistencia.Name = "txtexistencia";
             this.txtexistencia.Size = new System.Drawing.Size(293, 22);
             this.txtexistencia.TabIndex = 19;
+            this.txtexistencia.Text = "0";
             // 
             // txtmarca
             // 

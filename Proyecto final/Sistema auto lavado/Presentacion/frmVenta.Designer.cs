@@ -55,6 +55,8 @@
             this.btnbuscarcliente = new System.Windows.Forms.Button();
             this.txtbuscarclientenombre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtExistencias = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -78,8 +80,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btneliminarproductos = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtExistencias = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -408,6 +408,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles Venta";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(384, 51);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 18);
+            this.label15.TabIndex = 160;
+            this.label15.Text = "Precio :";
+            // 
+            // txtExistencias
+            // 
+            this.txtExistencias.Enabled = false;
+            this.txtExistencias.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExistencias.Location = new System.Drawing.Point(455, 46);
+            this.txtExistencias.Name = "txtExistencias";
+            this.txtExistencias.ReadOnly = true;
+            this.txtExistencias.Size = new System.Drawing.Size(98, 23);
+            this.txtExistencias.TabIndex = 161;
+            this.txtExistencias.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -426,6 +447,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(52, 23);
             this.txtCantidad.TabIndex = 101;
+            this.txtCantidad.Text = "0";
             this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
             // 
             // label10
@@ -657,27 +679,6 @@
             this.btnagregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnagregar.UseVisualStyleBackColor = true;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(384, 51);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 18);
-            this.label15.TabIndex = 160;
-            this.label15.Text = "Precio :";
-            // 
-            // txtExistencias
-            // 
-            this.txtExistencias.Enabled = false;
-            this.txtExistencias.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExistencias.Location = new System.Drawing.Point(455, 46);
-            this.txtExistencias.Name = "txtExistencias";
-            this.txtExistencias.ReadOnly = true;
-            this.txtExistencias.Size = new System.Drawing.Size(98, 23);
-            this.txtExistencias.TabIndex = 161;
-            this.txtExistencias.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmVenta
             // 

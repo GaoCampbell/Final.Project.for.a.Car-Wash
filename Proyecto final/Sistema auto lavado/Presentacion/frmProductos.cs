@@ -69,12 +69,21 @@ namespace Presentacion
         }
         public void Limpiar()
         {
+            int d;
+            double c, v;
+            c = 0 * 0;
+            v = 0 * 0;
+            d = 0 * 0;
+            txtexistencia.Text = d.ToString();
+            txtpreciocompra.Text = c.ToString();
+            txtprecioventa.Text = v.ToString();
+
             txtnombre.Text = "";
             txtmarca.Text = "";
-            txtpreciocompra.Text = "";
-            txtprecioventa.Text = "";
-            txtCodSAC.Text = "";
-            txtexistencia.Text = "";
+            //txtpreciocompra.Text = "";
+            //txtprecioventa.Text = "";
+              txtCodSAC.Text = "";
+          //  txtexistencia.Text = "";
         }
 
 

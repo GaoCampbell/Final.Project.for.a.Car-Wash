@@ -102,7 +102,9 @@ namespace Presentacion
             btncancelar.Enabled = false;
             btnbuscaridLavadoV.Enabled = false;
             btnidgrupo.Enabled = false;
-            
+            btnmodificar.Visible = false;
+            btnmodificar.Enabled = false;
+            dtpFecha.Text = DateTime.Now.ToString();
             lblusuario.Text = Global.usuarioSesion.usuario;
             try {
                 actualizarGrid();
@@ -147,7 +149,9 @@ namespace Presentacion
                     NLavado IL = new NLavado();
                     IL.InsertRow(InserLavado);
                     MessageBox.Show("Guardado", "Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    frmFacturaLavado factura = new frmFacturaLavado();
+                    factura.idLavado = InserLavado.idLavado; //Convert.ToInt32(this.dgvLavado.CurrentRow.Cells["idLavado"].Value);
+                    factura.ShowDialog();
                 }
                 actualizarGrid();
                 Limpiar();
@@ -229,6 +233,7 @@ namespace Presentacion
             txtlavado.Enabled = false;
             dtpFecha.Enabled = false;
             txttotal.Enabled = false;
+            dtpFecha.Text = DateTime.Now.ToString();
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -268,9 +273,7 @@ namespace Presentacion
 
         private void btnFacturar_Click(object sender, EventArgs e)
         {
-            frmFacturaLavado factura = new frmFacturaLavado();
-            factura.idLavado = Convert.ToInt32(this.dgvLavado.CurrentRow.Cells["idLavado"].Value);
-            factura.ShowDialog();
+            
         }
     }
 }

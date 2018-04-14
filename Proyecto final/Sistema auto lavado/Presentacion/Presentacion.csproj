@@ -56,6 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dtsLavado.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +318,12 @@
     <Compile Include="frmReporteLavado.Designer.cs">
       <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmreporteventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreporteventas.Designer.cs">
+      <DependentUpon>frmreporteventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmServicioLavado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +380,12 @@
     </Compile>
     <Compile Include="Reportes\frmFacturaLavado.Designer.cs">
       <DependentUpon>frmFacturaLavado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmMostrarReporteMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmMostrarReporteMantenimiento.Designer.cs">
+      <DependentUpon>frmMostrarReporteMantenimiento.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmAuditoriaCompra.resx">
       <DependentUpon>FrmAuditoriaCompra.cs</DependentUpon>
@@ -496,6 +513,9 @@
     <EmbeddedResource Include="frmReporteLavado.resx">
       <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmreporteventas.resx">
+      <DependentUpon>frmreporteventas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmServicioLavado.resx">
       <DependentUpon>frmServicioLavado.cs</DependentUpon>
     </EmbeddedResource>
@@ -531,10 +551,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Reportes\frmFacturaLavado.resx">
       <DependentUpon>frmFacturaLavado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmMostrarReporteMantenimiento.resx">
+      <DependentUpon>frmMostrarReporteMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptFacturarLavado.rdlc" />
+    <EmbeddedResource Include="Reportes\rptFacturarMantenimiento.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="dtsLavado.xsc">
       <DependentUpon>dtsLavado.xsd</DependentUpon>
     </None>

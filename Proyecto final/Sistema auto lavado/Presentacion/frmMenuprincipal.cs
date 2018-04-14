@@ -26,13 +26,25 @@ namespace Presentacion
     
         private void btnslide_Click(object sender, EventArgs e)
         {
+
+
+
             if (Menuvertical.Width == 72)
             {
+                this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 Menuvertical.Width = 250;
+
             }
             else
-
+            {
+                this.pictureBox1.Size = new System.Drawing.Size(56, 61);
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 Menuvertical.Width = 72;
+            }
+            
 
         }
 

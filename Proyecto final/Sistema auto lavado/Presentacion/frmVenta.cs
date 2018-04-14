@@ -87,8 +87,10 @@ namespace Presentacion
 
         public void Limpiar()
         {
-            int d;
+            int d ,x;
             d = 0 * 0;
+            x = 0 * 0;
+            txtCantidad.Text = x.ToString();
             txtdescuento.Text = d.ToString();
 
             txtbuscarusuario.Text = "";
@@ -101,7 +103,7 @@ namespace Presentacion
             txtproducto.Text = "";
             txtprecio.Text = "";
             txtnombre.Text = "";
-            txtCantidad.Text = "";
+         //   txtCantidad.Text = "";
             
 
 
@@ -137,6 +139,7 @@ namespace Presentacion
             txtCantidad.Enabled = true;        
             mkfecha.Enabled = false;
             txttotalCordobas.Enabled = false;
+
             Limpiar();
         }
 
@@ -189,9 +192,10 @@ namespace Presentacion
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            Limpiar();
-            this.Close();
+            frmreporteventas s = new frmreporteventas();
+            s.Show();
+            
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

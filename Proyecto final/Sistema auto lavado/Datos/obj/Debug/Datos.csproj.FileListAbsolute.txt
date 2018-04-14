@@ -30,14 +30,6 @@ D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debu
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
-E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
 C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
 C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
 C:\Users\Gelder\Desktop\ORIGINAL3000\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
@@ -102,3 +94,11 @@ L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
 L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 L:\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb

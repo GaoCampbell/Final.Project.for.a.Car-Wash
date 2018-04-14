@@ -31,7 +31,7 @@ namespace Presentacion
             lblusuario.Visible = false;
             actualizargrid();
             LlenarCombo();
-            txtfecha.Text = DateTime.Now.ToString("M/d/yyyy");
+            txtfecha.Text = DateTime.Now.ToString();
             lblusuario.Text = Global.usuarioSesion.usuario;
         }
         private void actualizargrid()
@@ -148,7 +148,7 @@ namespace Presentacion
         {
             
             Limpiar();
-            txtfecha.Text = (DateTime.Now.ToString("M/d/yyyy")).ToString();
+            txtfecha.Text = DateTime.Now.ToString();
             Habilitar();
             txttotal.Focus();
             btncancelar.Enabled = true;
@@ -180,8 +180,11 @@ namespace Presentacion
                     NMantenimiento gestionarMan = new NMantenimiento();
                     gestionarMan.InsertRow(newman);
                     MessageBox.Show("Se guardo correctamente", " Mantenimineto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //dgvVehiculoM.Enabled = true;
-                
+                //dgvVehiculoM.Enabled = true;
+
+                frmMostrarReporteMantenimiento mantenimiento = new frmMostrarReporteMantenimiento();
+                mantenimiento.idMatenimiento = newman.idMantenimiento;
+                mantenimiento.ShowDialog();
 
                 ActualizarServicioV();
                 actualizargrid();

@@ -30,18 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.sp_facturaLavadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsLavado = new Presentacion.dtsLavado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsLavado = new Presentacion.dtsLavado();
-            this.sp_facturaLavadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_facturaLavadoTableAdapter = new Presentacion.dtsLavadoTableAdapters.sp_facturaLavadoTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.sp_facturaLavadoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_facturaLavadoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sp_facturaLavadoBindingSource
+            // 
+            this.sp_facturaLavadoBindingSource.DataMember = "sp_facturaLavado";
+            this.sp_facturaLavadoBindingSource.DataSource = this.dtsLavado;
+            // 
+            // dtsLavado
+            // 
+            this.dtsLavado.DataSetName = "dtsLavado";
+            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -90,16 +100,6 @@
             this.reportViewer1.TabIndex = 11;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
-            // dtsLavado
-            // 
-            this.dtsLavado.DataSetName = "dtsLavado";
-            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sp_facturaLavadoBindingSource
-            // 
-            this.sp_facturaLavadoBindingSource.DataMember = "sp_facturaLavado";
-            this.sp_facturaLavadoBindingSource.DataSource = this.dtsLavado;
-            // 
             // sp_facturaLavadoTableAdapter
             // 
             this.sp_facturaLavadoTableAdapter.ClearBeforeFill = true;
@@ -116,11 +116,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmFacturaLavado";
             this.Load += new System.EventHandler(this.frmFacturaLavado_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.sp_facturaLavadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_facturaLavadoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
