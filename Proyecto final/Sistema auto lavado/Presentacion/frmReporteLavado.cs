@@ -68,6 +68,9 @@ namespace Presentacion
         private void frmReporteLavado_Load(object sender, EventArgs e)
         {
             rbtEmpleadp.Checked = true;
+            btnFecha.Enabled = false;
+            // btnFecha.Text = "";
+            label1.Text = "";
             try
             {
                 actualizarGrid();
@@ -79,6 +82,9 @@ namespace Presentacion
         }
         public void Filtro() {
             if (rbtEmpleadp.Checked ) {
+                btnFecha.Enabled = true;
+                //btnFecha.Text = "Empleado";
+                label1.Text = "Empleado";
                 var busqueda = (
                     from reporte in listaLavado where reporte.empleado.nombres.ToUpper().StartsWith(txtFiltro.Text.ToUpper())
                     select new {
@@ -107,11 +113,13 @@ namespace Presentacion
                 dgvLavado.Columns["idLavadoVehiculo"].Visible = false;
                 dgvLavado.Columns["precio"].Visible = false;
                 dgvLavado.Columns["Grupo"].Visible = false;
-                btnFecha.Text = "Generar reporte por empleado";
-                
+                                             
             }
             if (rbtServicio.Checked)
             {
+               btnFecha.Enabled = true;
+                //btnFecha.Text = "Servicio";
+                label1.Text = "Servicio";
                 var busqueda = (
                     from reporte in listaLavado
                     where reporte.servicioLavado.servicioLavado.ToUpper().StartsWith(txtFiltro.Text.ToUpper())
@@ -146,6 +154,9 @@ namespace Presentacion
 
             if (rbtVehiculo.Checked)
             {
+               btnFecha.Enabled = true;
+                //btnFecha.Text = "Vehiculo";
+                label1.Text = "Vehiculo";
                 var busqueda = (
                     from reporte in listaLavado
                     where reporte.vehiculoLavado.vehiculoLavado.ToUpper().StartsWith(txtFiltro.Text.ToUpper())
@@ -177,8 +188,11 @@ namespace Presentacion
                 dgvLavado.Columns["precio"].Visible = false;
                 dgvLavado.Columns["Grupo"].Visible = false;
             }
-            if (rbtFecha.Checked)
+            if (rbtFecha.Checked == true)
             {
+                btnFecha.Enabled = true;
+                ///btnFecha.Text = "Fecha";
+                label1.Text = "Fecha";
                 var busqueda = (
                     from reporte in listaLavado
                     where reporte.fecha.ToString().StartsWith(txtFiltro.Text.ToUpper())
@@ -209,6 +223,7 @@ namespace Presentacion
                 dgvLavado.Columns["idLavadoVehiculo"].Visible = false;
                 dgvLavado.Columns["precio"].Visible = false;
                 dgvLavado.Columns["Grupo"].Visible = false;
+                
             }
         }
 
@@ -226,9 +241,39 @@ namespace Presentacion
         {
             try
             {
-                frmMostrarReporteLavado reporteEmpledo = new frmMostrarReporteLavado();
-                reporteEmpledo.fecha = Convert.ToDateTime(txtFiltro.Text);
-                reporteEmpledo.ShowDialog();
+                if (txtFiltro.Text == "")
+                {
+                    MessageBox.Show("Por favor seleccione una opcion y escriba el filtro solicitado.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnFecha.Enabled = false;
+                    label1.Text = "";
+                }
+                if (label1.Text == "Fecha")
+                {
+                    btnFecha.Enabled = true;
+                    frmMostrarReporteLavado reporteFecha = new frmMostrarReporteLavado();
+                    reporteFecha.fecha = Convert.ToDateTime(txtFiltro.Text);
+                    reporteFecha.ShowDialog();
+                }
+                if(label1.Text == "Empleado") {
+                    btnFecha.Enabled = true;
+                    frmMostrarReporteLavadoEmpleado reporteEmpleado = new frmMostrarReporteLavadoEmpleado();
+                    reporteEmpleado.Empleado = txtFiltro.Text;
+                    reporteEmpleado.ShowDialog();
+                }
+                if (label1.Text == "Vehiculo") {
+                    btnFecha.Enabled = true;
+                    frmMostrarReporteLavadoVehiculo reporteVehiculo = new frmMostrarReporteLavadoVehiculo();
+                    reporteVehiculo.vehiculo = txtFiltro.Text;
+                    reporteVehiculo.ShowDialog();
+                }
+                if (label1.Text == "Servicio")
+                {
+                    btnFecha.Enabled = true;
+                    frmMostrarReporteLavadoServicio reporteServicio = new frmMostrarReporteLavadoServicio();
+                    reporteServicio.servicio = txtFiltro.Text;
+                    reporteServicio.ShowDialog();
+                }
+                
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);

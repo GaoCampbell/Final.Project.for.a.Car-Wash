@@ -266,7 +266,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>fecha</rd:DefaultName>
@@ -573,7 +575,7 @@
         <Top>3.7721cm</Top>
         <Left>16.08162cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>3.05562cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -603,7 +605,7 @@
         </Paragraphs>
         <rd:DefaultName>total</rd:DefaultName>
         <Top>3.7721cm</Top>
-        <Left>18.72273cm</Left>
+        <Left>19.13724cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>3</ZIndex>

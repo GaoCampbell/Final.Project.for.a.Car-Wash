@@ -29,35 +29,34 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpFecha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.lbltotal = new System.Windows.Forms.Label();
             this.txtgrupo = new System.Windows.Forms.TextBox();
+            this.btnidgrupo = new System.Windows.Forms.Button();
             this.txtlavado = new System.Windows.Forms.TextBox();
+            this.btnbuscaridLavadoV = new System.Windows.Forms.Button();
             this.txtplaca = new System.Windows.Forms.TextBox();
             this.lblplaca = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvLavado = new System.Windows.Forms.DataGridView();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
-            this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
-            this.btnidgrupo = new System.Windows.Forms.Button();
-            this.btnbuscaridLavadoV = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.dtpFecha = new System.Windows.Forms.TextBox();
+            this.dgvLavado = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -72,6 +71,16 @@
             this.panel2.Size = new System.Drawing.Size(835, 29);
             this.panel2.TabIndex = 21;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -82,6 +91,18 @@
             this.label8.Size = new System.Drawing.Size(78, 18);
             this.label8.TabIndex = 3;
             this.label8.Text = "LAVADO";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // groupBox1
             // 
@@ -106,6 +127,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del proveedor";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(109, 30);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(191, 22);
+            this.dtpFecha.TabIndex = 13;
             // 
             // label3
             // 
@@ -158,12 +186,34 @@
             this.txtgrupo.Size = new System.Drawing.Size(191, 22);
             this.txtgrupo.TabIndex = 7;
             // 
+            // btnidgrupo
+            // 
+            this.btnidgrupo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
+            this.btnidgrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnidgrupo.Location = new System.Drawing.Point(306, 81);
+            this.btnidgrupo.Name = "btnidgrupo";
+            this.btnidgrupo.Size = new System.Drawing.Size(48, 23);
+            this.btnidgrupo.TabIndex = 6;
+            this.btnidgrupo.UseVisualStyleBackColor = true;
+            this.btnidgrupo.Click += new System.EventHandler(this.btnidgrupo_Click);
+            // 
             // txtlavado
             // 
             this.txtlavado.Location = new System.Drawing.Point(599, 30);
             this.txtlavado.Name = "txtlavado";
             this.txtlavado.Size = new System.Drawing.Size(102, 22);
             this.txtlavado.TabIndex = 5;
+            // 
+            // btnbuscaridLavadoV
+            // 
+            this.btnbuscaridLavadoV.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
+            this.btnbuscaridLavadoV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(707, 30);
+            this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
+            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(48, 22);
+            this.btnbuscaridLavadoV.TabIndex = 4;
+            this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
+            this.btnbuscaridLavadoV.Click += new System.EventHandler(this.btnbuscaridLavadoV_Click);
             // 
             // txtplaca
             // 
@@ -204,16 +254,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
             // 
-            // dgvLavado
-            // 
-            this.dgvLavado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLavado.Location = new System.Drawing.Point(12, 346);
-            this.dgvLavado.Name = "dgvLavado";
-            this.dgvLavado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLavado.Size = new System.Drawing.Size(806, 204);
-            this.dgvLavado.TabIndex = 25;
-            this.dgvLavado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellDoubleClick);
-            // 
             // btnguardar
             // 
             this.btnguardar.Image = global::Presentacion.Properties.Resources.icons8_encuesta_48;
@@ -240,19 +280,6 @@
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
-            // btnmodificar
-            // 
-            this.btnmodificar.Image = global::Presentacion.Properties.Resources.icons8_editar_propiedad_482;
-            this.btnmodificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmodificar.Location = new System.Drawing.Point(698, 229);
-            this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(116, 28);
-            this.btnmodificar.TabIndex = 6;
-            this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnmodificar.UseVisualStyleBackColor = true;
-            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
-            // 
             // btnnuevo
             // 
             this.btnnuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_401;
@@ -266,56 +293,15 @@
             this.btnnuevo.UseVisualStyleBackColor = true;
             this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
-            // btnidgrupo
+            // dgvLavado
             // 
-            this.btnidgrupo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
-            this.btnidgrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnidgrupo.Location = new System.Drawing.Point(306, 81);
-            this.btnidgrupo.Name = "btnidgrupo";
-            this.btnidgrupo.Size = new System.Drawing.Size(48, 23);
-            this.btnidgrupo.TabIndex = 6;
-            this.btnidgrupo.UseVisualStyleBackColor = true;
-            this.btnidgrupo.Click += new System.EventHandler(this.btnidgrupo_Click);
-            // 
-            // btnbuscaridLavadoV
-            // 
-            this.btnbuscaridLavadoV.BackgroundImage = global::Presentacion.Properties.Resources.icons8_búsqueda_483;
-            this.btnbuscaridLavadoV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnbuscaridLavadoV.Location = new System.Drawing.Point(707, 30);
-            this.btnbuscaridLavadoV.Name = "btnbuscaridLavadoV";
-            this.btnbuscaridLavadoV.Size = new System.Drawing.Size(48, 22);
-            this.btnbuscaridLavadoV.TabIndex = 4;
-            this.btnbuscaridLavadoV.UseVisualStyleBackColor = true;
-            this.btnbuscaridLavadoV.Click += new System.EventHandler(this.btnbuscaridLavadoV_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(109, 30);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(191, 22);
-            this.dtpFecha.TabIndex = 13;
+            this.dgvLavado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLavado.Location = new System.Drawing.Point(12, 346);
+            this.dgvLavado.Name = "dgvLavado";
+            this.dgvLavado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLavado.Size = new System.Drawing.Size(806, 204);
+            this.dgvLavado.TabIndex = 25;
+            this.dgvLavado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellDoubleClick);
             // 
             // frmLavado
             // 
@@ -324,7 +310,6 @@
             this.ClientSize = new System.Drawing.Size(835, 577);
             this.Controls.Add(this.dgvLavado);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -334,12 +319,12 @@
             this.Load += new System.EventHandler(this.frmLavado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,7 +339,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.DataGridView dgvLavado;
         private System.Windows.Forms.TextBox txtlavado;

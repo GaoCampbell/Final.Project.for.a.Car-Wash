@@ -60,3 +60,8 @@ E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\E
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb

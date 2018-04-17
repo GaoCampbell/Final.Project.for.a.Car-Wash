@@ -102,3 +102,11 @@ E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entid
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb

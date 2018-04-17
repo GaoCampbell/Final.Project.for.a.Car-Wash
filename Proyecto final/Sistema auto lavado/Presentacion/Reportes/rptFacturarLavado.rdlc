@@ -14,15 +14,15 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>5.36484cm</Top>
-        <Left>0.51557cm</Left>
+        <Left>0.22453cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.87042cm</Width>
+        <Width>2.47354cm</Width>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -43,20 +43,20 @@
               <TextRun>
                 <Value>=Fields!fecha.Value</Value>
                 <Style>
-                  <Format>f</Format>
+                  <Format>g</Format>
                 </Style>
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>fecha</rd:DefaultName>
         <Top>5.36484cm</Top>
-        <Left>3.98161cm</Left>
+        <Left>2.69807cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.1248cm</Width>
+        <Width>3.69063cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -81,13 +81,13 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
         <Top>5.36484cm</Top>
-        <Left>10.91307cm</Left>
+        <Left>11.21765cm</Left>
         <Height>0.6cm</Height>
         <Width>2.87042cm</Width>
         <ZIndex>2</ZIndex>
@@ -114,13 +114,13 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Column1</rd:DefaultName>
         <Top>5.36484cm</Top>
-        <Left>14.37911cm</Left>
+        <Left>14.06161cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>3</ZIndex>
@@ -155,7 +155,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
         <Top>0.84349cm</Top>
-        <Left>7.48641cm</Left>
+        <Left>7.16891cm</Left>
         <Height>0.6cm</Height>
         <Width>4.16687cm</Width>
         <ZIndex>4</ZIndex>
@@ -190,7 +190,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>1.90927cm</Top>
-        <Left>7.48641cm</Left>
+        <Left>7.16891cm</Left>
         <Height>0.97042cm</Height>
         <Width>4.43146cm</Width>
         <ZIndex>5</ZIndex>
@@ -242,7 +242,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox33</rd:DefaultName>
@@ -258,7 +260,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -274,7 +275,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox35</rd:DefaultName>
@@ -290,7 +293,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -306,7 +308,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox37</rd:DefaultName>
@@ -322,7 +326,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -338,7 +341,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox39</rd:DefaultName>
@@ -354,7 +359,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -370,7 +374,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox41</rd:DefaultName>
@@ -386,7 +392,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -407,7 +412,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Area1</rd:DefaultName>
@@ -437,7 +444,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>vehiculoLavado1</rd:DefaultName>
@@ -467,7 +476,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>placa1</rd:DefaultName>
@@ -497,7 +508,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>servicioLavado1</rd:DefaultName>
@@ -527,7 +540,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>total1</rd:DefaultName>
@@ -570,11 +585,13 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>id Lavado</Value>
+                            <Value>No Lavado</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox43</rd:DefaultName>
@@ -590,7 +607,6 @@
                       <PaddingBottom>2pt</PaddingBottom>
                     </Style>
                   </Textbox>
-                  <rd:Selected>true</rd:Selected>
                 </CellContents>
               </TablixHeader>
               <TablixMembers>
@@ -623,7 +639,9 @@
                             <Style />
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>idLavado1</rd:DefaultName>
@@ -650,7 +668,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>3.54224cm</Top>
-        <Left>0.51557cm</Left>
+        <Left>0.19807cm</Left>
         <Height>1.2cm</Height>
         <Width>16.36354cm</Width>
         <ZIndex>6</ZIndex>
@@ -678,7 +696,6 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>9.19854cm</Top>
-        <Left>0.22458cm</Left>
         <Height>0.6cm</Height>
         <Width>16.87911cm</Width>
         <ZIndex>7</ZIndex>
@@ -698,7 +715,7 @@
         <Value>ID215810</Value>
         <Sizing>FitProportional</Sizing>
         <Top>0.3937cm</Top>
-        <Left>2.56036cm</Left>
+        <Left>2.24286cm</Left>
         <Height>2.48599cm</Height>
         <Width>3.93417cm</Width>
         <ZIndex>8</ZIndex>
@@ -712,7 +729,7 @@
     <Height>4.125in</Height>
     <Style />
   </Body>
-  <Width>6.73374in</Width>
+  <Width>6.66082in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

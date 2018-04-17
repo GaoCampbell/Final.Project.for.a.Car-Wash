@@ -294,6 +294,24 @@
     <Compile Include="frmMostrarReporteLavado.Designer.cs">
       <DependentUpon>frmMostrarReporteLavado.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMostrarReporteLavadoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavadoEmpleado.Designer.cs">
+      <DependentUpon>frmMostrarReporteLavadoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavadoServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavadoServicio.Designer.cs">
+      <DependentUpon>frmMostrarReporteLavadoServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavadoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarReporteLavadoVehiculo.Designer.cs">
+      <DependentUpon>frmMostrarReporteLavadoVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -501,6 +519,15 @@
     <EmbeddedResource Include="frmMostrarReporteLavado.resx">
       <DependentUpon>frmMostrarReporteLavado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarReporteLavadoEmpleado.resx">
+      <DependentUpon>frmMostrarReporteLavadoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarReporteLavadoServicio.resx">
+      <DependentUpon>frmMostrarReporteLavadoServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarReporteLavadoVehiculo.resx">
+      <DependentUpon>frmMostrarReporteLavadoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPago.resx">
       <DependentUpon>frmPago.cs</DependentUpon>
     </EmbeddedResource>
@@ -560,6 +587,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptFacturarLavado.rdlc" />
     <EmbeddedResource Include="Reportes\rptFacturarMantenimiento.rdlc" />
+    <EmbeddedResource Include="rptLavadoServicio.rdlc" />
+    <EmbeddedResource Include="rptLavadoVehiculo.rdlc" />
+    <EmbeddedResource Include="rptReporteLavadoEmpleado.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

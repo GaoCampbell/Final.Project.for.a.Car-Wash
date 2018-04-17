@@ -30,20 +30,30 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.sp_ReporteLavadoFechaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsLavado = new Presentacion.dtsLavado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.dtsLavado = new Presentacion.dtsLavado();
-            this.sp_ReporteLavadoFechaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_ReporteLavadoFechaTableAdapter = new Presentacion.dtsLavadoTableAdapters.sp_ReporteLavadoFechaTableAdapter();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.sp_ReporteLavadoFechaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_ReporteLavadoFechaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sp_ReporteLavadoFechaBindingSource
+            // 
+            this.sp_ReporteLavadoFechaBindingSource.DataMember = "sp_ReporteLavadoFecha";
+            this.sp_ReporteLavadoFechaBindingSource.DataSource = this.dtsLavado;
+            // 
+            // dtsLavado
+            // 
+            this.dtsLavado.DataSetName = "dtsLavado";
+            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -68,6 +78,23 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "REPORTE LAVADO";
             // 
+            // sp_ReporteLavadoFechaTableAdapter
+            // 
+            this.sp_ReporteLavadoFechaTableAdapter.ClearBeforeFill = true;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.sp_ReporteLavadoFechaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.informeLavado.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 29);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(835, 548);
+            this.reportViewer1.TabIndex = 24;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -90,33 +117,6 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
-            // dtsLavado
-            // 
-            this.dtsLavado.DataSetName = "dtsLavado";
-            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sp_ReporteLavadoFechaBindingSource
-            // 
-            this.sp_ReporteLavadoFechaBindingSource.DataMember = "sp_ReporteLavadoFecha";
-            this.sp_ReporteLavadoFechaBindingSource.DataSource = this.dtsLavado;
-            // 
-            // sp_ReporteLavadoFechaTableAdapter
-            // 
-            this.sp_ReporteLavadoFechaTableAdapter.ClearBeforeFill = true;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.sp_ReporteLavadoFechaBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.informeLavado.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 29);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(835, 548);
-            this.reportViewer1.TabIndex = 24;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
-            // 
             // frmMostrarReporteLavado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,12 +129,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMostrarReporteLavado";
             this.Load += new System.EventHandler(this.frmMostrarReporteLavado_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.sp_ReporteLavadoFechaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_ReporteLavadoFechaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

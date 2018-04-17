@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.dgvLavado = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,15 +40,16 @@
             this.rbtServicio = new System.Windows.Forms.RadioButton();
             this.rbtEmpleadp = new System.Windows.Forms.RadioButton();
             this.btnFecha = new System.Windows.Forms.Button();
-            this.btnEmpledo = new System.Windows.Forms.Button();
-            this.btnServicio = new System.Windows.Forms.Button();
-            this.btnVehiculo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.lblFiltr = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -65,16 +64,6 @@
             this.panel2.Size = new System.Drawing.Size(835, 29);
             this.panel2.TabIndex = 22;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -86,18 +75,6 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "REPORTE LAVADO";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
             // dgvLavado
             // 
             this.dgvLavado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -106,7 +83,6 @@
             this.dgvLavado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLavado.Size = new System.Drawing.Size(809, 291);
             this.dgvLavado.TabIndex = 26;
-           // this.dgvLavado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLavado_CellContentClick);
             // 
             // groupBox1
             // 
@@ -199,7 +175,7 @@
             // btnFecha
             // 
             this.btnFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFecha.Location = new System.Drawing.Point(659, 535);
+            this.btnFecha.Location = new System.Drawing.Point(12, 572);
             this.btnFecha.Name = "btnFecha";
             this.btnFecha.Size = new System.Drawing.Size(164, 30);
             this.btnFecha.TabIndex = 29;
@@ -208,47 +184,54 @@
             this.btnFecha.UseVisualStyleBackColor = true;
             this.btnFecha.Click += new System.EventHandler(this.btnReporteLavado_Click);
             // 
-            // btnEmpledo
+            // pictureBox1
             // 
-            this.btnEmpledo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpledo.Location = new System.Drawing.Point(27, 535);
-            this.btnEmpledo.Name = "btnEmpledo";
-            this.btnEmpledo.Size = new System.Drawing.Size(164, 30);
-            this.btnEmpledo.TabIndex = 30;
-            this.btnEmpledo.Text = "Generar reporte";
-            this.btnEmpledo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEmpledo.UseVisualStyleBackColor = true;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(778, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // btnServicio
+            // pictureBox8
             // 
-            this.btnServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServicio.Location = new System.Drawing.Point(239, 535);
-            this.btnServicio.Name = "btnServicio";
-            this.btnServicio.Size = new System.Drawing.Size(164, 30);
-            this.btnServicio.TabIndex = 31;
-            this.btnServicio.Text = "Generar reporte";
-            this.btnServicio.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnServicio.UseVisualStyleBackColor = true;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(806, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
-            // btnVehiculo
+            // lblFiltr
             // 
-            this.btnVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehiculo.Location = new System.Drawing.Point(460, 535);
-            this.btnVehiculo.Name = "btnVehiculo";
-            this.btnVehiculo.Size = new System.Drawing.Size(164, 30);
-            this.btnVehiculo.TabIndex = 32;
-            this.btnVehiculo.Text = "Generar reporte";
-            this.btnVehiculo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnVehiculo.UseVisualStyleBackColor = true;
+            this.lblFiltr.AutoSize = true;
+            this.lblFiltr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFiltr.Location = new System.Drawing.Point(12, 539);
+            this.lblFiltr.Name = "lblFiltr";
+            this.lblFiltr.Size = new System.Drawing.Size(174, 20);
+            this.lblFiltr.TabIndex = 30;
+            this.lblFiltr.Text = "Generar reporte por ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(180, 539);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 31;
             // 
             // frmReporteLavado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 577);
-            this.Controls.Add(this.btnVehiculo);
-            this.Controls.Add(this.btnServicio);
-            this.Controls.Add(this.btnEmpledo);
+            this.ClientSize = new System.Drawing.Size(835, 601);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFiltr);
             this.Controls.Add(this.btnFecha);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -261,14 +244,15 @@
             this.Load += new System.EventHandler(this.frmReporteLavado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLavado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -288,8 +272,7 @@
         private System.Windows.Forms.RadioButton rbtServicio;
         private System.Windows.Forms.RadioButton rbtEmpleadp;
         private System.Windows.Forms.Button btnFecha;
-        private System.Windows.Forms.Button btnEmpledo;
-        private System.Windows.Forms.Button btnServicio;
-        private System.Windows.Forms.Button btnVehiculo;
+        private System.Windows.Forms.Label lblFiltr;
+        private System.Windows.Forms.Label label1;
     }
 }

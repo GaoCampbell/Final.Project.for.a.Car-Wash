@@ -115,3 +115,12 @@ E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Ent
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
 E:\PortableGit\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.pdb
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
+H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb

@@ -24,7 +24,7 @@ namespace Presentacion
             txtgrupo.Enabled = false;
             txttotal.Enabled = false;
             btnguardar.Enabled = false;
-            btnmodificar.Enabled = false;
+            //btnmodificar.Enabled = false;
         }
         private void Habilitar()
         {
@@ -102,10 +102,11 @@ namespace Presentacion
             btncancelar.Enabled = false;
             btnbuscaridLavadoV.Enabled = false;
             btnidgrupo.Enabled = false;
-            btnmodificar.Visible = false;
-            btnmodificar.Enabled = false;
+           // btnmodificar.Visible = false;
+            //btnmodificar.Enabled = false;
             dtpFecha.Text = DateTime.Now.ToString();
             lblusuario.Text = Global.usuarioSesion.usuario;
+            lblusuario.Visible = false;
             try {
                 actualizarGrid();
             }
@@ -148,9 +149,9 @@ namespace Presentacion
                     InserLavado.usuario.usuario = lblusuario.Text;
                     NLavado IL = new NLavado();
                     IL.InsertRow(InserLavado);
-                    MessageBox.Show("Guardado", "Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Generado factura, por favor espera", "Lavado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmFacturaLavado factura = new frmFacturaLavado();
-                    factura.idLavado = InserLavado.idLavado; //Convert.ToInt32(this.dgvLavado.CurrentRow.Cells["idLavado"].Value);
+                    factura.idLavado = InserLavado.idLavado;
                     factura.ShowDialog();
                 }
                 actualizarGrid();
@@ -159,7 +160,7 @@ namespace Presentacion
                 Deshabilitar();
                 btncancelar.Enabled = false;
                 btnguardar.Enabled = false;
-                btnmodificar.Enabled = false;
+               // btnmodificar.Enabled = false;
                 btnnuevo.Enabled = true;
                 btnidgrupo.Enabled = false;
                 btnbuscaridLavadoV.Enabled = false;
@@ -185,7 +186,7 @@ namespace Presentacion
             btncancelar.Enabled = true;
             btnguardar.Enabled = true;
             btnbuscaridLavadoV.Enabled = true;
-            btnmodificar.Enabled = false;
+            //btnmodificar.Enabled = false;
             btnidgrupo.Enabled = true;
             txtgrupo.Enabled = false;
             txttotal.Enabled = false;
@@ -207,7 +208,7 @@ namespace Presentacion
                 txtgrupo.Tag = dgvLavado.Rows[e.RowIndex].Cells["idGrupo"].Value.ToString();
                 txtgrupo.Text = dgvLavado.Rows[e.RowIndex].Cells["Grupo_Asignado"].Value.ToString();
                 lblusuario.Text = dgvLavado.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
-                btnmodificar.Enabled = true;
+                //btnmodificar.Enabled = true;
                 btncancelar.Enabled = true;
                 btnguardar.Enabled = false;
                 btnnuevo.Enabled = false;
@@ -225,7 +226,7 @@ namespace Presentacion
             Habilitar();
             btncancelar.Enabled = true;
             btnguardar.Enabled = true;
-            btnmodificar.Enabled = false;
+            //btnmodificar.Enabled = false;
             btnidgrupo.Enabled = true;
             btnbuscaridLavadoV.Enabled = true;
             btnnuevo.Enabled = false;
@@ -242,7 +243,7 @@ namespace Presentacion
             Deshabilitar();
             btnnuevo.Enabled = true;
             btnguardar.Enabled = false;
-            btnmodificar.Enabled = false;
+            //btnmodificar.Enabled = false;
             btnidgrupo.Enabled = false;
             btnbuscaridLavadoV.Enabled = false;
             txtgrupo.Enabled = false;

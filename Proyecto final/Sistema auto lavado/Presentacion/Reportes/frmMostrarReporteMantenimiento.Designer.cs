@@ -30,18 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.sp_facturarMantenimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtsLavado = new Presentacion.dtsLavado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtsLavado = new Presentacion.dtsLavado();
-            this.sp_facturarMantenimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_facturarMantenimientoTableAdapter = new Presentacion.dtsLavadoTableAdapters.sp_facturarMantenimientoTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.sp_facturarMantenimientoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_facturarMantenimientoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sp_facturarMantenimientoBindingSource
+            // 
+            this.sp_facturarMantenimientoBindingSource.DataMember = "sp_facturarMantenimiento";
+            this.sp_facturarMantenimientoBindingSource.DataSource = this.dtsLavado;
+            // 
+            // dtsLavado
+            // 
+            this.dtsLavado.DataSetName = "dtsLavado";
+            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -89,16 +99,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(712, 411);
             this.reportViewer1.TabIndex = 12;
             // 
-            // dtsLavado
-            // 
-            this.dtsLavado.DataSetName = "dtsLavado";
-            this.dtsLavado.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sp_facturarMantenimientoBindingSource
-            // 
-            this.sp_facturarMantenimientoBindingSource.DataMember = "sp_facturarMantenimiento";
-            this.sp_facturarMantenimientoBindingSource.DataSource = this.dtsLavado;
-            // 
             // sp_facturarMantenimientoTableAdapter
             // 
             this.sp_facturarMantenimientoTableAdapter.ClearBeforeFill = true;
@@ -112,13 +112,14 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMostrarReporteMantenimiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMostrarReporteMantenimiento";
             this.Load += new System.EventHandler(this.frmMostrarReporteMantenimiento_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.sp_facturarMantenimientoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtsLavado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_facturarMantenimientoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
