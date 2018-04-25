@@ -30,5 +30,21 @@ namespace Presentacion
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CERRAR_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Desea volver a realizar otra venta?", "VENTA",
+                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)  == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+
+        }
     }
 }

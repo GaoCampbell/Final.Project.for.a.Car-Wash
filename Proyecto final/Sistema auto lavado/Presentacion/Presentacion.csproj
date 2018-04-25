@@ -42,8 +42,11 @@
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,6 +63,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCompra.cs">
+      <DependentUpon>DataSetCompra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCompra.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCompra.xsd</DependentUpon>
     </Compile>
     <Compile Include="dtsLavado.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -391,6 +402,11 @@
       <DependentUpon>frmVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="IngenieriaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngenieriaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reportes\frmFacturaLavado.cs">
@@ -579,6 +595,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Reportes\frmFacturaLavado.resx">
       <DependentUpon>frmFacturaLavado.cs</DependentUpon>
     </EmbeddedResource>
@@ -601,6 +618,17 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
+    <None Include="DataSetCompra.xsc">
+      <DependentUpon>DataSetCompra.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCompra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCompra.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCompra.xss">
+      <DependentUpon>DataSetCompra.xsd</DependentUpon>
+    </None>
     <None Include="dtsLavado.xsc">
       <DependentUpon>dtsLavado.xsd</DependentUpon>
     </None>
@@ -611,6 +639,17 @@
     </None>
     <None Include="dtsLavado.xss">
       <DependentUpon>dtsLavado.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriaDataSet.xsc">
+      <DependentUpon>IngenieriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IngenieriaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IngenieriaDataSet.xss">
+      <DependentUpon>IngenieriaDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

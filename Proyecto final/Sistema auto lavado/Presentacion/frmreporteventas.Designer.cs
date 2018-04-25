@@ -31,16 +31,31 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSet1 = new Presentacion.DataSet1();
             this.reporteventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reporteventaTableAdapter = new Presentacion.DataSet1TableAdapters.reporteventaTableAdapter();
+            this.DataSet1 = new Presentacion.DataSet1();
             this.getdetalleventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reporteventaTableAdapter = new Presentacion.DataSet1TableAdapters.reporteventaTableAdapter();
             this.getdetalleventaTableAdapter = new Presentacion.DataSet1TableAdapters.getdetalleventaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteventaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getdetalleventaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // reporteventaBindingSource
+            // 
+            this.reporteventaBindingSource.DataMember = "reporteventa";
+            this.reporteventaBindingSource.DataSource = this.DataSet1;
+            // 
+            // DataSet1
+            // 
+            this.DataSet1.DataSetName = "DataSet1";
+            this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // getdetalleventaBindingSource
+            // 
+            this.getdetalleventaBindingSource.DataMember = "getdetalleventa";
+            this.getdetalleventaBindingSource.DataSource = this.DataSet1;
             // 
             // reportViewer1
             // 
@@ -56,25 +71,11 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(537, 566);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // DataSet1
-            // 
-            this.DataSet1.DataSetName = "DataSet1";
-            this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reporteventaBindingSource
-            // 
-            this.reporteventaBindingSource.DataMember = "reporteventa";
-            this.reporteventaBindingSource.DataSource = this.DataSet1;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // reporteventaTableAdapter
             // 
             this.reporteventaTableAdapter.ClearBeforeFill = true;
-            // 
-            // getdetalleventaBindingSource
-            // 
-            this.getdetalleventaBindingSource.DataMember = "getdetalleventa";
-            this.getdetalleventaBindingSource.DataSource = this.DataSet1;
             // 
             // getdetalleventaTableAdapter
             // 
@@ -89,8 +90,8 @@
             this.Name = "frmreporteventas";
             this.Text = "frmreporteventas";
             this.Load += new System.EventHandler(this.frmreporteventas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteventaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getdetalleventaBindingSource)).EndInit();
             this.ResumeLayout(false);
 

@@ -92,7 +92,7 @@ namespace Presentacion
             x = 0 * 0;
             txtCantidad.Text = x.ToString();
             txtdescuento.Text = d.ToString();
-
+            txtTotalDolares.Text = "";
             txtbuscarusuario.Text = "";
             txtbuscarcliente.Text = "";
             mkfecha.Text = "";
@@ -194,6 +194,8 @@ namespace Presentacion
             }
             frmreporteventas s = new frmreporteventas();
             s.Show();
+
+            this.Close();
             
             
         }
@@ -266,23 +268,23 @@ namespace Presentacion
             {
                 sumatoria += Convert.ToInt32(row.Totaldetalle);
             }
-
+            //APLICAMOS EL DESCUENTO
             descuentox = Convert.ToDouble(txtdescuento.Text);
+            //APLICAMOS EL IVA
             ivax = (sumatoria * 0.15);
+            //EL IVA MAS LA SUMATORIA DE TODOS LOS PRODUCTOS QUE ESTAN EN EL DATAGRIDVIEW
             iva = ((sumatoria * 0.15) + sumatoria) ;
+
             txtiva.Text = ivax.ToString();        
+            //SACAR EL DESCUENTO
             descuento = iva * (descuentox / 100);
             totalcordobas = iva - descuento;
+        
             txtsubtotal.Text = sumatoria.ToString();
             txttotalCordobas.Text = totalcordobas.ToString();
+            totaldolares = (totalcordobas / 30.9);
 
-            totaldolares = totalcordobas / 30.9;
-
-            
-
-
-
-            txtTotalDolares.Text = totaldolares.ToString();
+           this.txtTotalDolares.Text = totaldolares.ToString("0.##");
 
         }
 
@@ -290,39 +292,53 @@ namespace Presentacion
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
+
             try
             {
-                if (Convert.ToInt32(txtExistencias.Text) >= Convert.ToInt32(txtCantidad.Text))
+
+                if (string.IsNullOrEmpty(txtproducto.Text))
                 {
-                    Edetalleventa nuevas = new Edetalleventa();
-                    nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                    nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
-                    nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
-                    nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
-                    nuevas.producto.Producto = txtnombre.Text;
-                    ventas.listadetalle.Add(nuevas);
-                    ActualizarLista2();
-                    calculartotal();
-                    Deshabilitar();
-                    txtCantidad.Enabled = true;
-                    btnGuardar.Enabled = true;
-                    btnCancelar.Enabled = true;
-                    btnNuevo.Enabled = true;
-                    txtdescuento.Enabled = true;
-                    txtproducto.Text = "";
-                    txtprecio.Text = "";
-                    txtnombre.Text = "";
-                    txtCantidad.Text = "";
-                    txtprecio.Text = "";
+
+                    MessageBox.Show("Debe ingresar un producto");
+
+                    return;
 
                 }
                 else
                 {
-                    MessageBox.Show("existencias insuficientes");
+                    if (Convert.ToInt32(txtExistencias.Text) >= Convert.ToInt32(txtCantidad.Text))
+                    {
+                        Edetalleventa nuevas = new Edetalleventa();
+                        nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                        nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+                        nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
+                        nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
+                        nuevas.producto.Producto = txtnombre.Text;
+                        ventas.listadetalle.Add(nuevas);
+                        ActualizarLista2();
+                        calculartotal();
+                        Deshabilitar();
+                        txtCantidad.Enabled = true;
+                        btnGuardar.Enabled = true;
+                        btnCancelar.Enabled = true;
+                        btnNuevo.Enabled = true;
+                        txtdescuento.Enabled = true;
+                        txtproducto.Text = "";
+                        txtprecio.Text = "";
+                        txtnombre.Text = "";
+                        txtCantidad.Text = "";
+                        txtprecio.Text = "";
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("EXISTENCIAS INSUFICIENTES");
+
+                    }
 
                 }
 
-
+            
             }
             catch (Exception ex)
             {

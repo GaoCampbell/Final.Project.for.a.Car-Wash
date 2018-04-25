@@ -46,14 +46,6 @@ D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Siste
 D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
-C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
 D:\10mo Cuatrimestres\Ingenieria de software\Final\Original II\OFICIALXXX\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
@@ -110,3 +102,11 @@ H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Rep
 H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
 H:\Clases de la UNI\10mo cuatrimestres\Ingenieria de software\Final\Original Reparacion\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll.config
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.dll
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.dll
+C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Datos\obj\Debug\Datos.pdb
