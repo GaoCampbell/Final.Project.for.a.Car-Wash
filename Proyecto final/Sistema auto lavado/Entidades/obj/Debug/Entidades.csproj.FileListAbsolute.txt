@@ -64,3 +64,8 @@ C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bi
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Entidades\obj\Debug\Entidades.pdb

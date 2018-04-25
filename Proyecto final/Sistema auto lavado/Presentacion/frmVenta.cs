@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Entidades;
+using Presentacion.Reportes;
+
 
 namespace Presentacion
 {
     public partial class frmVenta : Form
     {
         Eventa ventas = new Eventa();
+        int x;
         public frmVenta()
         {
             InitializeComponent();
@@ -192,9 +195,9 @@ namespace Presentacion
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            frmreporteventas s = new frmreporteventas();
-            s.Show();
 
+            FrmReporteVenta x = new FrmReporteVenta();
+            x.Show();
             this.Close();
             
             
@@ -292,50 +295,55 @@ namespace Presentacion
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-
+            x = Convert.ToInt32(txtCantidad.Text);
             try
             {
+                
 
                 if (string.IsNullOrEmpty(txtproducto.Text))
                 {
 
                     MessageBox.Show("Debe ingresar un producto");
-
                     return;
-
                 }
                 else
                 {
-                    if (Convert.ToInt32(txtExistencias.Text) >= Convert.ToInt32(txtCantidad.Text))
+                    if (x <= 0)
                     {
-                        Edetalleventa nuevas = new Edetalleventa();
-                        nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                        nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
-                        nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
-                        nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
-                        nuevas.producto.Producto = txtnombre.Text;
-                        ventas.listadetalle.Add(nuevas);
-                        ActualizarLista2();
-                        calculartotal();
-                        Deshabilitar();
-                        txtCantidad.Enabled = true;
-                        btnGuardar.Enabled = true;
-                        btnCancelar.Enabled = true;
-                        btnNuevo.Enabled = true;
-                        txtdescuento.Enabled = true;
-                        txtproducto.Text = "";
-                        txtprecio.Text = "";
-                        txtnombre.Text = "";
-                        txtCantidad.Text = "";
-                        txtprecio.Text = "";
-
+                        MessageBox.Show("Debe ingresar la cantidad de productos a vender");
                     }
                     else
                     {
-                        MessageBox.Show("EXISTENCIAS INSUFICIENTES");
+                        if (Convert.ToInt32(txtExistencias.Text) >= Convert.ToInt32(txtCantidad.Text))
+                        {
+                            Edetalleventa nuevas = new Edetalleventa();
+                            nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                            nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+                            nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
+                            nuevas.Totaldetalle = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
+                            nuevas.producto.Producto = txtnombre.Text;
+                            ventas.listadetalle.Add(nuevas);
+                            ActualizarLista2();
+                            calculartotal();
+                            Deshabilitar();
+                            txtCantidad.Enabled = true;
+                            btnGuardar.Enabled = true;
+                            btnCancelar.Enabled = true;
+                            btnNuevo.Enabled = true;
+                            txtdescuento.Enabled = true;
+                            txtproducto.Text = "";
+                            txtprecio.Text = "";
+                            txtnombre.Text = "";
+                            txtCantidad.Text = "";
+                            txtprecio.Text = "";
 
+                        }
+                        else
+                        {
+                            MessageBox.Show("EXISTENCIAS INSUFICIENTES");
+
+                        }
                     }
-
                 }
 
             

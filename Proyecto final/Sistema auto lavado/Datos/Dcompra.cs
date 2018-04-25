@@ -138,5 +138,31 @@ namespace Datos
 
         }
 
+        public void modificarestadocompra(Ecompra modificar)
+        {
+            try
+            {
+
+                SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cadenaConexion);
+                SqlCommand comando = new SqlCommand();
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.CommandText = "modificarcompra";
+                comando.Parameters.AddWithValue("@Numcompra", modificar.Idcompra);
+                comando.Parameters.AddWithValue("@Estado", modificar.Estado);
+                comando.Connection = conexion;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
     }
 }

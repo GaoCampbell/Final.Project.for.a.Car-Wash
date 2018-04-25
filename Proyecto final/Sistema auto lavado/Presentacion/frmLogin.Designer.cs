@@ -41,6 +41,7 @@
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,9 +88,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Presentacion.Properties.Resources._215810;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 59);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 29);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(172, 138);
+            this.pictureBox2.Size = new System.Drawing.Size(226, 165);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -140,7 +141,7 @@
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(403, 40);
             this.btnlogin.TabIndex = 0;
-            this.btnlogin.Text = "LOGIN";
+            this.btnlogin.Text = "ACCEDER";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             this.btnlogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnlogin_MouseDown);
@@ -148,11 +149,12 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 271);
+            this.panel7.Size = new System.Drawing.Size(264, 271);
             this.panel7.TabIndex = 13;
             // 
             // shapeContainer1
@@ -200,6 +202,18 @@
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter_1);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(259, 25);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Auto Lavado JAGUAR";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +243,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +263,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -34,6 +34,9 @@
             this.rbtEfectivo = new System.Windows.Forms.RadioButton();
             this.btnbuscarproducto = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -45,7 +48,9 @@
             this.txtbuscarusuario = new System.Windows.Forms.TextBox();
             this.txtbuscaridproveedor = new System.Windows.Forms.TextBox();
             this.dtpfecha = new System.Windows.Forms.DateTimePicker();
+            this.Btnbuscarusuario = new System.Windows.Forms.Button();
             this.txtbuscarusuarionombre = new System.Windows.Forms.TextBox();
+            this.btnbuscarcliente = new System.Windows.Forms.Button();
             this.txtbuscarproveedornombre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -59,7 +64,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dgvventas = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.txtiva = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -72,23 +79,16 @@
             this.txtTotalDolares = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btneliminarproductos = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
-            this.Btnbuscarusuario = new System.Windows.Forms.Button();
-            this.btnbuscarcliente = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvventas)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -157,6 +157,47 @@
             this.groupBox3.TabIndex = 171;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Funciones";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Enabled = false;
+            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_bolsa_de_dinero_32;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(324, 32);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(110, 35);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Facturar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Enabled = false;
+            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_eliminar_32;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(444, 32);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(110, 35);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_402;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(208, 32);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(110, 35);
+            this.btnNuevo.TabIndex = 10;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // groupBox2
             // 
@@ -289,6 +330,20 @@
             this.dtpfecha.Size = new System.Drawing.Size(246, 23);
             this.dtpfecha.TabIndex = 41;
             // 
+            // Btnbuscarusuario
+            // 
+            this.Btnbuscarusuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btnbuscarusuario.BackgroundImage")));
+            this.Btnbuscarusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btnbuscarusuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btnbuscarusuario.Enabled = false;
+            this.Btnbuscarusuario.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnbuscarusuario.Location = new System.Drawing.Point(364, 22);
+            this.Btnbuscarusuario.Name = "Btnbuscarusuario";
+            this.Btnbuscarusuario.Size = new System.Drawing.Size(33, 26);
+            this.Btnbuscarusuario.TabIndex = 42;
+            this.Btnbuscarusuario.UseVisualStyleBackColor = true;
+            this.Btnbuscarusuario.Click += new System.EventHandler(this.Btnbuscarusuario_Click);
+            // 
             // txtbuscarusuarionombre
             // 
             this.txtbuscarusuarionombre.Enabled = false;
@@ -298,6 +353,20 @@
             this.txtbuscarusuarionombre.Size = new System.Drawing.Size(200, 23);
             this.txtbuscarusuarionombre.TabIndex = 58;
             this.txtbuscarusuarionombre.TextChanged += new System.EventHandler(this.txtbuscarusuarionombre_TextChanged);
+            // 
+            // btnbuscarcliente
+            // 
+            this.btnbuscarcliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnbuscarcliente.BackgroundImage")));
+            this.btnbuscarcliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnbuscarcliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarcliente.Enabled = false;
+            this.btnbuscarcliente.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscarcliente.Location = new System.Drawing.Point(765, 25);
+            this.btnbuscarcliente.Name = "btnbuscarcliente";
+            this.btnbuscarcliente.Size = new System.Drawing.Size(33, 26);
+            this.btnbuscarcliente.TabIndex = 43;
+            this.btnbuscarcliente.UseVisualStyleBackColor = true;
+            this.btnbuscarcliente.Click += new System.EventHandler(this.btnbuscarcliente_Click);
             // 
             // txtbuscarproveedornombre
             // 
@@ -361,6 +430,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(52, 23);
             this.txtCantidad.TabIndex = 101;
+            this.txtCantidad.Text = "0";
             // 
             // label10
             // 
@@ -442,6 +512,16 @@
             this.panel2.Size = new System.Drawing.Size(905, 29);
             this.panel2.TabIndex = 165;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(819, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -452,6 +532,18 @@
             this.label3.Size = new System.Drawing.Size(176, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "FACTURA COMPRAS";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
+            this.pictureBox8.Location = new System.Drawing.Point(879, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // txtiva
             // 
@@ -575,47 +667,6 @@
             this.btneliminarproductos.UseVisualStyleBackColor = true;
             this.btneliminarproductos.Click += new System.EventHandler(this.btneliminarproductos_Click);
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Enabled = false;
-            this.btnGuardar.Image = global::Presentacion.Properties.Resources.icons8_bolsa_de_dinero_32;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(333, 32);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(110, 35);
-            this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "Facturar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Enabled = false;
-            this.btnCancelar.Image = global::Presentacion.Properties.Resources.icons8_eliminar_32;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(444, 32);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(110, 35);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = global::Presentacion.Properties.Resources.icons8_por_nueva_copia_402;
-            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(208, 32);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(110, 35);
-            this.btnNuevo.TabIndex = 10;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
             // btnagregar
             // 
             this.btnagregar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -631,56 +682,6 @@
             this.btnagregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnagregar.UseVisualStyleBackColor = true;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
-            // 
-            // Btnbuscarusuario
-            // 
-            this.Btnbuscarusuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btnbuscarusuario.BackgroundImage")));
-            this.Btnbuscarusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btnbuscarusuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btnbuscarusuario.Enabled = false;
-            this.Btnbuscarusuario.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnbuscarusuario.Location = new System.Drawing.Point(364, 22);
-            this.Btnbuscarusuario.Name = "Btnbuscarusuario";
-            this.Btnbuscarusuario.Size = new System.Drawing.Size(33, 26);
-            this.Btnbuscarusuario.TabIndex = 42;
-            this.Btnbuscarusuario.UseVisualStyleBackColor = true;
-            this.Btnbuscarusuario.Click += new System.EventHandler(this.Btnbuscarusuario_Click);
-            // 
-            // btnbuscarcliente
-            // 
-            this.btnbuscarcliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnbuscarcliente.BackgroundImage")));
-            this.btnbuscarcliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnbuscarcliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscarcliente.Enabled = false;
-            this.btnbuscarcliente.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscarcliente.Location = new System.Drawing.Point(765, 25);
-            this.btnbuscarcliente.Name = "btnbuscarcliente";
-            this.btnbuscarcliente.Size = new System.Drawing.Size(33, 26);
-            this.btnbuscarcliente.TabIndex = 43;
-            this.btnbuscarcliente.UseVisualStyleBackColor = true;
-            this.btnbuscarcliente.Click += new System.EventHandler(this.btnbuscarcliente_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(819, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Presentacion.Properties.Resources.X;
-            this.pictureBox8.Location = new System.Drawing.Point(879, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // frmCompra
             // 
@@ -722,9 +723,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvventas)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

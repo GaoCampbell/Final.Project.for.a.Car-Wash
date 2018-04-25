@@ -29,5 +29,24 @@ namespace Negocio
             }
 
         }
+        public List<Edetalleventa> obtenerlistdetallex()
+        {
+
+            try
+            {
+
+                Ddetalleventa datosdetalle = new Ddetalleventa();
+                return datosdetalle.obtenerlistadetallex();
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
     }
     }

@@ -124,3 +124,12 @@ C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\bin\
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
 C:\Users\Gelder\Desktop\ORIGINAL\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Datos.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.dll
+C:\Users\Gelder\Desktop\XXXXX\Proyecto final\Sistema auto lavado\Negocio\obj\Debug\Negocio.pdb

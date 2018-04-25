@@ -150,7 +150,13 @@ namespace Presentacion
                 devolucion.Usuario.idUsuario = Convert.ToInt32(txtbuscarusuario.Text);
                 devolucion.Fecha = Convert.ToDateTime(dtpfecha.Value);
                 devolucion.Observacion = txtobservacion.Text;
-               
+
+                Ecompra editar = new Ecompra();
+                editar.Idcompra = Convert.ToInt32(txtNumventas.Text);
+                editar.Estado = cmbEstado.Text;
+                Ncompra gestion = new Ncompra();
+                gestion.modificarestado(editar);
+
                 MessageBox.Show("Se realizo la devolucion correctamente", "DEVOLUCION", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 foreach (DataGridViewRow item in dgvdevolucion.Rows)
@@ -394,7 +400,7 @@ namespace Presentacion
                 txtTotalDolares.Text = bc.totaldolares.ToString();
 
 
-                listadetallev = _Ndetallecompra.obtenerlistdetallecompra();
+                listadetallev = _Ndetallecompra.obtenerlistdetallecomprax();
                 var lista = (from d in listadetallev
                              where d.Compra.Idcompra == bc.idcompra
                              select new

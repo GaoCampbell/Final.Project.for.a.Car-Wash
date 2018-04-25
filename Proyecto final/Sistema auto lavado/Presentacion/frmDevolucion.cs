@@ -410,7 +410,7 @@ namespace Presentacion
                 txtTotalDolares.Text = bc.totaldolares.ToString();
 
 
-                listadetallev = _Ndetalleventa.obtenerlistdetalle();
+                listadetallev = _Ndetalleventa.obtenerlistdetallex();
                 var lista = (from d in listadetallev
                              where d.Venta.Num_venta == bc.Numventas
                              select new

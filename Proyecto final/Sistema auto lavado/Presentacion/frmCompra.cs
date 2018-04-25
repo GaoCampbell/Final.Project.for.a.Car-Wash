@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
 using Entidades;
-using Presentacion;
+using Presentacion.Reportes;
 
 namespace Presentacion
 {
@@ -17,6 +17,7 @@ namespace Presentacion
     {
         Ecompra compra = new Ecompra();
         List<DataGridViewRow> list = new List<DataGridViewRow>();
+        int x;
       
         public frmCompra()
         {
@@ -104,11 +105,11 @@ namespace Presentacion
         }
         public void Limpiar()
         {
-            int d;
+            int d , x;
+            x = 0 * 0;
             d = 0 * 0;
             txtdescuento.Text = d.ToString();
-            
-
+            txtCantidad.Text = x.ToString();
             txtbuscarusuario.Text = "";
             txtbuscaridproveedor.Text = "";
             dtpfecha.Text = "";
@@ -119,7 +120,7 @@ namespace Presentacion
             txtproducto.Text = "";
             txtprecio.Text = "";
             txtnombre.Text = "";
-            txtCantidad.Text = "";
+        
             cmbEstado.Text = "";
 
 
@@ -218,24 +219,11 @@ namespace Presentacion
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-            if (MessageBox.Show("Desea volver a realizar otra compra?", "COMPRA",MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
-            {
-
-
-
-                frmMenuprincipal formmenu = new frmMenuprincipal();              
-                formmenu.AbrirFormInPanel(new frmCompra());
-          
-
-
-
-            }
-            else
-            {
+            FrmReporteCompra y = new FrmReporteCompra();
+            y.Show();
                 this.Close();
-            }
-            Limpiar();
+            
+            
             
 
         }
@@ -291,7 +279,7 @@ namespace Presentacion
 
         private void btnbuscarproducto_Click(object sender, EventArgs e)
         {
-            frmBuscarproducto bp = new frmBuscarproducto();
+            frmBuscarproductoCompra bp = new frmBuscarproductoCompra();
             if (bp.ShowDialog() == DialogResult.OK)
             {
 
@@ -305,28 +293,50 @@ namespace Presentacion
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
+            int x1;
+            x1 = Convert.ToInt32(txtCantidad.Text);
             try
             {
-                EdetalleCompra nuevas = new EdetalleCompra();
-                nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
-                nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
-                nuevas.Total = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
-                nuevas.producto.Producto = txtnombre.Text;
-                compra.listadetalle.Add(nuevas);
-                ActualizarLista2();
-                calculartotal();
-                Deshabilitar();
-                txtCantidad.Enabled = true;
-                btnGuardar.Enabled = true;
-                btnCancelar.Enabled = true;
-                btnNuevo.Enabled = true;
-                txtdescuento.Enabled = true;
-                txtproducto.Text = "";
-                txtprecio.Text = "";
-                txtnombre.Text = "";
-                txtCantidad.Text = "";
-                txtprecio.Text = "";
+                if (string.IsNullOrEmpty(txtproducto.Text))
+                {
+
+                    MessageBox.Show("Debe ingresar un producto");
+                    return;
+                }
+                else
+                {
+
+                    if (x1 <= 0)
+                    {
+                        MessageBox.Show("Debe ingresar la cantidad de productos a vender");
+                    }
+                    else
+                    {
+                        EdetalleCompra nuevas = new EdetalleCompra();
+                        nuevas.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                        nuevas.producto.Codproducto = Convert.ToInt32(txtproducto.Text);
+                        nuevas.producto.Precio = Convert.ToDecimal(txtprecio.Text);
+                        nuevas.Total = Convert.ToDecimal(nuevas.Cantidad * nuevas.producto.Precio);
+                        nuevas.producto.Producto = txtnombre.Text;
+                        compra.listadetalle.Add(nuevas);
+                        ActualizarLista2();
+                        calculartotal();
+                        Deshabilitar();
+                        txtCantidad.Enabled = true;
+                        btnGuardar.Enabled = true;
+                        btnCancelar.Enabled = true;
+                        btnNuevo.Enabled = true;
+                        txtdescuento.Enabled = true;
+                        txtproducto.Text = "";
+                        txtprecio.Text = "";
+                        txtnombre.Text = "";
+                        txtCantidad.Text = "";
+                        txtprecio.Text = "";
+                    }
+                }
+
+
+               
             }
             catch (Exception ex)
             {
@@ -374,7 +384,9 @@ namespace Presentacion
 
 
 
-            txtTotalDolares.Text = totaldolares.ToString();
+          
+
+            this.txtTotalDolares.Text = totaldolares.ToString("0.##");
 
         }
 

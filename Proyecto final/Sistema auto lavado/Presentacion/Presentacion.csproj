@@ -59,19 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSetCompra.cs">
-      <DependentUpon>DataSetCompra.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSetCompra.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetCompra.xsd</DependentUpon>
-    </Compile>
     <Compile Include="dtsLavado.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -172,6 +159,12 @@
     </Compile>
     <Compile Include="frmbuscarmarca.Designer.cs">
       <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarproductoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarproductoCompra.Designer.cs">
+      <DependentUpon>frmBuscarproductoCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarproductoINACTIVO.cs">
       <SubType>Form</SubType>
@@ -347,12 +340,6 @@
     <Compile Include="frmReporteLavado.Designer.cs">
       <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmreporteventas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmreporteventas.Designer.cs">
-      <DependentUpon>frmreporteventas.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmServicioLavado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +396,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DataSetReporteCompra.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReporteCompra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DataSetReporteVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReporteVenta.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\frmFacturaLavado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -420,6 +417,18 @@
     </Compile>
     <Compile Include="Reportes\frmMostrarReporteMantenimiento.Designer.cs">
       <DependentUpon>frmMostrarReporteMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteCompra.Designer.cs">
+      <DependentUpon>FrmReporteCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteVenta.Designer.cs">
+      <DependentUpon>FrmReporteVenta.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmAuditoriaCompra.resx">
       <DependentUpon>FrmAuditoriaCompra.cs</DependentUpon>
@@ -468,6 +477,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarmarca.resx">
       <DependentUpon>frmbuscarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarproductoCompra.resx">
+      <DependentUpon>frmBuscarproductoCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarproductoINACTIVO.resx">
       <DependentUpon>frmBuscarproductoINACTIVO.cs</DependentUpon>
@@ -556,9 +568,6 @@
     <EmbeddedResource Include="frmReporteLavado.resx">
       <DependentUpon>frmReporteLavado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmreporteventas.resx">
-      <DependentUpon>frmreporteventas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmServicioLavado.resx">
       <DependentUpon>frmServicioLavado.cs</DependentUpon>
     </EmbeddedResource>
@@ -595,40 +604,25 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Reportes\frmFacturaLavado.resx">
       <DependentUpon>frmFacturaLavado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmMostrarReporteMantenimiento.resx">
       <DependentUpon>frmMostrarReporteMantenimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteCompra.resx">
+      <DependentUpon>FrmReporteCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteVenta.resx">
+      <DependentUpon>FrmReporteVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportCompra.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportVenta.rdlc" />
     <EmbeddedResource Include="Reportes\rptFacturarLavado.rdlc" />
     <EmbeddedResource Include="Reportes\rptFacturarMantenimiento.rdlc" />
     <EmbeddedResource Include="rptLavadoServicio.rdlc" />
     <EmbeddedResource Include="rptLavadoVehiculo.rdlc" />
     <EmbeddedResource Include="rptReporteLavadoEmpleado.rdlc" />
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetCompra.xsc">
-      <DependentUpon>DataSetCompra.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetCompra.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetCompra.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSetCompra.xss">
-      <DependentUpon>DataSetCompra.xsd</DependentUpon>
-    </None>
     <None Include="dtsLavado.xsc">
       <DependentUpon>dtsLavado.xsd</DependentUpon>
     </None>
@@ -665,6 +659,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\DataSetReporteCompra.xsc">
+      <DependentUpon>DataSetReporteCompra.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSetReporteCompra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReporteCompra.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSetReporteCompra.xss">
+      <DependentUpon>DataSetReporteCompra.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSetReporteVenta.xsc">
+      <DependentUpon>DataSetReporteVenta.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSetReporteVenta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReporteVenta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSetReporteVenta.xss">
+      <DependentUpon>DataSetReporteVenta.xsd</DependentUpon>
+    </None>
     <None Include="Resources\minimizar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -692,6 +708,7 @@
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Car1.ico" />
+    <None Include="Resources\icons8-literatura-48.png" />
     <None Include="Resources\icons8-comprar-963.png" />
     <None Include="Resources\icons8-vender-stock-961.png" />
     <None Include="Resources\icons8-flecha-direccional-horizontal-801.png" />

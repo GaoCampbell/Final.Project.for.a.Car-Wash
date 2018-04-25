@@ -54,5 +54,23 @@ namespace Negocio
                 throw ex;
             }
         }
+
+        public void modificarestado(Ecompra modificar)
+        {
+            try
+            {
+
+
+                if (modificar.Estado.Length == 0)
+                    throw new ArgumentException("Ingrese el estado del producto");
+
+                Dcompra gestion = new Dcompra();
+                gestion.modificarestadocompra(modificar);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
